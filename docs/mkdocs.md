@@ -56,3 +56,4 @@ Una vez terminada de instalarse, abre el archivo “mkdocs.yml” y modifica el 
 
 ![Git Hub Image](images/mkdocs/08.mkdocs_tema_nuevo_index.png)
 <br>
+<br>
