@@ -632,9 +632,20 @@
 <p><img alt="Git Hub Image" src="../images/gh_deploy/08.visitar_pagina.png" />
 <br>
 <br></p>
-<p><strong>13.</strong> Para actualizar GitHub Pages, primero ejecuta (mkdocs gh-deploy) al repositorio del proyecto para la rama "gh-pages" y luego (git push -u origin main) para la rama "main". Verifica los cambios en la página.</p>
-<p><br>
-<br></p>
+<p><strong>13.</strong> Para actualizar GitHub Pages, ejecuta lo siguiente
+  - Ejecuta el comando (git init)
+  - Ejecuta el comando (git add .)
+  - Ejecuta el comando (git commit -m "actualizacion")
+  - Ejecuta el comando (git branch -M main)
+  - Ejecuta el comando (git remote add origin https://github.com/zuluta/docs.git)
+  - Ejecuta el comando (git remote -v)
+  - Ejecuta el comando (git status)
+  - Ejecuta el comando (git push -u origin main) este sube a la rama "main" que es donde guardamos el proyecto.
+  - ejecuta el comando (mkdocs gh-deploy) este sube a la rama "gh-pages" lo compila y va enlazado al sitio web de GitHub Pages
+
+<p>Verifica los cambios en la página.</p>
+<br>
+<br>
 
 
 
