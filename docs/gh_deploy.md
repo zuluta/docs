@@ -95,17 +95,20 @@ hide:
 <br>
 <br>
 
-<p><strong>13.</strong> Para actualizar GitHub Pages, ejecuta lo siguiente
+<p><strong>13.</strong> Si necesitas actualizar GitHub Pages por nuevos cambios, ejecuta lo siguiente</p>
+  - Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (.\env\scripts\activate)
+  - Accede a la carpeta del proyecto "docs" y lanza el comando "mkdocs build"
+
+
   - Ejecuta el comando (git init)
   - Ejecuta el comando (git add .)
-  - Ejecuta el comando (git commit -m "actualizacion")
+  - Ejecuta el comando (git commit -m "actualizar archivo")
   - Ejecuta el comando (git branch -M main)
   - Ejecuta el comando (git remote add origin https://github.com/zuluta/docs.git)
   - Ejecuta el comando (git remote -v)
   - Ejecuta el comando (git status)
-  - Ejecuta el comando (git push -u origin main) este sube a la rama "main" que es donde guardamos el proyecto.
+  - Ejecuta el comando (git push -u origin main) este sube a la rama "main" que es donde se guarda el proyecto.
   - ejecuta el comando (mkdocs gh-deploy) este sube a la rama "gh-pages" lo compila y va enlazado al sitio web de GitHub Pages
-
-<p>Verifica los cambios en la página.</p>
+  - Verifica los cambios en la página
 <br>
 <br>

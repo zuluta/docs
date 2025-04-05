@@ -632,9 +632,27 @@
 <p><img alt="Git Hub Image" src="../images/gh_deploy/08.visitar_pagina.png" />
 <br>
 <br></p>
-<p><strong>13.</strong> Para actualizar GitHub Pages, primero ejecuta (mkdocs gh-deploy) al repositorio del proyecto para la rama "gh-pages" y luego (git push -u origin main) para la rama "main". Verifica los cambios en la página.</p>
-<p><br>
-<br></p>
+<p><strong>13.</strong> Si necesitas actualizar GitHub Pages por nuevos cambios, ejecuta lo siguiente</p>
+<ul>
+<li>Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (.\env\scripts\activate)</li>
+<li>
+<p>Accede a la carpeta del proyecto "docs" y lanza el comando "mkdocs build"</p>
+</li>
+<li>
+<p>Ejecuta el comando (git init)</p>
+</li>
+<li>Ejecuta el comando (git add .)</li>
+<li>Ejecuta el comando (git commit -m "actualizar archivo")</li>
+<li>Ejecuta el comando (git branch -M main)</li>
+<li>Ejecuta el comando (git remote add origin https://github.com/zuluta/docs.git)</li>
+<li>Ejecuta el comando (git remote -v)</li>
+<li>Ejecuta el comando (git status)</li>
+<li>Ejecuta el comando (git push -u origin main) este sube a la rama "main" que es donde se guarda el proyecto.</li>
+<li>ejecuta el comando (mkdocs gh-deploy) este sube a la rama "gh-pages" lo compila y va enlazado al sitio web de GitHub Pages</li>
+<li>Verifica los cambios en la página
+<br>
+<br></li>
+</ul>
 
 
 
