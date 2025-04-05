@@ -40,9 +40,9 @@ hide:
   - `git log prueba.html` Muestra los commits del archivo (prueba.html)
   - `git commit --amend` Edita el mensajes del commit
 
-### Comando para restaurar el archivo a un commit específico:
+### Comandos para restaurar el archivo a un commit específico:
 
-  1. `git log --oneline` --------------------------> Muestra información simplificada de commits
-  2. `git restore --source 20cf9cb prueba.html` Restaura el archivo (prueba.html) al commit referenciado con un hash
+  - `git log --oneline` Muestra información simplificada de commits
+  - `git restore --source 20cf9cb prueba.html` Restaura el archivo (prueba.html) al commit referenciado con un hash
 <br>
 <br>
