@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://zuluta.github.io/docs/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/comandos_git/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/doc_06/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/doc_07/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/gh_deploy/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/mkdocs/</loc>
+         <lastmod>2025-04-05</lastmod>
+    </url>
+</urlset>
