@@ -94,3 +94,7 @@ hide:
 ![Git Hub Image](images/gh_deploy/08.visitar_pagina.png)
 <br>
 <br>
+
+<p><strong>13.</strong> Para actualizar GitHub Pages, primero ejecuta (git push -u origin main) al repositorio del proyecto en la rama "main" y luego (mkdocs gh-deploy) para la rama "gh-pages". verifica los cambios en la página.</p>
+<br>
+<br>
