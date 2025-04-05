@@ -95,6 +95,6 @@ hide:
 <br>
 <br>
 
-<p><strong>13.</strong> Para actualizar GitHub Pages, primero ejecuta (git push -u origin main) al repositorio del proyecto en la rama "main" y luego (mkdocs gh-deploy) para la rama "gh-pages". verifica los cambios en la página.</p>
+<p><strong>13.</strong> Para actualizar GitHub Pages, primero ejecuta (mkdocs gh-deploy) al repositorio del proyecto para la rama "gh-pages" y luego (git push -u origin main) para la rama "main". Verifica los cambios en la página.</p>
 <br>
 <br>
