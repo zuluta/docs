@@ -705,12 +705,23 @@
 <ul>
 <li><code>git status</code> Muestra el estado de los procesos GIT</li>
 <li><code>git add ejemplo.html</code> Agrega los archivos indibidualmente al GIT</li>
-<li><code>git branch -M main</code> Cambia a la rama main</li>
 <li><code>git remote -v</code> Verifica la comunicación con el repositorio remoto</li>
 <li><code>git log</code> Muestra el histórico de commits</li>
 <li><code>git log -n 2</code> Muestra los últimos 2 commits</li>
 <li><code>git log prueba.html</code> Muestra los commits del archivo (prueba.html)</li>
 <li><code>git commit --amend</code> Edita el mensajes del commit</li>
+<li><code>git switch main</code> Cambia a la rama main</li>
+<li><code>git branch -M main</code> Cambia a la rama main</li>
+<li><code>git branch --list</code> Muestra todas las ramas y distingue con un (*) la rama en la que estas</li>
+<li><code>git branch --show-current</code> Muestra la rama en la que estas</li>
+<li><code>git branch -d branch-test</code> Elimina la rama (branch-test) del repositorio local si esta fusionado con main</li>
+<li><code>git branch -D branch-test</code> Fuerza a eliminar la rama (branch-test) del repositorio local este o no fusionado con main</li>
+<li><code>git branch --no-merged</code> Muestra las ramas que estan sin fusionar con main</li>
+<li><code>git push origin --delete branch-test</code> Elimina la rama (branch-test) del repositorio remoto</li>
+<li><code>git fetch --prune</code> Elimina todas las referencias de seguimiento obsoletas del repositorio remoto</li>
+<li><code>git prune</code> Elimina todas las referencias de seguimiento obsoletas del repositorio local</li>
+<li><code>git prune --verbose</code> Elimina y muestra todas las referencias de seguimiento obsoletas que a eliminado del repositorio local</li>
+<li><code>git branch -r</code> Muestra todas las ramas del repositorio remoto</li>
 </ul>
 <h3 id="comandos-para-restaurar-el-archivo-a-un-commit-especifico">Comandos para restaurar el archivo a un commit específico:</h3>
 <ul>
