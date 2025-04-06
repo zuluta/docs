@@ -33,13 +33,23 @@ hide:
 
   - `git status` Muestra el estado de los procesos GIT
   - `git add ejemplo.html` Agrega los archivos indibidualmente al GIT
-  - `git branch -M main` Cambia a la rama main
   - `git remote -v` Verifica la comunicación con el repositorio remoto
   - `git log` Muestra el histórico de commits
   - `git log -n 2` Muestra los últimos 2 commits
   - `git log prueba.html` Muestra los commits del archivo (prueba.html)
   - `git commit --amend` Edita el mensajes del commit
-  - `git show-branch` Muestra todas las ramas
+  - `git switch main` Cambia a la rama main
+  - `git branch -M main` Cambia a la rama main
+  - `git branch --list` Muestra todas las ramas y distingue con un (*) la rama en la que estas
+  - `git branch --show-current` Muestra la rama en la que estas
+  - `git branch -d branch-test` Elimina la rama (branch-test) del repositorio local si esta fusionado con main
+  - `git branch -D branch-test` Fuerza a eliminar la rama (branch-test) del repositorio local este o no fusionado con main
+  - `git branch --no-merged` Muestra las ramas que estan sin fusionar con main
+  - `git push origin --delete branch-test` Elimina la rama (branch-test) del repositorio remoto
+  - `git fetch --prune` Elimina todas las referencias de seguimiento obsoletas del repositorio remoto
+  - `git prune` Elimina todas las referencias de seguimiento obsoletas del repositorio local
+  - `git prune --verbose` Elimina y muestra todas las referencias de seguimiento obsoletas que a eliminado del repositorio local
+  - `git branch -r` Muestra todas las ramas del repositorio remoto
 
 ### Comandos para restaurar el archivo a un commit específico:
 
