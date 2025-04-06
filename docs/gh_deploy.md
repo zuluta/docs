@@ -102,8 +102,8 @@ hide:
 
   - Ejecuta el comando (git init)
   - Ejecuta el comando (git add .)
-  - Ejecuta el comando (git commit -m "actualizar archivo")
-  - Ejecuta el comando (git branch -M main)
+  - Ejecuta el comando (git commit -m "actualizar contenido")
+  - Ejecuta el comando (git switch main)
   - Ejecuta el comando (git remote add origin https://github.com/zuluta/docs.git)
   - Ejecuta el comando (git remote -v)
   - Ejecuta el comando (git status)
