@@ -39,6 +39,7 @@ hide:
   - `git log -n 2` Muestra los últimos 2 commits
   - `git log prueba.html` Muestra los commits del archivo (prueba.html)
   - `git commit --amend` Edita el mensajes del commit
+  - `git show-branch` Muestra todas las ramas
 
 ### Comandos para restaurar el archivo a un commit específico:
 
