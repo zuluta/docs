@@ -513,9 +513,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comandos-para-restaurar-el-archivo-a-un-commit-especifico" class="md-nav__link">
+  <a href="#comandos-para-restaurar-o-resetear-a-un-commit-anterior-especifico" class="md-nav__link">
     <span class="md-ellipsis">
-      Comandos para restaurar el archivo a un commit específico:
+      Comandos para restaurar o resetear a un commit anterior específico:
     </span>
   </a>
   
@@ -648,9 +648,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comandos-para-restaurar-el-archivo-a-un-commit-especifico" class="md-nav__link">
+  <a href="#comandos-para-restaurar-o-resetear-a-un-commit-anterior-especifico" class="md-nav__link">
     <span class="md-ellipsis">
-      Comandos para restaurar el archivo a un commit específico:
+      Comandos para restaurar o resetear a un commit anterior específico:
     </span>
   </a>
   
@@ -682,7 +682,7 @@
 <ul>
 <li><code>git init</code> Iniciar GIT</li>
 <li><code>git add .</code> Agrega todos los archivos al GIT</li>
-<li><code>git commit -m 'primer commit'</code> Agrega un commit</li>
+<li><code>git commit -m "primer commit"</code> Agrega un commit</li>
 </ul>
 <h3 id="comandos-para-sincrinizar-por-primera-vez-git-con-github-desde-terminal-de-vscode">Comandos para sincrinizar por primera vez GIT con GitHub desde terminal de VSCode:</h3>
 <ul>
@@ -694,8 +694,8 @@
 <ul>
 <li><code>git init</code> Iniciar GIT</li>
 <li><code>git add .</code> Agrega todos los archivos al GIT</li>
-<li><code>git commit -m 'primer commit'</code> Agrega un commit</li>
-<li><code>git branch -M main</code> Cambia a la rama main</li>
+<li><code>git commit -m "primer commit"</code> Agrega un commit</li>
+<li><code>git branch -M main</code> Fuerza a renombrar la rama local actual por (main)</li>
 <li><code>git remote add origin https://github.com/usuario/mi_repositorio.git</code> Asigna url del repositorio GitHub</li>
 <li><code>git remote -v</code> Verifica la comunicación con el repositorio remoto</li>
 <li><code>git status</code> Muestra el estado de los procesos GIT</li>
@@ -709,27 +709,64 @@
 <li><code>git log</code> Muestra el histórico de commits</li>
 <li><code>git log -n 2</code> Muestra los últimos 2 commits</li>
 <li><code>git log prueba.html</code> Muestra los commits del archivo (prueba.html)</li>
-<li><code>git commit --amend</code> Edita el mensajes del commit</li>
-<li><code>git switch main</code> Cambia a la rama main</li>
-<li><code>git branch -M main</code> Cambia a la rama main</li>
-<li><code>git branch --list</code> Muestra todas las ramas y distingue con un (*) la rama en la que estas</li>
-<li><code>git branch --show-current</code> Muestra la rama en la que estas</li>
-<li><code>git branch -d branch-test</code> Elimina la rama (branch-test) del repositorio local si esta fusionado con main</li>
-<li><code>git branch -D branch-test</code> Fuerza a eliminar la rama (branch-test) del repositorio local este o no fusionado con main</li>
-<li><code>git branch --no-merged</code> Muestra las ramas que estan sin fusionar con main</li>
+<li><code>git switch main</code> Cambia de la rama actual a la rama (main)</li>
+<li><code>git branch branch-test</code> Crea una nueva rama (branch-test) a partir de la rama actual</li>
+<li><code>git branch -m branch-test</code> Renombra la rama local actual por (branch-test)</li>
+<li><code>git branch -M main</code> Fuerza a renombrar la rama local actual por (main)</li>
+<li><code>git branch</code> Muestra todas las ramas locales y distingue con un (*) la rama actual</li>
+<li><code>git branch --list</code> Muestra todas las ramas locales y distingue con un (*) la rama actual</li>
+<li><code>git branch -r</code> Muestra todas las ramas del repositorio remoto</li>
+<li><code>git branch -a</code> Muestra todas las ramas, tanto locales como remotas y distingue con un (*) la rama actual</li>
+<li><code>git branch --show-current</code> Muestra la rama actual</li>
+<li><code>git branch -d branch-test</code> Elimina la rama (branch-test) del repositorio local si esta fusionado con (main)</li>
+<li><code>git branch -D branch-test</code> Fuerza a eliminar la rama (branch-test) del repositorio local este o no fusionado con (main)</li>
+<li><code>git branch --no-merged</code> Muestra las ramas que estan sin fusionar con (main)</li>
+<li><code>git merge branch-test</code> Fusiona la rama (branch-test) a la rama actual</li>
 <li><code>git push origin --delete branch-test</code> Elimina la rama (branch-test) del repositorio remoto</li>
 <li><code>git fetch --prune</code> Elimina todas las referencias de seguimiento obsoletas del repositorio remoto</li>
 <li><code>git prune</code> Elimina todas las referencias de seguimiento obsoletas del repositorio local</li>
 <li><code>git prune --verbose</code> Elimina y muestra todas las referencias de seguimiento obsoletas que a eliminado del repositorio local</li>
-<li><code>git branch -r</code> Muestra todas las ramas del repositorio remoto</li>
+<li><code>git commit --amend -m "texto corregido"</code> Edita el commit mas reciente y lo sustituye por uno nuevo</li>
 </ul>
-<h3 id="comandos-para-restaurar-el-archivo-a-un-commit-especifico">Comandos para restaurar el archivo a un commit específico:</h3>
+<h3 id="comandos-para-restaurar-o-resetear-a-un-commit-anterior-especifico">Comandos para restaurar o resetear a un commit anterior específico:</h3>
+<ol>
+<li>
+<p>El método <code>git restore</code>: </p>
 <ul>
-<li><code>git log --oneline</code> Muestra información simplificada de commits</li>
-<li><code>git restore --source 20cf9cb prueba.html</code> Restaura el archivo (prueba.html) al commit referenciado con un hash
-<br>
-<br></li>
+<li><code>git log --oneline</code> Muestra información simplificada de commits donde sale el hash de cada uno</li>
+<li><code>git restore --source 20cf9cb prueba.html</code> Restaura el archivo (prueba.html) al commit mediante hash (20cf9cb)</li>
 </ul>
+</li>
+<li>
+<p>El método <code>git reset</code>:</p>
+<ul>
+<li><code>git log --oneline</code> Muestra información simplificada de commits donde sale el hash de cada uno</li>
+<li><code>git reset 20cf9cb</code> Regresa al commit mediante hash (20cf9cb)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">NOTA</p>
+<p>A pesar de que los commits ya no aparecen en el log, no se elimina de Git</p>
+</div>
+<p><br>
+<br></p>
+</li>
+</ol>
+<div class="admonition failure">
+<p class="admonition-title">MALAS PRÁCTICAS</p>
+<p>Está totalmente desaconsejado alterar el historial de commits, esto podria generar conflictos con los commits del repositorio remoto cuando se vaya hacer push o pull por cualquiera de los miembros, intenta siempre trabajar hacia adelante. Por lo general, está bien hacer este tipo de cambios en su propio repositorio local.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">BUENAS PRÁCTICAS</p>
+<p>El mensaje del commit se escribe en presente, debe ser corto y conciso, no utilizar puntos ni puntos suspensivos al final.</p>
+<ol>
+<li>Ejemplo commit: <code>remove a random notification</code> </li>
+<li>Ejemplo commit: <code>add a new search feature</code></li>
+<li>Ejemplo commit: <code>change the default system color</code></li>
+<li>Ejemplo commit: <code>fix a problem with the topbar</code></li>
+</ol>
+</div>
+<p><br>
+<br></p>
 
 
 
