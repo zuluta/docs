@@ -40,7 +40,7 @@ hide:
   - ==git switch main== Cambia de la rama actual a la rama (main)
   - ==git branch branch-test== Crea una nueva rama (branch-test) a partir de la rama actual
   - ==git branch -m branch-test== Renombra la rama local actual por (branch-test) {~~actual~> branch-test~~}
-  - ==git branch -M main== Fuerza a renombrar la rama local actual por (main) {~~actual~> main~~}
+  - ==git branch -M branch-test== Fuerza a renombrar la rama local actual por (branch-test) {~~actual~> branch-test~~}
   - ==git branch== Muestra todas las ramas locales y distingue con un (*) la rama actual
   - ==git branch --list== Muestra todas las ramas locales y distingue con un (*) la rama actual
   - ==git branch -r== Muestra todas las ramas del repositorio remoto
