@@ -112,8 +112,8 @@ hide:
   - Ejecuta el comando (==git remote add origin https://github.com/zuluta/docs.git==)
   - Ejecuta el comando (==git remote -v==)
   - Ejecuta el comando (==git status==)
-  - Ejecuta el comando (==git push -u origin main==) Se sube a la rama "main" del repositorio donde se guarda el proyecto.
-  - ejecuta el comando (==mkdocs gh-deploy==) Se sube a la rama "gh-pages" del repositorio ya complilado y va enlazado al sitio web de GitHub Pages
+  - Ejecuta el comando (==git push -u origin main==) Se sube a la rama "main" del repositorio donde se guarda el proyecto
+  - Ejecuta el comando (==mkdocs gh-deploy==) Compila y Despliega a la rama "gh-pages" del repositorio. Ésta rama, va enlazado al sitio web de GitHub Pages
   - Verifica los cambios en la página
 <br>
 <br>
