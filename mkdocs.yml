@@ -6,7 +6,7 @@ site_author: zuluta
 site_description: mkdocs
 
 extra:
-  homepage: https://zuluta.github.io/
+  homepage: https://zuluta.github.io/docs/
 
 # repository
 repo_name: docs
