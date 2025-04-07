@@ -73,5 +73,12 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+  # extension para el resaltado de texto
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
 copyright:
   Copyright &copy; 2025 <a href="https://github.com/zuluta"  target="_blank" rel="noopener">zuluta</a>
