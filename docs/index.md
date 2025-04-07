@@ -14,25 +14,27 @@
 
 ```
 # project information
-site_name: zuluta.dev
-site_url: https://zuluta.github.io
+site_name: zuluta
+site_url: https://zuluta.github.io/docs/
 
 site_author: zuluta
 site_description: mkdocs
 
-#extra:
-  #homepage: https://zuluta.github.io
+extra:
+  homepage: https://zuluta.github.io/
 
 # repository
-repo_name: zuluta
-repo_url: https://github.com/zuluta
+repo_name: docs
+repo_url: https://github.com/zuluta/docs/
 
 # navigation
 nav:
   - Inicio: index.md
   - 💻 Manuales de Instalación:
     - MkDocs + virtualenv: mkdocs.md
+    - Despliegue a GitHub Pages: gh_deploy.md
   - 📚 Documentación:
+    - Comandos de GIT: comandos_git.md
     - Checkpoint 06: doc_06.md
     - Checkpoint 07: doc_07.md
 
@@ -86,6 +88,14 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
 
+  # extension para el resaltado de texto
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
 copyright:
   Copyright &copy; 2025 <a href="https://github.com/zuluta"  target="_blank" rel="noopener">zuluta</a>
 ```
+<br>
