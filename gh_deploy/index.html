@@ -566,23 +566,23 @@
 <p><strong>04.</strong> Comandos para sincrinizar por primera vez GIT con GitHub desde la terminal de VSCode.</p>
 
 <ul>
-<li><code>git init</code> Inicia el Git</li>
-<li><code>git config --global user.name "Your_Name"</code> Usuario de github</li>
-<li><code>git config --global user.email "you@example.com"</code> Email de github
+<li>(<mark>git init</mark>) Inicia el Git</li>
+<li>(<mark>git config --global user.name "Your_Name"</mark>) Usuario de github</li>
+<li>(<mark>git config --global user.email "you@example.com"</mark>) Email de github
 <br></li>
 </ul>
 <p><strong>05.</strong> Comandos de terminal mas utilizados en GIT.</p>
 
 <ul>
-<li><code>git init</code> Inicia el Git</li>
-<li><code>git add .</code> Agrega todos los archivos al Git</li>
-<li><code>git add ejemplo.html</code> Agrega el archivo indibidualmente al Git</li>
-<li><code>git commit -m 'inserta el mensaje aqui'</code> Agrega un commit al Git</li>
-<li><code>git branch -M main</code> Cambia a la rama main</li>
-<li><code>git remote add origin https://github.com/usuario/mi_repositorio.git</code> Agrega la url remota del repositorio github</li>
-<li><code>git remote -v</code> Verifica la comunicación con el repositorio remoto</li>
-<li><code>git status</code> Muestra el estado de los procesos Git</li>
-<li><code>git push -u origin main</code> Sube los archivos a la rama main del repositorio github</li>
+<li>(<mark>git init</mark>) Inicia el Git</li>
+<li>(<mark>git add .</mark>) Agrega todos los archivos al Git</li>
+<li>(<mark>git add ejemplo.html</mark>) Agrega el archivo indibidualmente al Git</li>
+<li>(<mark>git commit -m "inserta el mensaje aqui"</mark>) Agrega un commit al Git</li>
+<li>(<mark>git branch -M main</mark>) Fuerza a renombrar la rama local actual por (main) <del class="critic">actual</del><ins class="critic"> main</ins></li>
+<li>(<mark>git remote add origin https://github.com/usuario/mi_repositorio.git</mark>) Agrega la url remota del repositorio github</li>
+<li>(<mark>git remote -v</mark>) Verifica la comunicación con el repositorio remoto</li>
+<li>(<mark>git status</mark>) Muestra el estado de los procesos Git</li>
+<li>(<mark>git push -u origin main</mark>) Sube los archivos a la rama main del repositorio github</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">El orden de ejecución</p>
@@ -591,7 +591,7 @@
 <p><br></p>
 <p><strong>06.</strong> Entra en VSCode y abre una terminal nueva.</p>
 <ul>
-<li>Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (.\env\scripts\activate).</li>
+<li>Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (<mark>.\env\scripts\activate</mark>)</li>
 <li>Accede a la carpeta del proyecto "docs" y lanza el comando "mkdocs build" para compilar. Se creara una nueva carpeta llamada "site" donde sera compilado todo el proyecto.</li>
 </ul>
 <p><img alt="Git Hub Image" src="../images/gh_deploy/04.build_proyecto_docs.png" />
@@ -599,15 +599,19 @@
 <br></p>
 <p><strong>07.</strong> Desde la carpeta del proyecto "docs", abre la terminal y prepara el repositorio GIT para subir al repositorio GitHub.</p>
 <ul>
-<li>Ejecuta el comando (git init)</li>
-<li>Ejecuta el comando (git add .)</li>
-<li>Ejecuta el comando (git commit -m "despliegue")</li>
-<li>Ejecuta el comando (git branch -M main)</li>
-<li>Ejecuta el comando (git remote add origin https://github.com/zuluta/docs.git)</li>
-<li>Ejecuta el comando (git remote -v)</li>
-<li>Ejecuta el comando (git status)</li>
-<li>Ejecuta el comando (git push -u origin main)</li>
+<li>Ejecuta el comando (<mark>git init</mark>)</li>
+<li>Ejecuta el comando (<mark>git add .</mark>)</li>
+<li>Ejecuta el comando (<mark>git commit -m "despliegue"</mark>)</li>
+<li>Ejecuta el comando (<mark>git branch -M main</mark>)</li>
+<li>Ejecuta el comando (<mark>git remote add origin https://github.com/zuluta/docs.git</mark>)</li>
+<li>Ejecuta el comando (<mark>git remote -v</mark>)</li>
+<li>Ejecuta el comando (<mark>git status</mark>)</li>
+<li>Ejecuta el comando (<mark>git push -u origin main</mark>)</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">NOTA</p>
+<p>La rama "master" y "main" son lo mismo. Hace unos años, la comunidad de software decidió cambiar el nombre de la rama principal de <del class="critic">master</del> a <ins class="critic">main</ins>. Verifica con el comando (<mark class="critic">git branch</mark>) las ramas existentes en tu repositorio local y si existe la rama master, pasa a la rama master con el comando (<mark class="critic">git switch master</mark>) y cambia el nombre de la rama con el comando (<mark class="critic">git branch -m main</mark>) o (<mark class="critic">git branch -M main</mark>) para forzarlo. De este modo, solo se dejara una rama principal con el nombre "main" por repositorio.</p>
+</div>
 <p><br>
 <br></p>
 <p><strong>08.</strong> Entra al repositorio y verifica si se subieron bien los archivos a GitHub en la rama main.</p>
@@ -615,7 +619,11 @@
 <p><img alt="Git Hub Image" src="../images/gh_deploy/05.verificar_subida_github.png" />
 <br>
 <br></p>
-<p><strong>09.</strong> GitHub permite crear una pagina web gratis desde el repositorio. Ejecuta el comando (mkdocs gh-deploy), este comando es específico de mkdocs para GitHub. Este comando creara de forma automática una nueva rama "gh_pages" en el mismo repositorio del proyecto para poder desplegar GitHub Pages.</p>
+<p><strong>09.</strong> GitHub permite crear una pagina web gratis desde el repositorio.</p>
+<ul>
+<li>Ejecuta el comando (<mark>mkdocs gh-deploy</mark>)</li>
+</ul>
+<p>Este comando es específico de mkdocs para GitHub. Este comando creara de forma automática una nueva rama "gh_pages" en el mismo repositorio del proyecto para poder desplegar GitHub Pages.</p>
 
 <p><strong>10.</strong> Entra al repositorio de GitHub y verifica si se creo la rama "gh-pages".</p>
 
@@ -632,23 +640,19 @@
 <p><img alt="Git Hub Image" src="../images/gh_deploy/08.visitar_pagina.png" />
 <br>
 <br></p>
-<p><strong>13.</strong> Si necesitas actualizar GitHub Pages por nuevos cambios, ejecuta lo siguiente</p>
+<p><strong>13.</strong> Si necesitas actualizar GitHub Pages por nuevos cambios, ejecuta lo siguiente.</p>
 <ul>
-<li>Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (.\env\scripts\activate)</li>
-<li>
-<p>Accede a la carpeta del proyecto "docs" y lanza el comando "mkdocs build"</p>
-</li>
-<li>
-<p>Ejecuta el comando (git init)</p>
-</li>
-<li>Ejecuta el comando (git add .)</li>
-<li>Ejecuta el comando (git commit -m "actualizar contenido")</li>
-<li>Ejecuta el comando (git switch main)</li>
-<li>Ejecuta el comando (git remote add origin https://github.com/zuluta/docs.git)</li>
-<li>Ejecuta el comando (git remote -v)</li>
-<li>Ejecuta el comando (git status)</li>
-<li>Ejecuta el comando (git push -u origin main) este sube a la rama "main" que es donde se guarda el proyecto.</li>
-<li>ejecuta el comando (mkdocs gh-deploy) este sube a la rama "gh-pages" lo compila y va enlazado al sitio web de GitHub Pages</li>
+<li>Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (<mark class="critic">.\env\scripts\activate</mark>)</li>
+<li>Accede a la carpeta del proyecto "docs" y lanza el comando (<mark>mkdocs build</mark>)</li>
+<li>Ejecuta el comando (<mark>git init</mark>)</li>
+<li>Ejecuta el comando (<mark>git add .</mark>)</li>
+<li>Ejecuta el comando (<mark>git commit -m "actualizar contenido"</mark>)</li>
+<li>Ejecuta el comando (<mark>git switch main</mark>)</li>
+<li>Ejecuta el comando (<mark>git remote add origin https://github.com/zuluta/docs.git</mark>)</li>
+<li>Ejecuta el comando (<mark>git remote -v</mark>)</li>
+<li>Ejecuta el comando (<mark>git status</mark>)</li>
+<li>Ejecuta el comando (<mark>git push -u origin main</mark>) este sube a la rama "main" que es donde se guarda el proyecto.</li>
+<li>ejecuta el comando (<mark>mkdocs gh-deploy</mark>) este sube a la rama "gh-pages" lo compila y va enlazado al sitio web de GitHub Pages</li>
 <li>Verifica los cambios en la página
 <br>
 <br></li>
