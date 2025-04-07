@@ -24,7 +24,7 @@ hide:
   - ==git add .== Agrega todos los archivos al GIT
   - ==git commit -m "primer commit"== Agrega un commit
   - ==git branch -M main== Fuerza a renombrar la rama local actual por (main) {~~actual~> main~~}
-  - ==git remote add origin https://github.com/usuario/mi_repositorio.git== Asigna url del repositorio GitHub
+  - ==git remote add origin https://github.com/usuario/mi_repositorio.git== Crea una conexión remota llamada {++origin++} con el repositorio de GitHub
   - ==git remote -v== Verifica la comunicación con el repositorio remoto
   - ==git status== Muestra el estado de los procesos GIT
   - ==git push -u origin main== Sube los archivos a la rama main remoto de GitHub
@@ -49,7 +49,10 @@ hide:
   - ==git branch -d branch-test== Elimina la rama (branch-test) del repositorio local si esta fusionado con (main)
   - ==git branch -D branch-test== Fuerza a eliminar la rama (branch-test) del repositorio local este o no fusionado con (main)
   - ==git branch --no-merged== Muestra las ramas que estan sin fusionar con (main)
-  - ==git merge branch-test== Fusiona la rama (branch-test) a la rama actual
+  - ==git remote add origin https://github.com/usuario/mi_repositorio.git== Crea una conexión remota llamada {++origin++} con el repositorio de GitHub
+  - ==git clone https://github.com/usuario/mi_repositorio.git== Copia el repositorio remoto completo al local y se crea automáticamente una conexión remota llamada {++origin++}
+  - ==git pull origin main== Actualiza la rama actual del repositorio local con los nuevos cambios efectuados en la rama (main) del repositorio remoto
+  - ==git merge branch-test== Fusiona la rama (branch-test) a la rama actual del repositorio local
   - ==git push origin --delete branch-test== Elimina la rama (branch-test) del repositorio remoto
   - ==git fetch --prune== Elimina todas las referencias de seguimiento obsoletas del repositorio remoto
   - ==git prune== Elimina todas las referencias de seguimiento obsoletas del repositorio local
@@ -71,7 +74,11 @@ hide:
     !!! info "NOTA"
         A pesar de que los commits ya no aparecen en el log, no se eliminan de Git
 <br>
-<br>
+
+!!! info "NOTA"
+    - Para detener el servidor de "mkdocs" pulsa (ctrl + c)
+    - Para limpiar la consola utiliza el comando (==cls==) o (==clear==)
+    - Para salir de algun comando GIT pulsa (q)
 
 !!! failure "MALAS PRÁCTICAS"
     Está totalmente desaconsejado alterar el historial de commits, esto podria generar conflictos con los commits del repositorio remoto cuando se vaya hacer push o pull por cualquiera de los miembros, intenta siempre trabajar hacia adelante. Por lo general, está bien hacer este tipo de cambios en su propio repositorio local.
@@ -83,4 +90,7 @@ hide:
       2. Ejemplo commit: `add a new search feature`
       3. Ejemplo commit: `change the default system color`
       4. Ejemplo commit: `fix a problem with the topbar`
+<br>
+
+ Fuente: [Sitio web oficial](https://git-scm.com/docs)
 <br>

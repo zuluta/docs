@@ -15,11 +15,13 @@ repo_url: https://github.com/zuluta/docs/
 # navigation
 nav:
   - Inicio: index.md
+  - 👨‍🏫 Manuales de programación:
+    - Ruta de aprendizaje: ruta_aprendizaje.md
+    - Comandos GIT: comandos_git.md
   - 💻 Manuales de Instalación:
     - MkDocs + virtualenv: mkdocs.md
     - Despliegue a GitHub Pages: gh_deploy.md
   - 📚 Documentación:
-    - Comandos de GIT: comandos_git.md
     - Checkpoint 06: doc_06.md
     - Checkpoint 07: doc_07.md
 

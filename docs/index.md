@@ -1,4 +1,4 @@
-# <center>Gestor de documentos</center>
+# <center>Mi centro de trabajo</center>
 
 ![Git Hub Image](images/index/portada.png)
 <br>
