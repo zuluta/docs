@@ -8,7 +8,7 @@ hide:
 
 <p><strong>01.</strong> Verifica si Python y virtualenv están instalados de forma global y si no aparecen, instalalos.</p>
 
-![Git Hub Image](images/mkdocs/01.python_virtualenv.png)
+![Image](../images/instalacion/mkdocs/01.python_virtualenv.png)
 <br>
 
 <p><strong>02.</strong> Entra en “escritorio” y crea una carpeta de trabajo que se llame ({++proyecto_docs++}) con el comando ({==mkdir proyecto_docs==}).</p>
@@ -16,23 +16,23 @@ hide:
 <p><strong>04.</strong> Actíva la carpeta “env” en modo virtual con el comando ({==.\env\scripts\activate==}).</p>
 <p><strong>05.</strong> Instala la librería dentro de la carpeta “env” con el comando ({==pip install mkdocs==}).</p>
 
-![Git Hub Image](images/mkdocs/02.instalacion_virtual_mkdocs.png)
+![Image](../images/instalacion/mkdocs/02.instalacion_virtual_mkdocs.png)
 <br>
 
 <p><strong>06.</strong> Verifica si la librería mkdocs se instaló bien.</p>
 
-![Git Hub Image](images/mkdocs/03.mkdocs_version.png)
+![Image](../images/instalacion/mkdocs/03.mkdocs_version.png)
 <br>
 
 <p><strong>07.</strong> Crea nuevo proyecto de mkdocs que se llame ({++mi-documentacion++}).</p>
 <p><strong>08.</strong> Verifica si el proyecto se creó bien y desactiva el entorno virtual con el comando ({==deactivate==}). Cierra la terminal.</p>
 
-![Git Hub Image](images/mkdocs/04.mkdocs_nuevo_proyecto.png)
+![Image](../images/instalacion/mkdocs/04.mkdocs_nuevo_proyecto.png)
 <br>
 
 <p><strong>09.</strong> Abre VSCode y carga la carpeta del escritorio “proyecto_docs” desde el menu superior (<strong>Archivo / Abrir carpeta…</strong>).</p>
 
-![Git Hub Image](images/mkdocs/05.vscode_abrir_carpeta_trabajo.png)
+![Image](../images/instalacion/mkdocs/05.vscode_abrir_carpeta_trabajo.png)
 <br>
 
 <p><strong>10.</strong> Dentro del proyecto “mi_documentacion”, abre el archivo que pone index.md.</p>
@@ -40,12 +40,12 @@ hide:
 comando ({==.\env\Scripts\activate==}). Luego entra en la carpeta del proyecto “mi-documentación” y desde ahí, ejecutar
 el siguiente comando ({==mkdocs serve==}), esto ejecutara el servidor local.</p>
 
-![Git Hub Image](images/mkdocs/06.vscode_ejecutar_servidor.png)
+![Image](../images/instalacion/mkdocs/06.vscode_ejecutar_servidor.png)
 <br>
 
 <p><strong>12.</strong> Para verificar, copia la URL del servidor y abre en el navegador, le aparecerá la página de bienvenida por defecto.</p>
 
-![Git Hub Image](images/mkdocs/07.mkdocs_index.png)
+![Image](../images/instalacion/mkdocs/07.mkdocs_index.png)
 <br>
 
 <p><strong>13.</strong> Con esto, ya tendrias instalado la librería mkdocs en un entorno virtual y creado el proyecto para empezar a editar tu propia documentación, porfolio, o lo que quieras de forma local.</p>
@@ -53,11 +53,11 @@ el siguiente comando ({==mkdocs serve==}), esto ejecutara el servidor local.</p>
 diseño mucho mas moderno. Abre la terminal de VSCode, pulsa (ctrl + c) para detener el servidor, activa el entorno virtual, accede a la carpeta “mi-documentación” y desde ahí ejecuta el comando ({==pip install mkdocs-material==}).
 Una vez terminada la instalación, abre el archivo “mkdocs.yml” y modifica el nombre del tema. En este caso, se llama {++material++}. El tema que viene instalado por defecto se llama “readthedocs”.</p>
 
-![Git Hub Image](images/mkdocs/08.instalar_temas.png)
+![Image](../images/instalacion/mkdocs/08.instalar_temas.png)
 <br>
 
 <p><strong>15.</strong> Para finalizar, recarga la página y veras un aspecto mucho mas moderno de tu sitio web.</p>
 
-![Git Hub Image](images/mkdocs/09.mkdocs_tema_nuevo_index.png)
+![Image](../images/instalacion/mkdocs/09.mkdocs_tema_nuevo_index.png)
 <br>
 <br>

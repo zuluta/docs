@@ -33,7 +33,7 @@ hide:
     Hay que evitar el mal uso de las clases, en este ejemplo, vemos que las variables no son reutilizables, tampoco podemos pasarle argumentos.
 <br>
 
-![Git Hub Image](images/doc_06/01.class_descripcion.png)
+![Image](../images/documentacion/checkpoint_06/01.class_descripcion.png)
 <br>
 
 <p><strong>Código Python 👇</strong></p>
@@ -76,7 +76,7 @@ Cliente()
     Dentro de la clase, las variables pasan a llamarse <strong>atributos</strong>, el <strong>primer atributo obligatorio</strong> siempre sera <code>self</code>, las funciones pasan a llamarse <strong>métodos</strong>, nos permite pasarle <strong>argumentos</strong> y eso hace que el código sea <strong>reutilizable</strong>. Estas son las razones por el cual se crearon las clases en programación.
 <br>
 
-![Git Hub Image](images/doc_06/02.class_descripcion.png)
+![Image](../images/documentacion/checkpoint_06/02.class_descripcion.png)
 <br>
 
 <p><strong>Código Python 👇</strong></p>
@@ -183,7 +183,7 @@ print(cli_2.cuenta())
 
 <p>Llegados aqui, aprenderemos los conceptos básicos que construyen una clase. Trata de leer el código y entender lo que sucede en cada paso.</p>
 
-![Git Hub Image](images/doc_06/03.class_descripcion.png)
+![Image](../images/documentacion/checkpoint_06/03.class_descripcion.png)
 
 !!! note "**Descripción de conceptos:**"
 
@@ -332,7 +332,7 @@ print(len(l)) # Imprime 5
     Si alguna vez has visto <code>@</code>, estás ante un <strong>decorador</strong>.
 <br>
 
-![Git Hub Image](images/doc_06/decoradores.png)
+![Image](../images/documentacion/checkpoint_06/decoradores.png)
 <br>
 
 <p><strong>Código Python 👇</strong></p>
@@ -388,7 +388,7 @@ Funcionalidad inicial
 <p>El polimorfismo tiene como objetivo cambiar la funcionalidad entre los métodos con el mismo nombre, en este ejemplo, tenemos tres clases, a los métodos les hemos asignado el mismo nombre <code>desplazamiento</code>. A pesar de que lleven el mismo nombre, los podemos diferenciar creando una nueva función y pasandole como atributo, por ejemplo <code>vehiculo</code>. El <code>vehiculo</code> tomara el valor de <code>mi_vehiculo</code> para hacer la mágia del polimorfismo. A la variable <code>mi_vehiculo</code>, podemos pasarle cualquiera de las tres clases, <code>Moto()</code>, <code>Coche()</code>, <code>Camion()</code>.</p>
 <br>
 
-![Git Hub Image](images/doc_06/polimorfismo.png)
+![Image](../images/documentacion/checkpoint_06/polimorfismo.png)
 <br>
 
 <p><strong>Código Python 👇</strong></p>
@@ -434,7 +434,7 @@ desplazamiento_vehiculo(mi_vehiculo)
     El formato de intercambio de datos normalmente es JSON o XML, lo que permite que la API sea compatible con una amplia variedad de aplicaciones.
 <br>
 
-![Git Hub Image](images/doc_06/api_rest.png)
+![Image](../images/documentacion/checkpoint_06/api_rest.png)
 <br>
 <br>
 
@@ -519,7 +519,7 @@ Formato de una API 👇
     - <strong>Documentos</strong>: Se refiere a la <code>"clave": "valor"</code> dentro de un diccionario. 
 <br>
 
-![Git Hub Image](images/doc_06/mongo_db.png)
+![Image](../images/documentacion/checkpoint_06/mongo_db.png)
 
 ```js
 {

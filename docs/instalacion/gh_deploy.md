@@ -8,19 +8,19 @@ hide:
 
 <p><strong>01.</strong> Accede a GitHub y crea un repositorio nuevo.</p>
 
-![Git Hub Image](images/gh_deploy/01.nuevo_repo_github.png)
+![Image](../images/instalacion/gh_deploy/01.nuevo_repo_github.png)
 <br>
 <br>
 
 <p><strong>02.</strong> Escribe el mismo nombre del proyecto local, deja en público y pulsa el botón crear repositorio.</p>
 
-![Git Hub Image](images/gh_deploy/02.crear_repo_github.png)
+![Image](../images/instalacion/gh_deploy/02.crear_repo_github.png)
 <br>
 <br>
 
 <p><strong>03.</strong> Muestra los comandos y la URL remota del repositorio creado.</p>
 
-![Git Hub Image](images/gh_deploy/03.codigo_repo_terminal.png)
+![Image](../images/instalacion/gh_deploy/03.codigo_repo_terminal.png)
 <br>
 <br>
 
@@ -52,7 +52,7 @@ hide:
   - Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (==.\env\scripts\activate==)
   - Accede a la carpeta del proyecto "docs" y lanza el comando (==mkdocs build==) para compilar, ésto creara una nueva carpeta llamada {++site++} donde compilara todo el proyecto.
 
-![Git Hub Image](images/gh_deploy/04.build_proyecto_docs.png)
+![Image](../images/instalacion/gh_deploy/04.build_proyecto_docs.png)
 <br>
 <br>
 
@@ -74,7 +74,7 @@ hide:
 
 <p><strong>08.</strong> Entra al repositorio y verifica si se subieron bien los archivos a GitHub en la rama main.</p>
 
-![Git Hub Image](images/gh_deploy/05.verificar_subida_github.png)
+![Image](../images/instalacion/gh_deploy/05.verificar_subida_github.png)
 <br>
 <br>
 
@@ -85,19 +85,19 @@ hide:
 
 <p><strong>10.</strong> Entra al repositorio de GitHub y verifica si se creo la rama "gh-pages".</p>
 
-![Git Hub Image](images/gh_deploy/06.crear_rama_gh_pages.png)
+![Image](../images/instalacion/gh_deploy/06.crear_rama_gh_pages.png)
 <br>
 <br>
 
 <p><strong>11.</strong> Entra en Settings, luego en Pages, donde pone Branch, selecciona la rama "gh-pages" y la carpeta "(root)". Pulsa el botón de guardar y espera unos segundos a que se active la página.</p>
 
-![Git Hub Image](images/gh_deploy/07.selec_repo_pages.png)
+![Image](../images/instalacion/gh_deploy/07.selec_repo_pages.png)
 <br>
 <br>
 
 <p><strong>12.</strong> Entra en Settings, luego en Pages, donde pone GitHub Pages, verifica que la página este operativa.</p>
 
-![Git Hub Image](images/gh_deploy/08.visitar_pagina.png)
+![Image](../images/instalacion/gh_deploy/08.visitar_pagina.png)
 <br>
 <br>
 
