@@ -26,26 +26,26 @@ hide:
 
 <p><strong>04.</strong> Comandos para sincrinizar por primera vez GIT con GitHub desde la terminal de VSCode.</p>
 
-  - (==git init==) Inicia el Git
+  - (==git init==) Inicia el GIT
   - (==git config --global user.name "nombre_usuario"==) Usuario de GitHub
   - (==git config --global user.email "micorreo@ejemplo.com"==) Email de GitHub
 <br>
 
 <p><strong>05.</strong> Comandos de terminal mas utilizados en GIT.</p>
 
-  - (==git init==) Inicia el Git
-  - (==git add .==) Agrega todos los archivos al Git
+  - (==git init==) Inicia el GIT
+  - (==git add .==) Agrega todos los archivos al GIT
   - (==git add ejemplo.html==) Agrega los archivos indibidualmente al GIT
-  - (==git commit -m "inserta el mensaje aqui"==) Agrega un commit al Git
+  - (==git commit -m "inserta el mensaje aqui"==) Agrega un commit al GIT
   - (==git branch -M main==) Fuerza a renombrar la rama local actual por (main) {~~actual~> main~~}
   - (==git remote add origin https://github.com/usuario/mi_repositorio.git==) Agrega la url remota del repositorio GitHub
   - (==git remote -v==) Verifica la comunicación con el repositorio remoto
-  - (==git status==) Muestra el estado de los procesos Git
-  - (==git push -u origin main==) Sube los archivos a la rama main del repositorio github
+  - (==git status==) Muestra el estado de los procesos GIT
+  - (==git push -u origin main==) Sube los archivos a la rama main del repositorio GitHub
 
 !!! info "El orden de ejecución"
 
-    El orden de ejecución, variara en función de lo que quieras hacer. Por lógica, primero se inicia el Git, se agregan los archivos, se envia un commit, la verificación de estado y la comunicación con el repositorio solo nos da información, no hace ningun cambio en el repositorio.
+    El orden de ejecución, variara en función de lo que quieras hacer. Por lógica, primero se inicia el GIT, se agregan los archivos, se envia un commit, la verificación de estado y la comunicación con el repositorio solo nos da información, no hace ningun cambio en el repositorio.
 <br>
 
 <p><strong>06.</strong> Entra en VSCode y abre una terminal nueva.</p>

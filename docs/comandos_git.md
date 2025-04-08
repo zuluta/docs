@@ -10,19 +10,19 @@ hide:
 
   - ==git init== Iniciar GIT
   - ==git add .== Agrega todos los archivos al GIT
-  - ==git commit -m "primer commit"== Agrega un commit al Git
+  - ==git commit -m "primer commit"== Agrega un commit al GIT
 
 ### Comandos para sincrinizar por primera vez GIT con GitHub desde terminal de VSCode:
 
   - ==git init== Iniciar GIT
-  - ==git config --global user.name "Your_Name"== Usuario de GitHub
-  - ==git config --global user.email "you@example.com"== Email de GitHub
+  - ==git config --global user.name "nombre_usuario"== Usuario de GitHub
+  - ==git config --global user.email "micorreo@ejemplo.com"== Email de GitHub
 
 ### Comandos basicos para subir nuestro proyecto localhost al repositorio de GitHub:
 
   - ==git init== Iniciar GIT
   - ==git add .== Agrega todos los archivos al GIT
-  - ==git commit -m "primer commit"== Agrega un commit al Git
+  - ==git commit -m "primer commit"== Agrega un commit al GIT
   - ==git branch -M main== Fuerza a renombrar la rama local actual por (main) {~~actual~> main~~}
   - ==git remote add origin https://github.com/usuario/mi_repositorio.git== Crea una conexión remota llamada {++origin++} con el repositorio de GitHub
   - ==git remote -v== Verifica la comunicación con el repositorio remoto
