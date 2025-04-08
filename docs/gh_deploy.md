@@ -27,18 +27,18 @@ hide:
 <p><strong>04.</strong> Comandos para sincrinizar por primera vez GIT con GitHub desde la terminal de VSCode.</p>
 
   - (==git init==) Inicia el Git
-  - (==git config --global user.name "Your_Name"==) Usuario de github
-  - (==git config --global user.email "you@example.com"==) Email de github
+  - (==git config --global user.name "nombre_usuario"==) Usuario de GitHub
+  - (==git config --global user.email "micorreo@ejemplo.com"==) Email de GitHub
 <br>
 
 <p><strong>05.</strong> Comandos de terminal mas utilizados en GIT.</p>
 
   - (==git init==) Inicia el Git
   - (==git add .==) Agrega todos los archivos al Git
-  - (==git add ejemplo.html==) Agrega el archivo indibidualmente al Git
+  - (==git add ejemplo.html==) Agrega los archivos indibidualmente al GIT
   - (==git commit -m "inserta el mensaje aqui"==) Agrega un commit al Git
   - (==git branch -M main==) Fuerza a renombrar la rama local actual por (main) {~~actual~> main~~}
-  - (==git remote add origin https://github.com/usuario/mi_repositorio.git==) Agrega la url remota del repositorio github
+  - (==git remote add origin https://github.com/usuario/mi_repositorio.git==) Agrega la url remota del repositorio GitHub
   - (==git remote -v==) Verifica la comunicación con el repositorio remoto
   - (==git status==) Muestra el estado de los procesos Git
   - (==git push -u origin main==) Sube los archivos a la rama main del repositorio github
@@ -50,7 +50,7 @@ hide:
 
 <p><strong>06.</strong> Entra en VSCode y abre una terminal nueva.</p>
   - Desde la carpeta de trabajo "proyecto_docs", activa el entorno virtual (==.\env\scripts\activate==)
-  - Accede a la carpeta del proyecto "docs" y lanza el comando "mkdocs build" para compilar. Se creara una nueva carpeta llamada "site" donde sera compilado todo el proyecto.
+  - Accede a la carpeta del proyecto "docs" y lanza el comando (==mkdocs build==) para compilar, ésto creara una nueva carpeta llamada {++site++} donde compilara todo el proyecto.
 
 ![Git Hub Image](images/gh_deploy/04.build_proyecto_docs.png)
 <br>
@@ -81,7 +81,7 @@ hide:
 <p><strong>09.</strong> GitHub permite crear una pagina web gratis desde el repositorio.</p>
   - Ejecuta el comando (==mkdocs gh-deploy==)
   
-<p>Este comando es específico de mkdocs para GitHub. Este comando creara de forma automática una nueva rama "gh_pages" en el mismo repositorio del proyecto para poder desplegar GitHub Pages.</p>
+<p>Este comando es específico de mkdocs para GitHub. Este comando creara de forma automática una nueva rama {++gh_pages++} en el mismo repositorio del proyecto para poder desplegar GitHub Pages.</p>
 
 <p><strong>10.</strong> Entra al repositorio de GitHub y verifica si se creo la rama "gh-pages".</p>
 
