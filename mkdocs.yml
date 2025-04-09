@@ -14,9 +14,8 @@ repo_url: https://github.com/zuluta/docs/
 
 # navigation
 nav:
-  - Inicio: https://zuluta.github.io/docs/
   - Manual de programación:
-      - Inicio: index.md
+      - Introducción: index.md
       - Ruta de aprendizaje:
           - Desarrollador Full Stack: ruta_aprendizaje/desarrollador_full_stack.md
       - Programación:
