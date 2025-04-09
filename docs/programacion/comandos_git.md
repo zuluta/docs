@@ -72,7 +72,7 @@ hide:
     - ==git reset 20cf9cb== Regresa al commit mediante hash (20cf9cb)
 
     !!! info "NOTA"
-        A pesar de que los commits ya no aparecen en el log, no se eliminan de Git
+        A pesar de que los commits ya no aparecen en el log, no se eliminan de GIT
 <br>
 
 !!! info "NOTA"

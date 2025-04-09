@@ -14,18 +14,19 @@ repo_url: https://github.com/zuluta/docs/
 
 # navigation
 nav:
-  - Manuales de programación:
+  - Inicio: https://zuluta.github.io/docs/
+  - Manual de programación:
       - Inicio: index.md
       - Ruta de aprendizaje:
-        - Desarrollador Full Stack: ruta_aprendizaje/desarrollador_full_stack.md
+          - Desarrollador Full Stack: ruta_aprendizaje/desarrollador_full_stack.md
       - Programación:
-        - Comandos GIT: programacion/comandos_git.md
-      - Manuales de instalación:
-        - MkDocs + virtualenv: instalacion/mkdocs.md
-        - Despliegue a GitHub Pages: instalacion/gh_deploy.md
+          - Comandos GIT: programacion/comandos_git.md
+      - Instalación:
+          - MkDocs + virtualenv: instalacion/mkdocs.md
+          - Despliegue a GitHub Pages: instalacion/gh_deploy.md
       - Documentación:
-        - Checkpoint 06: documentacion/checkpoint_06.md
-        - Checkpoint 07: documentacion/checkpoint_07.md
+          - Checkpoint 06: documentacion/checkpoint_06.md
+          - Checkpoint 07: documentacion/checkpoint_07.md
 
 # configuration
 theme:
