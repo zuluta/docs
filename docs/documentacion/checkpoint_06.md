@@ -6,7 +6,7 @@ hide:
 
 # <center>Checkpoint 06</center>
 
-## **Documentación Python** 🐍
+## **Documentación Python** :material-language-python:
 
 !!! info "CONTENIDO"
 
@@ -16,8 +16,6 @@ hide:
     ### 4. ¿Qué es el polimorfismo?
     ### 5. ¿Qué es una API?
     ### 6. ¿Es MongoDB una base de datos SQL o NoSQL?
-
-<hr>
 <br>
 
 ## <p style="color:#308830;">**1. Introducción al uso de clases**</p>
