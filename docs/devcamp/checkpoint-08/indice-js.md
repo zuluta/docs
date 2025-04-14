@@ -5,17 +5,17 @@ hide:
 ---
 
 # <center>Checkpoint 08</center>
-
 ## **Documentación JavaScript** :material-language-javascript:
+<hr>
 
-!!! info "ÍNDICE DE CONTENIDOS"
+**ÍNDICE DE CONTENIDOS**
 
-    ### 1. -
-    ### 2. -
-    ### 3. -
-    ### 4. -
-    ### 5. -
-    ### 6. -
-    ### 7. -
+  1. -
+  2. -
+  3. -
+  4. -
+  5. -
+  6. -
+  7. -
 <br>
 <br>

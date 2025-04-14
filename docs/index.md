@@ -33,7 +33,7 @@ repo_url: https://github.com/zuluta/docs/
 # navigation
 nav:
   - Manual de programación:
-      - Introducción: index.md
+      - Inicio: index.md
       - Ruta de aprendizaje:
           - Desarrollador Full Stack: ruta_aprendizaje/desarrollador_full_stack.md
       - Programación:
@@ -42,10 +42,17 @@ nav:
           - MkDocs + virtualenv: instalacion/mkdocs.md
           - Despliegue a GitHub Pages: instalacion/gh_deploy.md
       - DevCamp documentación:
-          - Checkpoint 06: devcamp/checkpoint-06/checkpoint_06.md
+          - Checkpoint 06:
+              - Índice: devcamp/checkpoint-06/indice-py.md
+              - 1. Introducción al uso de clases: devcamp/checkpoint-06/introduccion-clases-py.md
+              - 2. ¿Qué es un método dunder?: devcamp/checkpoint-06/metodo-dunder-py.md
+              - 3. ¿Qué es un decorador?: devcamp/checkpoint-06/que-es-un-decorador-py.md
+              - 4. ¿Qué es el polimorfismo?: devcamp/checkpoint-06/que-es-polimorfismo-py.md
+              - 5. ¿Que es una API?: devcamp/checkpoint-06/que-es-una-api-py.md
+              - 6. ¿Es MongoDB una base de datos SQL o NoSQL?: devcamp/checkpoint-06/que-es-mongodb-py.md
           - Checkpoint 07:
-              - Índice: devcamp/checkpoint-07/indice.md
-              - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/checkpoint-07/introducción-js.md
+              - Índice: devcamp/checkpoint-07/indice-js.md
+              - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/checkpoint-07/introduccion-js.md
               - 2. ¿Cuáles son algunos tipos de datos JS?: devcamp/checkpoint-07/tipos-de-datos-js.md
               - 3. ¿Cuáles son las tres funciones de String en JS?: devcamp/checkpoint-07/tres-funciones-de-string-js.md
               - 4. ¿Qué es un condicional?: devcamp/checkpoint-07/condicionales-js.md
@@ -53,7 +60,7 @@ nav:
               - 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?: devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js.md
               - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/checkpoint-07/que-es-this-js.md
           - Checkpoint 08:
-              - Índice: devcamp/checkpoint-08/indice.md
+              - Índice: devcamp/checkpoint-08/indice-js.md
 
 # configuration
 theme:
@@ -124,4 +131,5 @@ markdown_extensions:
 copyright:
   Copyright &copy; 2025 <a href="https://github.com/zuluta"  target="_blank" rel="noopener">zuluta</a>
 ```
+<br>
 <br>
