@@ -23,9 +23,19 @@ nav:
       - Instalación:
           - MkDocs + virtualenv: instalacion/mkdocs.md
           - Despliegue a GitHub Pages: instalacion/gh_deploy.md
-      - Documentación:
-          - Checkpoint 06: documentacion/checkpoint_06.md
-          - Checkpoint 07: documentacion/checkpoint_07.md
+      - DevCamp documentación:
+          - Checkpoint 06: devcamp/checkpoint-06/checkpoint_06.md
+          - Checkpoint 07:
+              - Índice: devcamp/checkpoint-07/indice.md
+              - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/checkpoint-07/introducción-js.md
+              - 2. ¿Cuáles son algunos tipos de datos JS?: devcamp/checkpoint-07/tipos-de-datos-js.md
+              - 3. ¿Cuáles son las tres funciones de String en JS?: devcamp/checkpoint-07/tres-funciones-de-string-js.md
+              - 4. ¿Qué es un condicional?: devcamp/checkpoint-07/condicionales-js.md
+              - 5. ¿Qué es un operador ternario?: devcamp/checkpoint-07/operador-ternario-js.md
+              - 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?: devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js.md
+              - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/checkpoint-07/que-es-this-js.md
+          - Checkpoint 08:
+              - Índice: devcamp/checkpoint-08/indice.md
 
 # configuration
 theme:
