@@ -2,30 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zuluta.github.io/docs/</loc>
-         <lastmod>2025-04-12</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
-         <loc>https://zuluta.github.io/docs/documentacion/checkpoint_06/</loc>
-         <lastmod>2025-04-12</lastmod>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-06/checkpoint_06/</loc>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
-         <loc>https://zuluta.github.io/docs/documentacion/checkpoint_07/</loc>
-         <lastmod>2025-04-12</lastmod>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/condicionales-js/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/indice/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/introducci%C3%B3n-js/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/operador-ternario-js/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/que-es-this-js/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/tipos-de-datos-js/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-07/tres-funciones-de-string-js/</loc>
+         <lastmod>2025-04-14</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/devcamp/checkpoint-08/indice/</loc>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://zuluta.github.io/docs/instalacion/gh_deploy/</loc>
-         <lastmod>2025-04-12</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://zuluta.github.io/docs/instalacion/mkdocs/</loc>
-         <lastmod>2025-04-12</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://zuluta.github.io/docs/programacion/comandos_git/</loc>
-         <lastmod>2025-04-12</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
     <url>
          <loc>https://zuluta.github.io/docs/ruta_aprendizaje/desarrollador_full_stack/</loc>
-         <lastmod>2025-04-12</lastmod>
+         <lastmod>2025-04-14</lastmod>
     </url>
 </urlset>
