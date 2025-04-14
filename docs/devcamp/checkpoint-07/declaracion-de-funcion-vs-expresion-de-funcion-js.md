@@ -3,7 +3,8 @@ hide:
   #- navigation
   - toc
 ---
-# <p style="color:#308830;">**6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?**</p>
+
+# <span style="color:#308830;">**6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?**</span>
 JavaScript al ser un lenguaje dinámico, tiene ciertos mecanismos para garantizar que la ejecución de nuestro código sea la más óptima y correcta.
 
 **Tenemos dos maneras principales de definir funciones:**

@@ -61,6 +61,14 @@ nav:
               - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/checkpoint-07/que-es-this-js.md
           - Checkpoint 08:
               - Índice: devcamp/checkpoint-08/indice-js.md
+              - 1. ¿Qué tipo de bucles hay en JS?: devcamp/checkpoint-08/bucles-js.md
+              - 2. ¿Cuáles son las diferencias entre const, let y var?: devcamp/checkpoint-08/variables-js.md
+              - 3. ¿Qué es una función de flecha?: devcamp/checkpoint-08/funcion-flecha-js.md
+              - 4. ¿Qué es la deconstrucción de variables?: devcamp/checkpoint-08/deconstruccion-de-variables-js.md
+              - 5. ¿Qué hace el operador de extensión en JS?: devcamp/checkpoint-08/operador-de-extension-js.md
+              - 6. ¿Qué es la programación orientada a objetos?: devcamp/checkpoint-08/que-es-poo-js.md
+              - 7. ¿Qué es una promesa en JS?: devcamp/checkpoint-08/promesa-js.md
+              - 8. ¿Qué hacen async y await por nosotros?: devcamp/checkpoint-08/async-await-js.md
 
 # configuration
 theme:

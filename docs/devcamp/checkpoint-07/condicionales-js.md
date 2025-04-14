@@ -3,7 +3,8 @@ hide:
   #- navigation
   - toc
 ---
-# <p style="color:#308830;">**4. ¿Qué es un condicional?**</p>
+
+# <span style="color:#308830;">**4. ¿Qué es un condicional?**</span>
 Hasta ahora, hemos visto cómo resolver los problemas más sencillos pero no podemos resolver todo utilizando estructuras secuenciales. Cuando tenemos que tomar una decisión aparecen las estructuras condicionales. Por ejemplo, en nuestra vida diaria hay momentos donde tenemos que decidir entre un pantalón u otro, un camino u otro. En estos casos es común resolver un problema combinando estructuras secuenciales y condicionales.
 
 JavaScript cuenta con **4 tipos de condicionales**:

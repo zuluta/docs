@@ -3,7 +3,8 @@ hide:
   #- navigation
   - toc
 ---
-# <p style="color:#308830;">**2. ¿Cuáles son algunos tipos de datos JS?**</p>
+
+# <span style="color:#308830;">**2. ¿Cuáles son algunos tipos de datos JS?**</span>
 Los tipos de datos en JavaScript son atributos que determinan el tipo de valor que puede contener una variable. Estos tipos de datos son utilizados para representar diferentes tipos de información.
 
 JavaScript es un lenguaje de programación de ==tipado dinámico==, lo que significa que no es necesario declarar explícitamente el tipo de una variable al momento de su creación. Pero eso no significa que JavaScript no tenga tipos. Simplemente ==el tipo se determina automáticamente cuando se asigna un valor==.
