@@ -128,6 +128,18 @@ console.log(resultado); // Salida: 8
 ```
 <br>
 
+**Ejemplo con 3 atributos** 👇
+```js title="ejemplo.js"
+// Expresión de función flecha + 3 atributos
+const cliente = (nombre, apellido, telefono) => {
+    return (`${nombre} ${apellido} ${telefono}`);
+};
+
+const resultado = cliente('Roberto', 'Mendiburu', '666-666-666');
+console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
+```
+<br>
+
 ### :material-arrow-right-circle: Expresión de función flecha conciso (en una línea):
 En este ejemplo, podemos observar cómo ==la **expresión de función flecha conciso** elimina la necesidad de escribir la palabra clave **function**, las **llaves {}** y la declaración **return**==, resultando en una **expresión más compacta**.
 
@@ -137,6 +149,16 @@ const sumar = (a, b) => a + b;
 
 const resultado = sumar(2, 6);
 console.log(resultado); // Salida: 8
+```
+<br>
+
+**Ejemplo con 3 atributos** 👇
+```js title="ejemplo.js"
+// Expresión de función flecha conciso + 3 atributos - en una linea
+const cliente = (nombre, apellido, telefono) => (`${nombre} ${apellido} ${telefono}`);
+
+const resultado = cliente('Roberto', 'Mendiburu', '666-666-666');
+console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
 ```
 <br>
 <br>
