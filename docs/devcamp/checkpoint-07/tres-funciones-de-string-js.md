@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**3. ¿Cuáles son las tres funciones de String en JS?**</span>
+# 3. ¿Cuáles son las tres funciones de String en JS?
 JavaScript ofrece numerosas funciones predefinidas que facilitan el trabajo con cadenas de texto (==string==). Entre las posibilidades que ofrecen estas funciones tenemos el `replace()`, `toLowerCase()`, `toUpperCase()`, etc.
 
 ### ==replace()==:

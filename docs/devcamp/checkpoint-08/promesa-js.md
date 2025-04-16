@@ -4,4 +4,4 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**7. ¿Qué es una promesa en JS?**</span>
+# 7. ¿Qué es una promesa en JS?

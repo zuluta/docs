@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**1. Introducción al uso de clases**</span>
+# 1. Introducción al uso de clases
 
 <p>Python es un lenguaje orientado a objetos, no es necesario hacer uso de ellas para poder crear un programa. De hecho, hemos estado trabajando hasta ahora sin hacer mención a ellas ni emplearlas.</p>
 

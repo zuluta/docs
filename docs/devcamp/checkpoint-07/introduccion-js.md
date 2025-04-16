@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**1. ¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?**</span>
+# 1. ¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?
 **JavaScript** es un lenguaje de programación básico para la ==creación de sitios web dinámicos e interactivos==. Se usa en navegadores, servidores y aplicaciones para mejorar la experiencia del usuario. Aunque se llama JavaScript, no debe confundirse con Java.
 
 Su principal ventaja es que {==se ejecuta directamente en el navegador del usuario==}, sin necesidad de compilar el código previamente.

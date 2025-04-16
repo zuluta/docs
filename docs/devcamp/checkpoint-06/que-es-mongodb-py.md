@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**6. ¿Es MongoDB una base de datos SQL o NoSQL?**</span>
+# 6. ¿Es MongoDB una base de datos SQL o NoSQL?
 
 <p><strong>MongoDB</strong> es una <strong>base de datos NoSQL</strong> orientada a documentos que apareció el año 2007. Se utiliza para almacenar volúmenes masivos de datos.</p>
 

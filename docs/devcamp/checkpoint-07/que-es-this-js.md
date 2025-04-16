@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**7. ¿Qué es la palabra clave "this" en JS?**</span>
+# 7. ¿Qué es la palabra clave "this" en JS?
 Una de las características de JavaScript que más confusión genera es la palabra clave ==**this**==. Más concretamente a qué o quién hace referencia y en qué circunstancias.
 
 ==**this**== es una palabra clave que ==se utiliza mucho dentro de las **clases**== para **hacer referencia al objeto instanciado**. Cuando se crea una función dentro de una clase, esta función  pasa a llamarse **método**. El **primer método siempre sera el constructor**, se encarga de **declarar atributos**, el ==**this**== hace referencia a cualquier atributo que se le pase **dentro de esa misma clase**. si se utilizara fuera de ésta clase, aría referencia a otra cosa.

@@ -4,7 +4,8 @@ hide:
   - toc
 ---
 
-# <center>Checkpoint 08</center>
+<h1 style="text-align:center">Checkpoint 08</h1>
+
 ## **Documentación JavaScript** :material-language-javascript:
 <hr>
 

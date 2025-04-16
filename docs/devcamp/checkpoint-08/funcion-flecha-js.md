@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**3. ¿Qué es una función de flecha?**</span>
+# 3. ¿Qué es una función de flecha?
 Las **funciones flecha** permiten escribir funciones de manera más concisa y legible, especialmente cuando se trata de **funciones cortas o funciones de una sola línea**.
 
 ### :material-arrow-right-circle: Sintaxis de una función flecha:
@@ -109,7 +109,7 @@ Las **funciones flecha** (arrow functions) son indudablemente una de las caracte
   - Esto implica que siempre deberemos asignar la expresión a una variable (o una constante).
   - Existen **2 tipos de funciones flecha**:
     - ==Expresión de función flecha (multilínea)==
-    - ==Expresión de función flecha conciso (en una línea)==
+    - ==Expresión de función flecha conciso (monolínea)==
 <br>
 
 ### :material-arrow-right-circle: Expresión de función flecha (multilínea):
@@ -140,7 +140,7 @@ console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
 ```
 <br>
 
-### :material-arrow-right-circle: Expresión de función flecha conciso (en una línea):
+### :material-arrow-right-circle: Expresión de función flecha conciso (monolínea):
 En este ejemplo, podemos observar cómo ==la **expresión de función flecha conciso** elimina la necesidad de escribir la palabra clave **function**, las **llaves {}** y la declaración **return**==, resultando en una **expresión más compacta**.
 
 ```js title="ejemplo.js"
@@ -160,5 +160,44 @@ const cliente = (nombre, apellido, telefono) => (`${nombre} ${apellido} ${telefo
 const resultado = cliente('Roberto', 'Mendiburu', '666-666-666');
 console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
 ```
+<br>
+
+### :material-arrow-right-circle: Análisis de función, función flecha y función flecha conciso:
+**Veamos un ejemplo con las 3 opciones** 👇
+
+```js title="ejemplo.js"
+// Opción 1:
+// Declaración de función + 3 atributos - multilínea
+function cliente(nombre, apellido, telefono) {
+    return `${nombre} ${apellido} ${telefono}`;
+}
+
+const resultado_1 = cliente('Roberto', 'Mendiburu', '666-666-666');
+console.log(resultado_1); // Salida: Roberto Mendiburu 666-666-666
+
+
+
+// Opción 2:
+// Expresión de función flecha + 3 atributos - multilínea
+const cliente = (nombre, apellido, telefono) => {
+    return `${nombre} ${apellido} ${telefono}`;
+};
+
+const resultado_2 = cliente('Roberto', 'Mendiburu', '666-666-666');
+console.log(resultado_2); // Salida: Roberto Mendiburu 666-666-666
+
+
+
+// Opción 3:
+// Expresión de función flecha conciso + 3 atributos - monolínea
+const cliente = (nombre, apellido, telefono) => `${nombre} ${apellido} ${telefono}`;
+
+const resultado_3 = cliente('Roberto', 'Mendiburu', '666-666-666');
+console.log(resultado_3); // Salida: Roberto Mendiburu 666-666-666
+```
+
+### 🕵️ Analicemos las diferencias:
+
+![Image](../../images/devcamp/checkpoint-08/analisis-de-funciones.png)
 <br>
 <br>

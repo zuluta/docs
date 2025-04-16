@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**3. ¿Qué es un decorador?**</span>
+# 3. ¿Qué es un decorador?
 
 <p>Los decoradores son funciones que toman otra función como argumento y anidan una nueva función para agregarle código extra sin alterar la existente.</p>
 

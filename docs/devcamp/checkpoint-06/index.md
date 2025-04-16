@@ -4,7 +4,8 @@ hide:
   - toc
 ---
 
-# <center>Checkpoint 06</center>
+<h1 style="text-align:center">Checkpoint 06</h1>
+
 ## **Documentación Python** :material-language-python:
 <hr>
 

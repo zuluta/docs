@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# <span style="color:#308830;">**5. ¿Qué es un operador ternario?**</span>
+# 5. ¿Qué es un operador ternario?
 ==El operador ternario es una forma abreviada de la estructura **if**...**else**== y es útil cuando queremos tomar decisiones basadas en una condición.
 
 **Se compone de tres partes:**
