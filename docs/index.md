@@ -138,9 +138,37 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
-# estilo personalizado
+  # extensión para escapar carácteres de código con la barra invertida
+  - pymdownx.escapeall
+
+# css personalizado
 extra_css:
+  - stylesheets/highlight/11.11.1/atom-one-dark.min.css # libreria para resaltado de código
   - stylesheets/extra.css
+
+# js personalizado
+extra_javascript:
+  - javascripts/highlight/11.11.1/highlight.min.js # libreria para resaltado de código
+  - javascripts/extra.js
+
+# plugin instalados
+plugins:
+   - glightbox: # plugin para redimensionar imagenes
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+       auto_caption: false
+       caption_position: bottom
+       background: white
+       shadow: true
+       manual: false
 
 copyright:
   Copyright &copy; 2025 <a href="https://github.com/zuluta"  target="_blank" rel="noopener">zuluta</a>
