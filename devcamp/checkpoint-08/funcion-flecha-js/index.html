@@ -52,6 +52,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+    
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -61,7 +63,16 @@
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -151,48 +162,6 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Buscar">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Inicializando búsqueda
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
     
     
       <div class="md-header__source">
@@ -1281,6 +1250,42 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#declaracion-de-funcion-multilinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración de función (multilínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresion-de-funcion-multilinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expresión de función (multilínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresion-de-funcion-flecha-multilinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expresión de función flecha (multilínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresion-de-funcion-flecha-conciso-monolinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expresión de función flecha conciso (monolínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ejemplo-2" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo 2
@@ -1290,9 +1295,72 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#funcion-flecha-multilinea-1-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha (multilínea) + 1 atributo:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-conciso-monolinea-1-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha conciso (monolínea) + 1 atributo:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ejemplo-3" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-multilinea-1-argumento-en-la-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha (multilínea) + 1 argumento en la llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-conciso-monolinea-1-argumento-en-la-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha conciso (monolínea) + 1 argumento en la llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-2-atributos-2-argumentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha + 2 atributos + 2 argumentos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-conciso-2-atributos-2-argumentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha conciso + 2 atributos + 2 argumentos:
     </span>
   </a>
   
@@ -1340,14 +1408,20 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#analisis-de-funcion-funcion-flecha-y-funcion-flecha-conciso" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-analisis-de-funcion-funcion-flecha-y-funcion-flecha-conciso" class="md-nav__link">
     <span class="md-ellipsis">
-      Análisis de función, función flecha y función flecha conciso:
+      3.3. Análisis de función, función flecha y función flecha conciso:
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="3.3. Análisis de función, función flecha y función flecha conciso:">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#analicemos-las-diferencias" class="md-nav__link">
@@ -1567,6 +1641,42 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#declaracion-de-funcion-multilinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración de función (multilínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresion-de-funcion-multilinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expresión de función (multilínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresion-de-funcion-flecha-multilinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expresión de función flecha (multilínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expresion-de-funcion-flecha-conciso-monolinea-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expresión de función flecha conciso (monolínea) + llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ejemplo-2" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo 2
@@ -1576,9 +1686,72 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#funcion-flecha-multilinea-1-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha (multilínea) + 1 atributo:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-conciso-monolinea-1-atributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha conciso (monolínea) + 1 atributo:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ejemplo-3" class="md-nav__link">
     <span class="md-ellipsis">
       Ejemplo 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-multilinea-1-argumento-en-la-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha (multilínea) + 1 argumento en la llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-conciso-monolinea-1-argumento-en-la-llamada" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha conciso (monolínea) + 1 argumento en la llamada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-2-atributos-2-argumentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha + 2 atributos + 2 argumentos:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcion-flecha-conciso-2-atributos-2-argumentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      función flecha conciso + 2 atributos + 2 argumentos:
     </span>
   </a>
   
@@ -1626,14 +1799,20 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#analisis-de-funcion-funcion-flecha-y-funcion-flecha-conciso" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-analisis-de-funcion-funcion-flecha-y-funcion-flecha-conciso" class="md-nav__link">
     <span class="md-ellipsis">
-      Análisis de función, función flecha y función flecha conciso:
+      3.3. Análisis de función, función flecha y función flecha conciso:
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="3.3. Análisis de función, función flecha y función flecha conciso:">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#analicemos-las-diferencias" class="md-nav__link">
@@ -1670,180 +1849,297 @@
   
 
 
-<h1 id="3-que-es-una-funcion-de-flecha">3. ¿Qué es una función de flecha?</h1>
+<h1 id="3-que-es-una-funcion-de-flecha">3. ¿Qué es una función de flecha? <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.03 6.03 20 7l2-5-5 2 .97.97-1.82 1.82C10.87 2.16 3.3 3.94 2.97 4L2 4.26l.5 1.94.79-.2 6.83 6.82L6.94 16H5l-3 3 2 1 1 2 3-3v-1.94l3.18-3.18L18 20.71l-.19.79 1.93.5.26-.97c.06-.33 1.84-7.9-2.79-13.18zM4.5 5.78c2.05-.28 6.78-.5 10.23 2.43l-3.91 3.91zM18.22 19.5l-6.34-6.32 3.91-3.91c2.93 3.45 2.71 8.18 2.43 10.23"/></svg></span></h1>
 <p>Las <strong>funciones flecha</strong> permiten escribir funciones de manera más concisa y legible, especialmente cuando se trata de <strong>funciones cortas o funciones de una sola línea</strong>.</p>
-<h3 id="sintaxis-de-una-funcion-flecha"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg></span> Sintaxis de una función flecha:</h3>
-<p>La sintaxis de una función flecha es la siguiente:</p>
-<p><mark>() =&gt; {}</mark></p>
+<h3 id="sintaxis-de-una-funcion-flecha"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2zm1-8h8.5L11 16.5l1.42 1.42L18.34 12l-5.92-5.92L11 7.5l3.5 3.5H6z"/></svg></span> Sintaxis de una función flecha:</h3>
 <ul>
-<li><mark><strong>()</strong></mark> Se utiliza para pasarle atributos a una función</li>
-<li><mark><strong>=&gt;</strong></mark> Se define como función flecha, es una función anónima sin nombre</li>
-<li><mark><strong>{}</strong></mark> Se utiliza para envolver el cuerpo de la función
-<br>
-<br></li>
+<li>La sintaxis básica de una función flecha es la siguiente: <mark>() =&gt; {}</mark><ul>
+<li><mark class="critic">()</mark> Se utiliza para pasarle atributos a una función</li>
+<li><mark class="critic">=&gt;</mark> Se define como función flecha, es una función anónima sin nombre</li>
+<li><mark class="critic">{}</mark> Se utiliza para envolver el cuerpo de la función</li>
 </ul>
+</li>
+</ul>
+<hr />
+<p><br></p>
 <h2 id="31-tipos-de-funciones"><strong>3.1. Tipos de funciónes:</strong></h2>
 <p>Antes de nada, veamos una <strong>comparación entre diferentes tipos de funciones</strong>, esto es de vital importancia para entender como funciona cada uno, en que se relacionan y en que situaciones es conveniente utilizar uno u otro.</p>
 <h3 id="ejemplo-1">Ejemplo 1</h3>
-<p>En este ejemplo, vamos a comparar <strong>4 tipos de función equivalentes</strong> y ver <strong>en que se diferencian</strong>. Para ello, hemos utilizado una <mark>declaración de función</mark>, una <mark>expresión de función</mark>, una <mark>expresión de función flecha</mark> y una <mark>expresión de función flecha conciso (en una línea)</mark>. Ninguno incluye atributos.</p>
+<p>En este ejemplo, vamos a comparar <strong>4 tipos de función equivalentes</strong> y ver <strong>en que se diferencian</strong>. Para ello, hemos utilizado una <mark>declaración de función</mark>, una <mark>expresión de función</mark>, una <mark>expresión de función flecha</mark> y una <mark>expresión de función flecha conciso</mark>. Ninguno incluye atributos.</p>
+<h3 id="declaracion-de-funcion-multilinea-llamada"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>Declaración de función</mark> (multilínea) + llamada:</h3>
 <ul>
-<li><strong>Opción 1:</strong> <mark>Declaración de función</mark></li>
-<li><strong>Opción 2:</strong> <mark>Expresión de función</mark></li>
-<li><strong>Opción 3:</strong> <mark>Expresión de función flecha</mark></li>
-<li><strong>Opción 4:</strong> <mark>Expresión de función flecha conciso (en una línea)</mark></li>
+<li>Si <strong>no contiene atributos</strong>, <mark>los paréntesis</mark> estarán vacíos, pero <mark>deben estar presentes</mark>.</li>
+<li>Al ser una <strong>función multilínea</strong>, <mark>las llaves deben estar presentes</mark>.</li>
+<li>Al ser una <strong>declaración de función</strong>, <mark>no lleva punto y coma al final</mark>.</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">IMPORTANTE</p>
-<p>Si la función consiste en una sola expresión, se puede omitir el bloque de llaves. Solo en (<strong>expresión de función flecha conciso - en una linea</strong>).</p>
-<p>const cliente = () =&gt; <mark><strong>{ console.log('¡Bienvenido!') }</strong></mark>; (puedes ver en la <strong>opcion 4</strong> de este ejemplo).</p>
-</div>
-<p><div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Opción 1: Declaración de función</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">cliente</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1">// Opción 2: Expresión de función</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">};</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">// Opción 3: Expresión de función flecha</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="c1">// Opción 4: Expresión de función flecha conciso - en una linea</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
-</code></pre></div>
-<br></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">cliente</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="expresion-de-funcion-multilinea-llamada"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>Expresión de función</mark> (multilínea) + llamada:</h3>
+<ul>
+<li>Si <strong>no contiene atributos</strong>, <mark>los paréntesis</mark> estarán vacíos, pero <mark>deben estar presentes</mark>.</li>
+<li>Al ser una <strong>función multilínea</strong>, <mark>las llaves deben estar presentes</mark>.</li>
+<li>Al ser una <strong>expresión de función</strong>, <mark>lleva punto y coma al final</mark>.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">};</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="expresion-de-funcion-flecha-multilinea-llamada"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>Expresión de función flecha</mark> (multilínea) + llamada:</h3>
+<ul>
+<li>Si <strong>no contiene atributos</strong>, <mark>los paréntesis</mark> estarán vacíos, pero <mark>deben estar presentes</mark>.</li>
+<li>Al ser una <strong>función multilínea</strong>, <mark>las llaves deben estar presentes</mark>.</li>
+<li>Al ser una <strong>expresión de función</strong>, <mark>lleva punto y coma al final</mark>.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">};</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="expresion-de-funcion-flecha-conciso-monolinea-llamada"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>Expresión de función flecha conciso</mark> (monolínea) + llamada:</h3>
+<ul>
+<li>Si <strong>no contiene atributos</strong>, <mark>los paréntesis</mark> estarán vacíos, pero <mark>deben estar presentes</mark>.</li>
+<li>Al ser una <strong>función monolínea</strong>, <mark>las llaves pueden omitirse</mark>.</li>
+<li>Al ser una <strong>expresión de función</strong>, <mark>lleva punto y coma al final</mark>.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;¡Bienvenido!&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nx">cliente</span><span class="p">();</span><span class="w"> </span><span class="c1">// Salida: ¡Bienvenido!</span>
+</code></pre></div></td></tr></table></div>
+<p><br></p>
 <h3 id="ejemplo-2">Ejemplo 2</h3>
-<p>Veamos el segundo ejemplo, esta vez, <strong>le pasamos 1 atributo</strong> para ir viendo como se construyen <strong>funciónes flecha</strong>:</p>
+<p>Veamos el segundo ejemplo, esta vez, le pasamos <strong>1 atributo</strong> en la función:</p>
+<h3 id="funcion-flecha-multilinea-1-atributo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>función flecha</mark> (multilínea) + <mark>1 atributo</mark>:</h3>
 <ul>
-<li><strong>Opción 1:</strong> <mark>Expresión de función flecha + 1 atributo</mark></li>
-<li><strong>Opción 2:</strong> <mark>Expresión de función flecha conciso + 1 atributo (en una línea)</mark></li>
+<li>Las <strong>funciones flecha</strong> <mark>con un solo atributo, los paréntesis pueden omitirse</mark>.</li>
+<li>Al ser una <strong>función multilínea</strong>, <mark>las llaves deben estar presentes</mark>.</li>
+<li>Al ser una <strong>expresión de función</strong>, <mark>lleva punto y coma al final</mark>.</li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">IMPORTANTE</p>
-<p>Para funciones con un solo atributo, los paréntesis pueden omitirse.</p>
-<p>const cliente = <strong><mark>(nombre)</mark></strong> =&gt; console.log(<code>${nombre}</code>);</p>
-</div>
-<p><div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Opcion 1: Expresión de función flecha + 1 atributo</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">}</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1">// Opcion 2: Expresión de función flecha conciso + 1 atributo - en una linea</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto</span>
-</code></pre></div>
-<br></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// antes</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="p">};</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// despues</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="p">};</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="funcion-flecha-conciso-monolinea-1-atributo"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>función flecha conciso</mark> (monolínea) + <mark>1 atributo</mark>:</h3>
+<ul>
+<li>Las <strong>funciones flecha</strong> <mark>con un solo atributo, los paréntesis pueden omitirse</mark>.</li>
+<li>Al ser una <strong>función monolínea</strong>, <mark>las llaves pueden omitirse</mark>.</li>
+<li>Al ser una <strong>expresión de función</strong>, <mark>lleva punto y coma al final</mark>.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span><span class="w"> </span><span class="p">};</span><span class="w"> </span><span class="c1">// antes</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span><span class="w"> </span><span class="c1">// despues</span>
+</code></pre></div></td></tr></table></div>
+<p><br></p>
 <h3 id="ejemplo-3">Ejemplo 3</h3>
-<p>Veamos el tercer ejemplo, a diferencia del segundo ejemplo, <strong>aqui le pasamos 2 atributos</strong>. Vemos una <mark>expresión de función flecha + 2 atributos</mark> y una <mark>expresión de función flecha conciso + 2 atributos (en una línea)</mark>.</p>
-<div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Opcion 1: Expresión de función flecha + 2 atributos</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">}</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">// Opción 2: Expresión de función flecha conciso + 2 atributos - en una linea</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu</span>
-</code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">IMPORTANTE</p>
-<p>Si el cuerpo de la función incluye <strong>varias operaciones</strong>, se recomienda el uso de <strong>expresión de función flecha</strong>, (puedes ver en la <strong>opcion 2</strong> de este ejemplo).</p>
-</div>
+<p>Veamos el tercer ejemplo, esta vez, le pasamos <strong>1 argumento</strong> en la llamada:</p>
+<h3 id="funcion-flecha-multilinea-1-argumento-en-la-llamada"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>función flecha</mark> (multilínea) + <mark>1 argumento en la llamada</mark>:</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">};</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="funcion-flecha-conciso-monolinea-1-argumento-en-la-llamada"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>función flecha conciso</mark> (monolínea) + <mark>1 argumento en la llamada</mark>:</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto</span>
+</code></pre></div></td></tr></table></div>
+<p><br></p>
+<h3 id="ejemplo-4">Ejemplo 4</h3>
+<p>Veamos el cuarto ejemplo, a diferencia del segundo ejemplo, aqui le pasamos <strong>2 atributos</strong> en la función y <strong>2 argumentos</strong> en la llamada a la función.</p>
+<h3 id="funcion-flecha-2-atributos-2-argumentos"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>función flecha</mark> + <mark>2 atributos</mark> + <mark>2 argumentos</mark>:</h3>
+<ul>
+<li>Las <strong>funciones flecha</strong> <mark>con mas de un atributo, los paréntesis deben estar presentes</mark>.</li>
+<li>Al ser una <strong>función multilínea</strong>, <mark>las llaves deben estar presentes</mark>.</li>
+<li>Al ser una <strong>expresión de función</strong>, <mark>lleva punto y coma al final</mark>.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="p">};</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="funcion-flecha-conciso-2-atributos-2-argumentos"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span> <mark>función flecha conciso</mark> + <mark>2 atributos</mark> + <mark>2 argumentos</mark>:</h3>
+<ul>
+<li>Las <strong>funciones flecha</strong> <mark>con mas de un atributo, los paréntesis deben estar presentes</mark>.</li>
+<li>Al ser una <strong>función monolínea</strong>, <mark>las llaves pueden omitirse</mark>.</li>
+<li>Al ser una <strong>expresión de función</strong>, <mark>lleva punto y coma al final</mark>.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu</span>
+</code></pre></div></td></tr></table></div>
+<hr />
 <p><br></p>
 <h2 id="32-tipos-de-funciones-flecha"><strong>3.2. Tipos de funciónes flecha:</strong></h2>
 <p>Las <strong>funciones flecha</strong> (arrow functions) son indudablemente una de las características más populares de <strong>ES6</strong> (EcmaScript 6). Ellas introducen una nueva forma de escribir <strong>funciones concisas</strong>. Es importante notar que <strong>las funciones flecha son anónimas</strong>, lo que significa que <strong>no tienen nombre</strong> y no se pueden utilizar como metodos ni constructores dentro de una clase.</p>
-<h3 id="caracteristicas"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg></span> Características:</h3>
+<h3 id="caracteristicas"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2zm1-8h8.5L11 16.5l1.42 1.42L18.34 12l-5.92-5.92L11 7.5l3.5 3.5H6z"/></svg></span> Características:</h3>
 <ul>
 <li><strong>Siempre son expresiones</strong>, a diferencia de <code>function</code> (que puede ser <strong>expresión</strong> o <strong>declaración</strong>).</li>
 <li>Esto implica que siempre deberemos asignar la expresión a una variable (o una constante).</li>
 <li>Existen <strong>2 tipos de funciones flecha</strong>:<ul>
-<li><mark>Expresión de función flecha (multilínea)</mark></li>
-<li><mark>Expresión de función flecha conciso (monolínea)</mark>
+<li><mark>Expresión de función flecha</mark> (multilínea)</li>
+<li><mark>Expresión de función flecha conciso</mark> (monolínea)
 <br></li>
 </ul>
 </li>
 </ul>
-<h3 id="expresion-de-funcion-flecha-multilinea"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg></span> Expresión de función flecha (multilínea):</h3>
+<h3 id="expresion-de-funcion-flecha-multilinea"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2zm1-8h8.5L11 16.5l1.42 1.42L18.34 12l-5.92-5.92L11 7.5l3.5 3.5H6z"/></svg></span> Expresión de función flecha (multilínea):</h3>
 <p>En este ejemplo, podemos observar cómo <mark>la <strong>expresión de función flecha</strong> elimina la necesidad de escribir la palabra clave <strong>function</strong></mark>. Le pasa <strong>2 atributos <mark>(a, b)</mark></strong> entre parentesis, le pone la <mark><strong>=&gt;</strong></mark> (flecha) y acaba la fila con la apertura de una <mark><strong>{</strong></mark> (llave) que se cierra despues del cuerpo de la función, en una nueva línea con el cierre de una <mark><strong>}</strong></mark> (llave).</p>
-<p>Esta función, esta construido en bloque. Al no estar toda la función en una misma línea, se trataria de una <mark><strong>expresión de función flecha</strong> (multilínea) y no obtendria las características de un conciso (en una línea)</mark>.</p>
-<p><div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Expresión de función flecha + 2 atributos</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">sumar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">}</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">);</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: 8</span>
-</code></pre></div>
+<p>Esta función, esta construido en bloque. Al no estar toda la función en una misma línea, se trataria de una <mark><strong>expresión de función flecha</strong> (multilínea) y no obtendria las características de un conciso (monolínea)</mark>.</p>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ejemplo.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span>
+<span class="normal"><a href="#__codelineno-10-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">sumar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="p">};</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">);</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: 8</span>
+</code></pre></div></td></tr></table></div>
 <br></p>
-<p><strong>Ejemplo con 3 atributos</strong> 👇
-<div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// Expresión de función flecha + 3 atributos</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">};</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
-</code></pre></div>
+<p><strong>Ejemplo con 3 atributos y 3 argumentos</strong> 👇
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ejemplo.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span>
+<span class="normal"><a href="#__codelineno-11-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="p">};</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
+</code></pre></div></td></tr></table></div>
 <br></p>
-<h3 id="expresion-de-funcion-flecha-conciso-monolinea"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg></span> Expresión de función flecha conciso (monolínea):</h3>
+<h3 id="expresion-de-funcion-flecha-conciso-monolinea"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 21a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2zm1-8h8.5L11 16.5l1.42 1.42L18.34 12l-5.92-5.92L11 7.5l3.5 3.5H6z"/></svg></span> Expresión de función flecha conciso (monolínea):</h3>
 <p>En este ejemplo, podemos observar cómo <mark>la <strong>expresión de función flecha conciso</strong> elimina la necesidad de escribir la palabra clave <strong>function</strong>, las <strong>llaves {}</strong> y la declaración <strong>return</strong></mark>, resultando en una <strong>expresión más compacta</strong>.</p>
-<p><div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// Expresión de función flecha conciso + 2 atributos - en una linea</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">sumar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">);</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: 8</span>
-</code></pre></div>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ejemplo.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">sumar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sumar</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">);</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: 8</span>
+</code></pre></div></td></tr></table></div>
 <br></p>
-<p><strong>Ejemplo con 3 atributos</strong> 👇
-<div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// Expresión de función flecha conciso + 3 atributos - en una linea</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
-</code></pre></div>
-<br></p>
-<h3 id="analisis-de-funcion-funcion-flecha-y-funcion-flecha-conciso"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6z"/></svg></span> Análisis de función, función flecha y función flecha conciso:</h3>
+<p><strong>Ejemplo con 3 atributos y 3 argumentos</strong> 👇
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ejemplo.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
+</code></pre></div></td></tr></table></div></p>
+<hr />
+<p><br></p>
+<h2 id="33-analisis-de-funcion-funcion-flecha-y-funcion-flecha-conciso"><strong>3.3. Análisis de función, función flecha y función flecha conciso:</strong></h2>
 <p><strong>Veamos un ejemplo con las 3 opciones</strong> 👇</p>
-<div class="highlight"><span class="filename">ejemplo.js</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">// Opción 1:</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1">// Declaración de función + 3 atributos - multilínea</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado_1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="c1">// Opción 2:</span>
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="c1">// Expresión de función flecha + 3 atributos - multilínea</span>
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
-<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="p">};</span>
-<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
-<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
-<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado_2</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
-<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
-<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
-<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
-<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="c1">// Opción 3:</span>
-<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="c1">// Expresión de función flecha conciso + 3 atributos - monolínea</span>
-<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
-<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>
-<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado_3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
-<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado_3</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">ejemplo.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-14-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-14-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-14-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-14-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-14-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-14-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-14-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-14-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-14-10">10</a></span>
+<span class="normal"><a href="#__codelineno-14-11">11</a></span>
+<span class="normal"><a href="#__codelineno-14-12">12</a></span>
+<span class="normal"><a href="#__codelineno-14-13">13</a></span>
+<span class="normal"><a href="#__codelineno-14-14">14</a></span>
+<span class="normal"><a href="#__codelineno-14-15">15</a></span>
+<span class="normal"><a href="#__codelineno-14-16">16</a></span>
+<span class="normal"><a href="#__codelineno-14-17">17</a></span>
+<span class="normal"><a href="#__codelineno-14-18">18</a></span>
+<span class="normal"><a href="#__codelineno-14-19">19</a></span>
+<span class="normal"><a href="#__codelineno-14-20">20</a></span>
+<span class="normal"><a href="#__codelineno-14-21">21</a></span>
+<span class="normal"><a href="#__codelineno-14-22">22</a></span>
+<span class="normal"><a href="#__codelineno-14-23">23</a></span>
+<span class="normal"><a href="#__codelineno-14-24">24</a></span>
+<span class="normal"><a href="#__codelineno-14-25">25</a></span>
+<span class="normal"><a href="#__codelineno-14-26">26</a></span>
+<span class="normal"><a href="#__codelineno-14-27">27</a></span>
+<span class="normal"><a href="#__codelineno-14-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c1">// Opción 1:</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="c1">// Declaración de función + 3 atributos - multilínea</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="p">}</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado_1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9"></a>
+<a id="__codelineno-14-10" name="__codelineno-14-10"></a>
+<a id="__codelineno-14-11" name="__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12"></a><span class="c1">// Opción 2:</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13"></a><span class="c1">// Expresión de función flecha + 3 atributos - multilínea</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16"></a><span class="p">};</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17"></a>
+<a id="__codelineno-14-18" name="__codelineno-14-18"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado_2</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20"></a>
+<a id="__codelineno-14-21" name="__codelineno-14-21"></a>
+<a id="__codelineno-14-22" name="__codelineno-14-22"></a>
+<a id="__codelineno-14-23" name="__codelineno-14-23"></a><span class="c1">// Opción 3:</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24"></a><span class="c1">// Expresión de función flecha conciso + 3 atributos - monolínea</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cliente</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="nx">apellido</span><span class="p">,</span><span class="w"> </span><span class="nx">telefono</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">nombre</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">apellido</span><span class="si">}</span><span class="sb"> </span><span class="si">${</span><span class="nx">telefono</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26"></a>
+<a id="__codelineno-14-27" name="__codelineno-14-27"></a><span class="kd">const</span><span class="w"> </span><span class="nx">resultado_3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cliente</span><span class="p">(</span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Mendiburu&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;666-666-666&#39;</span><span class="p">);</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">resultado_3</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: Roberto Mendiburu 666-666-666</span>
+</code></pre></div></td></tr></table></div>
 <h3 id="analicemos-las-diferencias">🕵️ Analicemos las diferencias:</h3>
-<p><img alt="Image" src="../../../images/devcamp/checkpoint-08/analisis-de-funciones.png" />
+<p><a class="glightbox" href="../../../images/devcamp/checkpoint-08/analisis-de-funciones.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../images/devcamp/checkpoint-08/analisis-de-funciones.png" /></a>
 <br>
 <br></p>
 
@@ -1914,6 +2210,12 @@
     
       <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
+        <script src="../../../javascripts/highlight/11.11.1/highlight.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
