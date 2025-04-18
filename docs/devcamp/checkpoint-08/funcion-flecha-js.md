@@ -12,6 +12,15 @@ Las **funciones flecha** permiten escribir funciones de manera más concisa y le
     - {==()==} Se utiliza para pasarle atributos a una función
     - {===>==} Se define como función flecha, es una función anónima sin nombre
     - {=={}==} Se utiliza para envolver el cuerpo de la función
+<br>
+<br>
+
+  - Las funciónes flecha, pueden ser de varios tipos:
+    - Multilínea
+    - Monolínea
+
+![Image](../../images/devcamp/checkpoint-08/sintaxis-funcion-flecha.png)
+==Una función flecha es simplemente una expresión de función compacta== frente a una **expresión de función tradicional**. A diferencia de una **declaración de función**, las de **expresión de función** ==siempre deben acabar en punto y coma==.
 ***
 <br>
 
@@ -157,22 +166,27 @@ cliente('Roberto', 'Mendiburu'); // Salida: Roberto Mendiburu
 <br>
 
 ## **3.2. Tipos de funciónes flecha:**
-Las **funciones flecha** (arrow functions) son indudablemente una de las características más populares de **ES6** (EcmaScript 6). Ellas introducen una nueva forma de escribir **funciones concisas**. Es importante notar que **las funciones flecha son anónimas**, lo que significa que **no tienen nombre** y no se pueden utilizar como metodos ni constructores dentro de una clase.
+Las **funciones flecha** (arrow functions) son indudablemente una de las características más populares de **ES6** (EcmaScript 6). Ellas introducen una nueva forma de escribir ==funciones concisas==. Es importante notar que las **funciones flecha** ==son anónimas==, lo que significa que ==no tienen nombre== y ==no se pueden utilizar como metodos ni constructores dentro de una clase==.
 
 ### :material-arrow-right-box: Características:
-  - **Siempre son expresiones**, a diferencia de `function` (que puede ser **expresión** o **declaración**).
-  - Esto implica que siempre deberemos asignar la expresión a una variable (o una constante).
-  - Existen **2 tipos de funciones flecha**:
+  - Siempre son expresiones.
+  - Siempre deberemos asignar la expresión a una variable.
+  - Pueden ser de varios tipos:
     - ==Expresión de función flecha== (multilínea)
     - ==Expresión de función flecha conciso== (monolínea)
 <br>
 
 ### :material-arrow-right-box: Expresión de función flecha (multilínea):
-En este ejemplo, podemos observar cómo ==la **expresión de función flecha** elimina la necesidad de escribir la palabra clave **function**==. Le pasa **2 atributos ==(a, b)==** entre parentesis, le pone la ==**=>**== (flecha) y acaba la fila con la apertura de una ==**{**== (llave) que se cierra despues del cuerpo de la función, en una nueva línea con el cierre de una ==**}**== (llave).
+Esta función, esta construido en bloque. Al no estar toda la función en una misma línea, se trataria de una ==**expresión de función flecha** (multilínea) y no obtendria las características de un (monolínea)==.
 
-Esta función, esta construido en bloque. Al no estar toda la función en una misma línea, se trataria de una ==**expresión de función flecha** (multilínea) y no obtendria las características de un conciso (monolínea)==.
+  - Al ser una **expresión de función**, ==debe asignarse a una **variable**==.
+  - La **expresión de función flecha** ==elimina la palabra clave **function**==.
+  - Una **función flecha** ==con mas de un atributo, los **paréntesis** deben estar presentes==.
+  - Al ser una **función multilínea**, ==las **llaves** deben estar presentes==.
+  - Al ser una **función multilínea**, ==el **return** debe estar presente==.
+  - Al ser una **expresión de función**, ==lleva **punto y coma** al final==.
 
-```js title="ejemplo.js" linenums="1"
+```js linenums="1"
 const sumar = (a, b) => {
     return a + b;
 };
@@ -182,10 +196,10 @@ console.log(resultado); // Salida: 8
 ```
 <br>
 
-**Ejemplo con 3 atributos y 3 argumentos** 👇
-```js title="ejemplo.js" linenums="1"
+### :material-code-braces-box: Ejemplo de ==función flecha== + ==3 atributos== + ==3 argumentos==:
+```js linenums="1"
 const cliente = (nombre, apellido, telefono) => {
-    return (`${nombre} ${apellido} ${telefono}`);
+    return `${nombre} ${apellido} ${telefono}`;
 };
 
 const resultado = cliente('Roberto', 'Mendiburu', '666-666-666');
@@ -194,9 +208,16 @@ console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
 <br>
 
 ### :material-arrow-right-box: Expresión de función flecha conciso (monolínea):
-En este ejemplo, podemos observar cómo ==la **expresión de función flecha conciso** elimina la necesidad de escribir la palabra clave **function**, las **llaves {}** y la declaración **return**==, resultando en una **expresión más compacta**.
+En este ejemplo, podemos observar cómo la **expresión de función flecha conciso** ==elimina la necesidad de escribir== la palabra clave ==function==, las llaves =={}== y la declaración ==return==, resultando en una **expresión más compacta**.
 
-```js title="ejemplo.js" linenums="1"
+  - Al ser una **expresión de función**, ==debe asignarse a una **variable**==.
+  - La **expresión de función flecha** ==elimina la palabra clave **function**==.
+  - Una **función flecha** ==con mas de un atributo, los **paréntesis** deben estar presentes==.
+  - Al ser una **función monolínea**, ==las **llaves** pueden omitirse==.
+  - Al ser una **función monolínea**, ==el **return** puede omitirse==.
+  - Al ser una **expresión de función**, ==lleva **punto y coma** al final==.
+
+```js linenums="1"
 const sumar = (a, b) => a + b;
 
 const resultado = sumar(2, 6);
@@ -204,9 +225,9 @@ console.log(resultado); // Salida: 8
 ```
 <br>
 
-**Ejemplo con 3 atributos y 3 argumentos** 👇
-```js title="ejemplo.js" linenums="1"
-const cliente = (nombre, apellido, telefono) => (`${nombre} ${apellido} ${telefono}`);
+### :material-code-braces-box: Ejemplo de ==función flecha conciso== + ==3 atributos== + ==3 argumentos==:
+```js linenums="1"
+const cliente = (nombre, apellido, telefono) => `${nombre} ${apellido} ${telefono}`;
 
 const resultado = cliente('Roberto', 'Mendiburu', '666-666-666');
 console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
@@ -214,9 +235,12 @@ console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
 ***
 <br>
 
-## **3.3. Análisis de función, función flecha y función flecha conciso:**
+## **3.3. Análisis de funciones:**
+Veamos un ejemplo con las 3 opciones 👇
 
-**Veamos un ejemplo con las 3 opciones** 👇
+  - Opción 1: ==Función tradicional==
+  - Opción 2: ==Función flecha==
+  - Opción 3: ==Función flecha conciso==
 
 ```js title="ejemplo.js" linenums="1"
 // Opción 1:
@@ -252,5 +276,7 @@ console.log(resultado_3); // Salida: Roberto Mendiburu 666-666-666
 ### 🕵️ Analicemos las diferencias:
 
 ![Image](../../images/devcamp/checkpoint-08/analisis-de-funciones.png)
+Las **funciones flecha** pueden componerse de ==más de una línea==, lo cual ya ==nos obligará a emplear las **llaves** y el **return**==.
+
 <br>
 <br>
