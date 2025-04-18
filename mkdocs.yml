@@ -82,16 +82,16 @@ theme:
   palette:
     # modo diurno
     - scheme: default
-      primary: teal
-      accent: teal
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Light Mode
 
     # modo nocturno
     - scheme: slate
-      primary: teal
-      accent: teal
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Dark Mode

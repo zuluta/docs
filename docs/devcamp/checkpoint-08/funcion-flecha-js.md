@@ -1,7 +1,7 @@
 ---
 hide:
   #- navigation
-  - toc
+  #- toc
 ---
 
 # 3. ¿Qué es una función de flecha? :material-bow-arrow:
