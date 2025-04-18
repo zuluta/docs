@@ -153,22 +153,8 @@ extra_javascript:
 
 # plugin instalados
 plugins:
-   - glightbox: # plugin para redimensionar imagenes
-       touchNavigation: true
-       loop: false
-       effect: zoom
-       slide_effect: slide
-       width: 100%
-       height: auto
-       zoomable: true
-       draggable: true
-       skip_classes:
-         - custom-skip-class-name
-       auto_caption: false
-       caption_position: bottom
-       background: white
-       shadow: true
-       manual: false
+  - search # activa la caja de búsqueda
+  - glightbox # plugin para redimensionar imagenes
 
 copyright:
   Copyright &copy; 2025 <a href="https://github.com/zuluta"  target="_blank" rel="noopener">zuluta</a>
