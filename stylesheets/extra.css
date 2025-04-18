@@ -12,11 +12,12 @@
 
 .md-typeset .admonition,
 .md-typeset details {
-  border-width: 1px;
-  border-left-width: 4px;
-  border-radius: 0;
+    border-width: 1px;
+    border-left-width: 4px;
+    border-radius: 0;
 }
 
-img {
-  border-radius: .2rem;
+.md-typeset img,
+.gslide-image img {
+    border-radius: .2rem;
 }
