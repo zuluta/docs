@@ -1,7 +1,5 @@
 ---
 hide:
   #- navigation
-  - toc
+  #- toc
 ---
-
-# 7. ¿Qué es una promesa en JS?

@@ -1,7 +1,5 @@
 ---
 hide:
   #- navigation
-  - toc
+  #- toc
 ---
-
-# 6. ¿Qué es la programación orientada a objetos?

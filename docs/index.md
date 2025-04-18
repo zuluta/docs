@@ -33,42 +33,42 @@ repo_url: https://github.com/zuluta/docs/
 # navegación
 nav:
   - Manual de programación:
-      - Inicio: index.md
-      - Ruta de aprendizaje:
-          - Desarrollador Full Stack: ruta_aprendizaje/desarrollador_full_stack.md
-      - Programación:
-          - Comandos GIT: programacion/comandos_git.md
-      - Instalación:
-          - MkDocs + virtualenv: instalacion/mkdocs.md
-          - Despliegue a GitHub Pages: instalacion/gh_deploy.md
-      - DevCamp documentación:
-          - Checkpoint 06:
-              - Índice: devcamp/checkpoint-06/index.md
-              - 1. Introducción al uso de clases: devcamp/checkpoint-06/introduccion-clases-py.md
-              - 2. ¿Qué es un método dunder?: devcamp/checkpoint-06/metodo-dunder-py.md
-              - 3. ¿Qué es un decorador?: devcamp/checkpoint-06/que-es-un-decorador-py.md
-              - 4. ¿Qué es el polimorfismo?: devcamp/checkpoint-06/que-es-polimorfismo-py.md
-              - 5. ¿Que es una API?: devcamp/checkpoint-06/que-es-una-api-py.md
-              - 6. ¿Es MongoDB una base de datos SQL o NoSQL?: devcamp/checkpoint-06/que-es-mongodb-py.md
-          - Checkpoint 07:
-              - Índice: devcamp/checkpoint-07/index.md
-              - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/checkpoint-07/introduccion-js.md
-              - 2. ¿Cuáles son algunos tipos de datos JS?: devcamp/checkpoint-07/tipos-de-datos-js.md
-              - 3. ¿Cuáles son las tres funciones de String en JS?: devcamp/checkpoint-07/tres-funciones-de-string-js.md
-              - 4. ¿Qué es un condicional?: devcamp/checkpoint-07/condicionales-js.md
-              - 5. ¿Qué es un operador ternario?: devcamp/checkpoint-07/operador-ternario-js.md
-              - 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?: devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js.md
-              - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/checkpoint-07/que-es-this-js.md
-          - Checkpoint 08: 
-              - Índice: devcamp/checkpoint-08/index.md
-              - 1. ¿Qué tipo de bucles hay en JS?: devcamp/checkpoint-08/bucles-js.md
-              - 2. ¿Cuáles son las diferencias entre const, let y var?: devcamp/checkpoint-08/variables-js.md
-              - 3. ¿Qué es una función de flecha?: devcamp/checkpoint-08/funcion-flecha-js.md
-              - 4. ¿Qué es la deconstrucción de variables?: devcamp/checkpoint-08/deconstruccion-de-variables-js.md
-              - 5. ¿Qué hace el operador de extensión en JS?: devcamp/checkpoint-08/operador-de-extension-js.md
-              - 6. ¿Qué es la programación orientada a objetos?: devcamp/checkpoint-08/que-es-poo-js.md
-              - 7. ¿Qué es una promesa en JS?: devcamp/checkpoint-08/promesa-js.md
-              - 8. ¿Qué hacen async y await por nosotros?: devcamp/checkpoint-08/async-await-js.md
+    - Inicio: index.md
+    - Ruta de aprendizaje:
+      - Desarrollador Full Stack: ruta_aprendizaje/desarrollador_full_stack.md
+    - Programación:
+      - Comandos GIT: programacion/comandos_git.md
+    - Instalación:
+      - MkDocs + virtualenv: instalacion/mkdocs.md
+      - Despliegue a GitHub Pages: instalacion/gh_deploy.md
+    - DevCamp documentación:
+      - Checkpoint 06:
+        - Índice: devcamp/checkpoint-06/index.md
+        - 1. Introducción al uso de clases: devcamp/checkpoint-06/introduccion-clases-py.md
+        - 2. ¿Qué es un método dunder?: devcamp/checkpoint-06/metodo-dunder-py.md
+        - 3. ¿Qué es un decorador?: devcamp/checkpoint-06/que-es-un-decorador-py.md
+        - 4. ¿Qué es el polimorfismo?: devcamp/checkpoint-06/que-es-polimorfismo-py.md
+        - 5. ¿Que es una API?: devcamp/checkpoint-06/que-es-una-api-py.md
+        - 6. ¿Es MongoDB una base de datos SQL o NoSQL?: devcamp/checkpoint-06/que-es-mongodb-py.md
+      - Checkpoint 07:
+        - Índice: devcamp/checkpoint-07/index.md
+        - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/checkpoint-07/introduccion-js.md
+        - 2. ¿Cuáles son algunos tipos de datos JS?: devcamp/checkpoint-07/tipos-de-datos-js.md
+        - 3. ¿Cuáles son las tres funciones de String en JS?: devcamp/checkpoint-07/tres-funciones-de-string-js.md
+        - 4. ¿Qué es un condicional?: devcamp/checkpoint-07/condicionales-js.md
+        - 5. ¿Qué es un operador ternario?: devcamp/checkpoint-07/operador-ternario-js.md
+        - 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?: devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js.md
+        - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/checkpoint-07/que-es-this-js.md
+      - Checkpoint 08: 
+        - Índice: devcamp/checkpoint-08/index.md
+        - 1. ¿Qué tipo de bucles hay en JS?: devcamp/checkpoint-08/bucles-js.md
+        - 2. ¿Cuáles son las diferencias entre const, let y var?: devcamp/checkpoint-08/variables-js.md
+        - 3. ¿Qué es una función de flecha?: devcamp/checkpoint-08/funcion-flecha-js.md
+        - 4. ¿Qué es la deconstrucción de variables?: devcamp/checkpoint-08/deconstruccion-de-variables-js.md
+        - 5. ¿Qué hace el operador de extensión en JS?: devcamp/checkpoint-08/operador-de-extension-js.md
+        - 6. ¿Qué es la programación orientada a objetos?: devcamp/checkpoint-08/que-es-poo-js.md
+        - 7. ¿Qué es una promesa en JS?: devcamp/checkpoint-08/promesa-js.md
+        - 8. ¿Qué hacen async y await por nosotros?: devcamp/checkpoint-08/async-await-js.md
 
 # configuración
 theme:
@@ -85,31 +85,23 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    #- navigation.tabs.sticky
-    #- navigation.path
-    #- navigation.sections
-    #- navigation.expand
     - search.suggest
     - search.highlight
     - content.code.copy
-    #- content.tabs.link
-    #- content.code.annotation
-    #- header.autohide
-    #- toc.integrate
 
   palette:
     # modo diurno
     - scheme: default
-      primary: teal
-      accent: teal
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Light Mode
 
     # modo nocturno
     - scheme: slate
-      primary: teal
-      accent: teal
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Dark Mode

@@ -4,7 +4,6 @@ hide:
   #- toc
 ---
 
-# 3. ¿Qué es una función de flecha? :material-bow-arrow:
 Las **funciones flecha** permiten escribir funciones de manera más concisa y legible, especialmente cuando se trata de **funciones cortas o funciones de una sola línea**.
 
 ### :material-arrow-right-box: Sintaxis de una función flecha:
