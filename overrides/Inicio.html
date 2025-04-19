@@ -20,6 +20,11 @@
     <!-- container principal -->
     <div class="main-container">
 
+      <!-- container de imagen -->
+      <div class="image-container">
+        <img src="assets/images/illustration.png" alt="" draggable="false">
+      </div>
+
       <!-- container de texto -->
       <div class="text-container">
         <h2>Documentación técnica</h2>
@@ -32,14 +37,12 @@
         </a>
       </div>
 
-      <!-- container de imagen -->
-      <div class="image-container">
-        <img src="assets/images/illustration.png" alt="" draggable="false">
-      </div>
-
     </div>
   </article>
 {% endblock %}
 
 
-{% block footer %}{% endblock %}
+{% block footer %}
+  <!-- carga el footer original -->
+  {{ super() }}
+{% endblock %}
