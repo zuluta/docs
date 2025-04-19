@@ -12,22 +12,28 @@
         <meta name="author" content="zuluta">
       
       
+        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/documentacion/checkpoint-07/tipos-de-datos-js/">
       
       
+        <link rel="prev" href="../introduccion-js/">
       
-      <link rel="icon" href="/docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../tres-funciones-de-string-js/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>zuluta.dev</title>
+        <title>2. ¿Cuáles son algunos tipos de datos JS? - zuluta.dev</title>
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/docs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +52,27 @@
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/docs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,6 +89,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#2-cuales-son-algunos-tipos-de-datos-js" class="md-skip">
+          Saltar a contenido
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -105,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              2. ¿Cuáles son algunos tipos de datos JS?
             
           </span>
         </div>
@@ -218,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/docs/tutoriales/" class="md-tabs__link">
+        <a href="../../../../tutoriales/" class="md-tabs__link">
           
   
   
@@ -255,11 +275,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/docs/devcamp/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -323,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -386,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/" class="md-nav__link">
+      <a href="../../../../tutoriales/" class="md-nav__link">
         
   
   
@@ -450,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
+      <a href="../../../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
         
   
   
@@ -522,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/control-versiones/comandos-git/" class="md-nav__link">
+      <a href="../../../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
         
   
   
@@ -594,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
+      <a href="../../../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
         
   
   
@@ -617,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
+      <a href="../../../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
         
   
   
@@ -652,24 +674,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -682,7 +709,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             DevCamp
@@ -696,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -716,6 +743,8 @@
                 
   
   
+    
+  
   
   
     
@@ -726,11 +755,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -746,7 +775,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Documentación
@@ -801,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/" class="md-nav__link">
+      <a href="../../checkpoint-06/" class="md-nav__link">
         
   
   
@@ -824,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -847,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -870,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -893,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
         
   
   
@@ -916,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-una-api-py/" class="md-nav__link">
         
   
   
@@ -939,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -967,6 +996,8 @@
                 
   
   
+    
+  
   
   
     
@@ -977,11 +1008,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
@@ -997,7 +1028,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_2">
             <span class="md-nav__icon md-icon"></span>
             Checkpoint 07
@@ -1011,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1034,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/introduccion-js/" class="md-nav__link">
+      <a href="../introduccion-js/" class="md-nav__link">
         
   
   
@@ -1054,10 +1085,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    2. ¿Cuáles son algunos tipos de datos JS?
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1068,6 +1121,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-tipos-de-datos-primitivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Tipos de datos primitivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    <span class="md-ellipsis">
+      string:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    <span class="md-ellipsis">
+      number:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      boolean:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      null:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    <span class="md-ellipsis">
+      undefined:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-tipos-de-datos-compuestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Tipos de datos compuestos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    <span class="md-ellipsis">
+      array:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object" class="md-nav__link">
+    <span class="md-ellipsis">
+      object:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1080,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
+      <a href="../tres-funciones-de-string-js/" class="md-nav__link">
         
   
   
@@ -1103,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/condicionales-js/" class="md-nav__link">
+      <a href="../condicionales-js/" class="md-nav__link">
         
   
   
@@ -1126,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/operador-ternario-js/" class="md-nav__link">
+      <a href="../operador-ternario-js/" class="md-nav__link">
         
   
   
@@ -1149,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
+      <a href="../declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
         
   
   
@@ -1172,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/que-es-this-js/" class="md-nav__link">
+      <a href="../que-es-this-js/" class="md-nav__link">
         
   
   
@@ -1244,7 +1398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/" class="md-nav__link">
+      <a href="../../checkpoint-08/" class="md-nav__link">
         
   
   
@@ -1267,7 +1421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/bucles-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/bucles-js/" class="md-nav__link">
         
   
   
@@ -1290,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/variables-js/" class="md-nav__link">
         
   
   
@@ -1313,7 +1467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/funcion-flecha-js/" class="md-nav__link">
         
   
   
@@ -1336,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
         
   
   
@@ -1359,7 +1513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/operador-de-extension-js/" class="md-nav__link">
         
   
   
@@ -1382,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/que-es-poo-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/que-es-poo-js/" class="md-nav__link">
         
   
   
@@ -1405,7 +1559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/promesa-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/promesa-js/" class="md-nav__link">
         
   
   
@@ -1428,7 +1582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/async-await-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/async-await-js/" class="md-nav__link">
         
   
   
@@ -1484,6 +1638,97 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-tipos-de-datos-primitivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1. Tipos de datos primitivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    <span class="md-ellipsis">
+      string:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#number" class="md-nav__link">
+    <span class="md-ellipsis">
+      number:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      boolean:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#null" class="md-nav__link">
+    <span class="md-ellipsis">
+      null:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undefined" class="md-nav__link">
+    <span class="md-ellipsis">
+      undefined:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-tipos-de-datos-compuestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2. Tipos de datos compuestos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    <span class="md-ellipsis">
+      array:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#object" class="md-nav__link">
+    <span class="md-ellipsis">
+      object:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1495,8 +1740,89 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="2-cuales-son-algunos-tipos-de-datos-js">2. ¿Cuáles son algunos tipos de datos JS?</h1>
+<p>Los tipos de datos en JavaScript son atributos que determinan el tipo de valor que puede contener una variable. Estos tipos de datos son utilizados para representar diferentes tipos de información.</p>
+<p>JavaScript es un lenguaje de programación de <mark>tipado dinámico</mark>, lo que significa que no es necesario declarar explícitamente el tipo de una variable al momento de su creación. Pero eso no significa que JavaScript no tenga tipos. Simplemente <mark>el tipo se determina automáticamente cuando se asigna un valor</mark>.
+<br></p>
+<h3 id="21-tipos-de-datos-primitivos">2.1. Tipos de datos primitivos</h3>
+<p>Los tipos de datos primitivos son aquellos que representan valores individuales y no tienen métodos o propiedades. Son inmutables, lo que significa que no se pueden cambiar una vez que se han creado.</p>
+<ul>
+<li>Cadena de texto (<mark>string</mark>)</li>
+<li>Números (<mark>number</mark>)</li>
+<li>Booleano (<mark>boolean</mark>)</li>
+<li>Valor <mark>null</mark></li>
+<li>Valor <mark>undefined</mark>
+<br></li>
+</ul>
+<h3 id="string"><mark>string</mark>:</h3>
+<p>El tipo de datos <code>string</code> representa una secuencia de caracteres, como texto o palabras. Las cadenas se deben encerrar entre comillas simples <code>' '</code> o dobles <code>" "</code>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Roberto&#39;</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;¡Hola mundo!&quot;</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="number"><mark>number</mark>:</h3>
+<p>El tipo de datos <code>number</code> en JavaScript representa tanto números enteros como de punto flotante.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">36</span><span class="p">;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">precio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">99.95</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="boolean"><mark>boolean</mark>:</h3>
+<p>El tipo de datos <code>boolean</code> representa un valor de verdad, que puede ser <code>true</code> (verdadero) o <code>false</code> (falso). Es útil en expresiones condicionales y lógicas.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">esHombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">let</span><span class="w"> </span><span class="nx">esMujer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="null"><mark>null</mark>:</h3>
+<p>En JavaScript, <code>null</code> es un valor especial que representa la ausencia intencional de cualquier objeto o valor.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">Unidades</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="undefined"><mark>undefined</mark>:</h3>
+<p>El valor <code>undefined</code> indica que una variable ha sido declarada pero aún no se le ha asignado ningún valor.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">unidades</span><span class="p">;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">unidades</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: undefined</span>
+</code></pre></div>
+<br></p>
+<h3 id="22-tipos-de-datos-compuestos">2.2. Tipos de datos compuestos</h3>
+<p>Los tipos de datos compuestos en JavaScript son aquellos que pueden contener múltiples valores y tienen métodos y propiedades. Son mutables, lo que significa que pueden cambiar después de su creación.</p>
+<ul>
+<li>Arrays (<mark>array</mark>)</li>
+<li>Objetos (<mark>object</mark>)
+<br></li>
+</ul>
+<h3 id="array"><mark>array</mark>:</h3>
+<p>Los arrays en JavaScript son objetos especiales que permiten almacenar múltiples valores en una sola variable, indexados numéricamente.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">animales</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;perro&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;oveja&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;caballo&#39;</span><span class="p">];</span>
+</code></pre></div>
+<h3 id="object"><mark>object</mark>:</h3>
+<p>Los objetos en JavaScript son colecciones de pares clave-valor, donde la clave es una cadena (o símbolo) y el valor puede ser cualquier tipo de dato, incluidos otros objetos.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">persona</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Roberto&#39;</span><span class="p">,</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">36</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nx">casado</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">};</span>
+</code></pre></div>
+<br>
+<br></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1542,15 +1868,17 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/docs/", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/docs/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="/docs/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="/docs/assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
+        <script src="../../../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
       
-        <script src="/docs/assets/javascripts/extra.js"></script>
+        <script src="../../../../assets/javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

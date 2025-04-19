@@ -12,22 +12,28 @@
         <meta name="author" content="zuluta">
       
       
+        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/documentacion/checkpoint-06/que-es-polimorfismo-py/">
       
       
+        <link rel="prev" href="../que-es-un-decorador-py/">
       
-      <link rel="icon" href="/docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../que-es-una-api-py/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>zuluta.dev</title>
+        <title>4. ¿Qué es el polimorfismo? - zuluta.dev</title>
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/docs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +52,27 @@
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/docs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,6 +89,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#4-que-es-el-polimorfismo" class="md-skip">
+          Saltar a contenido
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -105,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              4. ¿Qué es el polimorfismo?
             
           </span>
         </div>
@@ -218,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/docs/tutoriales/" class="md-tabs__link">
+        <a href="../../../../tutoriales/" class="md-tabs__link">
           
   
   
@@ -255,11 +275,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/docs/devcamp/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -323,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -386,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/" class="md-nav__link">
+      <a href="../../../../tutoriales/" class="md-nav__link">
         
   
   
@@ -450,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
+      <a href="../../../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
         
   
   
@@ -522,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/control-versiones/comandos-git/" class="md-nav__link">
+      <a href="../../../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
         
   
   
@@ -594,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
+      <a href="../../../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
         
   
   
@@ -617,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
+      <a href="../../../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
         
   
   
@@ -652,24 +674,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -682,7 +709,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             DevCamp
@@ -696,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -716,6 +743,8 @@
                 
   
   
+    
+  
   
   
     
@@ -726,11 +755,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -746,7 +775,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Documentación
@@ -757,6 +786,8 @@
                 
   
   
+    
+  
   
   
     
@@ -767,11 +798,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
@@ -787,7 +818,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_1">
             <span class="md-nav__icon md-icon"></span>
             Checkpoint 06
@@ -801,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -824,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
+      <a href="../introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -847,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
+      <a href="../metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -870,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -890,10 +921,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -904,6 +944,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -916,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
+      <a href="../que-es-una-api-py/" class="md-nav__link">
         
   
   
@@ -939,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
+      <a href="../que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -1011,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/" class="md-nav__link">
+      <a href="../../checkpoint-07/" class="md-nav__link">
         
   
   
@@ -1034,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/introduccion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/introduccion-js/" class="md-nav__link">
         
   
   
@@ -1057,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
         
   
   
@@ -1080,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
         
   
   
@@ -1103,7 +1144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/condicionales-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/condicionales-js/" class="md-nav__link">
         
   
   
@@ -1126,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/operador-ternario-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/operador-ternario-js/" class="md-nav__link">
         
   
   
@@ -1149,7 +1190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
         
   
   
@@ -1172,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/que-es-this-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/que-es-this-js/" class="md-nav__link">
         
   
   
@@ -1244,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/" class="md-nav__link">
+      <a href="../../checkpoint-08/" class="md-nav__link">
         
   
   
@@ -1267,7 +1308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/bucles-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/bucles-js/" class="md-nav__link">
         
   
   
@@ -1290,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/variables-js/" class="md-nav__link">
         
   
   
@@ -1313,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/funcion-flecha-js/" class="md-nav__link">
         
   
   
@@ -1336,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
         
   
   
@@ -1359,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/operador-de-extension-js/" class="md-nav__link">
         
   
   
@@ -1382,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/que-es-poo-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/que-es-poo-js/" class="md-nav__link">
         
   
   
@@ -1405,7 +1446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/promesa-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/promesa-js/" class="md-nav__link">
         
   
   
@@ -1428,7 +1469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/async-await-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/async-await-js/" class="md-nav__link">
         
   
   
@@ -1484,6 +1525,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1495,8 +1538,67 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="4-que-es-el-polimorfismo">4. ¿Qué es el polimorfismo?</h1>
+<p>El polimorfismo tiene como objetivo cambiar la funcionalidad entre los métodos con el mismo nombre, en este ejemplo, tenemos tres clases, a los métodos les hemos asignado el mismo nombre <code>desplazamiento</code>. A pesar de que lleven el mismo nombre, los podemos diferenciar creando una nueva función y pasandole como atributo, por ejemplo <code>vehiculo</code>. El <code>vehiculo</code> tomara el valor de <code>mi_vehiculo</code> para hacer la mágia del polimorfismo. A la variable <code>mi_vehiculo</code>, podemos pasarle cualquiera de las tres clases, <code>Moto()</code>, <code>Coche()</code>, <code>Camion()</code>.</p>
+<p><br></p>
+<p><a class="glightbox" href="../../../../assets/images/devcamp/checkpoint-06/polimorfismo.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../../assets/images/devcamp/checkpoint-06/polimorfismo.png" /></a>
+<br></p>
+<p><strong>Código Python 👇</strong></p>
+
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Moto</span><span class="p">():</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">desplazamiento</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Me desplazo utilizando 2 ruedas&#39;</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">class</span><span class="w"> </span><span class="nc">Coche</span><span class="p">():</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">desplazamiento</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Me desplazo utilizando 4 ruedas&#39;</span><span class="p">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">class</span><span class="w"> </span><span class="nc">Camion</span><span class="p">():</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">desplazamiento</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Me desplazo utilizando 6 ruedas&#39;</span><span class="p">)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="k">def</span><span class="w"> </span><span class="nf">desplazamiento_vehiculo</span><span class="p">(</span><span class="n">vehiculo</span><span class="p">):</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="n">vehiculo</span><span class="o">.</span><span class="n">desplazamiento</span><span class="p">()</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="n">mi_vehiculo</span> <span class="o">=</span> <span class="n">Coche</span><span class="p">()</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="n">desplazamiento_vehiculo</span><span class="p">(</span><span class="n">mi_vehiculo</span><span class="p">)</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="c1"># salida:</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="c1"># Me desplazo utilizando 4 ruedas</span>
+</code></pre></div>
+<br></p>
+<div class="admonition info">
+<p class="admonition-title">IMPORTANTE</p>
+<p>El polimorfismo puede acceder a cualquiera de las clases y ejecutar métodos independientemente del nombre que tengan.</p>
+</div>
+<p><br>
+<br></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1542,15 +1644,17 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/docs/", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/docs/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="/docs/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="/docs/assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
+        <script src="../../../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
       
-        <script src="/docs/assets/javascripts/extra.js"></script>
+        <script src="../../../../assets/javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
