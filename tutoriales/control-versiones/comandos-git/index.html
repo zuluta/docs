@@ -12,22 +12,28 @@
         <meta name="author" content="zuluta">
       
       
+        <link rel="canonical" href="https://zuluta.github.io/docs/tutoriales/control-versiones/comandos-git/">
       
       
+        <link rel="prev" href="../../ruta-aprendizaje/desarrollador-full-stack/">
       
-      <link rel="icon" href="/docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../../instalacion-librerias/mkdocs/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>zuluta.dev</title>
+        <title>Comandos GIT - zuluta.dev</title>
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/docs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +52,27 @@
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/docs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,6 +89,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#git-desde-la-linea-de-comandos" class="md-skip">
+          Saltar a contenido
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -105,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Comandos GIT
             
           </span>
         </div>
@@ -218,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -235,11 +255,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/docs/tutoriales/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -259,7 +281,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/docs/devcamp/" class="md-tabs__link">
+        <a href="../../../devcamp/" class="md-tabs__link">
           
   
   
@@ -281,6 +303,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -323,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -342,24 +366,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -372,7 +401,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tutoriales
@@ -386,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   
@@ -450,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
+      <a href="../../ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
         
   
   
@@ -478,6 +507,8 @@
                 
   
   
+    
+  
   
   
     
@@ -488,11 +519,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -508,7 +539,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Control de versiones
@@ -519,10 +550,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/docs/tutoriales/control-versiones/comandos-git/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Comandos GIT
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -533,6 +586,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-para-trabajar-en-localhost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos básicos para trabajar en localhost:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-para-sincrinizar-por-primera-vez-git-con-github-desde-terminal-de-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos para sincrinizar por primera vez GIT con GitHub desde terminal de VSCode:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-para-subir-nuestro-proyecto-localhost-al-repositorio-de-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos basicos para subir nuestro proyecto localhost al repositorio de GitHub:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos útiles:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-para-restaurar-o-resetear-a-un-commit-anterior-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos para restaurar o resetear a un commit anterior específico:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -594,7 +712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
+      <a href="../../instalacion-librerias/mkdocs/" class="md-nav__link">
         
   
   
@@ -617,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
+      <a href="../../instalacion-librerias/gh-deploy/" class="md-nav__link">
         
   
   
@@ -696,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/" class="md-nav__link">
+      <a href="../../../devcamp/" class="md-nav__link">
         
   
   
@@ -801,7 +919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-06/" class="md-nav__link">
         
   
   
@@ -824,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -847,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -870,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -893,7 +1011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
         
   
   
@@ -916,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
         
   
   
@@ -939,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -1011,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/" class="md-nav__link">
         
   
   
@@ -1034,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/introduccion-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/introduccion-js/" class="md-nav__link">
         
   
   
@@ -1057,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
         
   
   
@@ -1080,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
         
   
   
@@ -1103,7 +1221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/condicionales-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/condicionales-js/" class="md-nav__link">
         
   
   
@@ -1126,7 +1244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/operador-ternario-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/operador-ternario-js/" class="md-nav__link">
         
   
   
@@ -1149,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
         
   
   
@@ -1172,7 +1290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/que-es-this-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-07/que-es-this-js/" class="md-nav__link">
         
   
   
@@ -1244,7 +1362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/" class="md-nav__link">
         
   
   
@@ -1267,7 +1385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/bucles-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/bucles-js/" class="md-nav__link">
         
   
   
@@ -1290,7 +1408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/variables-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/variables-js/" class="md-nav__link">
         
   
   
@@ -1313,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
         
   
   
@@ -1336,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
         
   
   
@@ -1359,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
         
   
   
@@ -1382,7 +1500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/que-es-poo-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/que-es-poo-js/" class="md-nav__link">
         
   
   
@@ -1405,7 +1523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/promesa-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/promesa-js/" class="md-nav__link">
         
   
   
@@ -1428,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/async-await-js/" class="md-nav__link">
+      <a href="../../../devcamp/documentacion/checkpoint-08/async-await-js/" class="md-nav__link">
         
   
   
@@ -1475,7 +1593,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1484,6 +1604,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-para-trabajar-en-localhost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos básicos para trabajar en localhost:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-para-sincrinizar-por-primera-vez-git-con-github-desde-terminal-de-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos para sincrinizar por primera vez GIT con GitHub desde terminal de VSCode:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-para-subir-nuestro-proyecto-localhost-al-repositorio-de-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos basicos para subir nuestro proyecto localhost al repositorio de GitHub:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-utiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos útiles:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-para-restaurar-o-resetear-a-un-commit-anterior-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comandos para restaurar o resetear a un commit anterior específico:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1495,8 +1670,134 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
+  
 
+
+
+  
+  
+
+
+<h1 id="git-desde-la-linea-de-comandos">GIT desde la línea de comandos</h1>
+<h3 id="comandos-basicos-para-trabajar-en-localhost">Comandos básicos para trabajar en localhost:</h3>
+<ul>
+<li><mark>git init</mark> Iniciar GIT</li>
+<li><mark>git add .</mark> Agrega todos los archivos al GIT</li>
+<li><mark>git commit -m "primer commit"</mark> Agrega un commit al GIT</li>
+</ul>
+<h3 id="comandos-para-sincrinizar-por-primera-vez-git-con-github-desde-terminal-de-vscode">Comandos para sincrinizar por primera vez GIT con GitHub desde terminal de VSCode:</h3>
+<ul>
+<li><mark>git init</mark> Iniciar GIT</li>
+<li><mark>git config --global user.name "nombre_usuario"</mark> Usuario de GitHub</li>
+<li><mark>git config --global user.email "micorreo@ejemplo.com"</mark> Email de GitHub</li>
+</ul>
+<h3 id="comandos-basicos-para-subir-nuestro-proyecto-localhost-al-repositorio-de-github">Comandos basicos para subir nuestro proyecto localhost al repositorio de GitHub:</h3>
+<ul>
+<li><mark>git init</mark> Iniciar GIT</li>
+<li><mark>git add .</mark> Agrega todos los archivos al GIT</li>
+<li><mark>git commit -m "primer commit"</mark> Agrega un commit al GIT</li>
+<li><mark>git branch -M main</mark> Fuerza a renombrar la rama local actual por (main) <del class="critic">actual</del><ins class="critic"> main</ins></li>
+<li><mark>git remote add origin https://github.com/usuario/mi_repositorio.git</mark> Crea una conexión remota llamada <ins class="critic">origin</ins> con el repositorio de GitHub</li>
+<li><mark>git remote -v</mark> Verifica la comunicación con el repositorio remoto</li>
+<li><mark>git status</mark> Muestra el estado de los procesos GIT</li>
+<li><mark>git push -u origin main</mark> Sube los archivos a la rama main remoto de GitHub</li>
+</ul>
+<h3 id="comandos-utiles">Comandos útiles:</h3>
+<ul>
+<li><mark>git status</mark> Muestra el estado de los procesos GIT</li>
+<li><mark>git add ejemplo.html</mark> Agrega los archivos indibidualmente al GIT</li>
+<li><mark>git remote -v</mark> Verifica la comunicación con el repositorio remoto</li>
+<li><mark>git log</mark> Muestra el histórico de commits</li>
+<li><mark>git log -n 2</mark> Muestra los últimos 2 commits</li>
+<li><mark>git log prueba.html</mark> Muestra los commits del archivo (prueba.html)</li>
+<li><mark>git switch main</mark> Cambia de la rama actual a la rama (main)</li>
+<li><mark>git branch branch-test</mark> Crea una nueva rama (branch-test) a partir de la rama actual</li>
+<li><mark>git branch -m branch-test</mark> Renombra la rama local actual por (branch-test) <del class="critic">actual</del><ins class="critic"> branch-test</ins></li>
+<li><mark>git branch -M branch-test</mark> Fuerza a renombrar la rama local actual por (branch-test) <del class="critic">actual</del><ins class="critic"> branch-test</ins></li>
+<li><mark>git branch</mark> Muestra todas las ramas locales y distingue con un (*) la rama actual</li>
+<li><mark>git branch --list</mark> Muestra todas las ramas locales y distingue con un (*) la rama actual</li>
+<li><mark>git branch -r</mark> Muestra todas las ramas del repositorio remoto</li>
+<li><mark>git branch -a</mark> Muestra todas las ramas, tanto locales como remotas y distingue con un (*) la rama actual</li>
+<li><mark>git branch --show-current</mark> Muestra la rama actual</li>
+<li><mark>git branch -d branch-test</mark> Elimina la rama (branch-test) del repositorio local si esta fusionado con (main)</li>
+<li><mark>git branch -D branch-test</mark> Fuerza a eliminar la rama (branch-test) del repositorio local este o no fusionado con (main)</li>
+<li><mark>git branch --no-merged</mark> Muestra las ramas que estan sin fusionar con (main)</li>
+<li><mark>git remote add origin https://github.com/usuario/mi_repositorio.git</mark> Crea una conexión remota llamada <ins class="critic">origin</ins> con el repositorio de GitHub</li>
+<li><mark>git clone https://github.com/usuario/mi_repositorio.git</mark> Copia el repositorio remoto completo al local y se crea automáticamente una conexión remota llamada <ins class="critic">origin</ins></li>
+<li><mark>git pull origin main</mark> Actualiza la rama actual del repositorio local con los nuevos cambios efectuados en la rama (main) del repositorio remoto</li>
+<li><mark>git merge branch-test</mark> Fusiona la rama (branch-test) a la rama actual del repositorio local</li>
+<li><mark>git push origin --delete branch-test</mark> Elimina la rama (branch-test) del repositorio remoto</li>
+<li><mark>git fetch --prune</mark> Elimina todas las referencias de seguimiento obsoletas del repositorio remoto</li>
+<li><mark>git prune</mark> Elimina todas las referencias de seguimiento obsoletas del repositorio local</li>
+<li><mark>git prune --verbose</mark> Elimina y muestra todas las referencias de seguimiento obsoletas que a eliminado del repositorio local</li>
+<li><mark>git commit --amend -m "texto corregido"</mark> Edita el commit mas reciente y lo sustituye por uno nuevo</li>
+</ul>
+<h3 id="comandos-para-restaurar-o-resetear-a-un-commit-anterior-especifico">Comandos para restaurar o resetear a un commit anterior específico:</h3>
+<ol>
+<li>
+<p>El método (git restore): </p>
+<ul>
+<li><mark>git log --oneline</mark> Muestra información simplificada de commits donde sale el hash de cada uno</li>
+<li><mark>git restore --source 20cf9cb prueba.html</mark> Restaura el archivo (prueba.html) al commit mediante hash (20cf9cb)</li>
+</ul>
+</li>
+<li>
+<p>El método (git reset):</p>
+<ul>
+<li><mark>git log --oneline</mark> Muestra información simplificada de commits donde sale el hash de cada uno</li>
+<li><mark>git reset 20cf9cb</mark> Regresa al commit mediante hash (20cf9cb)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">NOTA</p>
+<p>A pesar de que los commits ya no aparecen en el log, no se eliminan de GIT</p>
+</div>
+<p><br></p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">NOTA</p>
+<ul>
+<li>Para detener el servidor de "mkdocs" pulsa (ctrl + c)</li>
+<li>Para limpiar la consola utiliza el comando (<mark>cls</mark>) o (<mark>clear</mark>)</li>
+<li>Para salir de algun comando GIT pulsa (q)</li>
+</ul>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">MALAS PRÁCTICAS</p>
+<p>Está totalmente desaconsejado alterar el historial de commits, esto podria generar conflictos con los commits del repositorio remoto cuando se vaya hacer push o pull por cualquiera de los miembros, intenta siempre trabajar hacia adelante. Por lo general, está bien hacer este tipo de cambios en su propio repositorio local.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">BUENAS PRÁCTICAS</p>
+<p>El mensaje del commit se escribe en presente, debe ser corto y conciso, no utilizar puntos ni puntos suspensivos al final.</p>
+<ol>
+<li>Ejemplo commit: <code>remove a random notification</code> </li>
+<li>Ejemplo commit: <code>add a new search feature</code></li>
+<li>Ejemplo commit: <code>change the default system color</code></li>
+<li>Ejemplo commit: <code>fix a problem with the topbar</code></li>
+</ol>
+</div>
+<p><br></p>
+<p>Fuente: <a href="https://git-scm.com/docs">Sitio web oficial</a>
+<br></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
               </article>
             </div>
           
@@ -1542,15 +1843,17 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/docs/", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/docs/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="/docs/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="/docs/assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
+        <script src="../../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
       
-        <script src="/docs/assets/javascripts/extra.js"></script>
+        <script src="../../../assets/javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

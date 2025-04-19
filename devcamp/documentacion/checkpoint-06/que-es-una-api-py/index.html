@@ -12,22 +12,28 @@
         <meta name="author" content="zuluta">
       
       
+        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/documentacion/checkpoint-06/que-es-una-api-py/">
       
       
+        <link rel="prev" href="../que-es-polimorfismo-py/">
       
-      <link rel="icon" href="/docs/assets/images/favicon.png">
+      
+        <link rel="next" href="../que-es-mongodb-py/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>zuluta.dev</title>
+        <title>5. ¿Que es una API? - zuluta.dev</title>
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="/docs/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +52,27 @@
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/docs/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  </head>
+   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,6 +89,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#5-que-es-una-api" class="md-skip">
+          Saltar a contenido
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -105,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              5. ¿Que es una API?
             
           </span>
         </div>
@@ -218,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/docs/." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -239,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/docs/tutoriales/" class="md-tabs__link">
+        <a href="../../../../tutoriales/" class="md-tabs__link">
           
   
   
@@ -255,11 +275,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/docs/devcamp/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../" class="md-tabs__link">
           
   
   
@@ -323,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -386,7 +408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/" class="md-nav__link">
+      <a href="../../../../tutoriales/" class="md-nav__link">
         
   
   
@@ -450,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
+      <a href="../../../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
         
   
   
@@ -522,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/control-versiones/comandos-git/" class="md-nav__link">
+      <a href="../../../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
         
   
   
@@ -594,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
+      <a href="../../../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
         
   
   
@@ -617,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
+      <a href="../../../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
         
   
   
@@ -652,24 +674,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -682,7 +709,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             DevCamp
@@ -696,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/" class="md-nav__link">
+      <a href="../../../" class="md-nav__link">
         
   
   
@@ -716,6 +743,8 @@
                 
   
   
+    
+  
   
   
     
@@ -726,11 +755,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -746,7 +775,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Documentación
@@ -757,6 +786,8 @@
                 
   
   
+    
+  
   
   
     
@@ -767,11 +798,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
@@ -787,7 +818,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2_1">
             <span class="md-nav__icon md-icon"></span>
             Checkpoint 06
@@ -801,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -824,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
+      <a href="../introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -847,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
+      <a href="../metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -870,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -893,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
+      <a href="../que-es-polimorfismo-py/" class="md-nav__link">
         
   
   
@@ -913,10 +944,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    5. ¿Que es una API?
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -927,6 +980,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-una-api-tiene-dos-componentes-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Una API tiene dos componentes principales:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-de-donde-obtiene-la-api-toda-la-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. ¿De donde obtiene la API toda la información?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-que-es-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. ¿Qué es Postman?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características principales:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -939,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
+      <a href="../que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -1011,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/" class="md-nav__link">
+      <a href="../../checkpoint-07/" class="md-nav__link">
         
   
   
@@ -1034,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/introduccion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/introduccion-js/" class="md-nav__link">
         
   
   
@@ -1057,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
         
   
   
@@ -1080,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
         
   
   
@@ -1103,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/condicionales-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/condicionales-js/" class="md-nav__link">
         
   
   
@@ -1126,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/operador-ternario-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/operador-ternario-js/" class="md-nav__link">
         
   
   
@@ -1149,7 +1258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
         
   
   
@@ -1172,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-07/que-es-this-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/que-es-this-js/" class="md-nav__link">
         
   
   
@@ -1244,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/" class="md-nav__link">
+      <a href="../../checkpoint-08/" class="md-nav__link">
         
   
   
@@ -1267,7 +1376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/bucles-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/bucles-js/" class="md-nav__link">
         
   
   
@@ -1290,7 +1399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/variables-js/" class="md-nav__link">
         
   
   
@@ -1313,7 +1422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/funcion-flecha-js/" class="md-nav__link">
         
   
   
@@ -1336,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
         
   
   
@@ -1359,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/operador-de-extension-js/" class="md-nav__link">
         
   
   
@@ -1382,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/que-es-poo-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/que-es-poo-js/" class="md-nav__link">
         
   
   
@@ -1405,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/promesa-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/promesa-js/" class="md-nav__link">
         
   
   
@@ -1428,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/docs/devcamp/documentacion/checkpoint-08/async-await-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/async-await-js/" class="md-nav__link">
         
   
   
@@ -1484,6 +1593,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-una-api-tiene-dos-componentes-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Una API tiene dos componentes principales:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#52-de-donde-obtiene-la-api-toda-la-informacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. ¿De donde obtiene la API toda la información?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#53-que-es-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. ¿Qué es Postman?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristicas-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características principales:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1495,8 +1650,113 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="5-que-es-una-api">5. ¿Que es una API?</h1>
+<p>Una <strong>API</strong> es una (interfaz de programación de aplicaciones) que sigue un conjunto de restricciones arquitecturales basadas en HTTP. Esto significa que se puede acceder a los recursos a través de URLs, lo que hace que la API sea fácil de entender y utilizar. Podemos crear una API que haga literalmente cualquier cosa, desde dar clima hasta un catálogo completo de una tienda en línea. Casi todas las aplicaciones utilizan APIs para conectarse con fuentes de datos corporativas, servicios de datos de terceros u otras aplicaciones.</p>
+
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p>El formato de intercambio de datos normalmente es JSON o XML, lo que permite que la API sea compatible con una amplia variedad de aplicaciones.</p>
+</div>
+<p><br></p>
+<p><a class="glightbox" href="../../../../assets/images/devcamp/checkpoint-06/api-rest.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../../assets/images/devcamp/checkpoint-06/api-rest.png" /></a>
+<br>
+<br></p>
+<h3 id="51-una-api-tiene-dos-componentes-principales">5.1. Una API tiene dos componentes principales:</h3>
+<ul>
+<li>
+<p><strong>Recursos:</strong></p>
+<ul>
+<li>Datos o información.</li>
+</ul>
+</li>
+<li>
+<p><strong>Verbos HTTP:</strong></p>
+<ul>
+<li><code>GET</code> para consultar y leer.</li>
+<li><code>POST</code> para crear.</li>
+<li><code>PUT</code> para editar.</li>
+<li><code>DELETE</code> para eliminar.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">IMPORTANTE</p>
+<p>Los <strong>recursos</strong> son los datos o información que se pueden acceder a través de la API. Los <strong>verbos HTTP</strong> son las operaciones que se pueden realizar en esos recursos, como obtener <code>GET</code> un recurso, crear <code>POST</code> un recurso, actualizar <code>PUT</code> un recurso o eliminar <code>DELETE</code> un recurso.</p>
+</div>
+<p><br></p>
+<h3 id="52-de-donde-obtiene-la-api-toda-la-informacion">5.2. ¿De donde obtiene la API toda la información?</h3>
+<p>La información de la api no sale de la nada, necesita ser construido por alguien en formato diccionario. Se puede construir de manera manual o cargarle la información desde una base de datos. Cuando abrimos la url donde esta alojado el API, veremos un monton de datos en formato diccionario <code>{...}</code>. Puede contener anidamientos tanto de diccionarios como de listas en su interior.</p>
+
+<p>Formato de una API 👇
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;apellido&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Garcia&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;pais&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">},</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">{</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nerea&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;apellido&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Larralde&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;pais&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
+</code></pre></div></p>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p>Puedes practicar con esta <strong>API de Rick and Morty</strong> https://rickandmortyapi.com/api/character/ utilizando la aplicación <strong>Postman</strong> https://www.postman.com/ para testear con APIs.</p>
+<p>Si accede a <code>https://rickandmortyapi.com/api/character/131</code> por numero de id al personaje, nos devolvera un json con toda la información.</p>
+</div>
+<p><br></p>
+<h3 id="53-que-es-postman">5.3. ¿Qué es Postman?</h3>
+<p>Se trata de una herramienta dirigida a desarrolladores web que permite realizar peticiones HTTP a cualquier API. Postman es muy útil a la hora de programar y hacer pruebas, puesto que nos ofrece la posibilidad de comprobar el correcto funcionamiento de nuestros desarrollos.</p>
+
+<p>Con esto no queremos decir que Postman sea una herramienta exclusiva para profesionales del entorno web, de hecho va a ser muy útil para todo aquel que tenga que interactuar con una API.</p>
+
+<h3 id="caracteristicas-principales">Características principales:</h3>
+<ul>
+<li>
+<p><strong>Envío de solicitudes:</strong></p>
+<ul>
+<li>Postman permite enviar solicitudes HTTP y HTTPS utilizando métodos como GET, POST, PUT y DELETE, entre otros. Los desarrolladores pueden especificar parámetros, encabezados y el cuerpo de la solicitud para simular diversas interacciones con una API.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pruebas automatizadas:</strong></p>
+<ul>
+<li>Con Postman, los desarrolladores pueden crear y ejecutar pruebas automatizadas para verificar el comportamiento de una API. Esto ayuda a detectar errores de manera temprana y a garantizar que el software cumpla con los estándares de calidad.
+<br></li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">TIP</p>
+<p>API de testeo https://rickandmortyapi.com</p>
+</div>
+<p><br>
+<br></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1542,15 +1802,17 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/docs/", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "/docs/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="/docs/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="/docs/assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
+        <script src="../../../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
       
-        <script src="/docs/assets/javascripts/extra.js"></script>
+        <script src="../../../../assets/javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
