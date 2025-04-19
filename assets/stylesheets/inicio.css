@@ -53,4 +53,10 @@
         width: 100%;
         object-fit: cover;
     }
+
+    .md-grid {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        max-width: initial;
+      }
 }
