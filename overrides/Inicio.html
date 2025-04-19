@@ -1,37 +1,45 @@
+<!-- comentario -->
+{#- Este archivo se generó automáticamente - no editar -#}
 
-{#-
-    This file was automatically generated - do not edit
-  -#}
-  {% extends "main.html" %}
 
-  {% block extrahead %}
-    {{ super() }}
-    <link rel="stylesheet" href="{{ 'assets/stylesheets/inicio.css' | url }}">
-  {% endblock%}
+<!-- carga el archivo principal main.html -->
+{% extends "main.html" %}
 
-  {% block tabs %}
-    {{ super() }}
-    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-    <section class="mdx-container">
-      <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-          <div class="mdx-hero__image">
-            <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
-          </div>
-          <div class="mdx-hero__content">
-            <h2>Documentación técnica</h2>
-            <p>Documentación de proyectos, tutoriales de programación, guías de instalación, todo en un único lugar.</p>
-            <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-              Tutoriales
-            </a>
-            <a href="{{ 'devcamp/' | url }}" title="DebCamp documentación" class="md-button">
-              DebCamp
-            </a>
-          </div>
-        </div>
+
+<!-- tab de la página -->
+{% block tabs %}
+  <!-- carga la barra del tab original -->
+  {{ super() }}
+{% endblock %}
+
+
+<!-- contenido de página -->
+{% block content %}
+  <!-- artículo -->
+  <article>
+    <!-- container principal -->
+    <div class="main-container">
+
+      <!-- container de texto -->
+      <div class="text-container">
+        <h2>Documentación técnica</h2>
+        <p>Documentación de proyectos, tutoriales de programación, guías de instalación, todo en un único lugar.</p>
+        <a href="tutoriales/" title="Tutoriales" class="md-button md-button--primary">
+          Tutoriales
+        </a>
+        <a href="devcamp/" title="DebCamp documentación" class="md-button">
+          DebCamp
+        </a>
       </div>
-    </section>
-  {% endblock %}
 
-  {% block content %}{% endblock %}
-  {% block footer %}{% endblock %}
+      <!-- container de imagen -->
+      <div class="image-container">
+        <img src="assets/images/illustration.png" alt="" draggable="false">
+      </div>
+
+    </div>
+  </article>
+{% endblock %}
+
+
+{% block footer %}{% endblock %}

@@ -1,3 +1,5 @@
+<!-- comentario --><!-- carga el archivo principal main.html -->
+<!-- Comentario --><!-- Carga el archivo base.html -->
 
 <!doctype html>
 <html lang="es" class="no-js">
@@ -61,9 +63,9 @@
     
     
     
-    
-    <link rel="stylesheet" href="assets/stylesheets/inicio.css">
-  
+
+<link rel="stylesheet" href="assets/stylesheets/inicio.css">
+
    <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -221,7 +223,8 @@
     <div class="md-container" data-md-component="container">
       
       
-    
+  <!-- carga la barra del tab original -->
+  
         
           
             
@@ -296,27 +299,7 @@
           
         
       
-    <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-    <section class="mdx-container">
-      <div class="md-grid md-typeset">
-        <div class="mdx-hero">
-          <div class="mdx-hero__image">
-            <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
-          </div>
-          <div class="mdx-hero__content">
-            <h2>Documentación técnica</h2>
-            <p>Documentación de proyectos, tutoriales de programación, guías de instalación, todo en un único lugar.</p>
-            <a href="tutoriales/" title="Inicio" class="md-button md-button--primary">
-              Tutoriales
-            </a>
-            <a href="devcamp/" title="DebCamp documentación" class="md-button">
-              DebCamp
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -1547,6 +1530,31 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
+  <!-- artículo -->
+  <article>
+    <!-- container principal -->
+    <div class="main-container">
+
+      <!-- container de texto -->
+      <div class="text-container">
+        <h2>Documentación técnica</h2>
+        <p>Documentación de proyectos, tutoriales de programación, guías de instalación, todo en un único lugar.</p>
+        <a href="tutoriales/" title="Tutoriales" class="md-button md-button--primary">
+          Tutoriales
+        </a>
+        <a href="devcamp/" title="DebCamp documentación" class="md-button">
+          DebCamp
+        </a>
+      </div>
+
+      <!-- container de imagen -->
+      <div class="image-container">
+        <img src="assets/images/illustration.png" alt="" draggable="false">
+      </div>
+
+    </div>
+  </article>
+
               </article>
             </div>
           
@@ -1573,6 +1581,7 @@
       <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
+  
       <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
       
         <script src="assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
@@ -1580,6 +1589,8 @@
         <script src="assets/javascripts/extra.js"></script>
       
     
+  <!-- <script src="assets/javascripts/custom.js"></script> -->
+
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
