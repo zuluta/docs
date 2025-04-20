@@ -25,6 +25,8 @@ nav:
     - Instalación de librerias:
       - MkDocs + virtualenv: tutoriales/instalacion-librerias/mkdocs.md
       - Despliegue a GitHub Pages: tutoriales/instalacion-librerias/gh-deploy.md
+    - Desarrollo web:
+      - Optimizar el SEO: tutoriales/desarrollo-web/optimizar-seo.md
 
   - DevCamp:
     - Inicio: devcamp/index.md
