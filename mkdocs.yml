@@ -1,9 +1,9 @@
 # información del proyecto
-site_name: zuluta.dev
+site_name: ZulutaDev
 site_url: https://zuluta.github.io/docs/
 
-site_author: zuluta
-site_description: Developer Full Stack
+site_author: ZulutaDev
+site_description: Documentación de proyectos, tutoriales de programación, guías de instalación, todo en un único lugar.
 
 extra:
   homepage: https://zuluta.github.io/docs/
