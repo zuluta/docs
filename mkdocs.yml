@@ -17,7 +17,7 @@ nav:
   - Inicio: index.md
 
   - Tutoriales:
-    - Inicio: tutoriales/index.md
+    - Tutoriales: tutoriales/index.md
     - Rutas de aprendizaje:
       - Desarrollador Full Stack: tutoriales/ruta-aprendizaje/desarrollador-full-stack.md
     - Control de versiones:
@@ -29,7 +29,7 @@ nav:
       - Optimizar el SEO: tutoriales/desarrollo-web/optimizar-seo.md
 
   - DevCamp:
-    - Inicio: devcamp/index.md
+    - DebCamp: devcamp/index.md
     - Documentación:
       - Checkpoint 06:
         - Índice: devcamp/documentacion/checkpoint-06/index.md
@@ -75,6 +75,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
+    - navigation.indexes
     - search.suggest
     - search.highlight
     - content.code.copy
