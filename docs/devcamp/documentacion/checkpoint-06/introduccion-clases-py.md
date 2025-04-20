@@ -94,6 +94,7 @@ Cliente('96452178K', 'Maribel', '')
 <br>
 
 **Python es un lenguaje multiparadigma:**
+
   - Soporta la programación imperativa y funcional.
   - Soporta la programación orientada a objetos (POO).
 <br>

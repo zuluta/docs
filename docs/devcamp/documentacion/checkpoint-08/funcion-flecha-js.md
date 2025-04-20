@@ -24,7 +24,7 @@ Las **funciones flecha** permiten escribir funciones de manera más concisa y le
 <br>
 
 ## **3.1. Tipos de funciónes:**
-Antes de nada, veamos una **comparación entre diferentes tipos de funciones**, esto es de vital importancia para entender como funciona cada uno, en que se relacionan y en que situaciones es conveniente utilizar uno u otro.
+Antes de nada, veamos una **comparativa entre diferentes tipos de funciones**, esto es de vital importancia para entender como funciona cada uno, en que se relacionan y en que situaciones es conveniente utilizar uno u otro.
 
 ### Ejemplo 1
 En este ejemplo, vamos a comparar **4 tipos de función equivalentes** y ver **en que se diferencian**. Para ello, hemos utilizado una ==declaración de función==, una ==expresión de función==, una ==expresión de función flecha== y una ==expresión de función flecha conciso==. Ninguno incluye atributos.
@@ -185,6 +185,7 @@ Esta función, esta construido en bloque. Al no estar toda la función en una mi
   - Al ser una **función multilínea**, ==el **return** debe estar presente==.
   - Al ser una **expresión de función**, ==lleva **punto y coma** al final==.
 
+### :material-code-braces-box: ==Función flecha== + ==2 atributos== + ==2 argumentos==:
 ```js linenums="1"
 const sumar = (a, b) => {
     return a + b;
@@ -193,9 +194,8 @@ const sumar = (a, b) => {
 const resultado = sumar(2, 6);
 console.log(resultado); // Salida: 8
 ```
-<br>
 
-### :material-code-braces-box: Ejemplo de ==función flecha== + ==3 atributos== + ==3 argumentos==:
+### :material-code-braces-box: ==función flecha== + ==3 atributos== + ==3 argumentos==:
 ```js linenums="1"
 const cliente = (nombre, apellido, telefono) => {
     return `${nombre} ${apellido} ${telefono}`;
@@ -216,15 +216,15 @@ En este ejemplo, podemos observar cómo la **expresión de función flecha conci
   - Al ser una **función monolínea**, ==el **return** puede omitirse==.
   - Al ser una **expresión de función**, ==lleva **punto y coma** al final==.
 
+### :material-code-braces-box: ==Función flecha conciso== + ==2 atributos== + ==2 argumentos==:
 ```js linenums="1"
 const sumar = (a, b) => a + b;
 
 const resultado = sumar(2, 6);
 console.log(resultado); // Salida: 8
 ```
-<br>
 
-### :material-code-braces-box: Ejemplo de ==función flecha conciso== + ==3 atributos== + ==3 argumentos==:
+### :material-code-braces-box: ==función flecha conciso== + ==3 atributos== + ==3 argumentos==:
 ```js linenums="1"
 const cliente = (nombre, apellido, telefono) => `${nombre} ${apellido} ${telefono}`;
 
@@ -235,7 +235,7 @@ console.log(resultado); // Salida: Roberto Mendiburu 666-666-666
 <br>
 
 ## **3.3. Análisis de funciones:**
-Veamos un ejemplo con las 3 opciones 👇
+Veamos una comparativa entre 3 tipos de funciones 👇
 
   - Opción 1: ==Función tradicional==
   - Opción 2: ==Función flecha==
