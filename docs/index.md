@@ -4,7 +4,7 @@ hide:
   - toc
 
 template: inicio.html
-title: ZulutaDev
+title:
 ---
 
 <br>
