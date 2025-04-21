@@ -16,6 +16,8 @@ hide:
   3. Instalación de librerias:
     - [MkDocs + virtualenv](instalacion-librerias/mkdocs.md)
     - [Despliegue a GitHub Pages](instalacion-librerias/gh-deploy.md)
+  4. Desarrollo web:
+    - [Optimizar el SEO](desarrollo-web/optimizar-seo.md)
 
 <br>
 <br>
