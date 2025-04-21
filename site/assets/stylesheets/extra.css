@@ -36,6 +36,8 @@
 
 /* para anchura inferior a 700px */
 @media (max-width: 780px){
+
+    /* anchura página */
     .md-grid {
         margin-left: 0rem;
         margin-right: 0rem;
