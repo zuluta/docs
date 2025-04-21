@@ -1,19 +1,20 @@
-<!-- comentario -->
-{#- Este archivo se generó automáticamente - no editar -#}
+<!-- carga la estructura de la página base.html -->
+{% extends "base.html" %}
 
 
-<!-- carga el archivo principal main.html -->
-{% extends "main.html" %}
+<!-- agrega al head solo para ésta página -->
+{% block extrahead %}
+  <link rel="stylesheet" href="assets/stylesheets/inicio.css">
+  <meta property="og:url" content="https://zuluta.github.io/docs/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ZulutaDev">
+  <meta property="og:description" content="Accede a mi documentación de proyectos, tutoriales de programación, guías de instalación, desde un único lugar."> <!-- descripción de url a compartir -->
+  <meta property="og:image" content="https://zuluta.github.io/docs/assets/images/og.png">
+  <meta property="og:locale" content="es_ES">
+{% endblock%}
 
 
-<!-- tab de la página -->
-{% block tabs %}
-  <!-- carga la barra del tab original -->
-  {{ super() }}
-{% endblock %}
-
-
-<!-- contenido de página -->
+<!-- crear contenido de página -->
 {% block content %}
   <!-- artículo -->
   <article>
@@ -27,8 +28,8 @@
 
       <!-- container de texto -->
       <div class="text-container">
-        <h2>Documentación técnica</h2>
-        <p>Documentación de proyectos, tutoriales de programación, guías de instalación, todo en un único lugar.</p>
+        <h2>Desarrollador Full Stack</h2>
+        <p>Accede a mi documentación de proyectos, tutoriales de programación, guías de instalación, desde un único lugar.</p>
         <a href="tutoriales/" title="Tutoriales" class="md-button md-button--primary">
           Tutoriales
         </a>
@@ -39,10 +40,4 @@
 
     </div>
   </article>
-{% endblock %}
-
-
-{% block footer %}
-  <!-- carga el footer original -->
-  {{ super() }}
 {% endblock %}
