@@ -31,3 +31,14 @@
     margin-right: 2rem;
     max-width: initial;
 }
+
+
+
+/* para anchura inferior a 700px */
+@media (max-width: 780px){
+    .md-grid {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        max-width: initial;
+    }
+}
