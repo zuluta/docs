@@ -14,8 +14,8 @@
 .text-container {
     margin-left: 2rem;
     margin-top: 3.5rem;
-    max-width: 25rem;
-    padding-bottom: 14vw;
+    max-width: 35rem;
+    padding-bottom: 2rem;
 }
 
 /* container de imagen */
@@ -31,6 +31,8 @@
 @media (max-width: 700px){
     /* container principal */
     .main-container {
+        margin-left: -2rem;
+        margin-right: -2rem;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -41,10 +43,12 @@
 
     /* container de texto */
     .text-container {
+        text-align: center;
+        text-wrap: balance;
         margin-left: 0rem;
         margin-top: 0rem;
-        max-width: 25rem;
-        padding-bottom: 7vw;
+        max-width: 35rem;
+        padding-bottom: 1rem;
     }
 
     /* container de imagen */
@@ -54,9 +58,8 @@
         object-fit: cover;
     }
 
-    .md-grid {
-        margin-left: 0rem;
-        margin-right: 0rem;
-        max-width: initial;
-      }
+    .btn-container {
+        display: grid;
+        gap: .5rem;
+    }
 }
