@@ -84,7 +84,7 @@ Para optimizar el SEO, ==es necesario seguir un orden específico dentro del hea
     <meta property="og:type" content="website"/> <!-- tipo de url a compartir -->
     <meta property="og:title" content="Documentación técnica"/> <!-- título de url a compartir -->
     <meta property="og:description" content="Documentación de proyectos, tutoriales de programación, guías de instalación, todo en un único lugar."/> <!-- descripción de url a compartir -->
-    <meta property="og:image" content="https://zuluta.github.io/og.jpg"/> <!-- imagen de url a compartir -->
+    <meta property="og:image" content="https://zuluta.github.io/docs/assets/images/og.png"/> <!-- imagen de url a compartir -->
     <meta property="og:locale" content="es_ES"/>
 
   </head>
