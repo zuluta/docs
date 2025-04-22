@@ -4,7 +4,9 @@ hide:
   - toc
 ---
 
-<h1 class="title-index hide">Checkpoint 07</h1>
+#
+
+[<h1 class="title-index">Checkpoint 07</h1>]: # 
 
 ## <h2 class="description-index">Documentación JavaScript :material-language-javascript:</h2>
 <hr>

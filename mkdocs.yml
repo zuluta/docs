@@ -14,11 +14,10 @@ repo_url: https://github.com/zuluta/docs/
 
 # navegación
 nav:
-  - Inicio:
-    - index.md
+  - Inicio: index.md
 
   - Tutoriales:
-    - tutoriales/index.md
+    - Tutoriales: tutoriales/index.md
     - Rutas de aprendizaje:
       - Desarrollador Full Stack: tutoriales/ruta-aprendizaje/desarrollador-full-stack.md
     - Control de versiones:
@@ -30,9 +29,9 @@ nav:
       - Optimizar el SEO: tutoriales/desarrollo-web/optimizar-seo.md
 
   - DevCamp:
-    - devcamp/index.md
+    - DevCamp: devcamp/index.md
     - Checkpoint 06:
-      - devcamp/checkpoint-06/index.md
+      - Checkpoint 06: devcamp/checkpoint-06/index.md
       - 1. Introducción al uso de clases: devcamp/checkpoint-06/introduccion-clases-py.md
       - 2. ¿Qué es un método dunder?: devcamp/checkpoint-06/metodo-dunder-py.md
       - 3. ¿Qué es un decorador?: devcamp/checkpoint-06/que-es-un-decorador-py.md
@@ -40,7 +39,7 @@ nav:
       - 5. ¿Que es una API?: devcamp/checkpoint-06/que-es-una-api-py.md
       - 6. ¿Es MongoDB una base de datos SQL o NoSQL?: devcamp/checkpoint-06/que-es-mongodb-py.md
     - Checkpoint 07:
-      - devcamp/checkpoint-07/index.md
+      - Checkpoint 07: devcamp/checkpoint-07/index.md
       - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/checkpoint-07/introduccion-js.md
       - 2. ¿Cuáles son algunos tipos de datos JS?: devcamp/checkpoint-07/tipos-de-datos-js.md
       - 3. ¿Cuáles son las tres funciones de String en JS?: devcamp/checkpoint-07/tres-funciones-de-string-js.md
@@ -49,7 +48,7 @@ nav:
       - 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?: devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js.md
       - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/checkpoint-07/que-es-this-js.md
     - Checkpoint 08:
-      - devcamp/checkpoint-08/index.md
+      - Checkpoint 08: devcamp/checkpoint-08/index.md
       - 1. ¿Qué tipo de bucles hay en JS?: devcamp/checkpoint-08/bucles-js.md
       - 2. ¿Cuáles son las diferencias entre const, let y var?: devcamp/checkpoint-08/variables-js.md
       - 3. ¿Qué es una función de flecha?: devcamp/checkpoint-08/funcion-flecha-js.md

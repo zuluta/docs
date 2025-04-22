@@ -4,7 +4,9 @@ hide:
   - toc
 ---
 
-<h1 class="title-index hide">Checkpoint 06</h1>
+#
+
+[<h1 class="title-index">Checkpoint 06</h1>]: # 
 
 ## <h2 class="description-index">Documentación Python :material-language-python:</h2>
 <hr>
