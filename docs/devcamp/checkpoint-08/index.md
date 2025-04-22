@@ -6,8 +6,8 @@ hide:
 
 <h1 style="text-align:center">Checkpoint 08</h1>
 
-**<h2 style="text-align: center; margin: -1rem 0 -.5rem 0;">Documentación JavaScript :material-language-javascript:</h2>**
-<hr style="margin-top: .5rem;">
+**<h2 style="text-align: center; margin: -1rem 0 -1.2rem 0;">Documentación JavaScript :material-language-javascript:</h2>**
+<hr>
 
 **ÍNDICE DE CONTENIDOS**
 
