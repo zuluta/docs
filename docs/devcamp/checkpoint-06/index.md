@@ -4,12 +4,12 @@ hide:
   - toc
 ---
 
-<h1 style="text-align:center">Checkpoint 06</h1>
+<h1 class="title-index hide">Checkpoint 06</h1>
 
-**<h2 style="text-align: center; margin: -1rem 0 -1.2rem 0;">Documentación Python :material-language-python:</h2>**
+## <h2 class="description-index">Documentación Python :material-language-python:</h2>
 <hr>
 
-**ÍNDICE DE CONTENIDOS**
+**ÍNDICE CHECKPOINT 06**
 
   1. [Introducción al uso de clases](introduccion-clases-py.md)
   2. [¿Qué es un método dunder?](metodo-dunder-py.md)

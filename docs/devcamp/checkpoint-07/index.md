@@ -4,12 +4,12 @@ hide:
   - toc
 ---
 
-<h1 style="text-align:center">Checkpoint 07</h1>
+<h1 class="title-index hide">Checkpoint 07</h1>
 
-**<h2 style="text-align: center; margin: -1rem 0 -1.2rem 0;">Documentación JavaScript :material-language-javascript:</h2>**
+## <h2 class="description-index">Documentación JavaScript :material-language-javascript:</h2>
 <hr>
 
-**ÍNDICE DE CONTENIDOS**
+**ÍNDICE CHECKPOINT 07**
 
   1. [¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?](introduccion-js.md)
   2. [¿Cuáles son algunos tipos de datos JS?](tipos-de-datos-js.md)

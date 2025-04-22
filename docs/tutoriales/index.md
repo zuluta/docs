@@ -4,9 +4,9 @@ hide:
   - toc
 ---
 
-<h1 style="text-align:center">Tutoriales</h1>
+<h1 class="title-index">Tutoriales</h1>
 
-<p style="text-align: center; margin: -1rem 0 -1.2rem 0;">PT Full Stack Development with JavaScript, Python, React</p>
+<p class="description-index">PT Full Stack Development with JavaScript, Python, React</p>
 <hr>
 
 **ÍNDICE DE CONTENIDOS**

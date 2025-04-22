@@ -4,12 +4,12 @@ hide:
   - toc
 ---
 
-<h1 style="text-align:center">Checkpoint 08</h1>
+<h1 class="title-index hide">Checkpoint 08</h1>
 
-**<h2 style="text-align: center; margin: -1rem 0 -1.2rem 0;">Documentación JavaScript :material-language-javascript:</h2>**
+## <h2 class="description-index">Documentación JavaScript :material-language-javascript:</h2>
 <hr>
 
-**ÍNDICE DE CONTENIDOS**
+**ÍNDICE CHECKPOINT 08**
 
   1. [¿Qué tipo de bucles hay en JS?](bucles-js.md)
   2. [¿Cuáles son las diferencias entre const, let y var?](variables-js.md)
