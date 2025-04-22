@@ -6,8 +6,8 @@ hide:
 
 <h1 style="text-align:center">Checkpoint 06</h1>
 
-## **Documentación Python** :material-language-python:
-<hr>
+**<h2 style="text-align: center; margin: -1rem 0 -.5rem 0;">Documentación Python :material-language-python:</h2>**
+<hr style="margin-top: .5rem;">
 
 **ÍNDICE DE CONTENIDOS**
 

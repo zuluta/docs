@@ -6,8 +6,8 @@ hide:
 
 <h1 style="text-align: center">DevCamp</h1>
 
-<p style="text-align: center; margin-top: -1rem;">PT Full Stack Development with JavaScript, Python, React</p>
-<hr style="margin-top: 2.7rem;">
+<p style="text-align: center; margin: -1rem 0 -.5rem 0;">PT Full Stack Development with JavaScript, Python, React</p>
+<hr style="margin-top: .5rem;">
 
 **ÍNDICE DE CONTENIDOS**
 
