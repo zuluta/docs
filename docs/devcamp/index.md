@@ -4,10 +4,10 @@ hide:
   - toc
 ---
 
-<h1 style="text-align:center">DevCamp</h1>
+<h1 style="text-align: center">DevCamp</h1>
 
-<p style="text-align:center">PT Full Stack Development with JavaScript, Python, React</p>
-<hr>
+<p style="text-align: center; margin-top: -1rem;">PT Full Stack Development with JavaScript, Python, React</p>
+<hr style="margin-top: 2.7rem;">
 
 **ÍNDICE DE CONTENIDOS**
 
