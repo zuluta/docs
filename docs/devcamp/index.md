@@ -10,9 +10,9 @@ hide:
 <hr>
 
   1. Documentación:
-    - [Checkpoint 06](documentacion/checkpoint-06)
-    - [Checkpoint 07](documentacion/checkpoint-07)
-    - [Checkpoint 08](documentacion/checkpoint-08)
+    - [Checkpoint 06](checkpoint-06)
+    - [Checkpoint 07](checkpoint-07)
+    - [Checkpoint 08](checkpoint-08)
 
 <br>
 <br>

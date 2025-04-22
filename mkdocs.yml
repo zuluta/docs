@@ -14,10 +14,11 @@ repo_url: https://github.com/zuluta/docs/
 
 # navegación
 nav:
-  - Inicio: index.md
+  - Inicio:
+    - index.md
 
   - Tutoriales:
-    - Tutoriales: tutoriales/index.md
+    - tutoriales/index.md
     - Rutas de aprendizaje:
       - Desarrollador Full Stack: tutoriales/ruta-aprendizaje/desarrollador-full-stack.md
     - Control de versiones:
@@ -29,35 +30,34 @@ nav:
       - Optimizar el SEO: tutoriales/desarrollo-web/optimizar-seo.md
 
   - DevCamp:
-    - DebCamp: devcamp/index.md
-    - Documentación:
-      - Checkpoint 06:
-        - Índice: devcamp/documentacion/checkpoint-06/index.md
-        - 1. Introducción al uso de clases: devcamp/documentacion/checkpoint-06/introduccion-clases-py.md
-        - 2. ¿Qué es un método dunder?: devcamp/documentacion/checkpoint-06/metodo-dunder-py.md
-        - 3. ¿Qué es un decorador?: devcamp/documentacion/checkpoint-06/que-es-un-decorador-py.md
-        - 4. ¿Qué es el polimorfismo?: devcamp/documentacion/checkpoint-06/que-es-polimorfismo-py.md
-        - 5. ¿Que es una API?: devcamp/documentacion/checkpoint-06/que-es-una-api-py.md
-        - 6. ¿Es MongoDB una base de datos SQL o NoSQL?: devcamp/documentacion/checkpoint-06/que-es-mongodb-py.md
-      - Checkpoint 07:
-        - Índice: devcamp/documentacion/checkpoint-07/index.md
-        - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/documentacion/checkpoint-07/introduccion-js.md
-        - 2. ¿Cuáles son algunos tipos de datos JS?: devcamp/documentacion/checkpoint-07/tipos-de-datos-js.md
-        - 3. ¿Cuáles son las tres funciones de String en JS?: devcamp/documentacion/checkpoint-07/tres-funciones-de-string-js.md
-        - 4. ¿Qué es un condicional?: devcamp/documentacion/checkpoint-07/condicionales-js.md
-        - 5. ¿Qué es un operador ternario?: devcamp/documentacion/checkpoint-07/operador-ternario-js.md
-        - 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?: devcamp/documentacion/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js.md
-        - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/documentacion/checkpoint-07/que-es-this-js.md
-      - Checkpoint 08:
-        - Índice: devcamp/documentacion/checkpoint-08/index.md
-        - 1. ¿Qué tipo de bucles hay en JS?: devcamp/documentacion/checkpoint-08/bucles-js.md
-        - 2. ¿Cuáles son las diferencias entre const, let y var?: devcamp/documentacion/checkpoint-08/variables-js.md
-        - 3. ¿Qué es una función de flecha?: devcamp/documentacion/checkpoint-08/funcion-flecha-js.md
-        - 4. ¿Qué es la deconstrucción de variables?: devcamp/documentacion/checkpoint-08/deconstruccion-de-variables-js.md
-        - 5. ¿Qué hace el operador de extensión en JS?: devcamp/documentacion/checkpoint-08/operador-de-extension-js.md
-        - 6. ¿Qué es la programación orientada a objetos?: devcamp/documentacion/checkpoint-08/que-es-poo-js.md
-        - 7. ¿Qué es una promesa en JS?: devcamp/documentacion/checkpoint-08/promesa-js.md
-        - 8. ¿Qué hacen async y await por nosotros?: devcamp/documentacion/checkpoint-08/async-await-js.md
+    - devcamp/index.md
+    - Checkpoint 06:
+      - devcamp/checkpoint-06/index.md
+      - 1. Introducción al uso de clases: devcamp/checkpoint-06/introduccion-clases-py.md
+      - 2. ¿Qué es un método dunder?: devcamp/checkpoint-06/metodo-dunder-py.md
+      - 3. ¿Qué es un decorador?: devcamp/checkpoint-06/que-es-un-decorador-py.md
+      - 4. ¿Qué es el polimorfismo?: devcamp/checkpoint-06/que-es-polimorfismo-py.md
+      - 5. ¿Que es una API?: devcamp/checkpoint-06/que-es-una-api-py.md
+      - 6. ¿Es MongoDB una base de datos SQL o NoSQL?: devcamp/checkpoint-06/que-es-mongodb-py.md
+    - Checkpoint 07:
+      - devcamp/checkpoint-07/index.md
+      - 1. ¿Que diferencia a JavaScript de cualquier otro lenguaje de programación?: devcamp/checkpoint-07/introduccion-js.md
+      - 2. ¿Cuáles son algunos tipos de datos JS?: devcamp/checkpoint-07/tipos-de-datos-js.md
+      - 3. ¿Cuáles son las tres funciones de String en JS?: devcamp/checkpoint-07/tres-funciones-de-string-js.md
+      - 4. ¿Qué es un condicional?: devcamp/checkpoint-07/condicionales-js.md
+      - 5. ¿Qué es un operador ternario?: devcamp/checkpoint-07/operador-ternario-js.md
+      - 6. ¿Cuál es la diferencia entre una declaración de función y una expresión de función?: devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js.md
+      - 7. ¿Qué es la palabra clave "this" en JS?: devcamp/checkpoint-07/que-es-this-js.md
+    - Checkpoint 08:
+      - devcamp/checkpoint-08/index.md
+      - 1. ¿Qué tipo de bucles hay en JS?: devcamp/checkpoint-08/bucles-js.md
+      - 2. ¿Cuáles son las diferencias entre const, let y var?: devcamp/checkpoint-08/variables-js.md
+      - 3. ¿Qué es una función de flecha?: devcamp/checkpoint-08/funcion-flecha-js.md
+      - 4. ¿Qué es la deconstrucción de variables?: devcamp/checkpoint-08/deconstruccion-de-variables-js.md
+      - 5. ¿Qué hace el operador de extensión en JS?: devcamp/checkpoint-08/operador-de-extension-js.md
+      - 6. ¿Qué es la programación orientada a objetos?: devcamp/checkpoint-08/que-es-poo-js.md
+      - 7. ¿Qué es una promesa en JS?: devcamp/checkpoint-08/promesa-js.md
+      - 8. ¿Qué hacen async y await por nosotros?: devcamp/checkpoint-08/async-await-js.md
 
 # configuración
 theme:
