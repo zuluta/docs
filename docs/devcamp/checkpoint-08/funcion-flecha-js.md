@@ -280,7 +280,7 @@ Las **funciones flecha** pueden componerse de ==más de una línea==, lo cual ya
 <br>
 
 ## **3.4. Funciones con "this":**
-La palabra clave "**this**" tendra efecto dentro de una función o clase que la envuelve. ==Utilizamos **"this"** para acceder a las distintas propiedades de una función o clase==.
+La palabra clave "**this**" tendra efecto dentro de una función o clase que la envuelve. ==Utilizamos "**this**" para acceder a las distintas propiedades de una función o clase==.
 
 Veamos el uso de "**this**" con diferentes tipos de funciones:
 
@@ -342,6 +342,195 @@ const totalFactura = new Factura(200);
 console.log(totalFactura.total()); // Salida: 242
 ```
 ==El uso de función flecha es limitada==, no se puede utilizar como metodo ni constructor dentro de una clase.
+***
+<br>
+
+## **3.5. Objetos y funciones con "this":**
+==Mostremos la diferencia== en cuanto al uso de "**this**" en las ==funciones tradicionales y las funciones flecha==.
+
+### Ejemplo 1
+En este ejemplo, incorpora una función como propiedad del objeto.
+
+### :material-code-braces-box: ==Objeto== + ==función de expresión== + =="this"==:
+
+```js linenums="1"
+const cliente = { 
+    nombre: 'Roberto',
+    apellido: 'Mendiburu',
+    
+    nombreCompleto: function() {
+        console.log("this es: ", this); 
+        console.log(`Cliente: ${this.nombre} ${this.apellido}`);
+    }
+}
+
+
+cliente.nombreCompleto();
+
+/* Salida:
+
+this es: {
+    nombre: 'Roberto',
+    apellido: 'Mendiburu',
+    nombreCompleto: [Function: nombreCompleto]
+}   
+Cliente: Roberto Mendiburu
+
+*/
+```
+<br>
+
+Veámos que ocurre si sacamos a la función fuera del objeto:
+```js linenums="1"
+const cliente = { 
+    nombre: 'Roberto',
+    apellido: 'Mendiburu'
+}
+
+const nombreCompleto = function() {
+    console.log("this es: ", this); 
+    console.log(`Cliente: ${this.nombre} ${this.apellido}`);
+};
+
+
+nombreCompleto(cliente);
+
+/* Salida:
+
+this es:  Object [global] {etc.}
+Cliente: undefined undefined
+
+*/
+```
+Nos devuelve un resultado distinto.
+
+  - El "**this**" hace ==referencia al objeto global== (window) ya que no tiene al objeto anterior envolviendolo.
+
+<br>
+
+### Ejemplo 2
+En este ejemplo, incorpora una función flecha como propiedad del objeto.
+
+### :material-code-braces-box: ==Objeto== + ==función de expresión flecha== + =="this"==:
+```js linenums="1"
+const cliente = { 
+    nombre: 'Roberto',
+    apellido: 'Mendiburu',
+    
+    nombreCompleto: () => {
+        console.log("this es: ", this); 
+        console.log(`Cliente: ${this.nombre} ${this.apellido}`);
+    }
+}
+
+
+cliente.nombreCompleto();
+
+/* Salida:
+
+this es:  {}
+Cliente: undefined undefined
+
+*/
+```
+El comportamiento del "**this**" en ==expresión de función flecha== es distinto al de ==expresión de función== cuando quiere referenciar al objeto.
+
+  - El "**this**" queda ==atrapado dentro de la función flecha sin valor==.
+
+<br>
+
+Veámos de nuevo que ocurre si sacamos a la función fuera del objeto:
+```js linenums="1"
+const cliente = { 
+    nombre: 'Roberto',
+    apellido: 'Mendiburu'
+}
+
+const nombreCompleto = () => {
+    console.log("this es: ", this); 
+    console.log(`Cliente: ${this.nombre} ${this.apellido}`);
+};
+
+
+nombreCompleto(cliente);
+
+/* Salida:
+
+this es:  {}
+Cliente: undefined undefined
+
+*/
+```
+Ésta vez nos devuelve el mismo resultado.
+
+  - El "**this**" vuelve a quedarse ==atrapado dentro de la función flecha sin valor==.
+
+<br>
+
+### Ejemplo 3
+LLegado aquí, te preguntaras si es posible acceder a las propiedades del objeto desde fuera de ella utilizando "**this**". La respuesta es que si, ==hay un método para las funciones que se llama (función de enlace) "**bind()**" que permite enlazar el "**this**" con el objeto mediante argumento==.
+
+### :material-code-braces-box: ==1 Objeto== + ==función de expresión==  + =="this"== + ==bind()==:
+```js linenums="1"
+const cliente = {
+    nombre: 'Roberto',
+    apellido: 'Mendiburu'
+}
+
+const nombreCompleto = function() {
+    alert(`Cliente: ${this.nombre} ${this.apellido}`);
+};
+
+const enlaceCliente = nombreCompleto.bind(cliente);
+
+enlaceCliente(); // Cliente: Roberto Mendiburu
+```
+<br>
+
+### :material-code-braces-box: ==2 Objetos== + ==función de expresión==  + =="this"== + ==bind()==:
+```js linenums="1"
+const cliente_1 = {
+    nombre: 'Roberto',
+    apellido: 'Mendiburu'
+}
+
+const cliente_2 = {
+    nombre: 'Julen',
+    apellido: 'Mendoza'
+}
+
+const nombreCompleto = function() {
+    alert(`Cliente: ${this.nombre} ${this.apellido}`);
+};
+
+const enlaceCliente_1 = nombreCompleto.bind(cliente_1);
+const enlaceCliente_2 = nombreCompleto.bind(cliente_2);
+
+enlaceCliente_1(); // Cliente: Roberto Mendiburu
+enlaceCliente_2(); // Cliente: Julen Mendoza
+```
+<br>
+
+Veámos que ocurre con la ==función flecha==: 
+```js linenums="1"
+const cliente = {
+    nombre: 'Roberto',
+    apellido: 'Mendiburu'
+}
+
+const nombreCompleto = () => {
+    alert(`Cliente: ${this.nombre} ${this.apellido}`);
+};
+
+const enlaceCliente = nombreCompleto.bind(cliente);
+
+enlaceCliente(); // Cliente: undefined undefined
+```
+Cabe recordar, que el "**this**" tampoco funciona con el método "**bind()**" en **función flecha**.
+
+  - El "**this**" queda ==atrapado dentro de la función flecha sin valor==.
+
+La única manera de enlazar el "**this**" con el objeto desde fuera de ella es con el uso de ==**función de expresión**== + =="**bind()**"==. Así es como trabaja el método (función de enlace).
 
 <br>
 <br>
