@@ -345,13 +345,13 @@ console.log(totalFactura.total()); // Salida: 242
 ***
 <br>
 
-## **3.5. Objetos y funciones:**
+## **3.5. Objetos y métodos con "this":**
 ==Cuando se crea una función dentro de un **objeto**, esta función pasa a llamarse **método**==. El **método**, ==no incorpora la palabra clave **function**== ni tampoco hace falta referenciarla a una **variable** como ocurre en la **expresión de función**. ==Un **método** debe tener nombre, no puede ser anónimo==.
 
 ### Ejemplo 1
 En este ejemplo, incorpora un método al objeto.
 
-### :material-code-braces-box: ==Objeto== + ==método==:
+### :material-code-braces-box: ==Objeto== + ==método== + =="this"==:
 
 ```js linenums="1"
 const usuario = {
