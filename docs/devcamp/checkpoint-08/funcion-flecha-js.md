@@ -29,7 +29,7 @@ Antes de nada, veamos una **comparativa entre diferentes tipos de funciones**, e
 ### Ejemplo 1
 En este ejemplo, vamos a comparar **4 tipos de función equivalentes** y ver **en que se diferencian**. Para ello, hemos utilizado una ==declaración de función==, una ==expresión de función==, una ==expresión de función flecha== y una ==expresión de función flecha conciso==. Ninguno incluye atributos.
 
-### :material-code-braces-box: ==Declaración de función== (multilínea) + llamada:
+### :material-code-braces: ==Declaración de función== (multilínea) + llamada:
   - Si **no contiene atributos**, ==los paréntesis== estarán vacíos, pero ==deben estar presentes==.
   - Al ser una **función multilínea**, ==las llaves deben estar presentes==.
   - Al ser una **declaración de función**, ==no lleva punto y coma al final==.
@@ -42,7 +42,7 @@ function cliente() {
 cliente(); // Salida: ¡Bienvenido!
 ```
 
-### :material-code-braces-box: ==Expresión de función== (multilínea) + llamada:
+### :material-code-braces: ==Expresión de función== (multilínea) + llamada:
   - Si **no contiene atributos**, ==los paréntesis== estarán vacíos, pero ==deben estar presentes==.
   - Al ser una **función multilínea**, ==las llaves deben estar presentes==.
   - Al ser una **expresión de función**, ==lleva punto y coma al final==.
@@ -55,7 +55,7 @@ const cliente = function() {
 cliente(); // Salida: ¡Bienvenido!
 ```
 
-### :material-code-braces-box: ==Expresión de función flecha== (multilínea) + llamada:
+### :material-code-braces: ==Expresión de función flecha== (multilínea) + llamada:
   - Si **no contiene atributos**, ==los paréntesis== estarán vacíos, pero ==deben estar presentes==.
   - Al ser una **función multilínea**, ==las llaves deben estar presentes==.
   - Al ser una **expresión de función**, ==lleva punto y coma al final==.
@@ -68,7 +68,7 @@ const cliente = () => {
 cliente(); // Salida: ¡Bienvenido!
 ```
 
-### :material-code-braces-box: ==Expresión de función flecha conciso== (monolínea) + llamada:
+### :material-code-braces: ==Expresión de función flecha conciso== (monolínea) + llamada:
   - Si **no contiene atributos**, ==los paréntesis== estarán vacíos, pero ==deben estar presentes==.
   - Al ser una **función monolínea**, ==las llaves pueden omitirse==.
   - Al ser una **expresión de función**, ==lleva punto y coma al final==.
@@ -84,7 +84,7 @@ cliente(); // Salida: ¡Bienvenido!
 ### Ejemplo 2
 Veamos el segundo ejemplo, esta vez, le pasamos **1 atributo** en la función.
 
-### :material-code-braces-box: ==Función flecha== (multilínea) + ==1 atributo==:
+### :material-code-braces: ==Función flecha== (multilínea) + ==1 atributo==:
   - Las **funciones flecha** ==con un solo atributo, los paréntesis pueden omitirse==.
   - Al ser una **función multilínea**, ==las llaves deben estar presentes==.
   - Al ser una **expresión de función**, ==lleva punto y coma al final==.
@@ -99,7 +99,7 @@ const cliente = nombre => { // despues
 };
 ```
 
-### :material-code-braces-box: ==Función flecha conciso== (monolínea) + ==1 atributo==:
+### :material-code-braces: ==Función flecha conciso== (monolínea) + ==1 atributo==:
   - Las **funciones flecha** ==con un solo atributo, los paréntesis pueden omitirse==.
   - Al ser una **función monolínea**, ==las llaves pueden omitirse==.
   - Al ser una **expresión de función**, ==lleva punto y coma al final==.
@@ -115,7 +115,7 @@ const cliente = nombre => console.log(`${nombre}`); // despues
 ### Ejemplo 3
 Veamos el tercer ejemplo, esta vez, le pasamos **1 argumento** en la llamada.
 
-### :material-code-braces-box: ==Función flecha== (multilínea) + ==1 argumento en la llamada==:
+### :material-code-braces: ==Función flecha== (multilínea) + ==1 argumento en la llamada==:
 
 ```js linenums="1"
 const cliente = nombre => {
@@ -125,7 +125,7 @@ const cliente = nombre => {
 cliente('Roberto'); // Salida: Roberto
 ```
 
-### :material-code-braces-box: ==Función flecha conciso== (monolínea) + ==1 argumento en la llamada==:
+### :material-code-braces: ==Función flecha conciso== (monolínea) + ==1 argumento en la llamada==:
 
 ```js linenums="1"
 const cliente = nombre => console.log(`${nombre}`);
@@ -138,7 +138,7 @@ cliente('Roberto'); // Salida: Roberto
 ### Ejemplo 4
 Veamos el cuarto ejemplo, a diferencia del segundo ejemplo, aqui le pasamos **2 atributos** en la función y **2 argumentos** en la llamada a la función.
 
-### :material-code-braces-box: ==Función flecha== + ==2 atributos== + ==2 argumentos==:
+### :material-code-braces: ==Función flecha== + ==2 atributos== + ==2 argumentos==:
   - Las **funciones flecha** ==con mas de un atributo, los paréntesis deben estar presentes==.
   - Al ser una **función multilínea**, ==las llaves deben estar presentes==.
   - Al ser una **expresión de función**, ==lleva punto y coma al final==.
@@ -151,7 +151,7 @@ const cliente = (nombre, apellido) => {
 cliente('Roberto', 'Mendiburu'); // Salida: Roberto Mendiburu
 ```
 
-### :material-code-braces-box: ==Función flecha conciso== + ==2 atributos== + ==2 argumentos==:
+### :material-code-braces: ==Función flecha conciso== + ==2 atributos== + ==2 argumentos==:
   - Las **funciones flecha** ==con mas de un atributo, los paréntesis deben estar presentes==.
   - Al ser una **función monolínea**, ==las llaves pueden omitirse==.
   - Al ser una **expresión de función**, ==lleva punto y coma al final==.
@@ -185,7 +185,7 @@ Esta función, esta construido en bloque. Al no estar toda la función en una mi
   - Al ser una **función multilínea**, ==el **return** debe estar presente==.
   - Al ser una **expresión de función**, ==lleva **punto y coma** al final==.
 
-### :material-code-braces-box: ==Función flecha== + ==2 atributos== + ==2 argumentos==:
+### :material-code-braces: ==Función flecha== + ==2 atributos== + ==2 argumentos==:
 ```js linenums="1"
 const sumar = (a, b) => {
     return a + b;
@@ -195,7 +195,7 @@ const resultado = sumar(2, 6);
 console.log(resultado); // Salida: 8
 ```
 
-### :material-code-braces-box: ==Función flecha== + ==3 atributos== + ==3 argumentos==:
+### :material-code-braces: ==Función flecha== + ==3 atributos== + ==3 argumentos==:
 ```js linenums="1"
 const cliente = (nombre, apellido, telefono) => {
     return `${nombre} ${apellido} ${telefono}`;
@@ -216,7 +216,7 @@ En este ejemplo, podemos observar cómo la **expresión de función flecha conci
   - Al ser una **función monolínea**, ==el **return** puede omitirse==.
   - Al ser una **expresión de función**, ==lleva **punto y coma** al final==.
 
-### :material-code-braces-box: ==Función flecha conciso== + ==2 atributos== + ==2 argumentos==:
+### :material-code-braces: ==Función flecha conciso== + ==2 atributos== + ==2 argumentos==:
 ```js linenums="1"
 const sumar = (a, b) => a + b;
 
@@ -224,7 +224,7 @@ const resultado = sumar(2, 6);
 console.log(resultado); // Salida: 8
 ```
 
-### :material-code-braces-box: ==Función flecha conciso== + ==3 atributos== + ==3 argumentos==:
+### :material-code-braces: ==Función flecha conciso== + ==3 atributos== + ==3 argumentos==:
 ```js linenums="1"
 const cliente = (nombre, apellido, telefono) => `${nombre} ${apellido} ${telefono}`;
 
@@ -272,7 +272,7 @@ const resultado_3 = cliente('Roberto', 'Mendiburu', '666-666-666');
 console.log(resultado_3); // Salida: Roberto Mendiburu 666-666-666
 ```
 
-### 🕵️ Analicemos las diferencias:
+### :material-vector-difference: Diferencias entre funciones:
 
 ![Image](../../assets/images/devcamp/checkpoint-08/analisis-de-funciones.png)
 Las **funciones flecha** pueden componerse de ==más de una línea==, lo cual ya ==nos obligará a emplear las **llaves** y el **return**==.
@@ -291,7 +291,7 @@ Veamos el uso de "**this**" con diferentes tipos de funciones:
 ### Ejemplo 1
 En este ejemplo, se crea una ==declaración de función== llamada **Factura** y se le pasa **1 atributo**. Dentro de esta función, se crea una ==función de expresión== referenciando a la ==variable **total** pasado por "**this**"==.
 
-### :material-code-braces-box: ==Declaración de función== + ==función de expresión== + ==this== + ==1 atributo== + ==1 argumento==:
+### :material-code-braces: ==Declaración de función== + ==función de expresión== + ==this== + ==1 atributo== + ==1 argumento==:
 ```js linenums="1"
 function Factura(subTotal) {
   this.iva = 0.21;
@@ -310,7 +310,7 @@ console.log(totalFactura.total()); // Salida: 242
 ### Ejemplo 2
 Veamos el segundo ejemplo, se crea una ==declaración de función== llamada **Factura** y se le pasa **1 atributo**. Dentro de esta función, (aqui viene la diferencia respecto al ejempo 1) se crea una ==función flecha== referenciando a la ==variable **total** pasado por "**this**"==.
 
-### :material-code-braces-box: ==Declaración de función== + ==función flecha== + ==this== + ==1 atributo== + ==1 argumento==:
+### :material-code-braces: ==Declaración de función== + ==función flecha== + ==this== + ==1 atributo== + ==1 argumento==:
 ```js linenums="1"
 function Factura(subTotal) {
     this.iva = 0.21;
@@ -329,7 +329,7 @@ console.log(totalFactura.total()); // Salida: 242
 ### Ejemplo 3
 Veamos el tercer ejemplo, se crea una ==declaración de función== llamada **Factura** y se le pasa **1 atributo**. Dentro de esta función, se crea una ==función flecha conciso== referenciando a la ==variable **total** pasado por "**this**"==.
 
-### :material-code-braces-box: ==Declaración de función== + ==función flecha conciso== + ==this== + ==1 atributo== + ==1 argumento==:
+### :material-code-braces: ==Declaración de función== + ==función flecha conciso== + ==this== + ==1 atributo== + ==1 argumento==:
 ```js linenums="1"
 function Factura(subTotal) {
     this.iva = 0.21;
@@ -351,7 +351,7 @@ console.log(totalFactura.total()); // Salida: 242
 ### Ejemplo 1
 En este ejemplo, incorpora un método al objeto.
 
-### :material-code-braces-box: ==Objeto== + ==método== + =="this"==:
+### :material-code-braces: ==Objeto== + ==método== + =="this"==:
 
 ```js linenums="1"
 const usuario = {
@@ -411,7 +411,7 @@ Lo que ocurre aquí es que, al tratarse de una función anónima, no podemos lla
 ### Ejemplo 1
 En este ejemplo, incorpora una función como propiedad del objeto.
 
-### :material-code-braces-box: ==Objeto== + ==función de expresión== + =="this"==:
+### :material-code-braces: ==Objeto== + ==función de expresión== + =="this"==:
 
 ```js linenums="1"
 const cliente = { 
@@ -471,7 +471,7 @@ Nos devuelve un resultado distinto.
 ### Ejemplo 2
 En este ejemplo, incorpora una función flecha como propiedad del objeto.
 
-### :material-code-braces-box: ==Objeto== + ==función de expresión flecha== + =="this"==:
+### :material-code-braces: ==Objeto== + ==función de expresión flecha== + =="this"==:
 ```js linenums="1"
 const cliente = { 
     nombre: 'Roberto',
@@ -530,7 +530,7 @@ Cliente: undefined undefined
 ### Ejemplo 3
 LLegado aquí, te preguntaras si es posible acceder a las propiedades del objeto desde fuera de ella utilizando "**this**". La respuesta es que si, ==hay un método para las funciones que se llama (función de enlace) "**bind()**" que permite enlazar el "**this**" con el objeto mediante argumento==.
 
-### :material-code-braces-box: ==1 Objeto== + ==función de expresión==  + =="this"== + ==bind()==:
+### :material-code-braces: ==1 Objeto== + ==función de expresión==  + =="this"== + ==bind()==:
 ```js linenums="1"
 const cliente = {
     nombre: 'Roberto',
@@ -547,7 +547,7 @@ enlaceCliente(); // Cliente: Roberto Mendiburu
 ```
 <br>
 
-### :material-code-braces-box: ==2 Objetos== + ==función de expresión==  + =="this"== + ==bind()==:
+### :material-code-braces: ==2 Objetos== + ==función de expresión==  + =="this"== + ==bind()==:
 ```js linenums="1"
 const cliente_1 = {
     nombre: 'Roberto',
