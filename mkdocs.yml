@@ -27,6 +27,9 @@ nav:
       - Despliegue a GitHub Pages: tutoriales/instalacion-librerias/gh-deploy.md
     - Desarrollo web:
       - Optimizar el SEO: tutoriales/desarrollo-web/optimizar-seo.md
+  - Programación:
+    - Programación: programacion/index.md
+    - Aprende JavaScript: programacion/javascript/index.md
 
   - DevCamp:
     - DevCamp: devcamp/index.md
