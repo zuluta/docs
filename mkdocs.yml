@@ -27,9 +27,139 @@ nav:
       - Despliegue a GitHub Pages: tutoriales/instalacion-librerias/gh-deploy.md
     - Desarrollo web:
       - Optimizar el SEO: tutoriales/desarrollo-web/optimizar-seo.md
-  - Programación:
-    - Programación: programacion/index.md
-    - Aprende JavaScript: programacion/javascript/index.md
+  - JavaScript:
+    - JavaScript: javascript/index.md
+
+    - 01. Primeros pasos con JavaScript:
+      - ¿Qué es JavaScript?: javascript/que-es-javascript.md
+      - Primeros pasos: javascript/primeros-pasos.md
+    - 02. Conceptos básicos:
+      - Sintaxis de JavaScript: javascript/sintaxis.md
+      - Variables: javascript/variables.md
+      - Diferencias entre var, let y const: javascript/var-let.md
+      - Tipos de datos: javascript/tipos-de-datos.md
+      - Los Números: javascript/numeros.md
+      - Booleanos: javascript/booleanos.md
+      - Cadena de Caracteres: javascript/string.md
+      - Valores Primitivos vs. Valores de Referencia: javascript/valores-primitivos-vs-referencia.md
+      - Introducción a los Objetos: javascript/objetos.md
+    - 03. Operadores:
+      - Operadores: javascript/operadores-aritmeticos.md
+      - Operador de Resto: javascript/operador-resto.md
+      - Operador de Exponenciación: javascript/operador-exponenciacion.md
+      - Operadores de asignación: javascript/operadores-asignacion.md
+      - Operadores Unarios: javascript/operadores-unarios.md
+      - Operadores de Comparación: javascript/operadores-comparacion.md
+      - Operadores lógicos: javascript/operadores-logicos.md
+      - Operadores de Asignación Lógica: javascript/operadores-asignacion-logica.md
+      - Operador de Fusión de Nulos: javascript/operador-fusion-nulos.md
+    - 04. Métodos de Strings:
+      - Métodos de Búsqueda en Strings: javascript/metodos-de-busqueda-strings.md
+      - Métodos de Reemplazo en Strings: javascript/metodos-de-reemplazo-string.md
+      - Métodos de Acceso a Caracteres: javascript/metodos-de-acceso.md
+      - Métodos de Extracción y Corte: javascript/metodos-de-extraccion.md
+      - Métodos de Concatenación y Relleno: javascript/metodos-de-concatenacion-string.md
+      - Métodos de Transformación de Caso: javascript/metodos-de-transformacion-caso-string.md
+      - Métodos de Limpieza en Strings: javascript/metodos-de-limpieza-string.md
+      - Métodos de División y Unión en Strings: javascript/metodos-de-division-y-union-en-strings.md
+    - 05. Sentencias De Flujo De Control:
+      - Declaración if…else: javascript/declaracion-if-else.md
+      - Operador ternario: javascript/operadores-ternario.md
+      - Estructura switch case: javascript/switch-case.md
+      - Bucle While: javascript/bucle-while.md
+      - Bucle do…while: javascript/bucle-do-while.md
+      - Bucle for: javascript/bucle-for.md
+      - Instrucción break: javascript/break.md
+      - Instrucción continue: javascript/continue.md
+    - 06. Funciones:
+      - Funciones: javascript/funciones.md
+      - Funciones “Ciudadanos de Primera clase”: javascript/funciones-ciudadanos-primera-clase.md
+      - Funciones Anónimas: javascript/funciones-anonimas.md
+      - Funciones Recursivas: javascript/funciones-recursivas.md
+      - Closures y Ámbito Léxico: javascript/closures.md
+      - Parámetros por Defecto: javascript/parametros-defecto.md
+      - Arrow Functions: javascript/arrow-functions.md
+      - Métodos Avanzados para el Contexto de Funciones: javascript/metodos-avanzados-funciones.md
+      - Rest Parameter: javascript/rest-parameter.md
+      - Funciones de Callback: javascript/funciones-de-callback.md
+    - 07. Arrays:
+      - Introducción a los Arrays: javascript/arrays.md
+      - Métodos Básicos de los Arrays: javascript/metodos-basicos-arrays.md
+      - Métodos de Corte y Pegado en Arrays: javascript/metodos-slice-splice-concat.md
+      - Métodos de Búsqueda y Acceso Arrays: javascript/metodos-de-busqueda-arrays.md
+      - Ordenar Arrays: javascript/ordenar-arrays.md
+      - Desestructuración de Arrays y Spread Operator: javascript/desestructuracion-y-spread-operator.md
+    - 08. Arrays - Métodos de Alto Orden:
+      - Introducción a los Métodos de Alto Orden: javascript/arrays-metodos-de-alto-orden.md
+      - Iterando sobre Arrays con ForEach: javascript/foreach.md
+      - Transformando Arrays con el Método Map: javascript/metodo-map.md
+      - Filtrando Arrays con el Método Filter: javascript/metodo-filter.md
+      - Reducción de Arrays con el Método Reduce: javascript/metodo-reduce.md
+      - Verificaciones Condicionales con Some y Every: javascript/metodos-some-every.md
+      - Búsqueda en Arrays con Find y FindIndex: javascript/metodos-find-findindex.md
+    - 09. Objetos y prototipos:
+      - Métodos de Objetos: javascript/metodos-de-objetos.md
+      - Funciones Constructoras: javascript/funcion-constructora.md
+      - Prototipo: javascript/prototipo.md
+      - Patrón Constructor/Prototipo: javascript/patron-constructor-prototipo.md
+      - Herencia Prototípica: javascript/herencia-prototipica.md
+      - Funcionamiento del This: javascript/this.md
+      - GlobalThis: javascript/globalthis.md
+      - Propiedades de los Objetos: javascript/propiedades-de-los-objetos.md
+      - Propiedades Enumerables y Propias: javascript/propiedades-enumerables-propiedades-propias.md
+      - Ciclo for…in: javascript/ciclo-for-in.md
+      - Funciones Fábrica: javascript/funciones-fabrica.md
+      - Desestructuración de Objetos: javascript/desestructuracion-de-objetos.md
+      - Operador de Encadenamiento Opcional: javascript/encadenamiento-opcional.md
+      - Object.create() - Objetos con Prototipo Específico: javascript/object-create.md
+    - 10. Clases:
+      - Introducción a las Clases: javascript/clases.md
+      - Constructor de Clase: javascript/constructor-de-clase.md
+      - Métodos de Instancia: javascript/metodos-de-instancia-clases.md
+      - Propiedades y Métodos Estáticos: javascript/clases-propiedades-metodos-estaticos.md
+      - Expresiones de Clase: javascript/expresiones-de-clase.md
+      - Nombres de Propiedad Computadas: javascript/nombres-de-propiedad-computadas-clases.md
+      - Extensión de Clases (Herencia): javascript/herencia-clases.md
+      - Uso de super en Clases: javascript/tipos-super-clases.md
+      - Encapsulación con Propiedades Privadas: javascript/propiedades-privadas-encapsulacion.md
+      - Getters y Setters: javascript/getters-y-setters-clases.md
+      - Mixins: javascript/mixins.md
+    - 11. Promesas y Async/Await:
+      - Programación Asíncrona: javascript/programacion-asincrona.md
+      - Promesas: javascript/promesas.md
+      - Encadenamiento de Promesas: javascript/encadenamiento-de-promesas.md
+      - Promise.all: javascript/metodo-promise-all.md
+      - Promise.race: javascript/metodo-promise-race.md
+      - Promise.allSettled: javascript/metodo-promise-allsettled.md
+      - Promise.any: javascript/metodo-promise-any.md
+      - Manejo de Errores en Promesas: javascript/manejo-errores-en-promesas.md
+      - Async/Await: javascript/async-await.md
+      - Manejo de Errores con Async/Await: javascript/manejo-de-errores-async-await.md
+    - 12. Iteradores y Generadores:
+      - Introducción a los Iteradores: javascript/iteradores.md
+      - Iterables y el Bucle for…of: javascript/bucle-for-of.md
+      - Generadores: javascript/generadores.md
+      - Iteradores Asíncronos: javascript/iteradores-asincronos.md
+      - Generadores Asíncronos: javascript/generadores-asincronos.md
+    - 13. Módulos:
+      - Introducción a los Módulos: javascript/modulos.md
+      - Exportación: javascript/exportacion-modulos.md
+      - Importación: javascript/importacion-modulos.md
+      - Módulos Dinámicos: javascript/modulos-dinamicos.md
+    - 14. Colecciones:
+      - Map: javascript/map.md
+      - Set: javascript/set.md
+    - 15. Gestión de errores:
+      - try catch: javascript/try-catch.md
+      - try catch finally: javascript/try-catch-finally.md
+      - Lanzar Excepciones con throw: javascript/throw.md
+      - Optional Catch Binding: javascript/optional-catch-binding.md
+    - 16. JavaScript Runtime:
+      - Contexto de Ejecución: javascript/contexto-de-ejecucion.md
+      - Call Stack - Entendiendo la Pila de Llamadas: javascript/call-stack.md
+      - Event Loop: javascript/event-loop.md
+      - Hoisting: javascript/hoisting.md
+      - Variable Scope: javascript/scope.md
 
   - DevCamp:
     - DevCamp: devcamp/index.md

@@ -5,6 +5,7 @@
     .md-sidebar--secondary {
         width: 17rem;
         margin-left: 1rem;
+        order: 1;
     }
 }
 
@@ -16,12 +17,13 @@
     }
 
     .md-content__inner {
+        width: 900px;
+        margin-left: 1.2rem;
         padding-top: .6rem;
-        width: 860px;
     }
 }
 
- /* tema - adaptada */
+/* tema - adaptada */
 .md-main__inner {
     margin-top: .5rem;
 }

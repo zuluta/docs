@@ -4,17 +4,17 @@ hide:
   #- toc
 ---
 
-<link rel="stylesheet" href="../../assets/stylesheets/programacion.css">
+<link rel="stylesheet" href="../assets/stylesheets/programacion.css">
 
 # **Aprende JavaScript**
 
 Aquí te guiaremos a través de los conceptos y funcionalidades esenciales de JavaScript, un versátil lenguaje de programación ampliamente utilizado para crear páginas web interactivas y aplicaciones web dinámicas.
 
-![Image](../../assets/images/programacion/javascript/javascript.gif)
+![Image](../assets/images/programacion/javascript/javascript.gif)
 
 Tanto si acabas de empezar como si buscas profundizar en tus conocimientos, estos tutoriales serán tu recurso de referencia para dominar este lenguaje de script.
 
-## **1. Primeros pasos con JavaScript**
+## **01. Primeros pasos con JavaScript**
 En las primeras etapas de la profundización en JavaScript, es crucial comprender los conceptos fundamentales que forman los bloques de construcción de este versátil lenguaje de programación.
 
 <section class="list-group">
@@ -29,7 +29,7 @@ En las primeras etapas de la profundización en JavaScript, es crucial comprende
   
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="que-es-javascript/">1.2. JavaScript: Primeros Pasos</a>
+      <a href="primeros-pasos/">1.2. Primeros pasos</a>
     </span>
     <div class="list-group-description">
       JavaScript es un lenguaje de programación interpretado, orientado a objetos y de alto...
@@ -37,7 +37,7 @@ En las primeras etapas de la profundización en JavaScript, es crucial comprende
   </article>
 </section>
 
-## **2. Conceptos básicos**
+## **02. Conceptos básicos**
 Los conceptos básicos de JavaScript son los bloques de construcción fundamentales que todo desarrollador debe comprender al iniciar su viaje con este versátil lenguaje de programación. Comprender los conceptos básicos como variables, tipos de datos y funciones es crucial para escribir código eficiente y fácil de mantener.
 
 <section class="list-group">
@@ -132,7 +132,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
   </article>
 </section>
 
-## **3. Operadores de JavaScript**
+## **03. Operadores de JavaScript**
 En JavaScript, los operadores son fundamentales para manipular datos y realizar cálculos. Entender los diferentes tipos de operadores disponibles es clave para escribir código eficiente. Desde operadores aritméticos hasta operadores lógicos, el conjunto diverso de herramientas en JavaScript ofrece soluciones para una variedad de tareas.
 
 <section class="list-group">
@@ -236,7 +236,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
   </article>
 </section>
 
-## **4. Métodos de Strings en JavaScript**
+## **04. Métodos de Strings en JavaScript**
 Los métodos de strings en proporcionan herramientas para trabajar con texto de manera eficiente y flexible. Desde la búsqueda de subcadenas hasta la modificación y comparación de texto, estos permiten manipular los strings con facilidad. Conocer cómo utilizarlos es esencial para resolver problemas comunes y optimizar el manejo de datos textuales en aplicaciones modernas.
 
 <section class="list-group">
@@ -329,7 +329,7 @@ Los métodos de strings en proporcionan herramientas para trabajar con texto de 
   </article>
 </section>
 
-## **5. Sentencias de flujo de control**
+## **05. Sentencias de flujo de control**
 Las sentencias de flujo de control son esenciales en la programación, ya que determinan el orden en que un programa ejecuta su código. Al comprender cómo funcionan las sentencias de flujo de control, los desarrolladores pueden crear una lógica que guíe al programa por diferentes caminos en función de las condiciones.
 
 <section class="list-group">
@@ -406,7 +406,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
   </article>
 </section>
 
-## **6. Funciones**
+## **06. Funciones**
 En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al permitir a los desarrolladores encapsular bloques de código para su reutilización y organización. Son entidades versátiles que pueden invocarse en cualquier punto del código, facilitando la ejecución de tareas específicas.
 
 <section class="list-group">
@@ -501,7 +501,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
   </article>
 </section>
 
-## **7. Arrays**
+## **07. Arrays**
 Los **arrays** son una de las estructuras de datos más importantes y utilizadas en JavaScript. Permiten a los desarrolladores almacenar múltiples valores en una sola variable, facilitando la manipulación y acceso a conjuntos de datos. Los arrays no solo son útiles para agrupar información, sino que también ofrecen una amplia variedad de métodos y propiedades que permiten modificar, ordenar, buscar y recorrer los elementos de forma eficiente.
 
 <section class="list-group">
@@ -568,7 +568,7 @@ Los **arrays** son una de las estructuras de datos más importantes y utilizadas
   </article>
 </section>
 
-## **8. Métodos de Alto Orden en Arrays**
+## **08. Métodos de Alto Orden en Arrays**
 Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permiten manipular arrays de forma más declarativa y eficiente. Estos métodos trabajan aplicando funciones a los elementos del array, ofreciendo una manera más concisa y clara de procesar y transformar datos sin recurrir a bucles tradicionales. Este concepto es clave en la programación funcional y su uso es muy común en JavaScript.
 
 <section class="list-group">
@@ -648,7 +648,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
   </article>
 </section>
 
-## **9. Objetos y prototipos**
+## **09. Objetos y prototipos**
 Comprender el concepto de objetos y prototipos es fundamental para dominar JavaScript. Los objetos sirven como bloques de construcción que encapsulan tanto datos como funcionalidad dentro de una única entidad. Por su parte, los prototipos desempeñan un papel crucial en la herencia y en los paradigmas de programación orientada a objetos en JavaScript.
 
 <section class="list-group">
