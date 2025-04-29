@@ -1,0 +1,35 @@
+/* sección de programación / javascript */
+
+/* tema - menu navegación - adaptada para resoluciones superiores a 1220px */
+@media (min-width: 1220px) {
+    .md-sidebar--primary {
+        width: 17rem;
+        margin-left: 1rem;
+        order: 1;
+    }
+}
+
+/* tema - adaptada para resoluciónes superiores a 1400px */
+@media (min-width: 1400px) {
+    .md-main {
+        display: grid;
+        justify-content: center;
+    }
+
+    .md-content__inner {
+        width: 900px;
+        margin-left: 1.2rem;
+        padding-top: .6rem;
+    }
+}
+
+/* tema - adaptada */
+.md-main__inner {
+    margin-top: .5rem;
+}
+
+/* tema - adaptada */
+.md-nav {
+    font-size: .74rem;
+    line-height: 1.3;
+}
