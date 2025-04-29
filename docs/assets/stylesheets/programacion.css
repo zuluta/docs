@@ -42,7 +42,7 @@
 
 .list-group-post {
     position: relative;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0);
     font-size: 1rem;
     border: solid 3px #323330;
     border-radius: .5rem;
