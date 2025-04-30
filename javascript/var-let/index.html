@@ -12,28 +12,28 @@
         <meta name="author" content="ZulutaDev">
       
       
-        <link rel="canonical" href="https://zuluta.github.io/docs/tutoriales/ruta-aprendizaje/desarrollador-full-stack/">
+        <link rel="canonical" href="https://zuluta.github.io/docs/javascript/var-let/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../variables/">
       
       
-        <link rel="next" href="../../control-versiones/comandos-git/">
+        <link rel="next" href="../tipos-de-datos/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Desarrollador Full Stack - ZulutaDev</title>
+        <title>Diferencias entre var, let y const - ZulutaDev</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
 <meta property="og:image" content="https://zuluta.github.io/docs/assets/images/og.png">
 <meta property="og:locale" content="es_ES">
 
-   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -79,7 +79,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#desarrollador-full-stack" class="md-skip">
+        <a href="#variables-diferencias-entre-var-let-y-const" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Desarrollador Full Stack
+              Diferencias entre var, let y const
             
           </span>
         </div>
@@ -245,7 +245,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -262,13 +262,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../tutoriales/" class="md-tabs__link">
           
   
   
@@ -286,11 +284,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../javascript/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -312,7 +312,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../devcamp/" class="md-tabs__link">
+        <a href="../../devcamp/" class="md-tabs__link">
           
   
   
@@ -380,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -399,8 +399,6 @@
       
   
   
-    
-  
   
   
     
@@ -422,21 +420,18 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../tutoriales/" class="md-nav__link ">
               
   
   
@@ -449,13 +444,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Tutoriales
@@ -468,8 +463,6 @@
                 
   
   
-    
-  
   
   
     
@@ -484,11 +477,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -504,7 +497,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Rutas de aprendizaje
@@ -515,32 +508,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Desarrollador Full Stack
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
         
   
   
@@ -551,35 +522,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#diagrama" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagrama
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -645,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../control-versiones/comandos-git/" class="md-nav__link">
+      <a href="../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
         
   
   
@@ -723,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../instalacion-librerias/mkdocs/" class="md-nav__link">
+      <a href="../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
         
   
   
@@ -746,7 +688,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../instalacion-librerias/gh-deploy/" class="md-nav__link">
+      <a href="../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
         
   
   
@@ -822,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../desarrollo-web/optimizar-seo/" class="md-nav__link">
+      <a href="../../tutoriales/desarrollo-web/optimizar-seo/" class="md-nav__link">
         
   
   
@@ -857,6 +799,8 @@
       
   
   
+    
+  
   
   
     
@@ -902,18 +846,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../javascript/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -926,13 +873,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -995,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/que-es-javascript/" class="md-nav__link">
+      <a href="../que-es-javascript/" class="md-nav__link">
         
   
   
@@ -1018,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/primeros-pasos/" class="md-nav__link">
+      <a href="../primeros-pasos/" class="md-nav__link">
         
   
   
@@ -1046,8 +993,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1076,11 +1025,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -1096,7 +1045,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             02. Conceptos básicos
@@ -1110,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/sintaxis-javascript/" class="md-nav__link">
+      <a href="../sintaxis-javascript/" class="md-nav__link">
         
   
   
@@ -1133,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/variables/" class="md-nav__link">
+      <a href="../variables/" class="md-nav__link">
         
   
   
@@ -1153,10 +1102,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../javascript/var-let/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Diferencias entre var, let y const
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1167,6 +1138,116 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-ambitos-de-las-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      El Ámbitos de las Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-forma-tradicional-de-declarar-variables-var" class="md-nav__link">
+    <span class="md-ellipsis">
+      La Forma Tradicional de Declarar Variables: var
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La Forma Tradicional de Declarar Variables: var">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema-de-la-creacion-de-propiedades-globales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema de la Creación de Propiedades Globales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-alternativa-moderna-let" class="md-nav__link">
+    <span class="md-ellipsis">
+      La Alternativa Moderna: let
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La Alternativa Moderna: let">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-zona-muerta-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      La Zona Muerta Temporal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaracion-para-constantes-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración para Constantes: const
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-para-usar-var-let-y-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas Prácticas para Usar var, let y const
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buenas Prácticas para Usar var, let y const">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1179,7 +1260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/tipos-de-datos/" class="md-nav__link">
+      <a href="../tipos-de-datos/" class="md-nav__link">
         
   
   
@@ -1202,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/numeros/" class="md-nav__link">
+      <a href="../numeros/" class="md-nav__link">
         
   
   
@@ -1225,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/booleanos/" class="md-nav__link">
+      <a href="../booleanos/" class="md-nav__link">
         
   
   
@@ -1248,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/string.md" class="md-nav__link">
+      <a href="../string.md" class="md-nav__link">
         
   
   
@@ -1271,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/valores-primitivos-vs-referencia.md" class="md-nav__link">
+      <a href="../valores-primitivos-vs-referencia.md" class="md-nav__link">
         
   
   
@@ -1294,7 +1375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/objetos.md" class="md-nav__link">
+      <a href="../objetos.md" class="md-nav__link">
         
   
   
@@ -1386,7 +1467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operadores-aritmeticos.md" class="md-nav__link">
+      <a href="../operadores-aritmeticos.md" class="md-nav__link">
         
   
   
@@ -1409,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operador-resto.md" class="md-nav__link">
+      <a href="../operador-resto.md" class="md-nav__link">
         
   
   
@@ -1432,7 +1513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operador-exponenciacion.md" class="md-nav__link">
+      <a href="../operador-exponenciacion.md" class="md-nav__link">
         
   
   
@@ -1455,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operadores-asignacion.md" class="md-nav__link">
+      <a href="../operadores-asignacion.md" class="md-nav__link">
         
   
   
@@ -1478,7 +1559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operadores-unarios.md" class="md-nav__link">
+      <a href="../operadores-unarios.md" class="md-nav__link">
         
   
   
@@ -1501,7 +1582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operadores-comparacion.md" class="md-nav__link">
+      <a href="../operadores-comparacion.md" class="md-nav__link">
         
   
   
@@ -1524,7 +1605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operadores-logicos.md" class="md-nav__link">
+      <a href="../operadores-logicos.md" class="md-nav__link">
         
   
   
@@ -1547,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operadores-asignacion-logica.md" class="md-nav__link">
+      <a href="../operadores-asignacion-logica.md" class="md-nav__link">
         
   
   
@@ -1570,7 +1651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operador-fusion-nulos.md" class="md-nav__link">
+      <a href="../operador-fusion-nulos.md" class="md-nav__link">
         
   
   
@@ -1660,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-busqueda-strings.md" class="md-nav__link">
+      <a href="../metodos-de-busqueda-strings.md" class="md-nav__link">
         
   
   
@@ -1683,7 +1764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-reemplazo-string.md" class="md-nav__link">
+      <a href="../metodos-de-reemplazo-string.md" class="md-nav__link">
         
   
   
@@ -1706,7 +1787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-acceso.md" class="md-nav__link">
+      <a href="../metodos-de-acceso.md" class="md-nav__link">
         
   
   
@@ -1729,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-extraccion.md" class="md-nav__link">
+      <a href="../metodos-de-extraccion.md" class="md-nav__link">
         
   
   
@@ -1752,7 +1833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-concatenacion-string.md" class="md-nav__link">
+      <a href="../metodos-de-concatenacion-string.md" class="md-nav__link">
         
   
   
@@ -1775,7 +1856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-transformacion-caso-string.md" class="md-nav__link">
+      <a href="../metodos-de-transformacion-caso-string.md" class="md-nav__link">
         
   
   
@@ -1798,7 +1879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-limpieza-string.md" class="md-nav__link">
+      <a href="../metodos-de-limpieza-string.md" class="md-nav__link">
         
   
   
@@ -1821,7 +1902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-division-y-union-en-strings.md" class="md-nav__link">
+      <a href="../metodos-de-division-y-union-en-strings.md" class="md-nav__link">
         
   
   
@@ -1911,7 +1992,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/declaracion-if-else.md" class="md-nav__link">
+      <a href="../declaracion-if-else.md" class="md-nav__link">
         
   
   
@@ -1934,7 +2015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/operadores-ternario.md" class="md-nav__link">
+      <a href="../operadores-ternario.md" class="md-nav__link">
         
   
   
@@ -1957,7 +2038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/switch-case.md" class="md-nav__link">
+      <a href="../switch-case.md" class="md-nav__link">
         
   
   
@@ -1980,7 +2061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/bucle-while.md" class="md-nav__link">
+      <a href="../bucle-while.md" class="md-nav__link">
         
   
   
@@ -2003,7 +2084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/bucle-do-while.md" class="md-nav__link">
+      <a href="../bucle-do-while.md" class="md-nav__link">
         
   
   
@@ -2026,7 +2107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/bucle-for.md" class="md-nav__link">
+      <a href="../bucle-for.md" class="md-nav__link">
         
   
   
@@ -2049,7 +2130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/break.md" class="md-nav__link">
+      <a href="../break.md" class="md-nav__link">
         
   
   
@@ -2072,7 +2153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/continue.md" class="md-nav__link">
+      <a href="../continue.md" class="md-nav__link">
         
   
   
@@ -2166,7 +2247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/funciones.md" class="md-nav__link">
+      <a href="../funciones.md" class="md-nav__link">
         
   
   
@@ -2189,7 +2270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/funciones-ciudadanos-primera-clase.md" class="md-nav__link">
+      <a href="../funciones-ciudadanos-primera-clase.md" class="md-nav__link">
         
   
   
@@ -2212,7 +2293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/funciones-anonimas.md" class="md-nav__link">
+      <a href="../funciones-anonimas.md" class="md-nav__link">
         
   
   
@@ -2235,7 +2316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/funciones-recursivas.md" class="md-nav__link">
+      <a href="../funciones-recursivas.md" class="md-nav__link">
         
   
   
@@ -2258,7 +2339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/closures.md" class="md-nav__link">
+      <a href="../closures.md" class="md-nav__link">
         
   
   
@@ -2281,7 +2362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/parametros-defecto.md" class="md-nav__link">
+      <a href="../parametros-defecto.md" class="md-nav__link">
         
   
   
@@ -2304,7 +2385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/arrow-functions.md" class="md-nav__link">
+      <a href="../arrow-functions.md" class="md-nav__link">
         
   
   
@@ -2327,7 +2408,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-avanzados-funciones.md" class="md-nav__link">
+      <a href="../metodos-avanzados-funciones.md" class="md-nav__link">
         
   
   
@@ -2350,7 +2431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/rest-parameter.md" class="md-nav__link">
+      <a href="../rest-parameter.md" class="md-nav__link">
         
   
   
@@ -2373,7 +2454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/funciones-de-callback.md" class="md-nav__link">
+      <a href="../funciones-de-callback.md" class="md-nav__link">
         
   
   
@@ -2459,7 +2540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/arrays.md" class="md-nav__link">
+      <a href="../arrays.md" class="md-nav__link">
         
   
   
@@ -2482,7 +2563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-basicos-arrays.md" class="md-nav__link">
+      <a href="../metodos-basicos-arrays.md" class="md-nav__link">
         
   
   
@@ -2505,7 +2586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-slice-splice-concat.md" class="md-nav__link">
+      <a href="../metodos-slice-splice-concat.md" class="md-nav__link">
         
   
   
@@ -2528,7 +2609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-busqueda-arrays.md" class="md-nav__link">
+      <a href="../metodos-de-busqueda-arrays.md" class="md-nav__link">
         
   
   
@@ -2551,7 +2632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/ordenar-arrays.md" class="md-nav__link">
+      <a href="../ordenar-arrays.md" class="md-nav__link">
         
   
   
@@ -2574,7 +2655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/desestructuracion-y-spread-operator.md" class="md-nav__link">
+      <a href="../desestructuracion-y-spread-operator.md" class="md-nav__link">
         
   
   
@@ -2662,7 +2743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/arrays-metodos-de-alto-orden.md" class="md-nav__link">
+      <a href="../arrays-metodos-de-alto-orden.md" class="md-nav__link">
         
   
   
@@ -2685,7 +2766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/foreach.md" class="md-nav__link">
+      <a href="../foreach.md" class="md-nav__link">
         
   
   
@@ -2708,7 +2789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodo-map.md" class="md-nav__link">
+      <a href="../metodo-map.md" class="md-nav__link">
         
   
   
@@ -2731,7 +2812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodo-filter.md" class="md-nav__link">
+      <a href="../metodo-filter.md" class="md-nav__link">
         
   
   
@@ -2754,7 +2835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodo-reduce.md" class="md-nav__link">
+      <a href="../metodo-reduce.md" class="md-nav__link">
         
   
   
@@ -2777,7 +2858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-some-every.md" class="md-nav__link">
+      <a href="../metodos-some-every.md" class="md-nav__link">
         
   
   
@@ -2800,7 +2881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-find-findindex.md" class="md-nav__link">
+      <a href="../metodos-find-findindex.md" class="md-nav__link">
         
   
   
@@ -2902,7 +2983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-objetos.md" class="md-nav__link">
+      <a href="../metodos-de-objetos.md" class="md-nav__link">
         
   
   
@@ -2925,7 +3006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/funcion-constructora.md" class="md-nav__link">
+      <a href="../funcion-constructora.md" class="md-nav__link">
         
   
   
@@ -2948,7 +3029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/prototipo.md" class="md-nav__link">
+      <a href="../prototipo.md" class="md-nav__link">
         
   
   
@@ -2971,7 +3052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/patron-constructor-prototipo.md" class="md-nav__link">
+      <a href="../patron-constructor-prototipo.md" class="md-nav__link">
         
   
   
@@ -2994,7 +3075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/herencia-prototipica.md" class="md-nav__link">
+      <a href="../herencia-prototipica.md" class="md-nav__link">
         
   
   
@@ -3017,7 +3098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/this.md" class="md-nav__link">
+      <a href="../this.md" class="md-nav__link">
         
   
   
@@ -3040,7 +3121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/globalthis.md" class="md-nav__link">
+      <a href="../globalthis.md" class="md-nav__link">
         
   
   
@@ -3063,7 +3144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/propiedades-de-los-objetos.md" class="md-nav__link">
+      <a href="../propiedades-de-los-objetos.md" class="md-nav__link">
         
   
   
@@ -3086,7 +3167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/propiedades-enumerables-propiedades-propias.md" class="md-nav__link">
+      <a href="../propiedades-enumerables-propiedades-propias.md" class="md-nav__link">
         
   
   
@@ -3109,7 +3190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/ciclo-for-in.md" class="md-nav__link">
+      <a href="../ciclo-for-in.md" class="md-nav__link">
         
   
   
@@ -3132,7 +3213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/funciones-fabrica.md" class="md-nav__link">
+      <a href="../funciones-fabrica.md" class="md-nav__link">
         
   
   
@@ -3155,7 +3236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/desestructuracion-de-objetos.md" class="md-nav__link">
+      <a href="../desestructuracion-de-objetos.md" class="md-nav__link">
         
   
   
@@ -3178,7 +3259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/encadenamiento-opcional.md" class="md-nav__link">
+      <a href="../encadenamiento-opcional.md" class="md-nav__link">
         
   
   
@@ -3201,7 +3282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/object-create.md" class="md-nav__link">
+      <a href="../object-create.md" class="md-nav__link">
         
   
   
@@ -3297,7 +3378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/clases.md" class="md-nav__link">
+      <a href="../clases.md" class="md-nav__link">
         
   
   
@@ -3320,7 +3401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/constructor-de-clase.md" class="md-nav__link">
+      <a href="../constructor-de-clase.md" class="md-nav__link">
         
   
   
@@ -3343,7 +3424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodos-de-instancia-clases.md" class="md-nav__link">
+      <a href="../metodos-de-instancia-clases.md" class="md-nav__link">
         
   
   
@@ -3366,7 +3447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/clases-propiedades-metodos-estaticos.md" class="md-nav__link">
+      <a href="../clases-propiedades-metodos-estaticos.md" class="md-nav__link">
         
   
   
@@ -3389,7 +3470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/expresiones-de-clase.md" class="md-nav__link">
+      <a href="../expresiones-de-clase.md" class="md-nav__link">
         
   
   
@@ -3412,7 +3493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/nombres-de-propiedad-computadas-clases.md" class="md-nav__link">
+      <a href="../nombres-de-propiedad-computadas-clases.md" class="md-nav__link">
         
   
   
@@ -3435,7 +3516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/herencia-clases.md" class="md-nav__link">
+      <a href="../herencia-clases.md" class="md-nav__link">
         
   
   
@@ -3458,7 +3539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/tipos-super-clases.md" class="md-nav__link">
+      <a href="../tipos-super-clases.md" class="md-nav__link">
         
   
   
@@ -3481,7 +3562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/propiedades-privadas-encapsulacion.md" class="md-nav__link">
+      <a href="../propiedades-privadas-encapsulacion.md" class="md-nav__link">
         
   
   
@@ -3504,7 +3585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/getters-y-setters-clases.md" class="md-nav__link">
+      <a href="../getters-y-setters-clases.md" class="md-nav__link">
         
   
   
@@ -3527,7 +3608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/mixins.md" class="md-nav__link">
+      <a href="../mixins.md" class="md-nav__link">
         
   
   
@@ -3621,7 +3702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/programacion-asincrona.md" class="md-nav__link">
+      <a href="../programacion-asincrona.md" class="md-nav__link">
         
   
   
@@ -3644,7 +3725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/promesas.md" class="md-nav__link">
+      <a href="../promesas.md" class="md-nav__link">
         
   
   
@@ -3667,7 +3748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/encadenamiento-de-promesas.md" class="md-nav__link">
+      <a href="../encadenamiento-de-promesas.md" class="md-nav__link">
         
   
   
@@ -3690,7 +3771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodo-promise-all.md" class="md-nav__link">
+      <a href="../metodo-promise-all.md" class="md-nav__link">
         
   
   
@@ -3713,7 +3794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodo-promise-race.md" class="md-nav__link">
+      <a href="../metodo-promise-race.md" class="md-nav__link">
         
   
   
@@ -3736,7 +3817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodo-promise-allsettled.md" class="md-nav__link">
+      <a href="../metodo-promise-allsettled.md" class="md-nav__link">
         
   
   
@@ -3759,7 +3840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/metodo-promise-any.md" class="md-nav__link">
+      <a href="../metodo-promise-any.md" class="md-nav__link">
         
   
   
@@ -3782,7 +3863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/manejo-errores-en-promesas.md" class="md-nav__link">
+      <a href="../manejo-errores-en-promesas.md" class="md-nav__link">
         
   
   
@@ -3805,7 +3886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/async-await.md" class="md-nav__link">
+      <a href="../async-await.md" class="md-nav__link">
         
   
   
@@ -3828,7 +3909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/manejo-de-errores-async-await.md" class="md-nav__link">
+      <a href="../manejo-de-errores-async-await.md" class="md-nav__link">
         
   
   
@@ -3912,7 +3993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/iteradores.md" class="md-nav__link">
+      <a href="../iteradores.md" class="md-nav__link">
         
   
   
@@ -3935,7 +4016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/bucle-for-of.md" class="md-nav__link">
+      <a href="../bucle-for-of.md" class="md-nav__link">
         
   
   
@@ -3958,7 +4039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/generadores.md" class="md-nav__link">
+      <a href="../generadores.md" class="md-nav__link">
         
   
   
@@ -3981,7 +4062,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/iteradores-asincronos.md" class="md-nav__link">
+      <a href="../iteradores-asincronos.md" class="md-nav__link">
         
   
   
@@ -4004,7 +4085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/generadores-asincronos.md" class="md-nav__link">
+      <a href="../generadores-asincronos.md" class="md-nav__link">
         
   
   
@@ -4086,7 +4167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/modulos.md" class="md-nav__link">
+      <a href="../modulos.md" class="md-nav__link">
         
   
   
@@ -4109,7 +4190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/exportacion-modulos.md" class="md-nav__link">
+      <a href="../exportacion-modulos.md" class="md-nav__link">
         
   
   
@@ -4132,7 +4213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/importacion-modulos.md" class="md-nav__link">
+      <a href="../importacion-modulos.md" class="md-nav__link">
         
   
   
@@ -4155,7 +4236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/modulos-dinamicos.md" class="md-nav__link">
+      <a href="../modulos-dinamicos.md" class="md-nav__link">
         
   
   
@@ -4233,7 +4314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/map.md" class="md-nav__link">
+      <a href="../map.md" class="md-nav__link">
         
   
   
@@ -4256,7 +4337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/set.md" class="md-nav__link">
+      <a href="../set.md" class="md-nav__link">
         
   
   
@@ -4338,7 +4419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/try-catch.md" class="md-nav__link">
+      <a href="../try-catch.md" class="md-nav__link">
         
   
   
@@ -4361,7 +4442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/try-catch-finally.md" class="md-nav__link">
+      <a href="../try-catch-finally.md" class="md-nav__link">
         
   
   
@@ -4384,7 +4465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/throw.md" class="md-nav__link">
+      <a href="../throw.md" class="md-nav__link">
         
   
   
@@ -4407,7 +4488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/optional-catch-binding.md" class="md-nav__link">
+      <a href="../optional-catch-binding.md" class="md-nav__link">
         
   
   
@@ -4491,7 +4572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/contexto-de-ejecucion.md" class="md-nav__link">
+      <a href="../contexto-de-ejecucion.md" class="md-nav__link">
         
   
   
@@ -4514,7 +4595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/call-stack.md" class="md-nav__link">
+      <a href="../call-stack.md" class="md-nav__link">
         
   
   
@@ -4537,7 +4618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/event-loop.md" class="md-nav__link">
+      <a href="../event-loop.md" class="md-nav__link">
         
   
   
@@ -4560,7 +4641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/hoisting.md" class="md-nav__link">
+      <a href="../hoisting.md" class="md-nav__link">
         
   
   
@@ -4583,7 +4664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../javascript/scope.md" class="md-nav__link">
+      <a href="../scope.md" class="md-nav__link">
         
   
   
@@ -4648,7 +4729,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../devcamp/" class="md-nav__link ">
+            <a href="../../devcamp/" class="md-nav__link ">
               
   
   
@@ -4716,7 +4797,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../devcamp/checkpoint-06/" class="md-nav__link ">
+            <a href="../../devcamp/checkpoint-06/" class="md-nav__link ">
               
   
   
@@ -4751,7 +4832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -4774,7 +4855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -4797,7 +4878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -4820,7 +4901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
         
   
   
@@ -4843,7 +4924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
         
   
   
@@ -4866,7 +4947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -4932,7 +5013,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../devcamp/checkpoint-07/" class="md-nav__link ">
+            <a href="../../devcamp/checkpoint-07/" class="md-nav__link ">
               
   
   
@@ -4967,7 +5048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-07/introduccion-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-07/introduccion-js/" class="md-nav__link">
         
   
   
@@ -4990,7 +5071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
         
   
   
@@ -5013,7 +5094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
         
   
   
@@ -5036,7 +5117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-07/condicionales-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-07/condicionales-js/" class="md-nav__link">
         
   
   
@@ -5059,7 +5140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-07/operador-ternario-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-07/operador-ternario-js/" class="md-nav__link">
         
   
   
@@ -5082,7 +5163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
         
   
   
@@ -5105,7 +5186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-07/que-es-this-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-07/que-es-this-js/" class="md-nav__link">
         
   
   
@@ -5173,7 +5254,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../devcamp/checkpoint-08/" class="md-nav__link ">
+            <a href="../../devcamp/checkpoint-08/" class="md-nav__link ">
               
   
   
@@ -5208,7 +5289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/bucles-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/bucles-js/" class="md-nav__link">
         
   
   
@@ -5231,7 +5312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/variables-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/variables-js/" class="md-nav__link">
         
   
   
@@ -5254,7 +5335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
         
   
   
@@ -5277,7 +5358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
         
   
   
@@ -5300,7 +5381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
         
   
   
@@ -5323,7 +5404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/que-es-poo-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/que-es-poo-js/" class="md-nav__link">
         
   
   
@@ -5346,7 +5427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/promesa-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/promesa-js/" class="md-nav__link">
         
   
   
@@ -5369,7 +5450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devcamp/checkpoint-08/async-await-js/" class="md-nav__link">
+      <a href="../../devcamp/checkpoint-08/async-await-js/" class="md-nav__link">
         
   
   
@@ -5429,11 +5510,92 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#diagrama" class="md-nav__link">
+  <a href="#el-ambitos-de-las-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagrama
+      El Ámbitos de las Variables
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-forma-tradicional-de-declarar-variables-var" class="md-nav__link">
+    <span class="md-ellipsis">
+      La Forma Tradicional de Declarar Variables: var
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La Forma Tradicional de Declarar Variables: var">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema-de-la-creacion-de-propiedades-globales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problema de la Creación de Propiedades Globales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-alternativa-moderna-let" class="md-nav__link">
+    <span class="md-ellipsis">
+      La Alternativa Moderna: let
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="La Alternativa Moderna: let">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-zona-muerta-temporal" class="md-nav__link">
+    <span class="md-ellipsis">
+      La Zona Muerta Temporal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaracion-para-constantes-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      Declaración para Constantes: const
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-para-usar-var-let-y-const" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas Prácticas para Usar var, let y const
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buenas Prácticas para Usar var, let y const">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5458,13 +5620,125 @@
   
 
 
-<h1 id="desarrollador-full-stack">Desarrollador Full Stack</h1>
-<p>El programador Full Stack es el profesional encargado de desarrollar páginas web, tanto en el FRONTEND como en el BACKEND. Para desempeñar sus funciones, que incluyen desde el diseño de interfaces hasta el desarrollo de arquitecturas y la optimización del sitio web, debe combinar una serie de conocimientos técnicos y creativos.</p>
-<h2 id="diagrama">Diagrama</h2>
-<p><a class="glightbox" href="../../../assets/images/ruta-aprendizaje/desarrollador-full-stack.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../assets/images/ruta-aprendizaje/desarrollador-full-stack.png" /></a>
-<br></p>
-<p>Creado con <a href="https://app.diagrams.net/">app.diagrams.net</a>
-<br></p>
+<p><link rel="stylesheet" href="../../assets/stylesheets/javascript.css"></p>
+<h1 id="variables-diferencias-entre-var-let-y-const"><strong>Variables: Diferencias entre var, let y const</strong></h1>
+<p>En JavaScript existen tres formas principales de <a href="../variables/">declarar variables</a>: <code>var</code>, <code>let</code> y <code>const</code>. Cada una tiene características específicas que las hacen adecuadas para diferentes situaciones. Comprender las diferencias entre ellas es importante para escribir código predecible y evitar errores comunes.</p>
+<p>En este artículo exploraremos las particularidades de cada tipo de declaración, sus ámbitos, el comportamiento en la elevación (<a href="../hoisting/">hoisting</a>), la zona muerta temporal y otros detalles clave.</p>
+<h2 id="el-ambitos-de-las-variables"><strong>El Ámbitos de las Variables</strong></h2>
+<p>El concepto de <a href="../scope/">ámbito de variable</a> hace referencia a la región del código donde esta es válida y accesible. En JavaScript la palabra clave <code>var</code> tiene un ámbito global o de función, lo que significa que las variables declaradas con esta keyword pueden ser accedidas o modificadas desde fuera de un bloque específico.</p>
+<p>Si declaramos una variable con <code>var</code> fuera de una función, esta se convierte en una variable global y puede ser accedida desde cualquier parte del código:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">30</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">printAge</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">age</span><span class="p">);</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">}</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="nx">printAge</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<p>Cuando una variable se declara dentro de una función utilizando var, su alcance se limita al contexto de esa función, lo que significa que no puede ser accedida desde fuera de la función. Por ejemplo:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">greet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;¡Hola!&quot;</span><span class="p">;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">}</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nx">greet</span><span class="p">();</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<p>Ahora, ya que tenemos el concepto del ámbito veamos que ofrece cada declaración que utilizamos para definir variables.</p>
+<h2 id="la-forma-tradicional-de-declarar-variables-var"><strong>La Forma Tradicional de Declarar Variables: <code>var</code></strong></h2>
+<p><code>var</code> fue la única manera de declarar variables en JavaScript hasta la introducción de ES6. Aunque sigue siendo válida, esta presenta varias peculiaridades que pueden llevar a errores difíciles de rastrear. Veamos las principales:</p>
+<ul>
+<li><strong>Ámbito global o de función</strong>: Las variables declaradas con <code>var</code> tienen un ámbito que se limita a la función en la que se declaran o son globales si se declaran fuera de cualquier función.</li>
+<li><strong>Permite la redeclaración</strong>: Es posible declarar la misma variable varias veces en el mismo ámbito, lo que puede generar confusión.</li>
+<li><strong>Hoisting</strong>: Las variables declaradas con <code>var</code> se elevan al principio del contexto de ejecución, con un valor inicial de <code>undefined</code>.</li>
+</ul>
+<p><strong>Ejemplo de ámbito y hoisting con <code>var</code>:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kd">var</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola, mundo&quot;</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">saludo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">mensajeInterno</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola desde la función&quot;</span><span class="p">;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensajeInterno</span><span class="p">);</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="p">}</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="nx">saludo</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<p>En el ejemplo anterior la variable <code>mensaje</code> se eleva y tiene un valor <code>undefined</code> antes de ser asignada, lo que muestra la naturaleza del hoisting en <code>var</code>.</p>
+<h3 id="problema-de-la-creacion-de-propiedades-globales"><strong>Problema de la Creación de Propiedades Globales</strong></h3>
+<p>Las variables globales definidas con <code>var</code> se agregan al objeto global como propiedades adicionales. Esto puede aumentar las posibilidades de conflictos con otras bibliotecas o scripts que también utilizan el objeto global para sus propias variables.</p>
+<blockquote>
+<p><br>
+En el navegador web, el objeto global es window, mientras que en Node.js es global.</p>
+<p><br></p>
+</blockquote>
+<h2 id="la-alternativa-moderna-let"><strong>La Alternativa Moderna: <code>let</code></strong></h2>
+<p><code>let</code> es una mejora significativa introducida en ES6 para declarar variables de manera más segura. Su ámbito está limitado al bloque en el que se declara, lo que evita problemas comunes asociados con el uso de <code>var</code>.</p>
+<p><strong>Características de <code>let</code>:</strong></p>
+<ul>
+<li><strong>Ámbito de bloque</strong>: Las variables declaradas con <code>let</code> solo son accesibles dentro del bloque en el que se declaran.</li>
+<li><strong>No permite la redeclaración en el mismo ámbito</strong>: Esto ayuda a evitar errores accidentales.</li>
+<li><strong>Hoisting con inicialización diferida</strong>: Aunque <code>let</code> se eleva, no se puede acceder a la variable antes de su declaración debido a la “zona muerta temporal”.</li>
+</ul>
+<h3 id="la-zona-muerta-temporal"><strong>La Zona Muerta Temporal</strong></h3>
+<p>La zona muerta temporal es el período entre el inicio del bloque y la declaración de la variable <code>let</code>, durante el cual no se puede acceder a la variable. Intentar hacerlo generará un <code>ReferenceError</code>.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">nombre</span><span class="p">);</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Carlos&quot;</span><span class="p">;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>En el ejemplo anterior <code>nombre</code> está en la zona muerta temporal hasta que se alcanza la declaración.</p>
+<h2 id="declaracion-para-constantes-const"><strong>Declaración para Constantes: <code>const</code></strong></h2>
+<p><code>const</code> se utiliza para declarar constantes, es decir, “variables porque almacena un dato” cuyo valor no puede cambiar una vez asignado. Sin embargo, si el valor es un objeto o un array sus propiedades o elementos pueden ser modificados.</p>
+<p><strong>Características de <code>const</code>:</strong></p>
+<ul>
+<li><strong>Debe ser inicializada al momento de la declaración</strong>.</li>
+<li><strong>No permite la reasignación</strong>: Una vez asignado, el valor de una variable <code>const</code> no puede cambiar.</li>
+<li><strong>Ámbito de bloque</strong>: Al igual que <code>let</code>, las variables <code>const</code> solo están disponibles dentro del bloque en el que se declaran.</li>
+</ul>
+<p><strong>Ejemplo de modificación de un objeto constante:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">usuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="w"> </span><span class="p">};</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nx">usuario</span><span class="p">.</span><span class="nx">edad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">31</span><span class="p">;</span><span class="w">  </span><span class="c1">// Esto es válido, ya que se modifica una propiedad, no la referencia</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">usuario</span><span class="p">.</span><span class="nx">edad</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="buenas-practicas-para-usar-var-let-y-const"><strong>Buenas Prácticas para Usar <code>var</code>, <code>let</code> y <code>const</code></strong></h2>
+<ol>
+<li><strong>Usar <code>const</code> de forma predeterminada</strong>: Siempre que el valor de una variable no cambie usa <code>const</code> para asegurar la inmutabilidad.</li>
+<li><strong>Optar por <code>let</code> si necesitas cambiar el valor</strong>: Si el valor de la variable debe cambiar, usa <code>let</code>.</li>
+<li><strong>Evitar <code>var</code></strong>: Los problemas de alcance y hoisting hacen que <code>var</code> no sea la mejor opción en la mayoría de los casos.</li>
+</ol>
+<hr />
+<h3 id="conclusion"><strong>Conclusión</strong></h3>
+<p>Comprender las diferencias entre <code>var</code>, <code>let</code> y <code>const</code> es útil para escribir código limpio y seguro en JavaScript. Utilizar la opción adecuada en cada situación ayuda a evitar errores comunes y mejora la calidad del código.</p>
+<p>En el próximo artículo nos adentraremos en los <a href="../tipos-de-datos/">tipos de datos en JavaScript</a>, explorando cada uno en detalle.</p>
+<hr />
+<p><br></p>
 
 
 
@@ -5528,14 +5802,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
+        <script src="../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
       
-        <script src="../../../assets/javascripts/extra.js"></script>
+        <script src="../../assets/javascripts/extra.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
