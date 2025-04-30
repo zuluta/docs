@@ -34,7 +34,7 @@ nav:
       - ¿Qué es JavaScript?: javascript/que-es-javascript.md
       - Primeros pasos: javascript/primeros-pasos.md
     - 02. Conceptos básicos:
-      - Sintaxis de JavaScript: javascript/sintaxis.md
+      - Sintaxis de JavaScript: javascript/sintaxis-javascript.md
       - Variables: javascript/variables.md
       - Diferencias entre var, let y const: javascript/var-let.md
       - Tipos de datos: javascript/tipos-de-datos.md
@@ -154,7 +154,7 @@ nav:
       - try catch finally: javascript/try-catch-finally.md
       - Lanzar Excepciones con throw: javascript/throw.md
       - Optional Catch Binding: javascript/optional-catch-binding.md
-    - 16. JavaScript Runtime:
+    - 16. Runtime:
       - Contexto de Ejecución: javascript/contexto-de-ejecucion.md
       - Call Stack - Entendiendo la Pila de Llamadas: javascript/call-stack.md
       - Event Loop: javascript/event-loop.md

@@ -52,7 +52,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-variables/">2.2. Variables en JavaScript</a>
+      <a href="variables/">2.2. Variables</a>
     </span>
     <div class="list-group-description">
       En este tutorial, aprenderá sobre las variables de JavaScript y cómo usarlas para almacenar...
@@ -61,7 +61,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-var-let/">2.3. Variables: Diferencias entre var, let y const</a>
+      <a href="var-let/">2.3. Variables: Diferencias entre var, let y const</a>
     </span>
     <div class="list-group-description">
       En JavaScript existen tres formas principales de declarar variables: var, let y const. Cada una...
@@ -70,7 +70,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="tipos-de-datos-javascript/">2.4. Tipos de datos en JavaScript</a>
+      <a href="tipos-de-datos/">2.4. Tipos de datos</a>
     </span>
     <div class="list-group-description">
       En JavaScript los tipos de datos son fundamentales para gestionar y manipular la...
@@ -79,7 +79,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-numeros/">2.5. Los Números en JavaScript</a>
+      <a href="numeros/">2.5. Los Números</a>
     </span>
     <div class="list-group-description">
       En JavaScript el tipo de dato number se utiliza para representar tanto números enteros como...
@@ -88,7 +88,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="booleanos-javascript/">2.6. Booleanos en JavaScript</a>
+      <a href="booleanos/">2.6. Booleanos</a>
     </span>
     <div class="list-group-description">
       En JavaScript, los booleanos son un tipo de dato fundamental que representa uno de dos...
@@ -97,7 +97,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-string/">2.7. Strings: Cadena de Caracteres en JavaScript</a>
+      <a href="string/">2.7. Strings: Cadena de Caracteres</a>
     </span>
     <div class="list-group-description">
       En el mundo de la programación las cadenas de caracteres o strings son una de las estructuras...
@@ -106,7 +106,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="valores-primitivos-vs-referencia-javascript/">2.8. Valores Primitivos vs. Valores de Referencia en JavaScript</a>
+      <a href="valores-primitivos-vs-referencia/">2.8. Valores Primitivos vs. Valores de Referencia</a>
     </span>
     <div class="list-group-description">
       En JavaScript existen dos tipos principales de valores: valores primitivos y valores de...
@@ -115,7 +115,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-objetos/">2.9. Introducción a los Objetos en JavaScript</a>
+      <a href="objetos/">2.9. Introducción a los Objetos</a>
     </span>
     <div class="list-group-description">
       En JavaScript, los objetos son una de las estructuras de datos más importantes y...
@@ -124,7 +124,7 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="arrays-javascript/">2.10. Arrays en JavaScript</a>
+      <a href="arrays/">2.10. Arrays</a>
     </span>
     <div class="list-group-description">
       Los arrays son estructuras de datos fundamentales que permiten almacenar múltiples...
@@ -132,13 +132,13 @@ Los conceptos básicos de JavaScript son los bloques de construcción fundamenta
   </article>
 </section>
 
-## **03. Operadores de JavaScript**
+## **03. Operadores**
 En JavaScript, los operadores son fundamentales para manipular datos y realizar cálculos. Entender los diferentes tipos de operadores disponibles es clave para escribir código eficiente. Desde operadores aritméticos hasta operadores lógicos, el conjunto diverso de herramientas en JavaScript ofrece soluciones para una variedad de tareas.
 
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operadores-aritmeticos/">3.1. Operadores Aritméticos en JavaScript</a>
+      <a href="operadores-aritmeticos/">3.1. Operadores Aritméticos</a>
     </span>
     <div class="list-group-description">
       Los operadores aritméticos en JavaScript permiten realizar cálculos matemáticos básicos u...
@@ -149,7 +149,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operador-resto/">3.2. Operador de Resto en JavaScript</a>
+      <a href="operador-resto/">3.2. Operador de Resto</a>
     </span>
     <div class="list-group-description">
       En JavaScript, el operador de resto, utilizado mediante el símbolo (%) se usa comúnmente para...
@@ -160,7 +160,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operador-exponenciacion/">3.3. Operador de Exponenciación en JavaScript</a>
+      <a href="operador-exponenciacion/">3.3. Operador de Exponenciación</a>
     </span>
     <div class="list-group-description">
       Introducido en ES6, el operador de exponenciación (**) en JavaScript permite elevar un número a...
@@ -171,7 +171,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operadores-asignacion/">3.4. Operadores de Asignación en JavaScript</a>
+      <a href="operadores-asignacion/">3.4. Operadores de Asignación</a>
     </span>
     <div class="list-group-description">
       Los operadores de asignación en JavaScript son esenciales para almacenar y actualizar valores en...
@@ -182,7 +182,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operadores-unarios/">3.5. Operadores Unarios en JavaScript</a>
+      <a href="operadores-unarios/">3.5. Operadores Unarios</a>
     </span>
     <div class="list-group-description">
       En JavaScript, los operadores unarios son herramientas que permiten realizar transformaciones y...
@@ -193,7 +193,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operadores-comparacion/">3.6. Operadores de Comparación en JavaScript</a>
+      <a href="operadores-comparacion/">3.6. Operadores de Comparación</a>
     </span>
     <div class="list-group-description">
       Los operadores de comparación en JavaScript permiten comparar valores para evaluar condiciones...
@@ -204,7 +204,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operadores-logicos/">3.7. Operadores lógicos en JavaScript</a>
+      <a href="operadores-logicos/">3.7. Operadores lógicos</a>
     </span>
     <div class="list-group-description">
       Los operadores lógicos en JavaScript permiten combinar y evaluar condiciones, facilitando la toma...
@@ -215,7 +215,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operadores-asignacion-logica/">3.8. Operadores de Asignación Lógica en JavaScript</a>
+      <a href="operadores-asignacion-logica/">3.8. Operadores de Asignación Lógica</a>
     </span>
     <div class="list-group-description">
       Los operadores de asignación lógica combinan una operación lógica (AND, OR o fusión de nulos)...
@@ -226,7 +226,7 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operador-fusion-nulos/">3.9. Operador de Fusión de Nulos en JavaScript</a>
+      <a href="operador-fusion-nulos/">3.9. Operador de Fusión de Nulos</a>
     </span>
     <div class="list-group-description">
       Introducido en ES2020, el operador de fusión de nulos (??) es una solución elegante para asignar...
@@ -236,13 +236,13 @@ En JavaScript, los operadores son fundamentales para manipular datos y realizar 
   </article>
 </section>
 
-## **04. Métodos de Strings en JavaScript**
+## **04. Métodos de Strings**
 Los métodos de strings en proporcionan herramientas para trabajar con texto de manera eficiente y flexible. Desde la búsqueda de subcadenas hasta la modificación y comparación de texto, estos permiten manipular los strings con facilidad. Conocer cómo utilizarlos es esencial para resolver problemas comunes y optimizar el manejo de datos textuales en aplicaciones modernas.
 
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-busqueda-strings/">4.1. Métodos de Búsqueda en Strings</a>
+      <a href="metodos-de-busqueda-strings/">4.1. Métodos de Búsqueda en Strings</a>
     </span>
     <div class="list-group-description">
       Los métodos de búsqueda en JavaScript son importantes porque nos ayudan a localizar textos dentro...
@@ -253,7 +253,7 @@ Los métodos de strings en proporcionan herramientas para trabajar con texto de 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-reemplazo-string/">4.2. Métodos de Reemplazo en Strings</a>
+      <a href="metodos-de-reemplazo-string/">4.2. Métodos de Reemplazo en Strings</a>
     </span>
     <div class="list-group-description">
       Reemplazar texto en JavaScript es una operación común y poderosa que permite modificar strings...
@@ -264,7 +264,7 @@ Los métodos de strings en proporcionan herramientas para trabajar con texto de 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-acceso/">4.3. Métodos de Acceso a Caracteres</a>
+      <a href="metodos-de-acceso/">4.3. Métodos de Acceso a Caracteres</a>
     </span>
     <div class="list-group-description">
       Los métodos de acceso a caracteres en JavaScript nos permiten trabajar con las posiciones...
@@ -275,7 +275,7 @@ Los métodos de strings en proporcionan herramientas para trabajar con texto de 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-extraccion/">4.4. Métodos de Extracción y Corte en JavaScript</a>
+      <a href="metodos-de-extraccion/">4.4. Métodos de Extracción y Corte</a>
     </span>
     <div class="list-group-description">
       La manipulación de cadenas de texto o strings es una tarea muy recurrida en JavaScript, y los...
@@ -286,7 +286,7 @@ Los métodos de strings en proporcionan herramientas para trabajar con texto de 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-concatenacion-string/">4.5. Métodos de Concatenación y Relleno en Strings</a>
+      <a href="metodos-de-concatenacion-string/">4.5. Métodos de Concatenación y Relleno en Strings</a>
     </span>
     <div class="list-group-description">
       En JavaScript, los métodos de concatenación y relleno no solo son herramientas útiles, sino que...
@@ -297,7 +297,7 @@ Los métodos de strings en proporcionan herramientas para trabajar con texto de 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-transformacion-caso-string/">4.6. Métodos de Transformación de Caso</a>
+      <a href="metodos-de-transformacion-caso-string/">4.6. Métodos de Transformación de Caso</a>
     </span>
     <div class="list-group-description">
       Trabajar con cadenas de texto en JavaScript a menudo implica ajustar el formato de mayúsculas y...
@@ -308,7 +308,7 @@ Los métodos de strings en proporcionan herramientas para trabajar con texto de 
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-limpieza-string/">4.7. Métodos de Limpieza en Strings</a>
+      <a href="metodos-de-limpieza-string/">4.7. Métodos de Limpieza en Strings</a>
     </span>
     <div class="list-group-description">
       Al trabajar con strings en JavaScript, es común encontrarse con espacios en blanco al inicio o al...
@@ -335,7 +335,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-declaracion-if-else/">5.1. Declaración if…else en JavaScript</a>
+      <a href="declaracion-if-else/">5.1. Declaración if…else</a>
     </span>
     <div class="list-group-description">
       La declaración if...else en JavaScript es una de las estructuras de control que se utilizan para...
@@ -344,7 +344,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-operadores-ternario/">5.2. Operador ternario en JavaScript</a>
+      <a href="operadores-ternario/">5.2. Operador ternario</a>
     </span>
     <div class="list-group-description">
       El operador ternario en JavaScript es una herramienta que sirve para simplificar...
@@ -353,7 +353,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-switch-case/">5.3. Estructura switch case en JavaScript</a>
+      <a href="switch-case/">5.3. Estructura switch case</a>
     </span>
     <div class="list-group-description">
       La declaración switch case es una herramienta eficiente en JavaScript que permite tomar...
@@ -362,7 +362,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="avascript-bucle-while/">5.4. Bucle While En JavaScript</a>
+      <a href="bucle-while/">5.4. Bucle While</a>
     </span>
     <div class="list-group-description">
       El bucle while en JavaScript es una herramienta esencial cuando necesitas ejecutar un bloque...
@@ -371,7 +371,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-bucle-do-while/">5.5. Bucle do…while en JavaScript</a>
+      <a href="bucle-do-while/">5.5. Bucle do…while</a>
     </span>
     <div class="list-group-description">
       El bucle do…while es una estructura repetitiva en JavaScript que nos garantiza que un bloque...
@@ -380,7 +380,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-bucle-for/">5.6. Bucle for en JavaScript</a>
+      <a href="bucle-for/">5.6. Bucle for</a>
     </span>
     <div class="list-group-description">
       El bucle for es una herramienta en JavaScript que nos permite manejar tareas repetitivas...
@@ -389,7 +389,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-break/">5.7. Instrucción break en JavaScript</a>
+      <a href="break/">5.7. Instrucción break</a>
     </span>
     <div class="list-group-description">
       La instrucción break se utiliza para terminar de manera abrupta un bucle, una instrucción...
@@ -398,7 +398,7 @@ Las sentencias de flujo de control son esenciales en la programación, ya que de
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-continue/">5.8. Instrucción continue en JavaScript</a>
+      <a href="continue/">5.8. Instrucción continue</a>
     </span>
     <div class="list-group-description">
       La instrucción continue se utiliza para omitir la iteración actual de un bucle y pasar a la...
@@ -412,7 +412,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-funciones/">6.1. Funciones en JavaScript</a>
+      <a href="funciones/">6.1. Funciones</a>
     </span>
     <div class="list-group-description">
       En JavaScript, las funciones son una de las piezas clave del lenguaje. Estas nos permiten...
@@ -421,7 +421,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-funciones-ciudadanos-primera-clase/">6.2. Funciones “Ciudadanos de Primera clase” en JavaScript</a>
+      <a href="funciones-ciudadanos-primera-clase/">6.2. Funciones “Ciudadanos de Primera clase”</a>
     </span>
     <div class="list-group-description">
       En JavaScript, las funciones son ciudadanos de primera clase. Este concepto significa que las...
@@ -430,7 +430,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-funciones-anonimas/">6.3. Funciones Anónimas en JavaScript</a>
+      <a href="funciones-anonimas/">6.3. Funciones Anónimas</a>
     </span>
     <div class="list-group-description">
       Las funciones anónimas son un concepto fundamental en JavaScript, que permite a los...
@@ -439,7 +439,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-funciones-recursivas/">6.4. Funciones Recursivas en JavaScript</a>
+      <a href="funciones-recursivas/">6.4. Funciones Recursivas</a>
     </span>
     <div class="list-group-description">
       Las funciones recursivas son una herramienta fundamental en programación, En JavaScript...
@@ -448,7 +448,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-closures/">6.5. Closures y Ámbito Léxico en JavaScript</a>
+      <a href="closures/">6.5. Closures y Ámbito Léxico</a>
     </span>
     <div class="list-group-description">
       En JavaScript, uno de los conceptos más potentes y utilizado es el de los closure. Estos...
@@ -457,7 +457,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-parametros-defecto/">6.6. Parámetros por Defecto en JavaScript</a>
+      <a href="parametros-defecto/">6.6. Parámetros por Defecto</a>
     </span>
     <div class="list-group-description">
       En JavaScript, los parámetros por defecto permiten asignar valores iniciales a los...
@@ -466,7 +466,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-arrow-functions/">6.7. Arrow Functions en JavaScript</a>
+      <a href="arrow-functions/">6.7. Arrow Functions</a>
     </span>
     <div class="list-group-description">
       Las arrow functions fueron introducidas en la especificación ES6 y ofrecen una forma más...
@@ -475,7 +475,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-avanzados-funciones/">6.8. Métodos avanzados para el contexto de funciones en JavaScript</a>
+      <a href="metodos-avanzados-funciones/">6.8. Métodos avanzados para el contexto de funciones</a>
     </span>
     <div class="list-group-description">
       En JavaScript, el contexto de una función (representado por la palabra clave this) es un...
@@ -484,7 +484,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-rest-parameter/">6.9. Rest Parameter en JavaScript</a>
+      <a href="rest-parameter/">6.9. Rest Parameter</a>
     </span>
     <div class="list-group-description">
       El Rest Parameter (parámetro rest) en JavaScript, introducido en ES6, es una herramienta útil del...
@@ -493,7 +493,7 @@ En el vasto mundo de JavaScript, las funciones desempeñan un papel crucial al p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-funciones-de-callback/">6.10. Funciones de Callback en JavaScript</a>
+      <a href="funciones-de-callback/">6.10. Funciones de Callback</a>
     </span>
     <div class="list-group-description">
       Las funciones de callback son una parte fundamental de JavaScript, especialmente...
@@ -507,7 +507,7 @@ Los **arrays** son una de las estructuras de datos más importantes y utilizadas
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-arrays/">7.1. Introducción a los Arrays en JavaScript</a>
+      <a href="arrays/">7.1. Introducción a los Arrays</a>
     </span>
     <div class="list-group-description">
       Los arrays son una de las estructuras de datos más versátiles y esenciales en JavaScript...
@@ -516,7 +516,7 @@ Los **arrays** son una de las estructuras de datos más importantes y utilizadas
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-basicos-arrays/">7.2. Métodos Básicos de los Arrays en JavaScript</a>
+      <a href="metodos-basicos-arrays/">7.2. Métodos Básicos de los Arrays</a>
     </span>
     <div class="list-group-description">
       Los arrays en JavaScript no solo nos permiten almacenar múltiples valores de diferentes tipos en...
@@ -527,7 +527,7 @@ Los **arrays** son una de las estructuras de datos más importantes y utilizadas
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-slice-splice-concat/">7.3. Métodos de Corte y Pegado Arrays en JavaScript</a>
+      <a href="metodos-slice-splice-concat/">7.3. Métodos de Corte y Pegado Arrays</a>
     </span>
     <div class="list-group-description">
       Manipular arrays es una tarea común en JavaScript. Más allá de agregar o eliminar elementos, a...
@@ -538,7 +538,7 @@ Los **arrays** son una de las estructuras de datos más importantes y utilizadas
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-busqueda-arrays/">7.4. Métodos de Búsqueda y Acceso Arrays en JavaScript</a>
+      <a href="metodos-de-busqueda-arrays/">7.4. Métodos de Búsqueda y Acceso Arrays</a>
     </span>
     <div class="list-group-description">
       Cuando trabajamos con arrays en JavaScript, una de las tareas más comunes es localizar elementos...
@@ -549,7 +549,7 @@ Los **arrays** son una de las estructuras de datos más importantes y utilizadas
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-ordenar-arrays/">7.5. Ordenar Arrays en JavaScript</a>
+      <a href="ordenar-arrays/">7.5. Ordenar Arrays</a>
     </span>
     <div class="list-group-description">
       Ordenar arrays es una tarea fundamental en cualquier lenguaje de programación, y JavaScript no es...
@@ -560,7 +560,7 @@ Los **arrays** son una de las estructuras de datos más importantes y utilizadas
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-desestructuracion-y-spread-operator/">7.6. Desestructuración de Arrays y Spread Operator en JavaScript</a>
+      <a href="desestructuracion-y-spread-operator/">7.6. Desestructuración de Arrays y Spread Operator</a>
     </span>
     <div class="list-group-description">
       Introducidos en ES6, la desestructuración de arrays y el operador de propagación spread...
@@ -574,7 +574,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-arrays-metodos-de-alto-orden/">8.1. Introducción a los Métodos de Alto Orden en Arrays</a>
+      <a href="arrays-metodos-de-alto-orden/">8.1. Introducción a los Métodos de Alto Orden en Arrays</a>
     </span>
     <div class="list-group-description">
       Los métodos de alto orden en JavaScript son herramientas que permiten trabajar con arrays...
@@ -583,7 +583,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-foreach/">8.2. Iterando sobre Arrays de Forma Eficiente con ForEach</a>
+      <a href="foreach/">8.2. Iterando sobre Arrays de Forma Eficiente con ForEach</a>
     </span>
     <div class="list-group-description">
       Dentro de los métodos de alto orden en arrays, el método forEach es uno de los más comunes y...
@@ -594,7 +594,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodo-map/">8.3. Transformando Arrays con el método Map</a>
+      <a href="metodo-map/">8.3. Transformando Arrays con el método Map</a>
     </span>
     <div class="list-group-description">
       El método map() en JavaScript es uno de los más útiles y flexibles entre los métodos de alto...
@@ -605,7 +605,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodo-filter/">8.4. Filtrando Arrays con el Método Filter</a>
+      <a href="metodo-filter/">8.4. Filtrando Arrays con el Método Filter</a>
     </span>
     <div class="list-group-description">
       En JavaScript, filter() es uno de los métodos de alto orden más potentes cuando se trata de...
@@ -616,7 +616,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodo-reduce/">8.5. Reducción de Arrays con el Método Reduce</a>
+      <a href="metodo-reduce/">8.5. Reducción de Arrays con el Método Reduce</a>
     </span>
     <div class="list-group-description">
       El método reduce() es uno de los métodos más potentes y versátiles en JavaScript. A diferencia...
@@ -627,7 +627,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-some-every/">8.6. Verificaciones Condicionales en Arrays con some y every</a>
+      <a href="metodos-some-every/">8.6. Verificaciones Condicionales en Arrays con some y every</a>
     </span>
     <div class="list-group-description">
       En JavaScript, los métodos some() y every() son dos métodos de alto orden muy útiles para...
@@ -638,7 +638,7 @@ Los **métodos de alto orden** o Higher Order Array Methods en JavaScript permit
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-find-findindex/">8.7. Búsqueda Eficiente en Arrays con find y findIndex</a>
+      <a href="metodos-find-findindex/">8.7. Búsqueda Eficiente en Arrays con find y findIndex</a>
     </span>
     <div class="list-group-description">
       En una sección anterior, discutimos los Métodos de Búsqueda y Acceso en Arrays en JavaScript...
@@ -654,7 +654,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-objetos/">9.1. Métodos de Objetos en JavaScript: Operaciones Comunes</a>
+      <a href="metodos-de-objetos/">9.1. Métodos de Objetos: Operaciones Comunes</a>
     </span>
     <div class="list-group-description">
       Los objetos son una de las estructuras de datos fundamentales en JavaScript, no solo permiten...
@@ -665,7 +665,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-funcion-constructora/">9.2. Funciones Constructoras en JavaScript: Creación de Objetos Personalizados</a>
+      <a href="funcion-constructora/">9.2. Funciones Constructoras: Creación de Objetos Personalizados</a>
     </span>
     <div class="list-group-description">
       Las funciones constructoras en JavaScript son una técnica esencial para la creación de...
@@ -674,7 +674,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-prototipo/">9.3. Prototipo en JavaScript: Fundamentos</a>
+      <a href="prototipo/">9.3. Prototipo: Fundamentos</a>
     </span>
     <div class="list-group-description">
       El concepto de prototipo en JavaScript es uno de los pilares fundamentales del lenguaje. Gracias...
@@ -683,7 +683,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-patron-constructor-prototipo/">9.4. Patrón Constructor/Prototipo en JavaScript</a>
+      <a href="patron-constructor-prototipo/">9.4. Patrón Constructor/Prototipo</a>
     </span>
     <div class="list-group-description">
       El desarrollo de aplicaciones escalables y eficientes en JavaScript requiere un uso...
@@ -692,7 +692,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-herencia-prototipica/">9.5. Patrón Herencia Prototípica en JavaScript: Herencia Basada en Objetos</a>
+      <a href="herencia-prototipica/">9.5. Patrón Herencia Prototípica: Herencia Basada en Objetos</a>
     </span>
     <div class="list-group-description">
       En JavaScript, la herencia se logra a través de un sistema basado en prototipos, conocido como...
@@ -701,7 +701,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="this-en-javascript/">9.6. El this en JavaScript: Cómo Funciona en Diferentes Contextos</a>
+      <a href="this/">9.6. El this: Cómo Funciona en Diferentes Contextos</a>
     </span>
     <div class="list-group-description">
       El valor de this en JavaScript es una de las características más potentes y a veces, confus...
@@ -710,7 +710,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="globalthis-en-javascript/">9.7. GlobalThis en JavaScript: Accede al Objeto Global en Diferentes Entornos</a>
+      <a href="globalthis/">9.7. GlobalThis: Accede al Objeto Global en Diferentes Entornos</a>
     </span>
     <div class="list-group-description">
       El concepto del objeto global en JavaScript es importante, ya que actúa como el contenedor...
@@ -719,7 +719,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-propiedades-de-los-objetos/">9.8. Propiedades de los Objetos en JavaScript</a>
+      <a href="propiedades-de-los-objetos/">9.8. Propiedades de los Objetos</a>
     </span>
     <div class="list-group-description">
       En JavaScript los objetos son colecciones de propiedades y cada propiedad tiene un conjunt...
@@ -728,7 +728,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-propiedades-enumerables-propiedades-propias/">9.9. Propiedades Enumerables y Propiedades Propias en JavaScript: Diferencias Clave</a>
+      <a href="propiedades-enumerables-propiedades-propias/">9.9. Propiedades Enumerables y Propiedades Propias: Diferencias Clave</a>
     </span>
     <div class="list-group-description">
       En JavaScript los objetos pueden tener diferentes tipos de propiedades y es important...
@@ -737,7 +737,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-ciclo-for-in/">9.10. Ciclo for…in en JavaScript: Cómo Iterar sobre las Propiedades de un Objeto</a>
+      <a href="ciclo-for-in/">9.10. Ciclo for…in: Cómo Iterar sobre las Propiedades de un Objeto</a>
     </span>
     <div class="list-group-description">
       El ciclo for...in es una de las herramientas más comunes en JavaScript para iterar sobre las...
@@ -746,7 +746,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-funciones-fabrica/">9.11. Funciones Fábrica en JavaScript: Creando Objetos de Forma Flexible</a>
+      <a href="funciones-fabrica/">9.11. Funciones Fábrica: Creando Objetos de Forma Flexible</a>
     </span>
     <div class="list-group-description">
       En JavaScript una función fábrica (o factory function) es una función que retorna un objeto...
@@ -755,7 +755,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-desestructuracion-de-objetos/">9.12. Desestructuración de Objetos en JavaScript: Asigna Propiedades a Variables</a>
+      <a href="desestructuracion-de-objetos/">9.12. Desestructuración de Objetos: Asigna Propiedades a Variables</a>
     </span>
     <div class="list-group-description">
       La desestructuración de objetos es una de las características más útiles introducidas en ES6...
@@ -764,7 +764,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-encadenamiento-opcional/">9.13. Operador de Encadenamiento Opcional ?. en JavaScript</a>
+      <a href="encadenamiento-opcional/">9.13. Operador de Encadenamiento Opcional (?.)</a>
     </span>
     <div class="list-group-description">
       El operador de encadenamiento opcional (?.) es una característica introducida en ES2020 que...
@@ -773,7 +773,7 @@ Comprender el concepto de objetos y prototipos es fundamental para dominar JavaS
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-object-create/">9.14. Crear Objetos con un Prototipo Específico con Object.create()</a>
+      <a href="object-create/">9.14. Crear Objetos con un Prototipo Específico con Object.create()</a>
     </span>
     <div class="list-group-description">
       El método Object.create() es una poderosa herramienta en JavaScript que permite crear un...
@@ -787,7 +787,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="clases-en-javascript/">10.1. Introducción a las Clases en JavaScript</a>
+      <a href="clases/">10.1. Introducción a las Clases</a>
     </span>
     <div class="list-group-description">
       Las clases en JavaScript, introducidas con ES6 (ECMAScript 2015), ofrecen una forma más clar...
@@ -796,7 +796,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-constructor-de-clase/">10.2. Constructor de Clase en JavaScript: Configuración de Objetos</a>
+      <a href="constructor-de-clase/">10.2. Constructor de Clase: Configuración de Objetos</a>
     </span>
     <div class="list-group-description">
       El constructor de clase en JavaScript es un método especial que se ejecuta...
@@ -805,7 +805,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodos-de-instancia-clases/">10.3. Métodos de Instancia en Clases</a>
+      <a href="metodos-de-instancia-clases/">10.3. Métodos de Instancia en Clases</a>
     </span>
     <div class="list-group-description">
       Los métodos de instancia en JavaScript son funciones definidas dentro de una clase que...
@@ -814,7 +814,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-clases-propiedades-metodos-estaticos/">10.4. Propiedades y Métodos Estáticos en Clases de JavaScript</a>
+      <a href="clases-propiedades-metodos-estaticos/">10.4. Propiedades y Métodos Estáticos en Clases</a>
     </span>
     <div class="list-group-description">
       En JavaScript, las propiedades y métodos estáticos pertenecen a la clase misma, no a sus...
@@ -823,7 +823,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-expresiones-de-clase/">10.5. Expresiones de Clase en JavaScript</a>
+      <a href="expresiones-de-clase/">10.5. Expresiones de Clase</a>
     </span>
     <div class="list-group-description">
       Las Class Expressions (Expresiones de Clase) en JavaScript son una forma alternativa de definir...
@@ -832,7 +832,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-nombres-de-propiedad-computadas-clases/">10.6. Nombres de Propiedad Computadas en Clases de JavaScript</a>
+      <a href="nombres-de-propiedad-computadas-clases/">10.6. Nombres de Propiedad Computadas en Clases</a>
     </span>
     <div class="list-group-description">
       Los nombres de propiedad computadas o Computed Property Names permiten definir...
@@ -841,7 +841,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-herencia-clases/">10.7. Extensión de Clases (Herencia) en JavaScript</a>
+      <a href="herencia-clases/">10.7. Extensión de Clases (Herencia)</a>
     </span>
     <div class="list-group-description">
       La herencia es un concepto fundamental en la programación orientada a objetos que permite...
@@ -850,7 +850,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="tipos-super-clases/">10.8. Uso de super en Clases de JavaScript</a>
+      <a href="tipos-super-clases/">10.8. Uso de super en Clases</a>
     </span>
     <div class="list-group-description">
       La palabra clave super en JavaScript se utiliza en clases derivadas para acceder al constructor o...
@@ -859,7 +859,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-propiedades-privadas-encapsulacion/">10.9. Encapsulación con Propiedades Privadas en Clases de JavaScript</a>
+      <a href="propiedades-privadas-encapsulacion/">10.9. Encapsulación con Propiedades Privadas en Clases</a>
     </span>
     <div class="list-group-description">
       La encapsulación es un concepto clave en la programación orientada a objetos que permite...
@@ -868,7 +868,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-getters-y-setters-clases/">10.10. Getters y Setters en Clases de JavaScript</a>
+      <a href="getters-y-setters-clases/">10.10. Getters y Setters en Clases</a>
     </span>
     <div class="list-group-description">
       Los getters y setters en JavaScript son funciones especiales que se utilizan para controlar el...
@@ -877,7 +877,7 @@ En el ámbito de la programación en JavaScript, las clases desempeñan un papel
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="mixins-en-javascript/">10.11. Mixins en JavaScript</a>
+      <a href="mixins/">10.11. Mixins</a>
     </span>
     <div class="list-group-description">
       Los Mixins en JavaScript son una técnica en la programación orientada a objetos que permite...
@@ -891,7 +891,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-programacion-asincrona/">11.1. Introducción a la Programación Asíncrona en JavaScript</a>
+      <a href="programacion-asincrona/">11.1. Introducción a la Programación Asíncrona</a>
     </span>
     <div class="list-group-description">
       La programación asíncrona es una técnica que permite que los programas realicen múltiples...
@@ -900,7 +900,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-promesas/">11.2. Promesas en JavaScript</a>
+      <a href="promesas/">11.2. Promesas</a>
     </span>
     <div class="list-group-description">
       Las promesas en JavaScript son una herramienta esencial para manejar operaciones asíncronas...
@@ -909,7 +909,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-encadenamiento-de-promesas/">11.3. Encadenamiento de Promesas en JavaScript</a>
+      <a href="encadenamiento-de-promesas/">11.3. Encadenamiento de Promesas</a>
     </span>
     <div class="list-group-description">
       El encadenamiento de promesas es una técnica que permite ejecutar operaciones asíncronas...
@@ -918,7 +918,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodo-promise-all/">11.4. Promise.all en JavaScript: Promesas en Paralelo</a>
+      <a href="metodo-promise-all/">11.4. Promise.all: Promesas en Paralelo</a>
     </span>
     <div class="list-group-description">
       El método Promise.all en JavaScript es una herramienta poderosa para manejar múltiples...
@@ -929,7 +929,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodo-promise-race/">11.5. Promise.race en JavaScript: Resolviendo la Promesa Más Rápida</a>
+      <a href="metodo-promise-race/">11.5. Promise.race: Resolviendo la Promesa Más Rápida</a>
     </span>
     <div class="list-group-description">
       El método Promise.race en JavaScript permite manejar varias promesas ejecutadas en paralelo y...
@@ -940,7 +940,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodo-promise-allsettled/">11.6. Promise.allSettled en JavaScript: Manejo Completo de Promesas</a>
+      <a href="metodo-promise-allsettled/">11.6. Promise.allSettled: Manejo Completo de Promesas</a>
     </span>
     <div class="list-group-description">
       El método Promise.allSettled en JavaScript es una herramienta diseñada para manejar múltiples...
@@ -951,7 +951,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-metodo-promise-any/">11.7. Promise.any: Esperando la Primera Promesa Resuelta con Éxito</a>
+      <a href="metodo-promise-any/">11.7. Promise.any: Esperando la Primera Promesa Resuelta con Éxito</a>
     </span>
     <div class="list-group-description">
       Promise.any es un método en JavaScript que devuelve la primera promesa que se resuelve con éxito...
@@ -962,7 +962,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-manejo-errores-en-promesas/">11.8. Manejo de Errores en Promesas en JavaScript</a>
+      <a href="manejo-errores-en-promesas/">11.8. Manejo de Errores en Promesas</a>
     </span>
     <div class="list-group-description">
       Trabajar con promesas en JavaScript permite manejar operaciones asíncronas de manera fluida, pero...
@@ -973,7 +973,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-async-await/">11.9. Async/Await en JavaScript</a>
+      <a href="async-await/">11.9. Async/Await</a>
     </span>
     <div class="list-group-description">
       La introducción de async/await en JavaScript transformó la manera de manejar el código...
@@ -982,7 +982,7 @@ En el ámbito de JavaScript, dominar las promesas y Async/Await puede mejorar si
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-manejo-de-errores-async-await/">11.10. Manejo de Errores con Async/Await</a>
+      <a href="manejo-de-errores-async-await/">11.10. Manejo de Errores con Async/Await</a>
     </span>
     <div class="list-group-description">
       El uso de async y await ha hecho que trabajar con código asíncrono sea más claro y legible...
@@ -996,7 +996,7 @@ Los **Iteradores** y **Generadores** desempeñan un papel importante en JavaScri
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-iteradores/">12.1. Introducción a los Iteradores en JavaScript</a>
+      <a href="iteradores/">12.1. Introducción a los Iteradores</a>
     </span>
     <div class="list-group-description">
       Los iteradores en JavaScript proporcionan una manera eficiente y controlada de recorrer...
@@ -1005,7 +1005,7 @@ Los **Iteradores** y **Generadores** desempeñan un papel importante en JavaScri
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-bucle-for-of/">12.2. Iterables y el Bucle for…of en JavaScript</a>
+      <a href="bucle-for-of/">12.2. Iterables y el Bucle for…of</a>
     </span>
     <div class="list-group-description">
       Los iterables en JavaScript son estructuras que permiten recorrer sus elementos de manera...
@@ -1014,7 +1014,7 @@ Los **Iteradores** y **Generadores** desempeñan un papel importante en JavaScri
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-generadores/">12.3. Generadores en JavaScript</a>
+      <a href="generadores/">12.3. Generadores</a>
     </span>
     <div class="list-group-description">
       Los generadores en JavaScript son un tipo especial de función que permite pausar y reanudar su...
@@ -1025,7 +1025,7 @@ Los **Iteradores** y **Generadores** desempeñan un papel importante en JavaScri
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-iteradores-asincronos/">12.4. Iteradores Asíncronos en JavaScript</a>
+      <a href="iteradores-asincronos/">12.4. Iteradores Asíncronos</a>
     </span>
     <div class="list-group-description">
       Con el auge de aplicaciones que manejan datos en tiempo real y operaciones asíncronas como...
@@ -1034,7 +1034,7 @@ Los **Iteradores** y **Generadores** desempeñan un papel importante en JavaScri
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-generadores-asincronos/">12.5. Generadores Asíncronos en JavaScript</a>
+      <a href="generadores-asincronos/">12.5. Generadores Asíncronos</a>
     </span>
     <div class="list-group-description">
       Los generadores asíncronos en JavaScript permiten producir y consumir valores de...
@@ -1048,7 +1048,7 @@ Los módulos desempeñan un papel importante en la organización y estructuraci�
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="modulos-en-javascript/">13.1. Introducción a los Módulos en JavaScript</a>
+      <a href="modulos/">13.1. Introducción a los Módulos</a>
     </span>
     <div class="list-group-description">
       Los módulos en JavaScript son fundamentales para organizar y estructurar código de manera...
@@ -1057,7 +1057,7 @@ Los módulos desempeñan un papel importante en la organización y estructuraci�
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-exportacion-modulos/">13.2. Exportación en JavaScript</a>
+      <a href="exportacion-modulos/">13.2. Exportación</a>
     </span>
     <div class="list-group-description">
       La exportación en JavaScript permite compartir variables, funciones y clases entre módulos...
@@ -1066,7 +1066,7 @@ Los módulos desempeñan un papel importante en la organización y estructuraci�
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-importacion-modulos/">13.3. Importación en JavaScript</a>
+      <a href="importacion-modulos/">13.3. Importación</a>
     </span>
     <div class="list-group-description">
       La importación en JavaScript permite que un módulo use funciones, variables o clases de...
@@ -1075,7 +1075,7 @@ Los módulos desempeñan un papel importante en la organización y estructuraci�
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-reexportacion-modulos/">13.4. Reexportación de Módulos en JavaScript</a>
+      <a href="reexportacion-modulos/">13.4. Reexportación de Módulos</a>
     </span>
     <div class="list-group-description">
       La reexportación en JavaScript permite agrupar y redistribuir módulos desde un solo punto de...
@@ -1084,7 +1084,7 @@ Los módulos desempeñan un papel importante en la organización y estructuraci�
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-modulos-dinamicos/">13.5. Módulos Dinámicos en JavaScript</a>
+      <a href="modulos-dinamicos/">13.5. Módulos Dinámicos</a>
     </span>
     <div class="list-group-description">
       Los módulos dinámicos en JavaScript permiten cargar código de manera asíncrona durante la...
@@ -1098,7 +1098,7 @@ En el ámbito de la programación en JavaScript comprender las colecciones es un
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-map/">14.1. Map en JavaScript</a>
+      <a href="map/">14.1. Map</a>
     </span>
     <div class="list-group-description">
       El objeto Map en JavaScript, introducido en ES6, es una estructura de datos diseñada para...
@@ -1107,7 +1107,7 @@ En el ámbito de la programación en JavaScript comprender las colecciones es un
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-set/">14.2. Set en JavaScript</a>
+      <a href="set/">14.2. Set</a>
     </span>
     <div class="list-group-description">
       El objeto Set es una estructura de datos que permite almacenar valores únicos de cualquier...
@@ -1121,7 +1121,7 @@ La gestión de errores en JavaScript es un aspecto crucial de la programación p
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-try-catch/">15.1. try catch en JavaScript</a>
+      <a href="try-catch/">15.1. try catch</a>
     </span>
     <div class="list-group-description">
       El manejo de errores en JavaScript es importante al momento de construir aplicaciones confiable...
@@ -1130,7 +1130,7 @@ La gestión de errores en JavaScript es un aspecto crucial de la programación p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-try-catch-finally/">15.2. try catch finally en JavaScript</a>
+      <a href="try-catch-finally/">15.2. try catch finally</a>
     </span>
     <div class="list-group-description">
       El bloque try catch finally en JavaScript amplía la funcionalidad de la estructura...
@@ -1139,7 +1139,7 @@ La gestión de errores en JavaScript es un aspecto crucial de la programación p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-throw/">15.3. Lanzar Excepciones con throw</a>
+      <a href="throw/">15.3. Lanzar Excepciones con throw</a>
     </span>
     <div class="list-group-description">
       El manejo de errores en JavaScript no solo implica capturar problemas con try…catch, sino...
@@ -1148,7 +1148,7 @@ La gestión de errores en JavaScript es un aspecto crucial de la programación p
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-optional-catch-binding/">15.4. Optional Catch Binding en JavaScript</a>
+      <a href="optional-catch-binding/">15.4. Optional Catch Binding</a>
     </span>
     <div class="list-group-description">
       La introducción del optional catch binding (Manejo Opcional del Error en Catch) en...
@@ -1156,13 +1156,13 @@ La gestión de errores en JavaScript es un aspecto crucial de la programación p
   </article>
 </section>
 
-## **16. JavaScript Runtime (tiempo de ejecución)**
+## **16. Runtime (tiempo de ejecución)**
 El JavaScript Runtime es el entorno en el cual se ejecuta el código JavaScript. Es el “escenario” donde ocurren todas las acciones de nuestro código. Durante la ejecución, el tiempo de ejecución se encarga de interpretar y ejecutar el código JavaScript línea por línea, gestionando tareas como la asignación de memoria, la ejecución de funciones, la manipulación de objetos, y la interacción con el entorno donde se esté ejecutando.
 
 <section class="list-group">
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-contexto-de-ejecucion/">16.1. Contexto de Ejecución en JavaScript</a>
+      <a href="contexto-de-ejecucion/">16.1. Contexto de Ejecución</a>
     </span>
     <div class="list-group-description">
       El contexto de ejecución es uno de los conceptos clave para entender cómo JavaScript procesa y...
@@ -1171,7 +1171,7 @@ El JavaScript Runtime es el entorno en el cual se ejecuta el código JavaScript.
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-call-stack/">16.2. JavaScript Call Stack: Entendiendo la Pila de Llamadas</a>
+      <a href="call-stack/">16.2. Call Stack: Entendiendo la Pila de Llamadas</a>
     </span>
     <div class="list-group-description">
       La pila de llamadas o call stack es un mecanismo en el cual se utiliza el motor de JavaScript para...
@@ -1180,7 +1180,7 @@ El JavaScript Runtime es el entorno en el cual se ejecuta el código JavaScript.
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-event-loop/">16.3. Event Loop en JavaScript</a>
+      <a href="event-loop/">16.3. Event Loop</a>
     </span>
     <div class="list-group-description">
       El event loop (bucle de eventos) es un componente fundamental del tiempo de...
@@ -1189,7 +1189,7 @@ El JavaScript Runtime es el entorno en el cual se ejecuta el código JavaScript.
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-hoisting/">16.4. JavaScript Hoisting: Entendiendo la Elevación en el Código</a>
+      <a href="hoisting/">16.4. Hoisting: Entendiendo la Elevación en el Código</a>
     </span>
     <div class="list-group-description">
       El hoisting (o elevación) es un comportamiento en JavaScript que ocurre durante la fase de...
@@ -1198,7 +1198,7 @@ El JavaScript Runtime es el entorno en el cual se ejecuta el código JavaScript.
 
   <article class="list-group-post">
     <span class="list-group-title">
-      <a href="javascript-scope/">16.5. JavaScript Variable Scope: Alcances de las Variables</a>
+      <a href="scope/">16.5. Variable Scope: Alcances de las Variables</a>
     </span>
     <div class="list-group-description">
       El alcance (scope) de una variable en JavaScript define dónde es visible y accesible dentro del...
