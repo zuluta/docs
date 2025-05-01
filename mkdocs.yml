@@ -44,7 +44,7 @@ nav:
       - Valores Primitivos vs. Valores de Referencia: javascript/valores-primitivos-vs-referencia.md
       - Introducción a los Objetos: javascript/objetos.md
     - 03. Operadores:
-      - Operadores: javascript/operadores-aritmeticos.md
+      - Operadores Aritméticos: javascript/operadores-aritmeticos.md
       - Operador de Resto: javascript/operador-resto.md
       - Operador de Exponenciación: javascript/operador-exponenciacion.md
       - Operadores de asignación: javascript/operadores-asignacion.md
