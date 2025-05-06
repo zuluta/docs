@@ -121,7 +121,19 @@
          <lastmod>2025-05-06</lastmod>
     </url>
     <url>
+         <loc>https://zuluta.github.io/docs/javascript/call-stack/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/javascript/contexto-de-ejecucion/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
          <loc>https://zuluta.github.io/docs/javascript/encadenamiento-de-promesas/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/javascript/event-loop/</loc>
          <lastmod>2025-05-06</lastmod>
     </url>
     <url>
@@ -134,6 +146,10 @@
     </url>
     <url>
          <loc>https://zuluta.github.io/docs/javascript/generadores/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/javascript/hoisting/</loc>
          <lastmod>2025-05-06</lastmod>
     </url>
     <url>
@@ -261,6 +277,10 @@
          <lastmod>2025-05-06</lastmod>
     </url>
     <url>
+         <loc>https://zuluta.github.io/docs/javascript/optional-catch-binding/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
          <loc>https://zuluta.github.io/docs/javascript/primeros-pasos/</loc>
          <lastmod>2025-05-06</lastmod>
     </url>
@@ -277,6 +297,10 @@
          <lastmod>2025-05-06</lastmod>
     </url>
     <url>
+         <loc>https://zuluta.github.io/docs/javascript/scope/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
          <loc>https://zuluta.github.io/docs/javascript/set/</loc>
          <lastmod>2025-05-06</lastmod>
     </url>
@@ -289,7 +313,19 @@
          <lastmod>2025-05-06</lastmod>
     </url>
     <url>
+         <loc>https://zuluta.github.io/docs/javascript/throw/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
          <loc>https://zuluta.github.io/docs/javascript/tipos-de-datos/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/javascript/try-catch-finally/</loc>
+         <lastmod>2025-05-06</lastmod>
+    </url>
+    <url>
+         <loc>https://zuluta.github.io/docs/javascript/try-catch/</loc>
          <lastmod>2025-05-06</lastmod>
     </url>
     <url>
