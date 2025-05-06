@@ -93,7 +93,6 @@ promesa
     .then((resultado) => {
         console.log("Este código no recibirá un valor adecuado");
     });
-
 ```
 
 Asegúrate de devolver un valor o una promesa.
@@ -106,7 +105,6 @@ const promesa = new Promise((resolve) => resolve(10));
 promesa
     .then((resultado) => console.log("Primera operación:", resultado)) // Primera operación: 10
     .then((resultado) => console.log("Segunda operación:", resultado)); // Segunda operación: undefined
-
 ```
 
 ## **Buenas prácticas para el encadenamiento de promesas**
@@ -124,7 +122,7 @@ Para aprovechar al máximo el encadenamiento de promesas, ten en cuenta las sigu
 
 El encadenamiento de promesas en JavaScript es una técnica poderosa para manejar flujos asíncronos de manera ordenada y legible. Al devolver valores o promesas en cada `.then()`, puedes construir cadenas claras y evitar el caos de los callbacks anidados. Además, el uso adecuado de `.catch()` y `.finally()` asegura que tu código sea robusto y fácil de mantener.
 
-En el próximo artículo, exploraremos Promise.all en JavaScript, una herramienta para ejecutar múltiples promesas en paralelo.
+En el próximo artículo, exploraremos [Promise.all en JavaScript](../metodo-promise-all/), una herramienta para ejecutar múltiples promesas en paralelo.
 
 ***
 
