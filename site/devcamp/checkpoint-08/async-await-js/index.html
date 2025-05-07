@@ -95,6 +95,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#que-son-async-y-await" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -5316,6 +5321,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    8. ¿Qué hacen async y await por nosotros?
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -5327,6 +5345,83 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-son-async-y-await" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué son async y await?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-secuencial-con-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejecución secuencial con async/await
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-paralela-con-promiseall-y-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejecución paralela con Promise.all y async/await
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manejo-de-errores-con-trycatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manejo de errores con try/catch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-con-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas con async/await
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buenas prácticas con async/await">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -5366,6 +5461,74 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-son-async-y-await" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué son async y await?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-secuencial-con-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejecución secuencial con async/await
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecucion-paralela-con-promiseall-y-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejecución paralela con Promise.all y async/await
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manejo-de-errores-con-trycatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manejo de errores con try/catch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-con-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buenas prácticas con async/await
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buenas prácticas con async/await">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusión
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -5385,7 +5548,152 @@
 
   <h1>8. ¿Qué hacen async y await por nosotros?</h1>
 
-
+<p>La introducción de async/await en JavaScript transformó la manera de manejar el código asíncrono, haciéndolo más legible y fácil de seguir. Estas palabras clave permiten trabajar con promesas de forma más fluida, logrando que el código se parezca al flujo síncrono. Esto no solo mejora la comprensión del código, sino que también facilita su depuración.</p>
+<p>En este artículo, aprenderemos cómo funcionan <code>async</code> y <code>await</code>, sus ventajas, y cómo usarlos para simplificar operaciones asíncronas complejas.</p>
+<h2 id="que-son-async-y-await"><strong>¿Qué son async y await?</strong></h2>
+<p><code>async</code> y <code>await</code> son palabras clave introducidas en <strong>ES2017</strong> que permiten manejar código asíncrono de manera más clara. Estas herramientas convierten el trabajo con promesas en un proceso más lineal, facilitando la escritura y lectura del código.</p>
+<ul>
+<li><strong>async</strong>: Convierte automáticamente una función utilitaria en una función asíncrona que devuelve una promesa.</li>
+<li><strong>await</strong>: Pausa la ejecución de una función <code>async</code> hasta que la promesa asociada sea resuelta o rechazada.</li>
+</ul>
+<p><strong>Ejemplo básico de una función async:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">saludo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Hola, Async/Await&quot;</span><span class="p">;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">}</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nx">saludo</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">mensaje</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">));</span>
+</code></pre></div></td></tr></table></div>
+<p>Al usar <code>async</code>, la función <code>saludo</code> devuelve automáticamente una promesa.El valor <code>"Hola, Async/Await"</code> se convierte en el resultado de la promesa.</p>
+<p><strong>Uso de await para manejar promesas:</strong></p>
+<p>La palabra clave <code>await</code> permite pausar la ejecución de una función <code>async</code> hasta que la promesa asociada se resuelva. Esto elimina la necesidad de usar <code>.then()</code> para manejar resultados, logrando un flujo más natural.</p>
+<p><strong>Ejemplo básico de await:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">obtenerDatos</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/datos&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">datos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">datos</span><span class="p">;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>La función <code>fetch</code> devuelve una promesa. <code>await</code> espera a que esta se resuelva. El flujo no continúa hasta que se obtienen y procesan los datos.</p>
+<h2 id="ejecucion-secuencial-con-asyncawait"><strong>Ejecución secuencial con async/await</strong></h2>
+<p><code>async/await</code> también permite ejecutar operaciones de manera secuencial, en caso de que cada tarea dependa de la finalización de la anterior. Esta secuencia asegura que el flujo de datos sea correcto y elimina la necesidad de anidar múltiples <code>.then()</code> en una cadena.</p>
+<p><strong>Ejemplo de Ejecución Secuencial:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">procesoSecuencial</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">paso1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&quot;Paso 1 completado&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paso1</span><span class="p">);</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">paso2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&quot;Paso 2 completado&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paso2</span><span class="p">);</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">paso3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&quot;Paso 3 completado&quot;</span><span class="p">);</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">paso3</span><span class="p">);</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="p">}</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="nx">procesoSecuencial</span><span class="p">();</span>
+</code></pre></div></td></tr></table></div>
+<p>En el ejemplo anterior, cada <code>await</code> asegura que el paso anterior esté completo antes de continuar. Esta función asíncrona produce lo que sería una cadena de promesas en un flujo de código fácil de entender y sin necesidad de anidación.</p>
+<h2 id="ejecucion-paralela-con-promiseall-y-asyncawait"><strong>Ejecución paralela con Promise.all y async/await</strong></h2>
+<p>Aunque <code>async/await</code> es ideal para flujos secuenciales, también puedes usarlo con <code>Promise.all</code> para ejecutar tareas en paralelo. Esto mejora el rendimiento en operaciones independientes.</p>
+<p><strong>Ejemplo de Ejecución Paralela:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">obtenerDatosParalelo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">usuario</span><span class="p">,</span><span class="w"> </span><span class="nx">pedidos</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">([</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">        </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/usuario/1&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">()),</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">        </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/pedidos/1&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">        </span><span class="p">]);</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">usuario</span><span class="p">,</span><span class="w"> </span><span class="nx">pedidos</span><span class="w"> </span><span class="p">};</span><span class="w"> </span><span class="c1">// Devuelve ambos resultados como un objeto</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="w"> </span><span class="p">};</span><span class="w"> </span><span class="c1">// Devuelve el error capturado</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="p">}</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="nx">obtenerDatosParalelo</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">resultado</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">    </span><span class="c1">// Manejo de resultado o error</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+<p>En el ejemplo anterior las dos solicitudes se ejecutan en paralelo. <code>Promise.all</code> espera a que ambas operaciones finalicen, pero sin depender una de la otra, mejorando el rendimiento de la aplicación.</p>
+<h2 id="manejo-de-errores-con-trycatch"><strong>Manejo de errores con try/catch</strong></h2>
+<p>El manejo de errores es más limpio con <code>try/catch</code> dentro de funciones <code>async</code>, ya que centraliza la gestión de errores en un solo bloque. Esto asegura que todos los errores de la función <code>async</code> se gestionen en un solo bloque.</p>
+<p><strong>Ejemplo de manejo de errores:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">obtenerDatosSeguro</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">respuesta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/datos&#39;</span><span class="p">);</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Error en la solicitud&quot;</span><span class="p">);</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">datos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">respuesta</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">datos</span><span class="p">;</span><span class="w"> </span><span class="c1">// Devuelve los datos obtenidos</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="w"> </span><span class="p">};</span><span class="w"> </span><span class="c1">// Devuelve el error capturado</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="p">}</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="nx">obtenerDatosSeguro</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">resultado</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="w">    </span><span class="c1">// Manejo de resultado o error</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+<p><code>try</code> protege el bloque donde pueden ocurrir errores. <code>catch</code> captura y maneja cualquier error, como fallos de red o datos inválidos.</p>
+<h2 id="buenas-practicas-con-asyncawait"><strong>Buenas prácticas con async/await</strong></h2>
+<p>Para aprovechar al máximo <code>async/await</code>, es importante tener en cuenta algunas buenas prácticas que aseguran un manejo eficiente y ordenado de las operaciones asíncronas.</p>
+<ol>
+<li><strong>Usa <code>Promise.all</code> para operaciones paralelas</strong>: Cuando varias tareas no dependen unas de otras, ejecútalas simultáneamente para mejorar el rendimiento.</li>
+<li><strong>Utiliza <code>try/catch</code> para capturar errores</strong>: Centraliza el manejo de errores para evitar fallos inesperados y mejorar la depuración.</li>
+<li><strong>Evita bloqueos innecesarios</strong>: No uses <code>await</code> en operaciones que no necesitan ser pausadas. Esto puede ralentizar el flujo del programa.</li>
+<li><strong>Manejo eficiente de errores</strong>: En flujos complejos, combina <code>try/catch</code> con funciones reutilizables para reducir la redundancia.</li>
+</ol>
+<hr />
+<h3 id="conclusion"><strong>Conclusión</strong></h3>
+<p><code>async</code> y <code>await</code> han revolucionado la forma de manejar la asincronía en JavaScript, haciendo que el código sea más limpio, legible y fácil de mantener. Al comprender su funcionamiento y seguir buenas prácticas, puedes optimizar tus aplicaciones y simplificar el desarrollo de tareas asíncronas.</p>
+<p>En el próximo artículo, exploraremos cómo <a href="../manejo-de-errores-async-await/">manejar errores con async/await</a>, asegurando que tu código sea robusto y eficiente.</p>
+<hr />
+<p><br></p>
 
 
 
