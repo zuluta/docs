@@ -190,6 +190,13 @@ nav:
       - 6. ¿Qué es la programación orientada a objetos?: devcamp/checkpoint-08/que-es-poo-js.md
       - 7. ¿Qué es una promesa en JS?: devcamp/checkpoint-08/promesa-js.md
       - 8. ¿Qué hacen async y await por nosotros?: devcamp/checkpoint-08/async-await-js.md
+    - Checkpoint 09:
+      - Checkpoint 09: devcamp/checkpoint-09/index.md
+      - 1. Mejorar productividad: devcamp/checkpoint-09/mejorar-productividad-js.md
+      - 2. Math con métodos estáticos: devcamp/checkpoint-09/math-js.md
+      - 3. Personalizar precios: devcamp/checkpoint-09/personalizar-precios-js.md
+      - 4. Manejo de errores: devcamp/checkpoint-09/manejar-errores-js.md
+      - 5. Introducción a los Módulos: devcamp/checkpoint-09/modulos-js.md
 
 # configuración
 theme:
