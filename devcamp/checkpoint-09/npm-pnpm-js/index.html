@@ -12,28 +12,28 @@
         <meta name="author" content="ZulutaDev">
       
       
-        <link rel="canonical" href="https://zuluta.github.io/docs/javascript/metodos-de-division-y-union-en-strings/">
+        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/checkpoint-09/npm-pnpm-js/">
       
       
-        <link rel="prev" href="../metodos-de-limpieza-string/">
+        <link rel="prev" href="../modulos-js/">
       
       
-        <link rel="next" href="../programacion-asincrona/">
+        <link rel="next" href="../crear-desplegar-modulo-npm-js/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Métodos de División y Unión en Strings - ZulutaDev</title>
+        <title>6. Introducción a NPM y PNPM - ZulutaDev</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
 <meta property="og:image" content="https://zuluta.github.io/docs/assets/images/og.png">
 <meta property="og:locale" content="es_ES">
 
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -79,7 +79,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metodos-de-division-y-union-en-strings" class="md-skip">
+        <a href="#como-instalar-o-actualizar-npm" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Métodos de División y Unión en Strings
+              6. Introducción a NPM y PNPM
             
           </span>
         </div>
@@ -245,7 +245,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -266,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tutoriales/" class="md-tabs__link">
+        <a href="../../../tutoriales/" class="md-tabs__link">
           
   
   
@@ -284,13 +284,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../javascript/" class="md-tabs__link">
           
   
   
@@ -308,11 +306,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../devcamp/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -336,8 +336,6 @@
         <div class="md-main__inner md-grid">
           
             
-              
-                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -380,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -431,7 +429,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutoriales/" class="md-nav__link ">
+            <a href="../../../tutoriales/" class="md-nav__link ">
               
   
   
@@ -511,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
+      <a href="../../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
         
   
   
@@ -587,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
+      <a href="../../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
         
   
   
@@ -665,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
+      <a href="../../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
         
   
   
@@ -688,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
+      <a href="../../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
         
   
   
@@ -764,7 +762,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/desarrollo-web/optimizar-seo/" class="md-nav__link">
+      <a href="../../../tutoriales/desarrollo-web/optimizar-seo/" class="md-nav__link">
         
   
   
@@ -799,8 +797,6 @@
       
   
   
-    
-  
   
   
     
@@ -846,21 +842,18 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../javascript/" class="md-nav__link ">
               
   
   
@@ -873,13 +866,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -942,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../que-es-javascript/" class="md-nav__link">
+      <a href="../../../javascript/que-es-javascript/" class="md-nav__link">
         
   
   
@@ -965,7 +958,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../primeros-pasos/" class="md-nav__link">
+      <a href="../../../javascript/primeros-pasos/" class="md-nav__link">
         
   
   
@@ -1057,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sintaxis-javascript/" class="md-nav__link">
+      <a href="../../../javascript/sintaxis-javascript/" class="md-nav__link">
         
   
   
@@ -1080,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../../javascript/variables/" class="md-nav__link">
         
   
   
@@ -1103,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../var-let/" class="md-nav__link">
+      <a href="../../../javascript/var-let/" class="md-nav__link">
         
   
   
@@ -1126,7 +1119,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tipos-de-datos/" class="md-nav__link">
+      <a href="../../../javascript/tipos-de-datos/" class="md-nav__link">
         
   
   
@@ -1149,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../numeros/" class="md-nav__link">
+      <a href="../../../javascript/numeros/" class="md-nav__link">
         
   
   
@@ -1172,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../booleanos/" class="md-nav__link">
+      <a href="../../../javascript/booleanos/" class="md-nav__link">
         
   
   
@@ -1195,7 +1188,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../string/" class="md-nav__link">
+      <a href="../../../javascript/string/" class="md-nav__link">
         
   
   
@@ -1218,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../valores-primitivos-vs-referencia/" class="md-nav__link">
+      <a href="../../../javascript/valores-primitivos-vs-referencia/" class="md-nav__link">
         
   
   
@@ -1241,7 +1234,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../objetos/" class="md-nav__link">
+      <a href="../../../javascript/objetos/" class="md-nav__link">
         
   
   
@@ -1333,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-aritmeticos/" class="md-nav__link">
+      <a href="../../../javascript/operadores-aritmeticos/" class="md-nav__link">
         
   
   
@@ -1356,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operador-resto/" class="md-nav__link">
+      <a href="../../../javascript/operador-resto/" class="md-nav__link">
         
   
   
@@ -1379,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operador-exponenciacion/" class="md-nav__link">
+      <a href="../../../javascript/operador-exponenciacion/" class="md-nav__link">
         
   
   
@@ -1402,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-asignacion/" class="md-nav__link">
+      <a href="../../../javascript/operadores-asignacion/" class="md-nav__link">
         
   
   
@@ -1425,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-unarios/" class="md-nav__link">
+      <a href="../../../javascript/operadores-unarios/" class="md-nav__link">
         
   
   
@@ -1448,7 +1441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-comparacion/" class="md-nav__link">
+      <a href="../../../javascript/operadores-comparacion/" class="md-nav__link">
         
   
   
@@ -1471,7 +1464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-logicos/" class="md-nav__link">
+      <a href="../../../javascript/operadores-logicos/" class="md-nav__link">
         
   
   
@@ -1494,7 +1487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-asignacion-logica/" class="md-nav__link">
+      <a href="../../../javascript/operadores-asignacion-logica/" class="md-nav__link">
         
   
   
@@ -1517,7 +1510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operador-fusion-nulos/" class="md-nav__link">
+      <a href="../../../javascript/operador-fusion-nulos/" class="md-nav__link">
         
   
   
@@ -1545,10 +1538,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1575,11 +1566,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1595,7 +1586,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             04. Métodos de Strings
@@ -1609,7 +1600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-busqueda-strings/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-busqueda-strings/" class="md-nav__link">
         
   
   
@@ -1632,7 +1623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-reemplazo-string/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-reemplazo-string/" class="md-nav__link">
         
   
   
@@ -1655,7 +1646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-acceso/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-acceso/" class="md-nav__link">
         
   
   
@@ -1678,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-extraccion/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-extraccion/" class="md-nav__link">
         
   
   
@@ -1701,7 +1692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-concatenacion-string/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-concatenacion-string/" class="md-nav__link">
         
   
   
@@ -1724,7 +1715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-transformacion-caso-string/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-transformacion-caso-string/" class="md-nav__link">
         
   
   
@@ -1747,7 +1738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-limpieza-string/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-limpieza-string/" class="md-nav__link">
         
   
   
@@ -1767,32 +1758,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Métodos de División y Unión en Strings
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../javascript/metodos-de-division-y-union-en-strings/" class="md-nav__link">
         
   
   
@@ -1803,101 +1772,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#convertir-un-string-en-un-array-split" class="md-nav__link">
-    <span class="md-ellipsis">
-      Convertir un String en un Array: split
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Convertir un String en un Array: split">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#division-con-un-limite" class="md-nav__link">
-    <span class="md-ellipsis">
-      División con un Límite
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#unir-elementos-de-un-array-en-un-string-join" class="md-nav__link">
-    <span class="md-ellipsis">
-      Unir Elementos de un Array en un String: join
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Unir Elementos de un Array en un String: join">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#uso-sin-separador" class="md-nav__link">
-    <span class="md-ellipsis">
-      Uso sin Separador
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#diferencias-entre-split-y-join" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diferencias entre split() y join()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#practicas-para-usar-split-y-join" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prácticas para Usar split() y join()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusión
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1977,7 +1851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../declaracion-if-else.md" class="md-nav__link">
+      <a href="../../../javascript/declaracion-if-else.md" class="md-nav__link">
         
   
   
@@ -2000,7 +1874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-ternario.md" class="md-nav__link">
+      <a href="../../../javascript/operadores-ternario.md" class="md-nav__link">
         
   
   
@@ -2023,7 +1897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../switch-case.md" class="md-nav__link">
+      <a href="../../../javascript/switch-case.md" class="md-nav__link">
         
   
   
@@ -2046,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-while.md" class="md-nav__link">
+      <a href="../../../javascript/bucle-while.md" class="md-nav__link">
         
   
   
@@ -2069,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-do-while.md" class="md-nav__link">
+      <a href="../../../javascript/bucle-do-while.md" class="md-nav__link">
         
   
   
@@ -2092,7 +1966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-for.md" class="md-nav__link">
+      <a href="../../../javascript/bucle-for.md" class="md-nav__link">
         
   
   
@@ -2115,7 +1989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break.md" class="md-nav__link">
+      <a href="../../../javascript/break.md" class="md-nav__link">
         
   
   
@@ -2138,7 +2012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../continue.md" class="md-nav__link">
+      <a href="../../../javascript/continue.md" class="md-nav__link">
         
   
   
@@ -2232,7 +2106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones.md" class="md-nav__link">
+      <a href="../../../javascript/funciones.md" class="md-nav__link">
         
   
   
@@ -2255,7 +2129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-ciudadanos-primera-clase.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-ciudadanos-primera-clase.md" class="md-nav__link">
         
   
   
@@ -2278,7 +2152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-anonimas.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-anonimas.md" class="md-nav__link">
         
   
   
@@ -2301,7 +2175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-recursivas.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-recursivas.md" class="md-nav__link">
         
   
   
@@ -2324,7 +2198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../closures.md" class="md-nav__link">
+      <a href="../../../javascript/closures.md" class="md-nav__link">
         
   
   
@@ -2347,7 +2221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parametros-defecto.md" class="md-nav__link">
+      <a href="../../../javascript/parametros-defecto.md" class="md-nav__link">
         
   
   
@@ -2370,7 +2244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrow-functions.md" class="md-nav__link">
+      <a href="../../../javascript/arrow-functions.md" class="md-nav__link">
         
   
   
@@ -2393,7 +2267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-avanzados-funciones.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-avanzados-funciones.md" class="md-nav__link">
         
   
   
@@ -2416,7 +2290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest-parameter.md" class="md-nav__link">
+      <a href="../../../javascript/rest-parameter.md" class="md-nav__link">
         
   
   
@@ -2439,7 +2313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-de-callback.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-de-callback.md" class="md-nav__link">
         
   
   
@@ -2525,7 +2399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrays.md" class="md-nav__link">
+      <a href="../../../javascript/arrays.md" class="md-nav__link">
         
   
   
@@ -2548,7 +2422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-basicos-arrays.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-basicos-arrays.md" class="md-nav__link">
         
   
   
@@ -2571,7 +2445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-slice-splice-concat.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-slice-splice-concat.md" class="md-nav__link">
         
   
   
@@ -2594,7 +2468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-busqueda-arrays.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-busqueda-arrays.md" class="md-nav__link">
         
   
   
@@ -2617,7 +2491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ordenar-arrays.md" class="md-nav__link">
+      <a href="../../../javascript/ordenar-arrays.md" class="md-nav__link">
         
   
   
@@ -2640,7 +2514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../desestructuracion-y-spread-operator.md" class="md-nav__link">
+      <a href="../../../javascript/desestructuracion-y-spread-operator.md" class="md-nav__link">
         
   
   
@@ -2728,7 +2602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrays-metodos-de-alto-orden.md" class="md-nav__link">
+      <a href="../../../javascript/arrays-metodos-de-alto-orden.md" class="md-nav__link">
         
   
   
@@ -2751,7 +2625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../foreach.md" class="md-nav__link">
+      <a href="../../../javascript/foreach.md" class="md-nav__link">
         
   
   
@@ -2774,7 +2648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-map.md" class="md-nav__link">
+      <a href="../../../javascript/metodo-map.md" class="md-nav__link">
         
   
   
@@ -2797,7 +2671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-filter.md" class="md-nav__link">
+      <a href="../../../javascript/metodo-filter.md" class="md-nav__link">
         
   
   
@@ -2820,7 +2694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-reduce.md" class="md-nav__link">
+      <a href="../../../javascript/metodo-reduce.md" class="md-nav__link">
         
   
   
@@ -2843,7 +2717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-some-every.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-some-every.md" class="md-nav__link">
         
   
   
@@ -2866,7 +2740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-find-findindex.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-find-findindex.md" class="md-nav__link">
         
   
   
@@ -2968,7 +2842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-objetos.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-objetos.md" class="md-nav__link">
         
   
   
@@ -2991,7 +2865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funcion-constructora.md" class="md-nav__link">
+      <a href="../../../javascript/funcion-constructora.md" class="md-nav__link">
         
   
   
@@ -3014,7 +2888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototipo.md" class="md-nav__link">
+      <a href="../../../javascript/prototipo.md" class="md-nav__link">
         
   
   
@@ -3037,7 +2911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../patron-constructor-prototipo.md" class="md-nav__link">
+      <a href="../../../javascript/patron-constructor-prototipo.md" class="md-nav__link">
         
   
   
@@ -3060,7 +2934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../herencia-prototipica.md" class="md-nav__link">
+      <a href="../../../javascript/herencia-prototipica.md" class="md-nav__link">
         
   
   
@@ -3083,7 +2957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../this.md" class="md-nav__link">
+      <a href="../../../javascript/this.md" class="md-nav__link">
         
   
   
@@ -3106,7 +2980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../globalthis.md" class="md-nav__link">
+      <a href="../../../javascript/globalthis.md" class="md-nav__link">
         
   
   
@@ -3129,7 +3003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../propiedades-de-los-objetos.md" class="md-nav__link">
+      <a href="../../../javascript/propiedades-de-los-objetos.md" class="md-nav__link">
         
   
   
@@ -3152,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../propiedades-enumerables-propiedades-propias.md" class="md-nav__link">
+      <a href="../../../javascript/propiedades-enumerables-propiedades-propias.md" class="md-nav__link">
         
   
   
@@ -3175,7 +3049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ciclo-for-in.md" class="md-nav__link">
+      <a href="../../../javascript/ciclo-for-in.md" class="md-nav__link">
         
   
   
@@ -3198,7 +3072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-fabrica.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-fabrica.md" class="md-nav__link">
         
   
   
@@ -3221,7 +3095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../desestructuracion-de-objetos.md" class="md-nav__link">
+      <a href="../../../javascript/desestructuracion-de-objetos.md" class="md-nav__link">
         
   
   
@@ -3244,7 +3118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encadenamiento-opcional.md" class="md-nav__link">
+      <a href="../../../javascript/encadenamiento-opcional.md" class="md-nav__link">
         
   
   
@@ -3267,7 +3141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-create.md" class="md-nav__link">
+      <a href="../../../javascript/object-create.md" class="md-nav__link">
         
   
   
@@ -3363,7 +3237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clases.md" class="md-nav__link">
+      <a href="../../../javascript/clases.md" class="md-nav__link">
         
   
   
@@ -3386,7 +3260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../constructor-de-clase.md" class="md-nav__link">
+      <a href="../../../javascript/constructor-de-clase.md" class="md-nav__link">
         
   
   
@@ -3409,7 +3283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-instancia-clases.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-instancia-clases.md" class="md-nav__link">
         
   
   
@@ -3432,7 +3306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clases-propiedades-metodos-estaticos.md" class="md-nav__link">
+      <a href="../../../javascript/clases-propiedades-metodos-estaticos.md" class="md-nav__link">
         
   
   
@@ -3455,7 +3329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expresiones-de-clase.md" class="md-nav__link">
+      <a href="../../../javascript/expresiones-de-clase.md" class="md-nav__link">
         
   
   
@@ -3478,7 +3352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nombres-de-propiedad-computadas-clases.md" class="md-nav__link">
+      <a href="../../../javascript/nombres-de-propiedad-computadas-clases.md" class="md-nav__link">
         
   
   
@@ -3501,7 +3375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../herencia-clases.md" class="md-nav__link">
+      <a href="../../../javascript/herencia-clases.md" class="md-nav__link">
         
   
   
@@ -3524,7 +3398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tipos-super-clases.md" class="md-nav__link">
+      <a href="../../../javascript/tipos-super-clases.md" class="md-nav__link">
         
   
   
@@ -3547,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../propiedades-privadas-encapsulacion.md" class="md-nav__link">
+      <a href="../../../javascript/propiedades-privadas-encapsulacion.md" class="md-nav__link">
         
   
   
@@ -3570,7 +3444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getters-y-setters-clases.md" class="md-nav__link">
+      <a href="../../../javascript/getters-y-setters-clases.md" class="md-nav__link">
         
   
   
@@ -3593,7 +3467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mixins.md" class="md-nav__link">
+      <a href="../../../javascript/mixins.md" class="md-nav__link">
         
   
   
@@ -3687,7 +3561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../programacion-asincrona/" class="md-nav__link">
+      <a href="../../../javascript/programacion-asincrona/" class="md-nav__link">
         
   
   
@@ -3710,7 +3584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../promesas/" class="md-nav__link">
+      <a href="../../../javascript/promesas/" class="md-nav__link">
         
   
   
@@ -3733,7 +3607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encadenamiento-de-promesas/" class="md-nav__link">
+      <a href="../../../javascript/encadenamiento-de-promesas/" class="md-nav__link">
         
   
   
@@ -3756,7 +3630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-all/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-all/" class="md-nav__link">
         
   
   
@@ -3779,7 +3653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-race/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-race/" class="md-nav__link">
         
   
   
@@ -3802,7 +3676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-allsettled/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-allsettled/" class="md-nav__link">
         
   
   
@@ -3825,7 +3699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-any/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-any/" class="md-nav__link">
         
   
   
@@ -3848,7 +3722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manejo-errores-en-promesas/" class="md-nav__link">
+      <a href="../../../javascript/manejo-errores-en-promesas/" class="md-nav__link">
         
   
   
@@ -3871,7 +3745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../async-await/" class="md-nav__link">
+      <a href="../../../javascript/async-await/" class="md-nav__link">
         
   
   
@@ -3894,7 +3768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manejo-de-errores-async-await/" class="md-nav__link">
+      <a href="../../../javascript/manejo-de-errores-async-await/" class="md-nav__link">
         
   
   
@@ -3978,7 +3852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../iteradores/" class="md-nav__link">
+      <a href="../../../javascript/iteradores/" class="md-nav__link">
         
   
   
@@ -4001,7 +3875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-for-of/" class="md-nav__link">
+      <a href="../../../javascript/bucle-for-of/" class="md-nav__link">
         
   
   
@@ -4024,7 +3898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generadores/" class="md-nav__link">
+      <a href="../../../javascript/generadores/" class="md-nav__link">
         
   
   
@@ -4047,7 +3921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../iteradores-asincronos/" class="md-nav__link">
+      <a href="../../../javascript/iteradores-asincronos/" class="md-nav__link">
         
   
   
@@ -4070,7 +3944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generadores-asincronos/" class="md-nav__link">
+      <a href="../../../javascript/generadores-asincronos/" class="md-nav__link">
         
   
   
@@ -4152,7 +4026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modulos/" class="md-nav__link">
+      <a href="../../../javascript/modulos/" class="md-nav__link">
         
   
   
@@ -4175,7 +4049,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exportacion-modulos/" class="md-nav__link">
+      <a href="../../../javascript/exportacion-modulos/" class="md-nav__link">
         
   
   
@@ -4198,7 +4072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../importacion-modulos/" class="md-nav__link">
+      <a href="../../../javascript/importacion-modulos/" class="md-nav__link">
         
   
   
@@ -4221,7 +4095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modulos-dinamicos/" class="md-nav__link">
+      <a href="../../../javascript/modulos-dinamicos/" class="md-nav__link">
         
   
   
@@ -4299,7 +4173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../map/" class="md-nav__link">
+      <a href="../../../javascript/map/" class="md-nav__link">
         
   
   
@@ -4322,7 +4196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../set/" class="md-nav__link">
+      <a href="../../../javascript/set/" class="md-nav__link">
         
   
   
@@ -4404,7 +4278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../try-catch/" class="md-nav__link">
+      <a href="../../../javascript/try-catch/" class="md-nav__link">
         
   
   
@@ -4427,7 +4301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../try-catch-finally/" class="md-nav__link">
+      <a href="../../../javascript/try-catch-finally/" class="md-nav__link">
         
   
   
@@ -4450,7 +4324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../throw/" class="md-nav__link">
+      <a href="../../../javascript/throw/" class="md-nav__link">
         
   
   
@@ -4473,7 +4347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../optional-catch-binding/" class="md-nav__link">
+      <a href="../../../javascript/optional-catch-binding/" class="md-nav__link">
         
   
   
@@ -4557,7 +4431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contexto-de-ejecucion/" class="md-nav__link">
+      <a href="../../../javascript/contexto-de-ejecucion/" class="md-nav__link">
         
   
   
@@ -4580,7 +4454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../call-stack/" class="md-nav__link">
+      <a href="../../../javascript/call-stack/" class="md-nav__link">
         
   
   
@@ -4603,7 +4477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../event-loop/" class="md-nav__link">
+      <a href="../../../javascript/event-loop/" class="md-nav__link">
         
   
   
@@ -4626,7 +4500,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hoisting/" class="md-nav__link">
+      <a href="../../../javascript/hoisting/" class="md-nav__link">
         
   
   
@@ -4649,7 +4523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scope/" class="md-nav__link">
+      <a href="../../../javascript/scope/" class="md-nav__link">
         
   
   
@@ -4684,6 +4558,8 @@
       
   
   
+    
+  
   
   
     
@@ -4705,18 +4581,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -4729,13 +4608,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             DevCamp
@@ -4784,7 +4663,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-06/" class="md-nav__link ">
+            <a href="../../checkpoint-06/" class="md-nav__link ">
               
   
   
@@ -4819,7 +4698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -4842,7 +4721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -4865,7 +4744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -4888,7 +4767,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
         
   
   
@@ -4911,7 +4790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-una-api-py/" class="md-nav__link">
         
   
   
@@ -4934,7 +4813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -5000,7 +4879,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-07/" class="md-nav__link ">
+            <a href="../../checkpoint-07/" class="md-nav__link ">
               
   
   
@@ -5035,7 +4914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/introduccion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/introduccion-js/" class="md-nav__link">
         
   
   
@@ -5058,7 +4937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
         
   
   
@@ -5081,7 +4960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
         
   
   
@@ -5104,7 +4983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/condicionales-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/condicionales-js/" class="md-nav__link">
         
   
   
@@ -5127,7 +5006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/operador-ternario-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/operador-ternario-js/" class="md-nav__link">
         
   
   
@@ -5150,7 +5029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
         
   
   
@@ -5173,7 +5052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/que-es-this-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/que-es-this-js/" class="md-nav__link">
         
   
   
@@ -5241,7 +5120,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-08/" class="md-nav__link ">
+            <a href="../../checkpoint-08/" class="md-nav__link ">
               
   
   
@@ -5276,7 +5155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/bucles-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/bucles-js/" class="md-nav__link">
         
   
   
@@ -5299,7 +5178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/variables-js/" class="md-nav__link">
         
   
   
@@ -5322,7 +5201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/funcion-flecha-js/" class="md-nav__link">
         
   
   
@@ -5345,7 +5224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
         
   
   
@@ -5368,7 +5247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/operador-de-extension-js/" class="md-nav__link">
         
   
   
@@ -5391,7 +5270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/que-es-poo-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/que-es-poo-js/" class="md-nav__link">
         
   
   
@@ -5414,7 +5293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/promesa-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/promesa-js/" class="md-nav__link">
         
   
   
@@ -5437,7 +5316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/async-await-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/async-await-js/" class="md-nav__link">
         
   
   
@@ -5465,6 +5344,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5495,15 +5376,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-09/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -5522,7 +5403,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Checkpoint 09
@@ -5538,7 +5419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/mejorar-productividad-js/" class="md-nav__link">
+      <a href="../mejorar-productividad-js/" class="md-nav__link">
         
   
   
@@ -5561,7 +5442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/math-js/" class="md-nav__link">
+      <a href="../math-js/" class="md-nav__link">
         
   
   
@@ -5584,7 +5465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/personalizar-precios-js/" class="md-nav__link">
+      <a href="../personalizar-precios-js/" class="md-nav__link">
         
   
   
@@ -5607,7 +5488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/manejar-errores-js/" class="md-nav__link">
+      <a href="../manejar-errores-js/" class="md-nav__link">
         
   
   
@@ -5630,7 +5511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/modulos-js/" class="md-nav__link">
+      <a href="../modulos-js/" class="md-nav__link">
         
   
   
@@ -5650,10 +5531,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/npm-pnpm-js/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    6. Introducción a NPM y PNPM
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -5664,6 +5565,267 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-instalar-o-actualizar-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo instalar o actualizar NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo instalar o actualizar NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verificar-la-instalacion-de-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificar la instalación de Node.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actualizar-npm-globalmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualizar NPM globalmente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternativas-a-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternativas a NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alternativas a NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-que-pnpm-en-lugar-de-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué PNPM en lugar de NPM?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Que es Node.js?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Node.js
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación de Node.js">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      En Windows:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprueba-la-version-de-nodejs-instalada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprueba la versión de Node.js instalada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizar-pnpm-como-administrador-de-paquetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizar PNPM como administrador de paquetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-pnpm-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de PNPM con NPM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificacion-de-la-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificación de la Instalación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-paquetes-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de paquetes con NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación de paquetes con NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-de-paquetes-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualización de paquetes con NPM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-son-las-instalaciones-globales-de-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué son las instalaciones globales de NPM?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-paquetes-con-pnpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de paquetes con PNPM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-instalar-dependencias-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo instalar dependencias con NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo instalar dependencias con NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-dependencias-requeridas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de dependencias requeridas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-dependencias-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de dependencias de desarrollo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-el-fichero-packagejson-de-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué es el fichero Package.json de NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué es el fichero Package.json de NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-basica-de-packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura básica de package.json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies-y-devdependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies y DevDependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package-lock
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -5676,7 +5838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/crear-desplegar-modulo-npm-js/" class="md-nav__link">
+      <a href="../crear-desplegar-modulo-npm-js/" class="md-nav__link">
         
   
   
@@ -5715,9 +5877,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -5725,8 +5885,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -5736,19 +5894,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#convertir-un-string-en-un-array-split" class="md-nav__link">
+  <a href="#como-instalar-o-actualizar-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Convertir un String en un Array: split
+      Cómo instalar o actualizar NPM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Convertir un String en un Array: split">
+    <nav class="md-nav" aria-label="Cómo instalar o actualizar NPM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#division-con-un-limite" class="md-nav__link">
+  <a href="#verificar-la-instalacion-de-nodejs" class="md-nav__link">
     <span class="md-ellipsis">
-      División con un Límite
+      Verificar la instalación de Node.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actualizar-npm-globalmente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualizar NPM globalmente
     </span>
   </a>
   
@@ -5760,46 +5927,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#unir-elementos-de-un-array-en-un-string-join" class="md-nav__link">
+  <a href="#alternativas-a-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Unir Elementos de un Array en un String: join
+      Alternativas a NPM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Unir Elementos de un Array en un String: join">
+    <nav class="md-nav" aria-label="Alternativas a NPM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#uso-sin-separador" class="md-nav__link">
+  <a href="#por-que-pnpm-en-lugar-de-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Uso sin Separador
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#diferencias-entre-split-y-join" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diferencias entre split() y join()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#practicas-para-usar-split-y-join" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prácticas para Usar split() y join()
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusión
+      ¿Por qué PNPM en lugar de NPM?
     </span>
   </a>
   
@@ -5807,6 +5947,192 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Que es Node.js?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Node.js
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación de Node.js">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      En Windows:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprueba-la-version-de-nodejs-instalada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprueba la versión de Node.js instalada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilizar-pnpm-como-administrador-de-paquetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilizar PNPM como administrador de paquetes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-pnpm-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de PNPM con NPM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificacion-de-la-instalacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verificación de la Instalación
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-paquetes-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de paquetes con NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación de paquetes con NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-de-paquetes-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actualización de paquetes con NPM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-son-las-instalaciones-globales-de-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué son las instalaciones globales de NPM?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-paquetes-con-pnpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de paquetes con PNPM
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-instalar-dependencias-con-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo instalar dependencias con NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo instalar dependencias con NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-dependencias-requeridas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de dependencias requeridas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-dependencias-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de dependencias de desarrollo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-el-fichero-packagejson-de-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué es el fichero Package.json de NPM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué es el fichero Package.json de NPM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#estructura-basica-de-packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estructura básica de package.json
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies-y-devdependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies y DevDependencies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-lock" class="md-nav__link">
+    <span class="md-ellipsis">
+      Package-lock
+    </span>
+  </a>
   
 </li>
       
@@ -5823,131 +6149,245 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
 
   
   
 
 
-<p><link rel="stylesheet" href="../../assets/stylesheets/javascript.css"></p>
-<h1 id="metodos-de-division-y-union-en-strings"><strong>Métodos de División y Unión en Strings</strong></h1>
-<p>En la manipulación de datos en JavaScript, los métodos de división y unión <code>split</code> y <code>join</code> juegan un papel importante. <code>split()</code> permite dividir un string en partes más manejables y convertirlo en un array, mientras que <code>join()</code> hace el proceso inverso, uniendo los elementos de un array en una única cadena de texto. Comprender estos métodos es esencial para el procesamiento de datos, formateo de strings y conversión eficiente entre tipos de datos.</p>
-<h2 id="convertir-un-string-en-un-array-split"><strong>Convertir un String en un Array: <code>split</code></strong></h2>
-<p>El método <code>split()</code> divide string o una cadena de texto en múltiples fragmentos y devuelve un array con los elementos resultantes. Se basa en un separador que define el punto de división.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nx">string</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="nx">separator</span><span class="p">,</span><span class="w"> </span><span class="nx">limit</span><span class="p">);</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li><code>separator</code> (opcional): Define el carácter o expresión regular que indica dónde dividir el string.</li>
-<li><code>limit</code> (opcional): Especifica la cantidad máxima de elementos en el array resultante.</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">texto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;manzana,pera,uva,mango&quot;</span><span class="p">;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">texto</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">));</span><span class="w">  </span><span class="c1">// [&quot;manzana&quot;, &quot;pera&quot;, &quot;uva&quot;, &quot;mango&quot;]</span>
-</code></pre></div></td></tr></table></div>
-<p>El separador <code>","</code> indica que cada vez que se encuentra una coma en el string, se crea un nuevo elemento en el array.</p>
-<h3 id="division-con-un-limite"><strong>División con un Límite</strong></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">lista</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;manzana,pera,uva,mango&quot;</span><span class="p">;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lista</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">));</span><span class="w">  </span><span class="c1">// [&quot;manzana&quot;, &quot;pera&quot;]</span>
-</code></pre></div></td></tr></table></div>
-<p>En el codigo anterior el límite <code>2</code> indica que solo se deben extraer los dos primeros elementos, ignorando el resto del string.</p>
-<p><strong>Caso de Uso: Convertir una Oración en Palabras</strong>: Uno de los usos más comunes de <code>split()</code> es descomponer una oración en palabras individuales.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">obtenerPalabras</span><span class="p">(</span><span class="nx">texto</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">texto</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">}</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obtenerPalabras</span><span class="p">(</span><span class="s2">&quot;JavaScript es un lenguaje poderoso&quot;</span><span class="p">));</span>
-</code></pre></div></td></tr></table></div>
-<p>Este enfoque es útil en motores de búsqueda, análisis de texto y procesamiento de datos.</p>
-<h2 id="unir-elementos-de-un-array-en-un-string-join"><strong>Unir Elementos de un Array en un String: <code>join</code></strong></h2>
-<p>El método <code>join()</code> hace lo contrario a <code>split()</code>, une los elementos de un array en un solo string, separándolos mediante un separador definido.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nx">array</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">separator</span><span class="p">);</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li><code>separator</code> (opcional): Define el carácter que separará cada elemento en el string resultante. Si se omite, se usa una coma <code>","</code> por defecto.</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">frutas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;manzana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;pera&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uva&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mango&quot;</span><span class="p">];</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frutas</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">));</span><span class="w">  </span><span class="c1">// &quot;manzana, pera, uva, mango&quot;</span>
-</code></pre></div></td></tr></table></div>
-<p>En el código anterior cada elemento del array se une en un solo string, separado por <code>", "</code>.</p>
-<h3 id="uso-sin-separador"><strong>Uso sin Separador</strong></h3>
-<p>Si no se proporciona un separador, <code>join()</code> usa la coma <code>","</code> por defecto.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">frutas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;manzana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;pera&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;uva&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mango&quot;</span><span class="p">];</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">frutas</span><span class="p">.</span><span class="nx">join</span><span class="p">());</span><span class="w">  </span><span class="c1">// &quot;manzana,pera,uva,mango&quot;</span>
-</code></pre></div></td></tr></table></div>
-<p><strong>Caso de Uso</strong>: Formatear Listas para Interfaces de Usuario.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nombres</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Carlos&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Luis&quot;</span><span class="p">];</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Participantes: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">nombres</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot; - &quot;</span><span class="p">));</span><span class="w"> </span><span class="c1">// &quot;Participantes: Carlos - Ana - Luis&quot;</span>
-</code></pre></div></td></tr></table></div>
-<p>Este uso es ideal para mostrar datos en listas de forma legible.</p>
-<h3 id="diferencias-entre-split-y-join"><strong>Diferencias entre split() y join()</strong></h3>
-<p>Aunque <code>split()</code> y <code>join()</code> parecen opuestos, cada uno tiene una función específica en la manipulación de strings y arrays. A continuación, te explico sus diferencias clave:</p>
-<ol>
-<li><strong>Tipo de Entrada y Salida</strong><ul>
-<li><code>split()</code> recibe un <strong>string</strong> y lo divide en un <strong>array</strong> basado en un separador.</li>
-<li><code>join()</code> recibe un <strong>array</strong> y lo convierte en un <strong>string</strong>, uniendo los elementos con un separador.</li>
-</ul>
-</li>
-<li><strong>Propósito Principal</strong><ul>
-<li><code>split()</code> se usa para <strong>fragmentar cadenas de texto</strong>, permitiendo separar palabras, caracteres o estructuras definidas.</li>
-<li><code>join()</code> se usa para <strong>construir cadenas a partir de un array</strong>, facilitando la creación de listas o formatos legibles.</li>
-</ul>
-</li>
-<li><strong>Uso del Separador</strong><ul>
-<li>En <code>split()</code>, el separador define dónde se corta la cadena y desaparece en la salida.</li>
-<li>En <code>join()</code>, el separador se inserta entre cada elemento del array en la salida.</li>
-</ul>
-</li>
-<li><strong>Efecto en los Datos</strong><ul>
-<li><code>split()</code> puede devolver un array con uno o más elementos dependiendo del separador y del contenido del string original.</li>
-<li><code>join()</code> siempre devuelve un solo string, sin importar cuántos elementos haya en el array.</li>
-</ul>
-</li>
-<li><strong>Casos de Uso</strong><ul>
-<li><code>split()</code>: Ideal para analizar texto, dividir palabras, extraer datos estructurados.</li>
-<li><code>join()</code>: Perfecto para formatear datos, crear cadenas legibles, generar reportes o estructuras dinámicas.</li>
-</ul>
-</li>
-</ol>
-<h3 id="practicas-para-usar-split-y-join"><strong>Prácticas para Usar <code>split()</code> y <code>join()</code></strong></h3>
-<ul>
-<li><strong>Usa</strong> <code>split(" ")</code> para dividir oraciones en palabras.</li>
-<li><strong>Utiliza</strong> <code>join()</code> para construir cadenas de texto de manera eficiente sin concatenaciones manuales.</li>
-<li><strong>Combina</strong> <code>split()</code> y <code>join()</code> para eliminar espacios innecesarios en strings:</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">limpiarTexto</span><span class="p">(</span><span class="nx">texto</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">texto</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">);</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
+  <h1>6. Introducción a NPM y PNPM</h1>
+
+<p><strong>NPM</strong> es el <mark>gestor de paquetes predeterminado de Node.js</mark>. Es decir, NPM normalmente no se instala de forma aislada, si no que <mark>se instala como un componente al instalar Node.js</mark>.</p>
+<p>Por tanto, antes de poder utilizar NPM, lo primero es asegurarnos de <strong>tener correctamente instalado Node.js</strong> en nuestro sistema.</p>
+<h2 id="como-instalar-o-actualizar-npm"><strong>Cómo instalar o actualizar NPM</strong></h2>
+<p>Si todavía no tienes instalado Node.JS, este está disponible para diferentes sistemas operativos y se puede descargar desde el sitio web oficial <a href="https://nodejs.org/es" target="_blank">nodejs.org</a>.</p>
+<p>Una vez descargado el instalador correspondiente a nuestro sistema operativo, procedemos a ejecutarlo y seguir los pasos del asistente de instalación. <mark>Durante la instalación, se añadirá automáticamente NPM como parte del proceso</mark>.</p>
+<h3 id="verificar-la-instalacion-de-nodejs"><strong>Verificar la instalación de Node.js</strong></h3>
+<p>Para verificar si tienes Node.js correctamente instalado, y en qué versión, simplemente abre una terminal o línea de comandos y escribe el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>node<span class="w"> </span>-v
+</code></pre></div>
+<p>Si NPM está instalado correctamente, nos mostrará la versión de NPM instalada en nuestro sistema.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="m">22</span>.15.0
+</code></pre></div>
+<p>Si en lugar de un numero de versión te dice que no reconoce el comando, es que debes instalar Node.js.</p>
+<h3 id="actualizar-npm-globalmente"><strong>Actualizar NPM globalmente</strong></h3>
+<p>Este comando instalará la última versión estable (LTS = Long Time Support) sobre la versión actual, y hace que este disponible en la consola de comando desde cualquier ubicación.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>npm@lts
+</code></pre></div>
 <hr />
-<h3 id="conclusion"><strong>Conclusión</strong></h3>
-<p>Los métodos split() y join() son herramientas clave en la manipulación de strings y arrays en JavaScript:</p>
+<h2 id="alternativas-a-npm"><strong>Alternativas a NPM</strong></h2>
+<p>Existen algunas alternativas a NPM que añaden características y/o permiten realizar las mismas tareas de NPM pero de una forma alternativa que ofrece ciertas ventajas. Entre estas alternativas podemos encontrar:</p>
+<ol>
+<li><strong><a href="https://pnpm.io/es/" target="_blank">PNPM</a></strong>: Alternativa rápida que hace uso eficiente del espacio en disco.</li>
+<li><strong><a href="https://ultrapkg.vercel.app/" target="_blank">Ultra</a></strong>:   Alternativa ultrarápida a NPM. Mejora aún más el rendimiento de PNPM.</li>
+</ol>
+<h3 id="por-que-pnpm-en-lugar-de-npm"><strong>¿Por qué PNPM en lugar de NPM?</strong></h3>
+<p>Utilizar <strong>pnpm</strong> como alternativa a <strong>npm</strong> es una muy buena opción por muchas razones, ya que puedes gestionar versiones de Node, instalar y gestionar paquetes y dependencias, entre otras varias ventajas.</p>
+<p>Pero sin duda, una de las mejores, es que pnpm utiliza una forma alternativa de instalación de paquetes, donde se gestionan mediante un almacén compartido, ahorrando espacio en disco y realizando una instalación de paquetes mucho más rápida:</p>
+<p><br></p>
+<p><a class="glightbox" href="../../../assets/images/devcamp/checkpoint-09/npm-vs-pnpm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../assets/images/devcamp/checkpoint-09/npm-vs-pnpm.png" /></a></p>
+<p><br></p>
+<p>Si lo deseas, puedes utilizar <strong>npm</strong>, pero si utilizas <strong>pnpm</strong> aprovecharás varias ventajas y funcionalidades de este último que mejorarán tu experiencia como desarrollador.</p>
+<hr />
+<h2 id="que-es-nodejs"><strong>¿Que es Node.js?</strong></h2>
+<p><a href="https://nodejs.org/es/download" target="_blank">Node.js®</a> es un entorno de ejecución de JavaScript multiplataforma, de código abierto y gratuito que permite a los desarrolladores crear servidores, aplicaciones web, herramientas de línea de comando y scripts.</p>
+<p>Un error común entre los desarrolladores es que Node.js es un framework de backend y que sólo se utiliza para construir servidores. 
+Esto no es cierto: Node.js puede utilizarse tanto en el frontend como en el backend.</p>
 <ul>
-<li>Usa <code>split()</code> cuando necesites fragmentar un string en partes manejables.</li>
-<li>Prefiere <code>join()</code> cuando quieras unir elementos de un array en una cadena formateada.</li>
+<li>No es un lenguaje de programación</li>
+<li>No es un framework</li>
+<li>No es una web</li>
+<li>No no es un servidor</li>
+<li>No no es un hosting</li>
 </ul>
-<p>Estos métodos permiten transformar datos con facilidad, haciéndolos fundamentales para el procesamiento de texto en cualquier aplicación web.</p>
+<h2 id="instalacion-de-nodejs"><strong>Instalación de Node.js</strong></h2>
+<h3 id="en-windows"><strong>En Windows:</strong></h3>
+<p>Descargue el instalador de Windows NodeJS en su versión LTS (<em>recomendada</em>) directamente desde el sitio web oficial <a href="https://nodejs.org/es" target="_blank">nodejs.org</a>. Ejecuta el instalador y dale a todo siguiente hasta finalizar la instalación, no hace falta cambiar nada.</p>
+<h3 id="comprueba-la-version-de-nodejs-instalada"><strong>Comprueba la versión de Node.js instalada</strong></h3>
+<p>En la sección anterior, hemos instalado con éxito Node. Vamos a verificarlo <mark>comprobando la versión instalada</mark>. Ejecuta el siguiente comando en la terminal.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>node<span class="w"> </span>-v
+</code></pre></div>
+<p>También puede comprobarlo a través de código más largo</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>node<span class="w"> </span>--version
+</code></pre></div>
+<p>Debería ver una salida similar a esta. Aunque el número de versión puede variar.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>v22.15.0
+</code></pre></div>
+<h3 id="utilizar-pnpm-como-administrador-de-paquetes"><strong>Utilizar PNPM como administrador de paquetes</strong></h3>
+<p>Si queremos utilizar pnpm, debemos <mark>activar pnpm</mark> como administrador de paquetes, ejecutar el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>corepack<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>pnpm<span class="w"> </span><span class="c1"># activa pnpm como administrador de paquetes</span>
+</code></pre></div>
+<p>Para <mark>actualizar pnpm</mark> a su última versión o una vesión específica, ejecutar el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pnpm<span class="w"> </span>self-update<span class="w"> </span><span class="c1">## actualiza pnpm a su última versión.</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>pnpm<span class="w"> </span>self-update<span class="w"> </span><span class="m">10</span>.6.5<span class="w"> </span><span class="c1">## actualiza pnpm a una versión específica.</span>
+</code></pre></div>
+<h3 id="instalacion-de-pnpm-con-npm"><strong>Instalación de PNPM con NPM</strong></h3>
+<p>Otra opción es, si tienes Node.js instalado en tu ordenador, es agregarlo como un paquete global mediante NPM. Para ello hacemos.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>PNPM
+</code></pre></div>
+<h3 id="verificacion-de-la-instalacion"><strong>Verificación de la Instalación</strong></h3>
+<p>Para asegurarte de que la instalación se realizó correctamente, puedes verificar la versión de PNPM que tenemos instalada con el siguiente comando.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pnpm<span class="w"> </span>--version
+</code></pre></div>
+<p>Deberías ver la versión de PNPM instalada. Por ejemplo, algo así.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="m">22</span>.15.0
+</code></pre></div>
+<blockquote>
+<p><br>
+<strong>Esto instalará PNPM de forma global en tu ordenador</strong> (lo que significa que podrás utilizarlo en cualquier proyecto de Node.js).</p>
+<p><br></p>
+</blockquote>
+<h2 id="instalacion-de-paquetes-con-npm"><strong>Instalación de paquetes con NPM</strong></h2>
+<p>Cuando instalas Node.js, NPM se instala automáticamente junto con él. Hemos cubierto cómo instalar Node.js en las secciones anteriores, así que ahora vamos a echar un vistazo al comando para instalar un paquete con NPM:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>npm<span class="w"> </span>install<span class="w"> </span>nombre_del_paquete
+</code></pre></div>
+<p>Sí, es así de fácil. Incluso puedes instalar varios paquetes a la vez:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>npm<span class="w"> </span>install<span class="w"> </span>pkg-1<span class="w"> </span>pkg-2<span class="w"> </span>pkg-3
+</code></pre></div>
+<p>instala y <strong>añade el nombre del paquete a la lista</strong> en <code>dependencies</code> dentro del archivo <mark>package.json</mark>, con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save<span class="w"> </span>nombre_del_paquete
+</code></pre></div>
+<p>instala pero no <strong>añade el nombre del paquete a la lista</strong> en <code>dependencies</code> dentro del archivo <mark>package.json</mark>, con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--no-save<span class="w"> </span>nombre_del_paquete
+</code></pre></div>
+<p>instala y <strong>añade el nombre del paquete a la lista</strong> en <code>devDependencies</code> dentro del archivo <mark>package.json</mark>, con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>nombre_del_paquete
+</code></pre></div>
+<h3 id="actualizacion-de-paquetes-con-npm"><strong>Actualización de paquetes con NPM</strong></h3>
+<p>Con el siguiente comando, <strong>npm</strong> actualizara todos los paquetes a la última versión.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>npm<span class="w"> </span>update
+</code></pre></div></p>
+<p>Puede especificar el paquete que quieras actualizar con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>npm<span class="w"> </span>update<span class="w"> </span>nombre_del_paquete
+</code></pre></div>
+<h3 id="que-son-las-instalaciones-globales-de-npm"><strong>¿Qué son las instalaciones globales de NPM?</strong></h3>
+<p>Las instalaciones globales en NPM se refieren a la instalación de paquetes de manera global en tu sistema. Esto significa que los paquetes estarán disponibles en cualquier proyecto de JavaScript que trabajes en tu máquina, en lugar de estar restringidos a un proyecto específico.</p>
+<p><strong>Instalar paquetes de forma global</strong> en NPM es muy sencillo. Esto te permite utilizar el paquete en cualquier lugar de tu máquina. Solo necesitas ejecutar el siguiente comando en tu terminal:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nombre_del_paquete
+</code></pre></div>
+<p><strong>puedes desinstalar paquetes globales</strong> en NPM utilizando el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>npm<span class="w"> </span>uninstall<span class="w"> </span>-g<span class="w"> </span>nombre_del_paquete
+</code></pre></div>
+<p><strong>Muestra todos los paquetes instalados de forma global</strong> con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>npm<span class="w"> </span>list<span class="w"> </span>-g<span class="w"> </span>--depth<span class="o">=</span><span class="m">0</span>
+</code></pre></div>
+<h2 id="instalacion-de-paquetes-con-pnpm"><strong>Instalación de paquetes con PNPM</strong></h2>
+<p>Una vez que PNPM esté instalado en tu sistema puedes utilizarlo para gestionar los paquetes de tu proyecto de Node.js de la misma manera que lo harías con NPM</p>
+<ul>
+<li><mark>pnpm install</mark>: Instala las dependencias del proyecto.</li>
+<li><mark>pnpm add nombre_del_paquete</mark>: Agrega un nuevo paquete al proyecto.</li>
+<li><mark>pnpm remove nombre_del_paquete</mark>: Elimina un paquete del proyecto.</li>
+</ul>
+<hr />
+<h2 id="como-instalar-dependencias-con-npm"><strong>Cómo instalar dependencias con NPM</strong></h2>
+<p>La función principal de <strong>NPM</strong> es instalar y gestionar las dependencias de nuestro proyecto. Para ello, como sabemos, registra las dependencias en el fichero <mark>package.json</mark>.</p>
+<p>Estas dependencias están organizadas en dos categorías:</p>
+<ol>
+<li><code>Dependencies</code>: Dependencias requeridas para la ejecución</li>
+<li><code>DevDependencies</code>: Dependencias necesarias solo durante el desarrollo</li>
+</ol>
+<p>Si tenemos nuestras dependencias correctamente configurados en el archivo <mark>package.json</mark>, podemos instalarlas simplemente con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>npm<span class="w"> </span>install
+</code></pre></div>
+<p>Este comando leerá el archivo <mark>package.json</mark> y descargará todas las dependencias especificadas en la sección <code>dependencies</code>. Estas dependencias se almacenarán en una carpeta llamada <mark>node_modules</mark> en el directorio del proyecto.</p>
+<p>Esto es muy habitual <strong>cuando bajamos un proyecto Open Source</strong>. Al publicar un proyecto, este se guarda en los repositorios (como Github) sin las librerías. Esto es lógico, es para ahorrar espacio.</p>
+<p><mark>Es un error muy frecuente</mark>, al principio, descargar un proyecto Open Source y pensar que no funciona. En muchas ocasiones es, simplemente, que nos hemos olvidado de instalar las dependencias con este comando.</p>
+<blockquote>
+<p><br>
+<strong>Nota</strong>: Si estas trabajando con GIT, es importante ignorar la carpeta <mark>node_modules</mark>, para ello, crea un archivo llamado <mark>.gitignore</mark> y agrega el nombre de la carpeta en una nueva línea. Esto es para cuando agamos <code>git add .</code> no nos incluya las librerias que contiene esa carpeta a GIT ni tampoco nos suba esos archivos a GitHub cuando agamos un <code>push</code> ya que es una carpeta muy pesada y no necesitamos en GIT. Es solo para tenerlo en cuenta. <strong>Las carpetas deben llevar una (<mark>/</mark>) delante a diferencia de los archivos</strong>.</p>
+<p>Ejemplo:</p>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">.gitignore</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span>
+<span class="normal"><a href="#__codelineno-22-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>archivo_para_ignorar.html
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a>archivo_para_ignorar.css
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a>archivo_para_ignorar.js
+<a id="__codelineno-22-4" name="__codelineno-22-4"></a>/node_modules
+</code></pre></div></td></tr></table></div>
+<br></p>
+</blockquote>
+<h3 id="instalacion-de-dependencias-requeridas"><strong>Instalación de dependencias requeridas</strong></h3>
+<p>Cuando se ejecuta <mark>npm install</mark> sin ninguna opción adicional, NPM instalará las dependencias que se encuentran bajo la sección <code>dependencies</code> en el archivo <mark>package.json</mark>. Estas son las dependencias necesarias para que la aplicación funcione correctamente en un entorno de producción.</p>
+<p>Supongamos que tenemos un fichero <mark>package.json</mark> como el siguiente:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">{</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mi-proyecto&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">    </span><span class="nt">&quot;express&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.1&quot;</span><span class="p">,</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">    </span><span class="nt">&quot;lodash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.21&quot;</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="p">}</span>
+</code></pre></div>
+<p>En este caso, <mark>npm install</mark> descargará e instalará las versiones más recientes de las bibliotecas <strong>express</strong> y <strong>lodash</strong>.</p>
+<h3 id="instalacion-de-dependencias-de-desarrollo"><strong>Instalación de dependencias de desarrollo</strong></h3>
+<p>Si deseamos instalar las dependencias necesarias para el desarrollo del proyecto (como pruebas unitarias, herramientas de compilación o pruebas de estilo de código), debemos usar la opción <mark>--dev</mark> o su forma corta <mark>-D</mark>. Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--dev
+</code></pre></div>
+<p>Esto instalará todas las dependencias que se encuentran en la sección <code>devDependencies</code> de nuestro archivo <mark>package.json</mark>. Recordemos que <strong>estas dependencias no se incluirán en el paquete final</strong> cuando distribuyamos nuestra aplicación.</p>
+<hr />
+<h2 id="que-es-el-fichero-packagejson-de-npm"><strong>Qué es el fichero Package.json de NPM</strong></h2>
+<p>El fichero <mark>package.json</mark> es un componente esencial dentro del funcionamiento de <strong>NPM</strong>. Este archivo desempeña un papel fundamental ya que almacena los datos del proyecto proyecto, sus dependencias, scripts personalizados y metadatos importantes.</p>
+<p><strong>Entre las funciones que tiene este fichero está:</strong></p>
+<ul>
+<li>
+<p><strong>Gestión de dependencias</strong>: El uso de package.json permite gestionar las dependencias del proyecto</p>
+</li>
+<li>
+<p><strong>Reproductibilidad</strong>: La combinación del fichero package.json junto con el fichero package-lock.json asegura que si puedes reproducir un proyecto (por ejemplo para duplicar, copiar a otra máquina)</p>
+</li>
+<li>
+<p><strong>Colaboración y distribución</strong>: Para compartir un paquete con otros desarrolladores, simplemente proporcionar el fichero package.json y los comandos para instalar las dependencias será suficiente</p>
+</li>
+</ul>
+<h3 id="estructura-basica-de-packagejson"><strong>Estructura básica de package.json</strong></h3>
+<p>La estructura del fichero <mark>package.json</mark> es un formato <strong>JSON</strong> (JavaScript Object Notation). Por lo que es muy fácil de entender por una persona, e incluso editarlo a mano sin demasiada dificultad.</p>
+<p>El fichero <mark>package.json</mark> consta de varias claves y valores que definen las características y dependencias del proyecto. Veamos un ejemplo sencillo de un posible (inventado) archivo <mark>package.json</mark>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">{</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;curso-npm&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Curso de NPM - Aprende a utilizar Node Package Manager&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">  </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;index.js&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">  </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LuisLlamas.es&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">  </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="w">    </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node index.js&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="w">    </span><span class="nt">&quot;test&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo \&quot;No hay pruebas disponibles\&quot;&quot;</span>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">    </span><span class="nt">&quot;express&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.1&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="w">    </span><span class="nt">&quot;lodash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.21&quot;</span>
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="w">  </span><span class="nt">&quot;devDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="w">    </span><span class="nt">&quot;nodemon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^2.0.12&quot;</span><span class="p">,</span>
+<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a><span class="w">    </span><span class="nt">&quot;eslint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^7.32.0&quot;</span>
+<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><code>name</code>: Nombre del proyecto.    <mark>“curso-npm”</mark></li>
+<li><code>version</code>:  Versión del proyecto.   <mark>“1.0.0”</mark></li>
+<li><code>description</code>:  Descripción breve del proyecto. </li>
+<li><code>main</code>: Archivo principal del proyecto, es el punto de entrada cuando se importa el módulo. <mark>“index.js”</mark></li>
+<li><code>author</code>:   Nombre del autor del proyecto.  </li>
+<li><code>license</code>:  Licencia del proyecto.  <mark>“MIT”</mark></li>
+<li><code>scripts</code>:  Define comandos que se pueden ejecutar usando npm run script-name.  </li>
+<li><code>dependencies</code>: Lista de dependencias requeridas para que el proyecto funcione correctamente en producción. <mark>“express”</mark>, <mark>“lodash”</mark></li>
+<li><code>devDependencies</code>:  Lista de dependencias requeridas solo para desarrollo.  <mark>“nodemon”</mark>, <mark>“eslint”</mark></li>
+</ul>
+<hr />
+<h2 id="dependencies-y-devdependencies"><strong>Dependencies y DevDependencies</strong></h2>
+<p>Las claves <code>dependencies</code> y <code>devDependencies</code> enumeran las dependencias del proyecto. La diferencia entre una y otra es que</p>
+<ol>
+<li><code>dependencies</code> son necesarias para que el programa funcione correctamente en producción.</li>
+<li><code>devDependencies</code> son solo requeridas durante el desarrollo.</li>
+</ol>
+<p><strong>Separar estas dependencias es importante</strong> para permitir usar herramientas solo en la fase de desarrollo, pero evitando que se incluyan paquetes innecesarios en la distribución de la aplicación final.</p>
+<p>Por ejemplo, <mark>imagina que estás usando una librería que te ayuda durante el desarrollo remarcándote errores de sintaxis</mark>. <strong>No quieres que esa librería forme parte del producto final</strong>. En ese caso, la añadirías en <code>devDependencies</code>.</p>
+<hr />
+<h2 id="package-lock"><strong>Package-lock</strong></h2>
+<p>El fichero <mark>package-lock.json</mark> es un fichero que <strong>se genera automáticamente por NPM</strong> en operaciones donde modifica el árbol de node_modules o el archivo <mark>package.json</mark>.</p>
+<p><strong>Su función principal es describir el árbol de dependencias exacto que se generó durante una instalación</strong>, permitiendo que futuras instalaciones generen árboles idénticos, independientemente de las actualizaciones intermedias de las dependencias.</p>
+<p><mark>No debemos tocar a mano el fichero Package-lock</mark>, <strong>es un fichero interno usado por NPM</strong>. Simplemente <strong>acostúmbrate a ignorarlo</strong>.</p>
 <hr />
 <p><br></p>
 
@@ -5962,8 +6402,6 @@
 
 
 
-
-  
 
 
 
@@ -6013,14 +6451,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
+        <script src="../../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
       
-        <script src="../../assets/javascripts/extra.js"></script>
+        <script src="../../../assets/javascripts/extra.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
