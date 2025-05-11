@@ -20,7 +20,6 @@ hide:
   5. [Introducción a los Módulos](modulos-js.md)
   6. [Introducción a NPM y PNPM](npm-pnpm-js.md)
   7. [Creación y despliegue de módulo NPM](crear-desplegar-modulo-npm-js.md)
-  8. [](promesa-js.md)
 
 <br>
 <br>

@@ -23,4 +23,6 @@ const producto_2 = precioMaquillado(4.23, 95);
 console.log(producto_2); // 4.95€
 ```
 
+***
+
 <br>

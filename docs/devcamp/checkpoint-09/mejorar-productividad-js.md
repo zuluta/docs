@@ -104,3 +104,7 @@ if (randomNumber === number) {
 ```
 
 Cuando el depurador es invocado, la ejecución se detiene en la sentencia debugger. Es como un punto de interrupción en el script.
+
+***
+
+<br>

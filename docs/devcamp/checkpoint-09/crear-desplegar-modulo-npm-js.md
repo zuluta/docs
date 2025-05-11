@@ -22,7 +22,7 @@ hide:
     - (==cd desktop==) Accede a la carpeta de escritorio
     - (==mkdir footer-js-npm==) Crea una carpeta llamada footer-js-npm
     - (==cd footer-js-npm==) Accede a la carpeta footer-js-npm
-3. Desde el directorio ==footer-js-npm==, ejecuta el comando (==npm init==) para iniciar el proceso. Se creara un archivo ==package.json== vacío y nos pedira que rellenemos una serie de datos desde la terminal.
+3. Desde el directorio **footer-js-npm**, ejecuta el comando (==npm init==) para iniciar el proceso. Se creara un archivo ==package.json== vacío y nos pedira que rellenemos una serie de datos desde la terminal.
     - `package name: (footer-js-npm)` Escribe el nombre del paquete (dejamos por defecto) y **enter**
     - `version: (1.0.0)` ==0.1.0== Escribe la versión y **enter**
     - `description:` ==Este módulo permite generar un pie de página dinámico para aplicaciones JS con un nombre y fecha actualizado.== y  **enter**
@@ -34,8 +34,8 @@ hide:
     - `licence: (ISC)` ==MIT== Escribe una licencia (por lo general se utiliza la licencia MIT, si no se pone ninguna licencia, en terminos legales significa que nadie puede usar tu código sin que le des acceso por derechos de autor) y **enter**
     - `Is this ok? (yes)` Verificamos que todo este correcto (dejamos (yes) por defecto) y **enter**
 
-4. Ahora si abrimos el archivo ==package.json==, veremos nuestros datos rellenados.
-5. Dentro del directorio ==footer-js-npm==, creamos un archivo llamado ==index.js== con el siguiente código:
+4. Ahora si abrimos el archivo **package.json**, veremos nuestros datos rellenados.
+5. Dentro del directorio **footer-js-npm**, creamos un archivo llamado ==index.js== con el siguiente código:
 
     ```js linenums="1" title="index.js"
     'use strict'; // es mas estricto con el código. finalizar con ; ya no es opcional etc.
@@ -50,14 +50,14 @@ hide:
     };
     ```
 
-6. Dentro del directorio ==footer-js-npm==, creamos un archivo llamado ==.README.md==.
-7. Dentro del directorio ==footer-js-npm==, creamos un archivo llamado ==.gitignore== y escribe lo siguiente:
+6. Dentro del directorio **footer-js-npm**, creamos un archivo llamado ==.README.md==.
+7. Dentro del directorio **footer-js-npm**, creamos un archivo llamado ==.gitignore== y escribe lo siguiente:
 
     ```js linenums="1" title=".gitignore"
     node_modules
     ```
 
-8. Desde la carpeta del proyecto ==footer-js-npm==, abre la terminal y prepara el repositorio GIT para subir al repositorio GitHub.
+8. Desde la carpeta del proyecto **footer-js-npm**, abre la terminal y prepara el repositorio GIT para subir al repositorio GitHub.
     - Ejecuta el comando (==git init==) Inicia el GIT
     - Ejecuta el comando (==git add .==) Agrega todos los archivos al GIT
     - Ejecuta el comando (==git commit -m "subir módulo"==) Agrega un commit al GIT

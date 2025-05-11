@@ -274,4 +274,6 @@ Math.trunc("foo"); // NaN
 Math.trunc(); // NaN
 ```
 
+***
+
 <br>
