@@ -18,9 +18,9 @@ Básicamente, se trata de un editor de código. Esto quiere decir, una herramien
   4. Integración nativa con Git y control de versiones.
   5. Personalización y extensibilidad para adaptarse a tus necesidades.
 
-## **Instalación y configuración de VS Code**
+## **Instalación y configuración de VSCode**
 
-Para instalar el editor, es importante acudir a la página oficial de Visual Studio Code. Allí encontraremos el instalador para Windows, macOS y Linux, aunque en el sistema del pingüino también es posible instalarlo a través de algunos gestores de software de las distribuciones.
+Para instalar el editor, es importante acudir a la página oficial de [VSCode](https://code.visualstudio.com){:target="_blank"}. Allí encontraremos el instalador para Windows, macOS y Linux, aunque en el sistema del pingüino también es posible instalarlo a través de algunos gestores de software de las distribuciones.
 
 Una vez instalado, ya tenemos lo suficiente para trabajar con muchos lenguajes y con unas personalizaciones que se adaptan a la mayoría de los gustos. Sin embargo, puedes configurar ajustes básicos como el tema y las preferencias de usuario desde la sección de «Ajustes» accesible mediante el menú superior.
 
