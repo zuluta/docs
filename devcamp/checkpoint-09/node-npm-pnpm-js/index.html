@@ -12,7 +12,7 @@
         <meta name="author" content="ZulutaDev">
       
       
-        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/checkpoint-09/npm-pnpm-js/">
+        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/checkpoint-09/node-npm-pnpm-js/">
       
       
         <link rel="prev" href="../modulos-js/">
@@ -26,7 +26,7 @@
     
     
       
-        <title>6. Introducción a NPM y PNPM - ZulutaDev</title>
+        <title>6. Introducción a Node, NPM y PNPM - ZulutaDev</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#como-instalar-o-actualizar-npm" class="md-skip">
+        <a href="#que-es-nodejs" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              6. Introducción a NPM y PNPM
+              6. Introducción a Node, NPM y PNPM
             
           </span>
         </div>
@@ -5546,7 +5546,7 @@
   
   
   <span class="md-ellipsis">
-    6. Introducción a NPM y PNPM
+    6. Introducción a Node, NPM y PNPM
     
   </span>
   
@@ -5559,7 +5559,7 @@
   
   
   <span class="md-ellipsis">
-    6. Introducción a NPM y PNPM
+    6. Introducción a Node, NPM y PNPM
     
   </span>
   
@@ -5580,23 +5580,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#como-instalar-o-actualizar-npm" class="md-nav__link">
+  <a href="#que-es-nodejs" class="md-nav__link">
     <span class="md-ellipsis">
-      Cómo instalar o actualizar NPM
+      ¿Que es Node.js?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cómo instalar o actualizar NPM">
+    <nav class="md-nav" aria-label="¿Que es Node.js?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#verificar-la-instalacion-de-nodejs" class="md-nav__link">
+  <a href="#instalar-nodejs-en-windows" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificar la instalación de Node.js
+      Instalar Node.js en Windows
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#verifica-la-version-de-nodejs-instalada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifica la versión de Node.js instalada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Que es NPM?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Que es NPM?">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#actualizar-npm-globalmente" class="md-nav__link">
@@ -5631,70 +5655,37 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Que es Node.js?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalación de Node.js
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalación de Node.js">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
-  <a href="#en-windows" class="md-nav__link">
+  <a href="#instalar-pnpm-con-corepack-experimental" class="md-nav__link">
     <span class="md-ellipsis">
-      En Windows:
+      Instalar PNPM con Corepack (experimental)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#comprueba-la-version-de-nodejs-instalada" class="md-nav__link">
+  <a href="#instalar-pnpm-con-npm-recomendado" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprueba la versión de Node.js instalada
+      Instalar PNPM con NPM (recomendado)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#utilizar-pnpm-como-administrador-de-paquetes" class="md-nav__link">
+  <a href="#actualizar-pnpm-con-pnpm" class="md-nav__link">
     <span class="md-ellipsis">
-      Utilizar PNPM como administrador de paquetes
+      Actualizar PNPM con PNPM
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#instalacion-de-pnpm-con-npm" class="md-nav__link">
+  <a href="#verifica-la-version-de-npnm-instalada" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de PNPM con NPM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verificacion-de-la-instalacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verificación de la Instalación
+      Verifica la versión de NPNM instalada
     </span>
   </a>
   
@@ -5706,19 +5697,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-paquetes-con-npm" class="md-nav__link">
+  <a href="#instalar-paquetes-con-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de paquetes con NPM
+      Instalar paquetes con NPM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Instalación de paquetes con NPM">
+    <nav class="md-nav" aria-label="Instalar paquetes con NPM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#actualizacion-de-paquetes-con-npm" class="md-nav__link">
+  <a href="#actualizar-paquetes-con-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Actualización de paquetes con NPM
+      Actualizar paquetes con NPM
     </span>
   </a>
   
@@ -5739,37 +5730,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-paquetes-con-pnpm" class="md-nav__link">
+  <a href="#instalar-paquetes-con-pnpm" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de paquetes con PNPM
+      Instalar paquetes con PNPM
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-instalar-dependencias-con-npm" class="md-nav__link">
+  <a href="#instalar-dependencias-con-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Cómo instalar dependencias con NPM
+      Instalar dependencias con NPM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cómo instalar dependencias con NPM">
+    <nav class="md-nav" aria-label="Instalar dependencias con NPM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#instalacion-de-dependencias-requeridas" class="md-nav__link">
+  <a href="#instalar-dependencias-requeridas-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de dependencias requeridas
+      Instalar dependencias requeridas (dependencies)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#instalacion-de-dependencias-de-desarrollo" class="md-nav__link">
+  <a href="#instalar-dependencias-de-desarrollo-devdependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de dependencias de desarrollo
+      Instalar dependencias de desarrollo (devDependencies)
     </span>
   </a>
   
@@ -5799,12 +5790,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#dependencies-y-devdependencies" class="md-nav__link">
     <span class="md-ellipsis">
       Dependencies y DevDependencies
@@ -5812,11 +5798,16 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#package-lock" class="md-nav__link">
+  <a href="#que-es-el-fichero-package-lockjson-de-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Package-lock
+      Qué es el fichero Package-lock.json de NPM
     </span>
   </a>
   
@@ -5894,23 +5885,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#como-instalar-o-actualizar-npm" class="md-nav__link">
+  <a href="#que-es-nodejs" class="md-nav__link">
     <span class="md-ellipsis">
-      Cómo instalar o actualizar NPM
+      ¿Que es Node.js?
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cómo instalar o actualizar NPM">
+    <nav class="md-nav" aria-label="¿Que es Node.js?">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#verificar-la-instalacion-de-nodejs" class="md-nav__link">
+  <a href="#instalar-nodejs-en-windows" class="md-nav__link">
     <span class="md-ellipsis">
-      Verificar la instalación de Node.js
+      Instalar Node.js en Windows
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#verifica-la-version-de-nodejs-instalada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verifica la versión de Node.js instalada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Que es NPM?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="¿Que es NPM?">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#actualizar-npm-globalmente" class="md-nav__link">
@@ -5945,70 +5960,37 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#que-es-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      ¿Que es Node.js?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalación de Node.js
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalación de Node.js">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
-  <a href="#en-windows" class="md-nav__link">
+  <a href="#instalar-pnpm-con-corepack-experimental" class="md-nav__link">
     <span class="md-ellipsis">
-      En Windows:
+      Instalar PNPM con Corepack (experimental)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#comprueba-la-version-de-nodejs-instalada" class="md-nav__link">
+  <a href="#instalar-pnpm-con-npm-recomendado" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprueba la versión de Node.js instalada
+      Instalar PNPM con NPM (recomendado)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#utilizar-pnpm-como-administrador-de-paquetes" class="md-nav__link">
+  <a href="#actualizar-pnpm-con-pnpm" class="md-nav__link">
     <span class="md-ellipsis">
-      Utilizar PNPM como administrador de paquetes
+      Actualizar PNPM con PNPM
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#instalacion-de-pnpm-con-npm" class="md-nav__link">
+  <a href="#verifica-la-version-de-npnm-instalada" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de PNPM con NPM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verificacion-de-la-instalacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Verificación de la Instalación
+      Verifica la versión de NPNM instalada
     </span>
   </a>
   
@@ -6020,19 +6002,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-paquetes-con-npm" class="md-nav__link">
+  <a href="#instalar-paquetes-con-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de paquetes con NPM
+      Instalar paquetes con NPM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Instalación de paquetes con NPM">
+    <nav class="md-nav" aria-label="Instalar paquetes con NPM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#actualizacion-de-paquetes-con-npm" class="md-nav__link">
+  <a href="#actualizar-paquetes-con-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Actualización de paquetes con NPM
+      Actualizar paquetes con NPM
     </span>
   </a>
   
@@ -6053,37 +6035,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-paquetes-con-pnpm" class="md-nav__link">
+  <a href="#instalar-paquetes-con-pnpm" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de paquetes con PNPM
+      Instalar paquetes con PNPM
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#como-instalar-dependencias-con-npm" class="md-nav__link">
+  <a href="#instalar-dependencias-con-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Cómo instalar dependencias con NPM
+      Instalar dependencias con NPM
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cómo instalar dependencias con NPM">
+    <nav class="md-nav" aria-label="Instalar dependencias con NPM">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#instalacion-de-dependencias-requeridas" class="md-nav__link">
+  <a href="#instalar-dependencias-requeridas-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de dependencias requeridas
+      Instalar dependencias requeridas (dependencies)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#instalacion-de-dependencias-de-desarrollo" class="md-nav__link">
+  <a href="#instalar-dependencias-de-desarrollo-devdependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación de dependencias de desarrollo
+      Instalar dependencias de desarrollo (devDependencies)
     </span>
   </a>
   
@@ -6113,12 +6095,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#dependencies-y-devdependencies" class="md-nav__link">
     <span class="md-ellipsis">
       Dependencies y DevDependencies
@@ -6126,11 +6103,16 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#package-lock" class="md-nav__link">
+  <a href="#que-es-el-fichero-package-lockjson-de-npm" class="md-nav__link">
     <span class="md-ellipsis">
-      Package-lock
+      Qué es el fichero Package-lock.json de NPM
     </span>
   </a>
   
@@ -6155,31 +6137,45 @@
   
 
 
-  <h1>6. Introducción a NPM y PNPM</h1>
+  <h1>6. Introducción a Node, NPM y PNPM</h1>
 
-<p><strong>NPM</strong> es el <mark>gestor de paquetes predeterminado de Node.js</mark>. Es decir, NPM normalmente no se instala de forma aislada, si no que <mark>se instala como un componente al instalar Node.js</mark>.</p>
-<p>Por tanto, antes de poder utilizar NPM, lo primero es asegurarnos de <strong>tener correctamente instalado Node.js</strong> en nuestro sistema.</p>
-<h2 id="como-instalar-o-actualizar-npm"><strong>Cómo instalar o actualizar NPM</strong></h2>
-<p>Si todavía no tienes instalado Node.JS, este está disponible para diferentes sistemas operativos y se puede descargar desde el sitio web oficial <a href="https://nodejs.org/es" target="_blank">nodejs.org</a>.</p>
-<p>Una vez descargado el instalador correspondiente a nuestro sistema operativo, procedemos a ejecutarlo y seguir los pasos del asistente de instalación. <mark>Durante la instalación, se añadirá automáticamente NPM como parte del proceso</mark>.</p>
-<h3 id="verificar-la-instalacion-de-nodejs"><strong>Verificar la instalación de Node.js</strong></h3>
-<p>Para verificar si tienes Node.js correctamente instalado, y en qué versión, simplemente abre una terminal o línea de comandos y escribe el siguiente comando:</p>
+<h2 id="que-es-nodejs"><strong>¿Que es Node.js?</strong></h2>
+<p><strong><a href="https://nodejs.org/es" target="_blank">Node.js</a> es un entorno de ejecución de JavaScript multiplataforma</strong>, de código abierto y gratuito que permite a los desarrolladores crear servidores, aplicaciones web, herramientas de línea de comando y scripts.</p>
+<p>Un error común entre los desarrolladores es que Node.js es un framework de backend y que sólo se utiliza para construir servidores. 
+Esto no es cierto: <strong>Node.js puede utilizarse tanto en el frontend como en el backend</strong>.</p>
+<p><strong>Node.js no es</strong>:</p>
+<ul>
+<li>No es un lenguaje de programación</li>
+<li>No es un framework</li>
+<li>No es una web</li>
+<li>No no es un servidor</li>
+<li>No no es un hosting</li>
+</ul>
+<h3 id="instalar-nodejs-en-windows"><strong>Instalar Node.js en Windows</strong></h3>
+<p>Descargue el instalador de Windows <strong>NodeJS en su versión LTS</strong> (<em>recomendada</em>) directamente desde el sitio web oficial <a href="https://nodejs.org/es" target="_blank">nodejs.org</a>. Ejecuta el instalador y dale a todo siguiente hasta finalizar la instalación, no hace falta cambiar nada.</p>
+<h3 id="verifica-la-version-de-nodejs-instalada"><strong>Verifica la versión de Node.js instalada</strong></h3>
+<p>En la sección anterior, hemos instalado con éxito Node. <strong>Vamos a verificar la versión instalada</strong>. Ejecuta el siguiente comando en la terminal.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>node<span class="w"> </span>-v
 </code></pre></div>
-<p>Si NPM está instalado correctamente, nos mostrará la versión de NPM instalada en nuestro sistema.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="m">22</span>.15.0
+<p>También puede comprobarlo a través de código más largo</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>node<span class="w"> </span>--version
 </code></pre></div>
-<p>Si en lugar de un numero de versión te dice que no reconoce el comando, es que debes instalar Node.js.</p>
+<p>Debería ver una salida similar a esta. Aunque el número de versión puede variar.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>v22.15.0
+</code></pre></div>
+<hr />
+<h2 id="que-es-npm"><strong>¿Que es NPM?</strong></h2>
+<p><strong>NPM</strong> es el <strong>gestor de paquetes predeterminado de Node.js</strong>. Es decir, NPM normalmente no se instala de forma aislada, si no que <strong>se instala como un componente al instalar Node.js</strong>.</p>
+<p>Por tanto, antes de poder utilizar NPM, lo primero es asegurarnos de <strong>tener correctamente instalado Node.js</strong> en nuestro sistema.</p>
 <h3 id="actualizar-npm-globalmente"><strong>Actualizar NPM globalmente</strong></h3>
 <p>Este comando instalará la última versión estable (LTS = Long Time Support) sobre la versión actual, y hace que este disponible en la consola de comando desde cualquier ubicación.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>npm@lts
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>npm@lts
 </code></pre></div>
 <hr />
 <h2 id="alternativas-a-npm"><strong>Alternativas a NPM</strong></h2>
 <p>Existen algunas alternativas a NPM que añaden características y/o permiten realizar las mismas tareas de NPM pero de una forma alternativa que ofrece ciertas ventajas. Entre estas alternativas podemos encontrar:</p>
 <ol>
 <li><strong><a href="https://pnpm.io/es/" target="_blank">PNPM</a></strong>: Alternativa rápida que hace uso eficiente del espacio en disco.</li>
-<li><strong><a href="https://ultrapkg.vercel.app/" target="_blank">Ultra</a></strong>:   Alternativa ultrarápida a NPM. Mejora aún más el rendimiento de PNPM.</li>
 </ol>
 <h3 id="por-que-pnpm-en-lugar-de-npm"><strong>¿Por qué PNPM en lugar de NPM?</strong></h3>
 <p>Utilizar <strong>pnpm</strong> como alternativa a <strong>npm</strong> es una muy buena opción por muchas razones, ya que puedes gestionar versiones de Node, instalar y gestionar paquetes y dependencias, entre otras varias ventajas.</p>
@@ -6188,145 +6184,123 @@
 <p><a class="glightbox" href="../../../assets/images/devcamp/checkpoint-09/npm-vs-pnpm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../assets/images/devcamp/checkpoint-09/npm-vs-pnpm.png" /></a></p>
 <p><br></p>
 <p>Si lo deseas, puedes utilizar <strong>npm</strong>, pero si utilizas <strong>pnpm</strong> aprovecharás varias ventajas y funcionalidades de este último que mejorarán tu experiencia como desarrollador.</p>
-<hr />
-<h2 id="que-es-nodejs"><strong>¿Que es Node.js?</strong></h2>
-<p><a href="https://nodejs.org/es/download" target="_blank">Node.js®</a> es un entorno de ejecución de JavaScript multiplataforma, de código abierto y gratuito que permite a los desarrolladores crear servidores, aplicaciones web, herramientas de línea de comando y scripts.</p>
-<p>Un error común entre los desarrolladores es que Node.js es un framework de backend y que sólo se utiliza para construir servidores. 
-Esto no es cierto: Node.js puede utilizarse tanto en el frontend como en el backend.</p>
-<ul>
-<li>No es un lenguaje de programación</li>
-<li>No es un framework</li>
-<li>No es una web</li>
-<li>No no es un servidor</li>
-<li>No no es un hosting</li>
-</ul>
-<h2 id="instalacion-de-nodejs"><strong>Instalación de Node.js</strong></h2>
-<h3 id="en-windows"><strong>En Windows:</strong></h3>
-<p>Descargue el instalador de Windows NodeJS en su versión LTS (<em>recomendada</em>) directamente desde el sitio web oficial <a href="https://nodejs.org/es" target="_blank">nodejs.org</a>. Ejecuta el instalador y dale a todo siguiente hasta finalizar la instalación, no hace falta cambiar nada.</p>
-<h3 id="comprueba-la-version-de-nodejs-instalada"><strong>Comprueba la versión de Node.js instalada</strong></h3>
-<p>En la sección anterior, hemos instalado con éxito Node. Vamos a verificarlo <mark>comprobando la versión instalada</mark>. Ejecuta el siguiente comando en la terminal.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>node<span class="w"> </span>-v
+<h3 id="instalar-pnpm-con-corepack-experimental"><strong>Instalar PNPM con Corepack</strong> (experimental)</h3>
+<p>Esto instalará automaticamente pnpm en tu ordenador mediante Corepack. Ejecuta el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>corepack<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>pnpm
 </code></pre></div>
-<p>También puede comprobarlo a través de código más largo</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>node<span class="w"> </span>--version
+<h3 id="instalar-pnpm-con-npm-recomendado"><strong>Instalar PNPM con NPM</strong> (recomendado)</h3>
+<p>Si tienes Node.js instalado en tu ordenador, es agregarlo como un paquete global mediante NPM. ejecuta el siguiente comando:</p>
+<blockquote>
+<p><strong>Esto instalará PNPM de forma global en tu ordenador</strong> (lo que significa que podrás utilizarlo en cualquier proyecto de Node.js).</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>pnpm
 </code></pre></div>
-<p>Debería ver una salida similar a esta. Aunque el número de versión puede variar.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>v22.15.0
+<h3 id="actualizar-pnpm-con-pnpm"><strong>Actualizar PNPM con PNPM</strong></h3>
+<p>Si tienes PNPM instalado, puedes actualizar PNPM a su última versión o una vesión específica, ejecuta el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pnpm<span class="w"> </span>self-update<span class="w"> </span><span class="c1"># actualiza pnpm a su última versión.</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>pnpm<span class="w"> </span>self-update<span class="w"> </span><span class="m">9</span>.6.5<span class="w"> </span><span class="c1"># actualiza pnpm a una versión específica.</span>
 </code></pre></div>
-<h3 id="utilizar-pnpm-como-administrador-de-paquetes"><strong>Utilizar PNPM como administrador de paquetes</strong></h3>
-<p>Si queremos utilizar pnpm, debemos <mark>activar pnpm</mark> como administrador de paquetes, ejecutar el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>corepack<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>pnpm<span class="w"> </span><span class="c1"># activa pnpm como administrador de paquetes</span>
-</code></pre></div>
-<p>Para <mark>actualizar pnpm</mark> a su última versión o una vesión específica, ejecutar el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pnpm<span class="w"> </span>self-update<span class="w"> </span><span class="c1">## actualiza pnpm a su última versión.</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>pnpm<span class="w"> </span>self-update<span class="w"> </span><span class="m">10</span>.6.5<span class="w"> </span><span class="c1">## actualiza pnpm a una versión específica.</span>
-</code></pre></div>
-<h3 id="instalacion-de-pnpm-con-npm"><strong>Instalación de PNPM con NPM</strong></h3>
-<p>Otra opción es, si tienes Node.js instalado en tu ordenador, es agregarlo como un paquete global mediante NPM. Para ello hacemos.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>PNPM
-</code></pre></div>
-<h3 id="verificacion-de-la-instalacion"><strong>Verificación de la Instalación</strong></h3>
+<h3 id="verifica-la-version-de-npnm-instalada"><strong>Verifica la versión de NPNM instalada</strong></h3>
 <p>Para asegurarte de que la instalación se realizó correctamente, puedes verificar la versión de PNPM que tenemos instalada con el siguiente comando.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pnpm<span class="w"> </span>--version
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pnpm<span class="w"> </span>--version
 </code></pre></div>
 <p>Deberías ver la versión de PNPM instalada. Por ejemplo, algo así.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="m">22</span>.15.0
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="m">9</span>.15.0
 </code></pre></div>
-<blockquote>
-<p><br>
-<strong>Esto instalará PNPM de forma global en tu ordenador</strong> (lo que significa que podrás utilizarlo en cualquier proyecto de Node.js).</p>
-<p><br></p>
-</blockquote>
-<h2 id="instalacion-de-paquetes-con-npm"><strong>Instalación de paquetes con NPM</strong></h2>
+<hr />
+<h2 id="instalar-paquetes-con-npm"><strong>Instalar paquetes con NPM</strong></h2>
 <p>Cuando instalas Node.js, NPM se instala automáticamente junto con él. Hemos cubierto cómo instalar Node.js en las secciones anteriores, así que ahora vamos a echar un vistazo al comando para instalar un paquete con NPM:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>npm<span class="w"> </span>install<span class="w"> </span>nombre_del_paquete
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>npm<span class="w"> </span>install<span class="w"> </span>nombre_del_paquete
 </code></pre></div>
 <p>Sí, es así de fácil. Incluso puedes instalar varios paquetes a la vez:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>npm<span class="w"> </span>install<span class="w"> </span>pkg-1<span class="w"> </span>pkg-2<span class="w"> </span>pkg-3
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>npm<span class="w"> </span>install<span class="w"> </span>pkg-1<span class="w"> </span>pkg-2<span class="w"> </span>pkg-3
 </code></pre></div>
-<p>instala y <strong>añade el nombre del paquete a la lista</strong> en <code>dependencies</code> dentro del archivo <mark>package.json</mark>, con el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save<span class="w"> </span>nombre_del_paquete
+<p>instala y <strong>guarda el nombre del paquete en la lista</strong> de <code>dependencies</code> dentro del archivo <strong>package.json</strong>, con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save<span class="w"> </span>nombre_del_paquete
 </code></pre></div>
-<p>instala pero no <strong>añade el nombre del paquete a la lista</strong> en <code>dependencies</code> dentro del archivo <mark>package.json</mark>, con el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--no-save<span class="w"> </span>nombre_del_paquete
+<p>instala pero no <strong>guarda el nombre del paquete en la lista</strong> de <code>dependencies</code> dentro del archivo <strong>package.json</strong>, con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--no-save<span class="w"> </span>nombre_del_paquete
 </code></pre></div>
-<p>instala y <strong>añade el nombre del paquete a la lista</strong> en <code>devDependencies</code> dentro del archivo <mark>package.json</mark>, con el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>nombre_del_paquete
+<p>instala y <strong>guarda el nombre del paquete en la lista</strong> de <code>devDependencies</code> dentro del archivo <strong>package.json</strong>, con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>nombre_del_paquete
 </code></pre></div>
-<h3 id="actualizacion-de-paquetes-con-npm"><strong>Actualización de paquetes con NPM</strong></h3>
+<h3 id="actualizar-paquetes-con-npm"><strong>Actualizar paquetes con NPM</strong></h3>
 <p>Con el siguiente comando, <strong>npm</strong> actualizara todos los paquetes a la última versión.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>npm<span class="w"> </span>update
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>npm<span class="w"> </span>update
 </code></pre></div></p>
 <p>Puede especificar el paquete que quieras actualizar con el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>npm<span class="w"> </span>update<span class="w"> </span>nombre_del_paquete
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>npm<span class="w"> </span>update<span class="w"> </span>nombre_del_paquete
 </code></pre></div>
 <h3 id="que-son-las-instalaciones-globales-de-npm"><strong>¿Qué son las instalaciones globales de NPM?</strong></h3>
 <p>Las instalaciones globales en NPM se refieren a la instalación de paquetes de manera global en tu sistema. Esto significa que los paquetes estarán disponibles en cualquier proyecto de JavaScript que trabajes en tu máquina, en lugar de estar restringidos a un proyecto específico.</p>
 <p><strong>Instalar paquetes de forma global</strong> en NPM es muy sencillo. Esto te permite utilizar el paquete en cualquier lugar de tu máquina. Solo necesitas ejecutar el siguiente comando en tu terminal:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nombre_del_paquete
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nombre_del_paquete
 </code></pre></div>
 <p><strong>puedes desinstalar paquetes globales</strong> en NPM utilizando el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>npm<span class="w"> </span>uninstall<span class="w"> </span>-g<span class="w"> </span>nombre_del_paquete
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>npm<span class="w"> </span>uninstall<span class="w"> </span>-g<span class="w"> </span>nombre_del_paquete
 </code></pre></div>
 <p><strong>Muestra todos los paquetes instalados de forma global</strong> con el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>npm<span class="w"> </span>list<span class="w"> </span>-g<span class="w"> </span>--depth<span class="o">=</span><span class="m">0</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>npm<span class="w"> </span>list<span class="w"> </span>-g<span class="w"> </span>--depth<span class="o">=</span><span class="m">0</span>
 </code></pre></div>
-<h2 id="instalacion-de-paquetes-con-pnpm"><strong>Instalación de paquetes con PNPM</strong></h2>
+<hr />
+<h2 id="instalar-paquetes-con-pnpm"><strong>Instalar paquetes con PNPM</strong></h2>
 <p>Una vez que PNPM esté instalado en tu sistema puedes utilizarlo para gestionar los paquetes de tu proyecto de Node.js de la misma manera que lo harías con NPM</p>
 <ul>
-<li><mark>pnpm install</mark>: Instala las dependencias del proyecto.</li>
-<li><mark>pnpm add nombre_del_paquete</mark>: Agrega un nuevo paquete al proyecto.</li>
-<li><mark>pnpm remove nombre_del_paquete</mark>: Elimina un paquete del proyecto.</li>
+<li>(<mark>pnpm install</mark>) Instala las dependencias del proyecto.</li>
+<li>(<mark>pnpm add nombre_del_paquete</mark>) Agrega un nuevo paquete al proyecto.</li>
+<li>(<mark>pnpm remove nombre_del_paquete</mark>) Elimina un paquete del proyecto.</li>
 </ul>
 <hr />
-<h2 id="como-instalar-dependencias-con-npm"><strong>Cómo instalar dependencias con NPM</strong></h2>
-<p>La función principal de <strong>NPM</strong> es instalar y gestionar las dependencias de nuestro proyecto. Para ello, como sabemos, registra las dependencias en el fichero <mark>package.json</mark>.</p>
+<h2 id="instalar-dependencias-con-npm"><strong>Instalar dependencias con NPM</strong></h2>
+<p>La función principal de <strong>NPM</strong> es instalar y gestionar las dependencias de nuestro proyecto. Para ello, como sabemos, registra las dependencias en el fichero <strong>package.json</strong>.</p>
 <p>Estas dependencias están organizadas en dos categorías:</p>
 <ol>
 <li><code>Dependencies</code>: Dependencias requeridas para la ejecución</li>
 <li><code>DevDependencies</code>: Dependencias necesarias solo durante el desarrollo</li>
 </ol>
-<p>Si tenemos nuestras dependencias correctamente configurados en el archivo <mark>package.json</mark>, podemos instalarlas simplemente con el siguiente comando:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>npm<span class="w"> </span>install
+<p>Si tenemos nuestras dependencias correctamente configurados en el archivo <strong>package.json</strong>, podemos instalarlas simplemente con el siguiente comando:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>npm<span class="w"> </span>install
 </code></pre></div>
-<p>Este comando leerá el archivo <mark>package.json</mark> y descargará todas las dependencias especificadas en la sección <code>dependencies</code>. Estas dependencias se almacenarán en una carpeta llamada <mark>node_modules</mark> en el directorio del proyecto.</p>
+<p>Este comando leerá el archivo <strong>package.json</strong> y descargará todas las dependencias especificadas en la sección <code>dependencies</code>. Estas dependencias se almacenarán en una carpeta llamada <strong>node_modules</strong> en el directorio del proyecto.</p>
 <p>Esto es muy habitual <strong>cuando bajamos un proyecto Open Source</strong>. Al publicar un proyecto, este se guarda en los repositorios (como Github) sin las librerías. Esto es lógico, es para ahorrar espacio.</p>
-<p><mark>Es un error muy frecuente</mark>, al principio, descargar un proyecto Open Source y pensar que no funciona. En muchas ocasiones es, simplemente, que nos hemos olvidado de instalar las dependencias con este comando.</p>
+<p><strong>Es un error muy frecuente</strong>, al principio, descargar un proyecto Open Source y pensar que no funciona. En muchas ocasiones es, simplemente, que nos hemos olvidado de instalar las dependencias con este comando.</p>
 <blockquote>
 <p><br>
-<strong>Nota</strong>: Si estas trabajando con GIT, es importante ignorar la carpeta <mark>node_modules</mark>, para ello, crea un archivo llamado <mark>.gitignore</mark> y agrega el nombre de la carpeta en una nueva línea. Esto es para cuando agamos <code>git add .</code> no nos incluya las librerias que contiene esa carpeta a GIT ni tampoco nos suba esos archivos a GitHub cuando agamos un <code>push</code> ya que es una carpeta muy pesada y no necesitamos en GIT. Es solo para tenerlo en cuenta. <strong>Las carpetas deben llevar una (<mark>/</mark>) delante a diferencia de los archivos</strong>.</p>
-<p>Ejemplo:</p>
-<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">.gitignore</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
-<span class="normal"><a href="#__codelineno-22-2">2</a></span>
-<span class="normal"><a href="#__codelineno-22-3">3</a></span>
-<span class="normal"><a href="#__codelineno-22-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>archivo_para_ignorar.html
-<a id="__codelineno-22-2" name="__codelineno-22-2"></a>archivo_para_ignorar.css
-<a id="__codelineno-22-3" name="__codelineno-22-3"></a>archivo_para_ignorar.js
-<a id="__codelineno-22-4" name="__codelineno-22-4"></a>/node_modules
+<strong>Nota</strong>: Si estas trabajando con GIT, es importante ignorar la carpeta <strong>node_modules</strong>, para ello, crea un archivo llamado (<mark>.gitignore</mark>) y agrega el nombre de la carpeta en una nueva línea. Esto es para cuando agamos (<mark>git add .</mark>) no nos incluya las librerias que contiene esa carpeta a GIT ni tampoco nos suba esos archivos a GitHub cuando agamos un <code>push</code> ya que es una carpeta muy pesada y no necesitamos en GIT. Es solo para tenerlo en cuenta. <strong>Las carpetas deben llevar una</strong> (<mark>/</mark>) <strong>delante</strong>.</p>
+<p><strong>Ejemplo de carpeta y archivos excluidos del GIT</strong>:</p>
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">.gitignore</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a>archivo_para_ignorar.html
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a>archivo_para_ignorar.css
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a>archivo_para_ignorar.js
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a>/node_modules
 </code></pre></div></td></tr></table></div>
 <br></p>
 </blockquote>
-<h3 id="instalacion-de-dependencias-requeridas"><strong>Instalación de dependencias requeridas</strong></h3>
-<p>Cuando se ejecuta <mark>npm install</mark> sin ninguna opción adicional, NPM instalará las dependencias que se encuentran bajo la sección <code>dependencies</code> en el archivo <mark>package.json</mark>. Estas son las dependencias necesarias para que la aplicación funcione correctamente en un entorno de producción.</p>
-<p>Supongamos que tenemos un fichero <mark>package.json</mark> como el siguiente:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">{</span>
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mi-proyecto&quot;</span><span class="p">,</span>
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
-<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">    </span><span class="nt">&quot;express&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.1&quot;</span><span class="p">,</span>
-<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">    </span><span class="nt">&quot;lodash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.21&quot;</span>
-<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="p">}</span>
+<h3 id="instalar-dependencias-requeridas-dependencies"><strong>Instalar dependencias requeridas (<code>dependencies</code>)</strong></h3>
+<p>Cuando se ejecuta (<mark>npm install</mark>) sin ninguna opción adicional, NPM instalará las dependencias que se encuentran bajo la sección <code>dependencies</code> en el archivo <strong>package.json</strong>. Estas son las dependencias necesarias para que la aplicación funcione correctamente en un entorno de producción.</p>
+<p>Supongamos que tenemos un fichero <strong>package.json</strong> como el siguiente:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">{</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mi-proyecto&quot;</span><span class="p">,</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">    </span><span class="nt">&quot;express&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.1&quot;</span><span class="p">,</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="w">    </span><span class="nt">&quot;lodash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.21&quot;</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="p">}</span>
 </code></pre></div>
-<p>En este caso, <mark>npm install</mark> descargará e instalará las versiones más recientes de las bibliotecas <strong>express</strong> y <strong>lodash</strong>.</p>
-<h3 id="instalacion-de-dependencias-de-desarrollo"><strong>Instalación de dependencias de desarrollo</strong></h3>
-<p>Si deseamos instalar las dependencias necesarias para el desarrollo del proyecto (como pruebas unitarias, herramientas de compilación o pruebas de estilo de código), debemos usar la opción <mark>--dev</mark> o su forma corta <mark>-D</mark>. Por ejemplo:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--dev
+<p>En este caso, (<mark>npm install</mark>) descargará e instalará las versiones más recientes de las bibliotecas <strong>express</strong> y <strong>lodash</strong>.</p>
+<h3 id="instalar-dependencias-de-desarrollo-devdependencies"><strong>Instalar dependencias de desarrollo (<code>devDependencies</code>)</strong></h3>
+<p>Si deseamos instalar las dependencias necesarias para el desarrollo del proyecto (como pruebas unitarias, herramientas de compilación o pruebas de estilo de código), debemos usar la opción (<mark>--dev</mark>) o su forma corta (<mark>-D</mark>). Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>npm<span class="w"> </span>install<span class="w"> </span>--dev
 </code></pre></div>
-<p>Esto instalará todas las dependencias que se encuentran en la sección <code>devDependencies</code> de nuestro archivo <mark>package.json</mark>. Recordemos que <strong>estas dependencias no se incluirán en el paquete final</strong> cuando distribuyamos nuestra aplicación.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-D
+</code></pre></div>
+<p>Esto instalará todas las dependencias que se encuentran en la sección <code>devDependencies</code> de nuestro archivo <strong>package.json</strong>. Recordemos que <strong>estas dependencias no se incluirán en el paquete final</strong> cuando distribuyamos nuestra aplicación.</p>
 <hr />
 <h2 id="que-es-el-fichero-packagejson-de-npm"><strong>Qué es el fichero Package.json de NPM</strong></h2>
-<p>El fichero <mark>package.json</mark> es un componente esencial dentro del funcionamiento de <strong>NPM</strong>. Este archivo desempeña un papel fundamental ya que almacena los datos del proyecto proyecto, sus dependencias, scripts personalizados y metadatos importantes.</p>
+<p>El fichero <strong>package.json</strong> es un componente esencial dentro del funcionamiento de <strong>NPM</strong>. Este archivo desempeña un papel fundamental ya que almacena los datos del proyecto proyecto, sus dependencias, scripts personalizados y metadatos importantes.</p>
 <p><strong>Entre las funciones que tiene este fichero está:</strong></p>
 <ul>
 <li>
@@ -6340,54 +6314,54 @@ Esto no es cierto: Node.js puede utilizarse tanto en el frontend como en el back
 </li>
 </ul>
 <h3 id="estructura-basica-de-packagejson"><strong>Estructura básica de package.json</strong></h3>
-<p>La estructura del fichero <mark>package.json</mark> es un formato <strong>JSON</strong> (JavaScript Object Notation). Por lo que es muy fácil de entender por una persona, e incluso editarlo a mano sin demasiada dificultad.</p>
-<p>El fichero <mark>package.json</mark> consta de varias claves y valores que definen las características y dependencias del proyecto. Veamos un ejemplo sencillo de un posible (inventado) archivo <mark>package.json</mark>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">{</span>
-<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;curso-npm&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Curso de NPM - Aprende a utilizar Node Package Manager&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">  </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;index.js&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">  </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LuisLlamas.es&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">  </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="w">    </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node index.js&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="w">    </span><span class="nt">&quot;test&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo \&quot;No hay pruebas disponibles\&quot;&quot;</span>
-<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">    </span><span class="nt">&quot;express&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.1&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="w">    </span><span class="nt">&quot;lodash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.21&quot;</span>
-<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="w">  </span><span class="p">},</span>
-<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="w">  </span><span class="nt">&quot;devDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="w">    </span><span class="nt">&quot;nodemon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^2.0.12&quot;</span><span class="p">,</span>
-<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a><span class="w">    </span><span class="nt">&quot;eslint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^7.32.0&quot;</span>
-<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="p">}</span>
+<p>La estructura del fichero <strong>package.json</strong> es un formato <strong>JSON</strong> (<em>JavaScript Object Notation</em>). Por lo que es muy fácil de entender por una persona, e incluso editarlo a mano sin demasiada dificultad.</p>
+<p>El fichero <strong>package.json</strong> consta de varias claves y valores que definen las características y dependencias del proyecto. Veamos un ejemplo sencillo de un posible archivo <strong>package.json</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="p">{</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;curso-npm&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Curso de NPM - Aprende a utilizar Node Package Manager&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="w">  </span><span class="nt">&quot;main&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;index.js&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="w">  </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nerea Zelaieta&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="w">  </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="w">  </span><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">    </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node index.js&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="w">    </span><span class="nt">&quot;test&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo \&quot;No hay pruebas disponibles\&quot;&quot;</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="w">    </span><span class="nt">&quot;express&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.1&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="w">    </span><span class="nt">&quot;lodash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^4.17.21&quot;</span>
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a><span class="w">  </span><span class="nt">&quot;devDependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="w">    </span><span class="nt">&quot;nodemon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^2.0.12&quot;</span><span class="p">,</span>
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a><span class="w">    </span><span class="nt">&quot;eslint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^7.32.0&quot;</span>
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a><span class="p">}</span>
 </code></pre></div>
+<p><strong>Descripción</strong>:</p>
 <ul>
-<li><code>name</code>: Nombre del proyecto.    <mark>“curso-npm”</mark></li>
-<li><code>version</code>:  Versión del proyecto.   <mark>“1.0.0”</mark></li>
-<li><code>description</code>:  Descripción breve del proyecto. </li>
-<li><code>main</code>: Archivo principal del proyecto, es el punto de entrada cuando se importa el módulo. <mark>“index.js”</mark></li>
-<li><code>author</code>:   Nombre del autor del proyecto.  </li>
-<li><code>license</code>:  Licencia del proyecto.  <mark>“MIT”</mark></li>
-<li><code>scripts</code>:  Define comandos que se pueden ejecutar usando npm run script-name.  </li>
-<li><code>dependencies</code>: Lista de dependencias requeridas para que el proyecto funcione correctamente en producción. <mark>“express”</mark>, <mark>“lodash”</mark></li>
-<li><code>devDependencies</code>:  Lista de dependencias requeridas solo para desarrollo.  <mark>“nodemon”</mark>, <mark>“eslint”</mark></li>
+<li><code>name</code>: Nombre del proyecto.    (<mark>"curso-npm"</mark>)</li>
+<li><code>version</code>:  Versión del proyecto.   (<mark>"1.0.0"</mark>)</li>
+<li><code>description</code>:  Descripción breve del proyecto. (<mark>"Curso de NPM - Aprende a utilizar Node Package Manager"</mark>)</li>
+<li><code>main</code>: Archivo principal del proyecto, es el punto de entrada cuando se importa el módulo. (<mark>"index.js"</mark>)</li>
+<li><code>author</code>:   Nombre del autor del proyecto. (<mark>"Nerea Zelaieta"</mark>)</li>
+<li><code>license</code>:  Licencia del proyecto.  (<mark>"MIT"</mark>)</li>
+<li><code>scripts</code>:  Define comandos que se pueden ejecutar usando npm run script-name.</li>
+<li><code>dependencies</code>: Lista de dependencias requeridas para que el proyecto funcione correctamente en producción. (<mark>"express"</mark>), (<mark>"lodash"</mark>)</li>
+<li><code>devDependencies</code>:  Lista de dependencias requeridas solo para desarrollo.  (<mark>"nodemon"</mark>), (<mark>"eslint"</mark>)</li>
 </ul>
-<hr />
-<h2 id="dependencies-y-devdependencies"><strong>Dependencies y DevDependencies</strong></h2>
+<h3 id="dependencies-y-devdependencies"><strong>Dependencies y DevDependencies</strong></h3>
 <p>Las claves <code>dependencies</code> y <code>devDependencies</code> enumeran las dependencias del proyecto. La diferencia entre una y otra es que</p>
 <ol>
 <li><code>dependencies</code> son necesarias para que el programa funcione correctamente en producción.</li>
 <li><code>devDependencies</code> son solo requeridas durante el desarrollo.</li>
 </ol>
 <p><strong>Separar estas dependencias es importante</strong> para permitir usar herramientas solo en la fase de desarrollo, pero evitando que se incluyan paquetes innecesarios en la distribución de la aplicación final.</p>
-<p>Por ejemplo, <mark>imagina que estás usando una librería que te ayuda durante el desarrollo remarcándote errores de sintaxis</mark>. <strong>No quieres que esa librería forme parte del producto final</strong>. En ese caso, la añadirías en <code>devDependencies</code>.</p>
+<p>Por ejemplo, <strong>imagina que estás usando una librería que te ayuda durante el desarrollo remarcándote errores de sintaxis</strong>. <strong>No quieres que esa librería forme parte del producto final</strong>. En ese caso, la añadirías en <code>devDependencies</code>.</p>
 <hr />
-<h2 id="package-lock"><strong>Package-lock</strong></h2>
-<p>El fichero <mark>package-lock.json</mark> es un fichero que <strong>se genera automáticamente por NPM</strong> en operaciones donde modifica el árbol de node_modules o el archivo <mark>package.json</mark>.</p>
+<h2 id="que-es-el-fichero-package-lockjson-de-npm"><strong>Qué es el fichero Package-lock.json de NPM</strong></h2>
+<p>El fichero <strong>package-lock.json</strong> es un fichero que <strong>se genera automáticamente por NPM</strong> en operaciones donde modifica el árbol de node_modules o el archivo <strong>package.json</strong>.</p>
 <p><strong>Su función principal es describir el árbol de dependencias exacto que se generó durante una instalación</strong>, permitiendo que futuras instalaciones generen árboles idénticos, independientemente de las actualizaciones intermedias de las dependencias.</p>
-<p><mark>No debemos tocar a mano el fichero Package-lock</mark>, <strong>es un fichero interno usado por NPM</strong>. Simplemente <strong>acostúmbrate a ignorarlo</strong>.</p>
+<p><strong>No debemos tocar a mano el fichero Package-lock, es un fichero interno usado por NPM</strong>. Simplemente <strong>acostúmbrate a ignorarlo</strong>.</p>
 <hr />
 <p><br></p>
 
