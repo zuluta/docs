@@ -4,13 +4,12 @@ hide:
   #- toc
 ---
 
-
 ### **Cuentas necesarias**
 
   1. [Registrar en NPM](https://www.npmjs.com/signup){:target="_blank"}
   2. [Registrar en GitHub](https://github.com/signup){:target="_blank"}
 
-### **Herramientas instaladas**
+### **Herramientas necesarias**
 
   1. Editor de texto ([VSCode](https://code.visualstudio.com){:target="_blank"}, Atom, Sublime Text, etc.)
   2. [Node.js](https://nodejs.org/es){:target="_blank"} (vienen con NPM)
@@ -31,7 +30,7 @@ hide:
     - `git repository:` ==https://github.com/usuario/footer-js-npm== Escribe la URL del repositorio GitHub y **enter**
     - `keywords:` ==footer== Escribe palabras clave (es un metadato para NPM, no hace nada) y **enter**
     - `author:` ==Maitane Zelaieta== Escribe tu nombre y **enter**
-    - `licence: (ISC)` ==MIT== Escribe una licencia (por lo general se utiliza la licencia MIT, si no se pone ninguna licencia, en terminos legales significa que nadie puede usar tu código sin que le des acceso por derechos de autor) y **enter**
+    - `licence: (ISC)` ==MIT== Escribe una licencia (por lo general se utiliza la (LICENSE.lic) [licencia MIT](https://choosealicense.com/licenses/mit/){:target="_blank"}, si no se pone ninguna licencia, en terminos legales significa que nadie puede usar tu código sin que le des acceso por derechos de autor) y **enter**
     - `Is this ok? (yes)` Verificamos que todo este correcto (dejamos (yes) por defecto) y **enter**
 
 4. Ahora si abrimos el archivo **package.json**, veremos nuestros datos rellenados.
