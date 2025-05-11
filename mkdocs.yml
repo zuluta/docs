@@ -197,7 +197,7 @@ nav:
       - 3. Personalizar precios: devcamp/checkpoint-09/personalizar-precios-js.md
       - 4. Manejo de errores: devcamp/checkpoint-09/manejar-errores-js.md
       - 5. Introducción a los Módulos: devcamp/checkpoint-09/modulos-js.md
-      - 6. Introducción a NPM y PNPM: devcamp/checkpoint-09/npm-pnpm-js.md
+      - 6. Introducción a Node, NPM y PNPM: devcamp/checkpoint-09/node-npm-pnpm-js.md
       - 7. Creación y despliegue de módulo NPM: devcamp/checkpoint-09/crear-desplegar-modulo-npm-js.md
 
 # configuración
