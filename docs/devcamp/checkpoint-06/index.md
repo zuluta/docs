@@ -19,5 +19,12 @@ hide:
   4. [¿Qué es el polimorfismo?](que-es-polimorfismo-py.md)
   5. [¿Qué es una API?](que-es-una-api-py.md)
   6. [¿Es MongoDB una base de datos SQL o NoSQL?](que-es-mongodb-py.md)
+
+***
+
+**LICENCIA**
+
+Material publicado bajo licencia [Atribución-NoComercial-SinObraDerivada 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es){:target="_blank"}
+
 <br>
 <br>

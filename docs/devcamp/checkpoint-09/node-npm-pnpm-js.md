@@ -348,4 +348,14 @@ El fichero **package-lock.json** es un fichero que **se genera automáticamente 
 
 ***
 
+### Fuentes:
+
+>Sitio web oficial: [Node.js](https://nodejs.org/es){:target="_blank"}
+
+>Documentación oficial: [NPM](https://docs.npmjs.com/){:target="_blank"}
+
+>Sitio web oficial: [PNPM](https://pnpm.io/es/){:target="_blank"}
+
+***
+
 <br>

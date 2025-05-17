@@ -20,5 +20,12 @@ hide:
   5. [¿Qué es un operador ternario?](operador-ternario-js.md)
   6. [¿Cuál es la diferencia entre una declaración de función y una expresión de función?](declaracion-de-funcion-vs-expresion-de-funcion-js.md)
   7. [¿Qué es la palabra clave "this" en JS?](que-es-this-js.md)
+
+***
+
+**LICENCIA**
+
+Material publicado bajo licencia [Atribución-NoComercial-SinObraDerivada 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es){:target="_blank"}
+
 <br>
 <br>

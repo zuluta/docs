@@ -21,5 +21,12 @@ hide:
   6. [¿Qué es la programación orientada a objetos?](que-es-poo-js.md)
   7. [¿Qué es una promesa en JS?](promesa-js.md)
   8. [¿Qué hacen async y await por nosotros?](async-await-js.md)
+
+***
+
+**LICENCIA**
+
+Material publicado bajo licencia [Atribución-NoComercial-SinObraDerivada 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es){:target="_blank"}
+
 <br>
 <br>

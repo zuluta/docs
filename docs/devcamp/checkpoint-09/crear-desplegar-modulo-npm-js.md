@@ -52,7 +52,7 @@ hide:
 6. Dentro del directorio **footer-js-npm**, creamos un archivo llamado ==.README.md==.
 7. Dentro del directorio **footer-js-npm**, creamos un archivo llamado ==.gitignore== y escribe lo siguiente:
 
-    ```js linenums="1" title=".gitignore"
+    ```linenums="1" title=".gitignore"
     node_modules
     ```
 
@@ -70,6 +70,18 @@ hide:
 10. Desde la carpeta del proyecto ==footer-js-npm==, abre la terminal y publica el módulo en tu cuenta NPM.
     - Ejecuta el comando (==npm publish==) Sube el módulo **footer-js-npm** a tu cuenta de NPM.
 11. Entra a tu perfil de NPM y verifica que tu módulo **footer-js-npm** a sido publicado.
+
+***
+
+### Fuentes:
+
+>Sitio web oficial: [Registrar en NPM](https://www.npmjs.com/signup){:target="_blank"}
+
+>Sitio web oficial: [Registrar en GitHub](https://github.com/signup){:target="_blank"}
+
+>Sitio web oficial: [VSCode](https://code.visualstudio.com){:target="_blank"}
+
+>Sitio web oficial: [Node.js](https://nodejs.org/es){:target="_blank"}
 
 ***
 

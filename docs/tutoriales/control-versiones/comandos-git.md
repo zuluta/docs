@@ -90,7 +90,11 @@ hide:
       2. Ejemplo commit: `add a new search feature`
       3. Ejemplo commit: `change the default system color`
       4. Ejemplo commit: `fix a problem with the topbar`
-<br>
 
- Fuente: [Sitio web oficial](https://git-scm.com/docs)
+***
+
+Fuente: [Sitio web oficial](https://git-scm.com/docs){:target="_blank"}
+
+***
+
 <br>

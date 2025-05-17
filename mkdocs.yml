@@ -196,9 +196,15 @@ nav:
       - 2. Math con métodos estáticos: devcamp/checkpoint-09/math-js.md
       - 3. Personalizar precios: devcamp/checkpoint-09/personalizar-precios-js.md
       - 4. Manejo de errores: devcamp/checkpoint-09/manejar-errores-js.md
-      - 5. Introducción a los Módulos: devcamp/checkpoint-09/modulos-js.md
-      - 6. Introducción a Node, NPM y PNPM: devcamp/checkpoint-09/node-npm-pnpm-js.md
-      - 7. Creación y despliegue de módulo NPM: devcamp/checkpoint-09/crear-desplegar-modulo-npm-js.md
+      - 5. Licencias de libre acceso: devcamp/checkpoint-09/licencias.md
+      - 6. Introducción a los Módulos: devcamp/checkpoint-09/modulos-js.md
+      - 7. Introducción a Node, NPM y PNPM: devcamp/checkpoint-09/node-npm-pnpm-js.md
+      - 8. Creación y despliegue de módulo NPM: devcamp/checkpoint-09/crear-desplegar-modulo-npm-js.md
+    - Checkpoint 10:
+      - Checkpoint 10: devcamp/checkpoint-10/index.md
+      - 1. Introducción a GitHub: devcamp/checkpoint-10/github.md
+      - 2. Introducción a GIT: devcamp/checkpoint-10/git.md
+      - 3. GIT desde la línea de comandos: devcamp/checkpoint-10/comandos-git.md
 
 # configuración
 theme:
