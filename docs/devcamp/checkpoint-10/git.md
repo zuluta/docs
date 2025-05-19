@@ -78,9 +78,10 @@ Si examinamos el contenido del directorio `.git` veremos el siguiente árbol de 
 ```
 .
 └── .git
-    ├── HEAD
+    ├── COMMIT_EDITMSG
     ├── config
     ├── description
+    ├── HEAD
     ├── hooks
     │   ├── applypatch-msg.sample
     │   ├── commit-msg.sample
@@ -94,6 +95,9 @@ Si examinamos el contenido del directorio `.git` veremos el siguiente árbol de 
     │   └── update.sample
     ├── info
     │   └── exclude
+    ├── logs
+    │   ├── refs
+    │   └── HEAD
     ├── objects
     │   ├── info
     │   └── pack
@@ -101,6 +105,19 @@ Si examinamos el contenido del directorio `.git` veremos el siguiente árbol de 
         ├── heads
         └── tags
 ```
+
+>**Descripción**:
+>
+>  - ==COMMIT_EDITMSG== Almacena el último commit enviado y permite editar de forma rápida.
+>  - ==config== Almacena la configuración del GIT. En ella encontramos la dirección remota al repositorio de GitHub etc.
+>  - ==description== Permite añadir una descripción a tu repositorio.
+>  - ==HEAD== Hace referencia al (id) de la rama donde nos encontramos actualmente.
+>  - ==hooks== Son scripts que se ejecutan automáticamente antes o después de ejecutar comandos GIT como `commit` y `push`. Permite personalizar scripts propios pero es un tema avanzado.
+>  - ==logs/HEAD== Almacena información completa de todos los commits enviados.
+>  - ==objects== almacena objetos en la memoria. No tocar.
+>  - ==refs== Almacena referencias en la memoria. No tocar.
+>
+>**Nota**: A todos estos archivos accedemos con GIT desde la línea de comandos.
 
 ### **Comandos básicos para trabajar con un repositorio local**
 
@@ -252,24 +269,36 @@ Usamos este comando para recibir los nuevos commits que existen en el repositori
 
 ## **El archivo `.gitignore`**
 
-Dentro del directorio raíz de nuestro proyecto podemos tener un archivo especial llamado `.gitignore` donde indicamos los archivos, tipos de archivos o carpetas que queremos que sean ignorados por GIT.
+Dentro del directorio raíz de nuestro proyecto, podemos crear un archivo específico llamado `.gitignore` donde indicamos los archivos, tipos de archivos o carpetas que queramos que sean ignorados por GIT.
+
+Todo lo que pongamos dentro de este archivo, sera ignorado por GIT y ni se subira a GitHub.
+
+> **Nota**: ==git rm -r --cached .== es un comando que elimina la cache de GIT. No se recomienda un uso continuo, solo en caso de que algun archivo haya sido guardado en chache y queramos eliminarla de ella porque nos sigue apareciendo apesar de ignoralo en `.gitignore`.
+
+### **Razones para ignorar:**
+
+  - **Seguridad**: En nuestro proyecto, podemos tener archivos con claves privadas a APIS u otro tipo de credenciales como contraseñas y sería un grave error incorporarlos al seguimineto del GIT y posterior subida a GitHub.
+  - **Espacio**: Las librerias en general ocupan mucho espacio en disco. Éstas librerias, se deben ignorar del GIT porque no necesitan un seguimiento y acabarian ocupando gran parte de espacio en GitHub.
 
 Por ejemplo, si en nuestro repositorio no queremos guardar archivos o carpetas, tendríamos el siguiente contenido en el archivo `.gitignore`:
 
 >Las extensiones deben llevar un (==*==) delante.
 
->Las carpetas deben llevar una (==/==) delante.
+>Si queremos ignorar un archivo o carpeta que esté en la raíz del proyecto (no en una subcarpeta), utilizaríamos un (==/==) antes del archivo o la carpeta. Por ejemplo, para ignorar la carpeta (==carpeta_para_ignorar==) que se encuentra en la raíz utilizaríamos como en el ejemplo.
 
 >Ejemplo de extensiones, archivos y carpeta excluidos del GIT:
 ```linenums="1" title=".gitignore" 
 *.class
 *.log
 *.html
+
 archivo_para_ignorar.html
 archivo_para_ignorar.css
 archivo_para_ignorar.js
+
 /carpeta_para_ignorar
 ```
+>Nota: Puede contener saltos de línea vacios.
 
 ***
 

@@ -5891,6 +5891,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#razones-para-ignorar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Razones para ignorar:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#fuentes" class="md-nav__link">
     <span class="md-ellipsis">
       Fuentes:
@@ -6121,6 +6130,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#razones-para-ignorar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Razones para ignorar:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#fuentes" class="md-nav__link">
     <span class="md-ellipsis">
       Fuentes:
@@ -6209,29 +6227,47 @@
 <p>Si examinamos el contenido del directorio <code>.git</code> veremos el siguiente árbol de contenidos:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>.
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>└── .git
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    ├── HEAD
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    ├── COMMIT_EDITMSG
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ├── config
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    ├── description
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ├── hooks
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    │   ├── applypatch-msg.sample
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    │   ├── commit-msg.sample
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    │   ├── post-update.sample
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    │   ├── pre-applypatch.sample
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    │   ├── pre-commit.sample
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    │   ├── pre-push.sample
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    │   ├── pre-rebase.sample
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    │   ├── pre-receive.sample
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    │   ├── prepare-commit-msg.sample
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    │   └── update.sample
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    ├── info
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    │   └── exclude
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    ├── objects
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    │   ├── info
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    │   └── pack
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    └── refs
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        ├── heads
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        └── tags
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ├── HEAD
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    ├── hooks
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    │   ├── applypatch-msg.sample
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    │   ├── commit-msg.sample
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    │   ├── post-update.sample
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    │   ├── pre-applypatch.sample
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    │   ├── pre-commit.sample
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    │   ├── pre-push.sample
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    │   ├── pre-rebase.sample
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    │   ├── pre-receive.sample
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    │   ├── prepare-commit-msg.sample
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    │   └── update.sample
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    ├── info
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    │   └── exclude
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    ├── logs
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    │   ├── refs
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    │   └── HEAD
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    ├── objects
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    │   ├── info
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    │   └── pack
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>    └── refs
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>        ├── heads
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        └── tags
 </code></pre></div>
+<blockquote>
+<p><strong>Descripción</strong>:</p>
+<ul>
+<li><mark>COMMIT_EDITMSG</mark> Almacena el último commit enviado y permite editar de forma rápida.</li>
+<li><mark>config</mark> Almacena la configuración del GIT. En ella encontramos la dirección remota al repositorio de GitHub etc.</li>
+<li><mark>description</mark> Permite añadir una descripción a tu repositorio.</li>
+<li><mark>HEAD</mark> Hace referencia al (id) de la rama donde nos encontramos actualmente.</li>
+<li><mark>hooks</mark> Son scripts que se ejecutan automáticamente antes o después de ejecutar comandos GIT como <code>commit</code> y <code>push</code>. Permite personalizar scripts propios pero es un tema avanzado.</li>
+<li><mark>logs/HEAD</mark> Almacena información completa de todos los commits enviados.</li>
+<li><mark>objects</mark> almacena objetos en la memoria. No tocar.</li>
+<li><mark>refs</mark> Almacena referencias en la memoria. No tocar.</li>
+</ul>
+<p><strong>Nota</strong>: A todos estos archivos accedemos con GIT desde la línea de comandos.</p>
+</blockquote>
 <h3 id="comandos-basicos-para-trabajar-con-un-repositorio-local"><strong>Comandos básicos para trabajar con un repositorio local</strong></h3>
 <p><strong>Paso 1</strong></p>
 <p>En primer lugar comprobaremos en qué estado se encuentran los archivos del repositorio:</p>
@@ -6353,11 +6389,20 @@
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>       +                +                +                +
 </code></pre></div>
 <h2 id="el-archivo-gitignore"><strong>El archivo <code>.gitignore</code></strong></h2>
-<p>Dentro del directorio raíz de nuestro proyecto podemos tener un archivo especial llamado <code>.gitignore</code> donde indicamos los archivos, tipos de archivos o carpetas que queremos que sean ignorados por GIT.</p>
+<p>Dentro del directorio raíz de nuestro proyecto, podemos crear un archivo específico llamado <code>.gitignore</code> donde indicamos los archivos, tipos de archivos o carpetas que queramos que sean ignorados por GIT.</p>
+<p>Todo lo que pongamos dentro de este archivo, sera ignorado por GIT y ni se subira a GitHub.</p>
+<blockquote>
+<p><strong>Nota</strong>: <mark>git rm -r --cached .</mark> es un comando que elimina la cache de GIT. No se recomienda un uso continuo, solo en caso de que algun archivo haya sido guardado en chache y queramos eliminarla de ella porque nos sigue apareciendo apesar de ignoralo en <code>.gitignore</code>.</p>
+</blockquote>
+<h3 id="razones-para-ignorar"><strong>Razones para ignorar:</strong></h3>
+<ul>
+<li><strong>Seguridad</strong>: En nuestro proyecto, podemos tener archivos con claves privadas a APIS u otro tipo de credenciales como contraseñas y sería un grave error incorporarlos al seguimineto del GIT y posterior subida a GitHub.</li>
+<li><strong>Espacio</strong>: Las librerias en general ocupan mucho espacio en disco. Éstas librerias, se deben ignorar del GIT porque no necesitan un seguimiento y acabarian ocupando gran parte de espacio en GitHub.</li>
+</ul>
 <p>Por ejemplo, si en nuestro repositorio no queremos guardar archivos o carpetas, tendríamos el siguiente contenido en el archivo <code>.gitignore</code>:</p>
 <blockquote>
 <p>Las extensiones deben llevar un (<mark>*</mark>) delante.</p>
-<p>Las carpetas deben llevar una (<mark>/</mark>) delante.</p>
+<p>Si queremos ignorar un archivo o carpeta que esté en la raíz del proyecto (no en una subcarpeta), utilizaríamos un (<mark>/</mark>) antes del archivo o la carpeta. Por ejemplo, para ignorar la carpeta (<mark>carpeta_para_ignorar</mark>) que se encuentra en la raíz utilizaríamos como en el ejemplo.</p>
 <p>Ejemplo de extensiones, archivos y carpeta excluidos del GIT:
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">.gitignore</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
@@ -6365,14 +6410,19 @@
 <span class="normal"><a href="#__codelineno-3-4">4</a></span>
 <span class="normal"><a href="#__codelineno-3-5">5</a></span>
 <span class="normal"><a href="#__codelineno-3-6">6</a></span>
-<span class="normal"><a href="#__codelineno-3-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>*.class
+<span class="normal"><a href="#__codelineno-3-7">7</a></span>
+<span class="normal"><a href="#__codelineno-3-8">8</a></span>
+<span class="normal"><a href="#__codelineno-3-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>*.class
 <a id="__codelineno-3-2" name="__codelineno-3-2"></a>*.log
 <a id="__codelineno-3-3" name="__codelineno-3-3"></a>*.html
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>archivo_para_ignorar.html
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>archivo_para_ignorar.css
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>archivo_para_ignorar.js
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a>/carpeta_para_ignorar
-</code></pre></div></td></tr></table></div></p>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>archivo_para_ignorar.html
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>archivo_para_ignorar.css
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>archivo_para_ignorar.js
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>/carpeta_para_ignorar
+</code></pre></div></td></tr></table></div>
+Nota: Puede contener saltos de línea vacios.</p>
 </blockquote>
 <hr />
 <h3 id="fuentes">Fuentes:</h3>
