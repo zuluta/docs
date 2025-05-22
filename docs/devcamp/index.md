@@ -16,6 +16,8 @@ hide:
   3. [Checkpoint 08](checkpoint-08)
   4. [Checkpoint 09](checkpoint-09)
   5. [Checkpoint 10](checkpoint-10)
+  6. [Checkpoint 11](checkpoint-11)
 
-<br>
+***
+
 <br>

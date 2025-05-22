@@ -205,6 +205,12 @@ nav:
       - 1. Introducción a GitHub: devcamp/checkpoint-10/github.md
       - 2. Introducción a GIT: devcamp/checkpoint-10/git.md
       - 3. GIT desde la línea de comandos: devcamp/checkpoint-10/comandos-git.md
+    - Checkpoint 11:
+      - Checkpoint 11: devcamp/checkpoint-11/index.md
+      - 1. GIT merge y rebase: devcamp/checkpoint-11/git-merge-rebase.md
+      - 2. GIT stash: devcamp/checkpoint-11/git-stash.md
+      - 3. GIT fetch y pull: devcamp/checkpoint-11/git-fetch-pull.md
+      - 4. GIT eliminar ramas: devcamp/checkpoint-11/git-eliminar-ramas.md
 
 # configuración
 theme:
