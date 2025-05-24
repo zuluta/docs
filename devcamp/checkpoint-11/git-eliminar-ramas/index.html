@@ -18,6 +18,8 @@
         <link rel="prev" href="../git-fetch-pull/">
       
       
+        <link rel="next" href="../git-conflicto-merge/">
+      
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
@@ -5768,6 +5770,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5968,6 +5976,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git-conflicto-merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. GIT resolver conflictos de fusión
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git-volver-ultimo-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. GIT volver al último commit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git-volver-commit-especifico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. GIT volver a un commit específico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6059,16 +6136,16 @@
 <p>Es de buena práctica, eliminar una rama que ya a sido fusionado a la rama principal. La razón de eliminar es que podemos evitar conflictos en el futuro en caso de que entremos a esa rama por error y realicemos cambios. Si estamos trabajando en un proyecto grande, lo mas seguro es que tengamos bastantes ramas y esa es la razón de ir eliminando las ramas ya terminadas y fusionadas al <code>main</code>.</p>
 <p>Suponiendo que ya tenermos una rama <code>nueva-rama</code> ya terminada y fusionada a la rama principal <code>main</code>, procedemos a eliminarla.</p>
 <ul>
-<li>Ejecutamos el comando <mark>git switch main</mark> para posicionar en la rama principal <code>main</code>.</li>
-<li>Ejecutamos el comando <mark>git branch -d nueva-rama</mark> para eliminar la rama <code>nueva-rama</code> ya fusionada.</li>
-<li>Ejecutamos el comando <mark>git branch</mark> para mostrar todas las ramas y verificar si la a eliminado.</li>
+<li><mark>git switch main</mark> para posicionar en la rama principal <code>main</code>.</li>
+<li><mark>git branch -d nueva-rama</mark> para eliminar la rama <code>nueva-rama</code> ya fusionada.</li>
+<li><mark>git branch</mark> para mostrar todas las ramas y verificar si la a eliminado.</li>
 </ul>
 <h2 id="git-como-eliminar-una-rama-remota"><strong>Git como eliminar una rama remota</strong></h2>
 <p>Para eliminar una rama remota de GitHub, seguimos el sigiente paso.</p>
 <ul>
-<li>Ejecutamos el comando <mark>git push origin --delete nueva-rama</mark> para eliminar la rama <code>nueva-rama</code> remoto.</li>
+<li><mark>git push origin --delete nueva-rama</mark> para eliminar la rama <code>nueva-rama</code> remoto.</li>
 <li>Entra en GitHub para verificar si la a eliminado o desde la termina con el siguiente paso.</li>
-<li>Ejecutamos el comando <mark>git branch -r</mark> para mostrar todas las ramas del repositorio remoto.</li>
+<li><mark>git branch -r</mark> para mostrar todas las ramas del repositorio remoto.</li>
 </ul>
 <hr />
 <h2 id="comandos-basicos"><strong>Comandos básicos:</strong></h2>

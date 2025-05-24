@@ -5859,6 +5859,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -5984,6 +5990,75 @@
   
   <span class="md-ellipsis">
     4. GIT eliminar ramas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devcamp/checkpoint-11/git-conflicto-merge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5. GIT resolver conflictos de fusión
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devcamp/checkpoint-11/git-volver-ultimo-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6. GIT volver al último commit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../devcamp/checkpoint-11/git-volver-commit-especifico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7. GIT volver a un commit específico
     
   </span>
   
@@ -6125,7 +6200,9 @@
 <li><mark>git remote add origin https://github.com/usuario/mi_repositorio.git</mark> Crea una conexión remota llamada <ins class="critic">origin</ins> con el repositorio de GitHub</li>
 <li><mark>git remote -v</mark> Verifica la comunicación con el repositorio remoto</li>
 <li><mark>git status</mark> Muestra el estado de los procesos GIT</li>
-<li><mark>git push -u origin main</mark> Sube los archivos a la rama main remoto de GitHub</li>
+<li><mark>git push origin main</mark> Sube los archivos a la rama (main) remoto de GitHub</li>
+<li><mark>git push -f origin main</mark> Fuerza la subida de los archivos a la rama (main) remoto de GitHub</li>
+<li><mark>git push -u origin main</mark> Obtiene las actualizaciones remotas y sube los archivos a la rama main remoto de GitHub</li>
 </ul>
 <h3 id="comandos-utiles">Comandos útiles:</h3>
 <ul>
@@ -6136,6 +6213,7 @@
 <li><mark>git log -n 2</mark> Muestra los últimos 2 commits</li>
 <li><mark>git log prueba.html</mark> Muestra los commits del archivo (prueba.html)</li>
 <li><mark>git switch main</mark> Cambia de la rama actual a la rama (main)</li>
+<li><mark>git checkout -b branch-test</mark> Crea una nueva rama (branch-test) a partir de la rama actual y te posiciona en ella</li>
 <li><mark>git branch branch-test</mark> Crea una nueva rama (branch-test) a partir de la rama actual</li>
 <li><mark>git branch -m branch-test</mark> Renombra la rama local actual por (branch-test) <del class="critic">actual</del><ins class="critic"> branch-test</ins></li>
 <li><mark>git branch -M branch-test</mark> Fuerza a renombrar la rama local actual por (branch-test) <del class="critic">actual</del><ins class="critic"> branch-test</ins></li>
