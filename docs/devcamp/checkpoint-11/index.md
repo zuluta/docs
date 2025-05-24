@@ -17,6 +17,9 @@ hide:
   2. [GIT stash](git-stash.md)
   3. [GIT fetch y pull](git-fetch-pull.md)
   4. [GIT eliminar ramas](git-eliminar-ramas.md)
+  5. [GIT resolver conflictos de fusión](git-conflicto-merge.md)
+  6. [GIT volver al último commit](git-volver-ultimo-commit.md)
+  7. [GIT volver a un commit específico](git-volver-commit-especifico.md)
 
 ***
 

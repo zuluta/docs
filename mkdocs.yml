@@ -211,6 +211,9 @@ nav:
       - 2. GIT stash: devcamp/checkpoint-11/git-stash.md
       - 3. GIT fetch y pull: devcamp/checkpoint-11/git-fetch-pull.md
       - 4. GIT eliminar ramas: devcamp/checkpoint-11/git-eliminar-ramas.md
+      - 5. GIT resolver conflictos de fusión: devcamp/checkpoint-11/git-conflicto-merge.md
+      - 6. GIT volver al último commit: devcamp/checkpoint-11/git-volver-ultimo-commit.md
+      - 7. GIT volver a un commit específico: devcamp/checkpoint-11/git-volver-commit-especifico.md
 
 # configuración
 theme:

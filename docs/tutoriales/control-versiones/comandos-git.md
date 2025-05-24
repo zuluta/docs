@@ -27,7 +27,9 @@ hide:
   - ==git remote add origin https://github.com/usuario/mi_repositorio.git== Crea una conexión remota llamada {++origin++} con el repositorio de GitHub
   - ==git remote -v== Verifica la comunicación con el repositorio remoto
   - ==git status== Muestra el estado de los procesos GIT
-  - ==git push -u origin main== Sube los archivos a la rama main remoto de GitHub
+  - ==git push origin main== Sube los archivos a la rama (main) remoto de GitHub
+  - ==git push -f origin main== Fuerza la subida de los archivos a la rama (main) remoto de GitHub
+  - ==git push -u origin main== Obtiene las actualizaciones remotas y sube los archivos a la rama main remoto de GitHub
 
 ### Comandos útiles:
 
@@ -38,6 +40,7 @@ hide:
   - ==git log -n 2== Muestra los últimos 2 commits
   - ==git log prueba.html== Muestra los commits del archivo (prueba.html)
   - ==git switch main== Cambia de la rama actual a la rama (main)
+  - ==git checkout -b branch-test== Crea una nueva rama (branch-test) a partir de la rama actual y te posiciona en ella
   - ==git branch branch-test== Crea una nueva rama (branch-test) a partir de la rama actual
   - ==git branch -m branch-test== Renombra la rama local actual por (branch-test) {~~actual~> branch-test~~}
   - ==git branch -M branch-test== Fuerza a renombrar la rama local actual por (branch-test) {~~actual~> branch-test~~}
