@@ -13,7 +13,7 @@ Lo primero que debemos hacer es, revisar el histórico completo de GIT, para con
   - ==git log== para mostrar el histórico de commits.
   - ==git log --oneline== para mostrar información simplificada de commits donde sale el hash de cada uno.
 
->Nota: El (==git log --oneline==) nos muestra los primeros 7 caracteres del hash.
+>Nota: El (git log --oneline) nos muestra los primeros 7 caracteres del hash.
 
 **Para navegar en el histórico de GIT:**
 

@@ -20,6 +20,8 @@ hide:
   5. [GIT resolver conflictos de fusión](git-conflicto-merge.md)
   6. [GIT volver al último commit](git-volver-ultimo-commit.md)
   7. [GIT volver a un commit específico](git-volver-commit-especifico.md)
+  8. [VSCode snippets](vscode-snippets.md)
+  9. [Introducción al DOM](introduccion-dom.md)
 
 ***
 

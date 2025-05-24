@@ -214,6 +214,8 @@ nav:
       - 5. GIT resolver conflictos de fusión: devcamp/checkpoint-11/git-conflicto-merge.md
       - 6. GIT volver al último commit: devcamp/checkpoint-11/git-volver-ultimo-commit.md
       - 7. GIT volver a un commit específico: devcamp/checkpoint-11/git-volver-commit-especifico.md
+      - 8. VSCode snippets: devcamp/checkpoint-11/vscode-snippets.md
+      - 9. Introducción al DOM: devcamp/checkpoint-11/introduccion-dom.md
 
 # configuración
 theme:
