@@ -18,6 +18,8 @@
         <link rel="prev" href="../vscode-snippets/">
       
       
+        <link rel="next" href="../dom-manipular-estilos/">
+      
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
@@ -5778,6 +5780,8 @@
       
         
       
+        
+      
     
     
     
@@ -6066,10 +6070,99 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#como-acceder-a-los-objetos-desde-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como acceder a los objetos desde JS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-acceder-a-los-objetos-desde-la-consola-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como acceder a los objetos desde la consola del navegador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como acceder a los objetos desde la consola del navegador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acceder-al-objeto-body-desde-la-consola-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceder al objeto (body) desde la consola del navegador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-elementos-por-nombre-de-class-desde-la-consola-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buscar elementos por nombre de (class) desde la consola del navegador
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seleccionar-elementos-dom-desde-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seleccionar elementos DOM desde JS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seleccionar elementos DOM desde JS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dom-manipular-estilos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10. DOM manipular estilos
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -6123,6 +6216,72 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#como-acceder-a-los-objetos-desde-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como acceder a los objetos desde JS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-acceder-a-los-objetos-desde-la-consola-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como acceder a los objetos desde la consola del navegador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como acceder a los objetos desde la consola del navegador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acceder-al-objeto-body-desde-la-consola-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceder al objeto (body) desde la consola del navegador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-elementos-por-nombre-de-class-desde-la-consola-del-navegador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buscar elementos por nombre de (class) desde la consola del navegador
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seleccionar-elementos-dom-desde-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seleccionar elementos DOM desde JS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seleccionar elementos DOM desde JS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -6145,6 +6304,162 @@
   <h1>9. Introducción al DOM</h1>
 
 <h2 id="que-es-el-dom"><strong>¿Que es el DOM?</strong></h2>
+<p>Cuando comenzamos en el mundo del desarrollo web, normalmente comenzamos por aprender a escribir etiquetado o marcado HTML y además, añadir estilos CSS para darle color, forma y algo de interacción. Sin embargo, a medida que avanzamos, nos damos cuenta que en cierta forma podemos estar bastante limitados.</p>
+<p>Si únicamente utilizamos HTML/CSS, sólo podremos crear páginas (estáticas), es decir, páginas que no pueden realizar tareas dinámicas y personalizadas dependiendo de acciones concretas del usuario o su entorno. Sin embargo, si añadimos Javascript, podremos crear dichas páginas (dinámicas), y aprovechar la potencia y flexibilidad que nos da un lenguaje de programación como Javascript para crear documentos y páginas mucho más ricas, con una experiencia más completa.</p>
+<p>Las siglas <strong>DOM</strong> significan Document Object Model, o lo que es lo mismo, la estructura de un documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí, que se denomina árbol DOM (o simplemente DOM).</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Título<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Párrafo 1<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Párrafo 2<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>Observa que como la etiqueta <code>&lt;head&gt;</code> está dentro de <code>&lt;html&gt;</code> se dibuja como hija de <code>&lt;html&gt;</code>. La etiqueta <code>&lt;title&gt;</code> está dentro de <code>&lt;head&gt;</code>, por lo que será hija de esta y así sucesivamente.</p>
+<p>Desde el navegador, la forma de acceder al DOM es a través de un objeto Javascript llamado <strong>document</strong>, que representa el árbol DOM de la página o, más concretamente, la página de la pestaña del navegador donde nos encontramos.</p>
+<hr />
+<h2 id="como-acceder-a-los-objetos-desde-js"><strong>Como acceder a los objetos desde JS</strong></h2>
+<p>Creamos un objeto llamado <strong>usuario</strong>:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span>
+<span class="normal"><a href="#__codelineno-1-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">usuario</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">    </span><span class="nx">nombre</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Aitor&#39;</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">    </span><span class="nx">apellido</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Irazoki&#39;</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nx">edad</span><span class="o">:</span><span class="w"> </span><span class="mf">32</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="nx">aficiones</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">        </span><span class="nx">Futbol</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">        </span><span class="nx">Ciclismo</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="p">]</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Con el siguiente comando, Accedemos a las propiedades del objeto usuario:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nx">user</span><span class="w"> </span><span class="c1">// accede a todas las propiedades del objeto</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nx">user</span><span class="p">.</span><span class="nx">nombre</span><span class="w"> </span><span class="c1">// accede a la propiedad nombre</span>
+</code></pre></div></td></tr></table></div>
+<p>Para mostrar el resultado de JavaScript en tiempo real, existe una extensión llamada (Quokka.js).</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nx">user</span><span class="p">.</span><span class="nx">nombre</span><span class="w"> </span><span class="c1">//? Aitor</span>
+</code></pre></div></td></tr></table></div>
+<p>El siguiente comando, accede al array del objeto usuario:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nx">user</span><span class="p">.</span><span class="nx">aficiones</span><span class="w"> </span><span class="c1">//? [ Futbol, Ciclismo ]</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nx">user</span><span class="p">.</span><span class="nx">aficiones</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="c1">//? Ciclismo </span>
+</code></pre></div></td></tr></table></div>
+<h2 id="como-acceder-a-los-objetos-desde-la-consola-del-navegador"><strong>Como acceder a los objetos desde la consola del navegador</strong></h2>
+<p>Una vez entendido como funcionan los objetos en JS, abrimos cualquier página web en el navegador y en cualquier parte de la página, hacemos:</p>
+<ul>
+<li><mark>Click derecho del ratón</mark> -&gt; <mark>Inspeccionar</mark> para abrir la herramienta de desarrollo.</li>
+</ul>
+<p>Con la herramienta de desarrollo abierto:</p>
+<ul>
+<li>Clicamos en <mark>Consola</mark> para acceder a la <strong>consola del navegador</strong>.</li>
+<li>Escribe <mark>document.</mark> para sugerir todos los objetos del documento.</li>
+<li>Ejecuta el comando <mark>document.location</mark> para acceder al objeto (<strong>location</strong>).</li>
+</ul>
+<p><a class="glightbox" href="../../../assets/images/devcamp/checkpoint-11/consola-navegador-01.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../assets/images/devcamp/checkpoint-11/consola-navegador-01.png" /></a></p>
+<ul>
+<li>Ejecuta el siguiente comando para acceder a la propiedad (<strong>host</strong>) del objeto (<strong>location</strong>):</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">host</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="c1">// Salida: &quot;basque.devcamp.com&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="acceder-al-objeto-body-desde-la-consola-del-navegador"><strong>Acceder al objeto (body) desde la consola del navegador</strong></h3>
+<p>El siguiente comando, devuelve todo el documento (<strong>body</strong>):</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">body</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="c1">// Salida: &lt;body&gt;...&lt;/body&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>El suiguiente comando, hace referencia al (<strong>padre de body</strong>) y devuelve todo el documento (<strong>html</strong>):</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">parentElement</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="c1">// Salida: &lt;html&gt;...&lt;/html&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="buscar-elementos-por-nombre-de-class-desde-la-consola-del-navegador"><strong>Buscar elementos por nombre de (class) desde la consola del navegador</strong></h3>
+<p>El siguiente comando, devuelve un objeto con todos los elementos donde se ha utilizado la clase (<strong>nav-link</strong>):</p>
+<p><a class="glightbox" href="../../../assets/images/devcamp/checkpoint-11/consola-navegador-02.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../assets/images/devcamp/checkpoint-11/consola-navegador-02.png" /></a></p>
+<p>El siguiente comando, devuelve el segundo elemento de la lista:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;nav-link&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">];</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="c1">// Salida: &lt;a class=&quot;nav-link guide-nav-right&quot; href=&quot;/pt-full-stack-developme…sses-vanilla-javascript&quot;&gt;</span>
+</code></pre></div></td></tr></table></div>
+<blockquote>
+<p>Nota: Lo que estamos haciendo es, recorrer los elementos de una página HTML con JS.</p>
+</blockquote>
+<p>Si necesitamos profundizar mas en detalle, podemos descender un escalón y obtener otra lista.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span>
+<span class="normal"><a href="#__codelineno-9-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;nav-link&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">].</span><span class="nx">children</span><span class="p">;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="c1">// Salida: HTMLCollection { 0: span.nav-icon.fa.fa-chevron-right, 1: span.nav-label, length: 2 }</span>
+</code></pre></div></td></tr></table></div>
+<p>El siguiente comando, nos devuelve el número de elementos que contiene. </p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;nav-link&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">].</span><span class="nx">children</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="c1">// Salida: 2</span>
+</code></pre></div></td></tr></table></div>
+<p>El siguiente comando, nos devuelve el texto de ese elemento. </p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;nav-link&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">].</span><span class="nx">text</span><span class="p">;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="c1">// Salida: &quot;Next Guide&quot;</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<p>Todo este tiempo, hemos trabajado con <strong>document</strong> pero exite tambien <strong>window</strong>:</p>
+<ul>
+<li><mark>window</mark> Es el objeto raiz donde residen todos los elemetos incluido <strong>document</strong>, <strong>alert</strong>, <strong>frames</strong>.</li>
+<li><mark>document</mark> Es el objeto <strong>html</strong> donde residen el resto de las etiquetas.</li>
+</ul>
+<blockquote>
+<p>Nota: Cuando vayas a analizar un <strong>alert</strong> deberas acceder por <mark>window.alert</mark>. Lo mismo para <mark>window.frames</mark>. Es simplemente una aclaratoria para que no pierdas el tiempo buscando dentro de <strong>document</strong>.</p>
+</blockquote>
+<h2 id="seleccionar-elementos-dom-desde-js"><strong>Seleccionar elementos DOM desde JS</strong></h2>
+<ul>
+<li><mark>document.getElementById('devCamp');</mark> Selecciona el elemento mediante (id)</li>
+<li><mark>document.getElementsByClassName('devCamp');</mark> Selecciona el elemento mediante (class)</li>
+<li><mark>document.querySelector('#devCamp');</mark> Selecciona el elemento mediante (id)</li>
+<li><mark>document.querySelector(".devCamp");</mark> Selecciona el elemento mediante (class)</li>
+</ul>
+<hr />
+<h3 id="fuentes">Fuentes:</h3>
+<blockquote>
+<p>Sitio web oficial: <a href="https://quokkajs.com" target="_blank">Quokka.js</a></p>
+</blockquote>
+<hr />
+<p><br></p>
 
 
 
