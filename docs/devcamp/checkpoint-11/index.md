@@ -22,6 +22,7 @@ hide:
   7. [GIT volver a un commit específico](git-volver-commit-especifico.md)
   8. [VSCode snippets](vscode-snippets.md)
   9. [Introducción al DOM](introduccion-dom.md)
+  10. [DOM manipular estilos](dom-manipular-estilos.md)
 
 ***
 
