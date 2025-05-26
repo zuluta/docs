@@ -18,6 +18,8 @@
         <link rel="prev" href="../introduccion-dom/">
       
       
+        <link rel="next" href="../dom-event-listener/">
+      
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
@@ -5780,6 +5782,8 @@
       
         
       
+        
+      
     
     
     
@@ -6093,18 +6097,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cambia-el-nombre-de-la-clase-con-getelementbyid" class="md-nav__link">
+  <a href="#cambia-el-nombre-de-la-clase" class="md-nav__link">
     <span class="md-ellipsis">
-      Cambia el nombre de la clase con getElementById:
+      Cambia el nombre de la clase:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#cambia-el-nombre-de-la-clase-con-queryselector" class="md-nav__link">
+  <a href="#crea-una-propiedad-en-la-clase" class="md-nav__link">
     <span class="md-ellipsis">
-      Cambia el nombre de la clase con querySelector:
+      Crea una propiedad en la clase:
     </span>
   </a>
   
@@ -6119,6 +6123,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dom-event-listener/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11. DOM event listener
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -6174,18 +6201,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cambia-el-nombre-de-la-clase-con-getelementbyid" class="md-nav__link">
+  <a href="#cambia-el-nombre-de-la-clase" class="md-nav__link">
     <span class="md-ellipsis">
-      Cambia el nombre de la clase con getElementById:
+      Cambia el nombre de la clase:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#cambia-el-nombre-de-la-clase-con-queryselector" class="md-nav__link">
+  <a href="#crea-una-propiedad-en-la-clase" class="md-nav__link">
     <span class="md-ellipsis">
-      Cambia el nombre de la clase con querySelector:
+      Crea una propiedad en la clase:
     </span>
   </a>
   
@@ -6218,7 +6245,15 @@
   <h1>10. DOM manipular estilos</h1>
 
 <h2 id="dom-anadir-y-eliminar-estilos"><strong>DOM añadir y eliminar estilos</strong></h2>
-<h3 id="cambia-el-nombre-de-la-clase-con-getelementbyid">Cambia el nombre de la clase con <code>getElementById</code>:</h3>
+<p>Cuando trabajamos con estilos CSS en JS, una tarea común es la de cambiar los estilos de los elementos DOM. Para seleccionar elementos DOM, hay diferentes metodos:</p>
+<ul>
+<li><mark>getElementById</mark></li>
+<li><mark>getElementsByClassName</mark></li>
+<li><mark>getElementsByTagName</mark></li>
+<li><mark>querySelector</mark></li>
+<li><mark>querySelectorAll</mark></li>
+</ul>
+<h3 id="cambia-el-nombre-de-la-clase"><strong>Cambia el nombre de la clase:</strong></h3>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
 <span class="normal"><a href="#__codelineno-0-2">2</a></span>
 <span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;titulo&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;disabled&quot;</span><span class="p">&gt;</span>
@@ -6250,36 +6285,13 @@
 <a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nx">titulo</span><span class="p">.</span><span class="nx">className</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;active&#39;</span><span class="p">;</span>
 </code></pre></div></td></tr></table></div>
 <hr />
-<h3 id="cambia-el-nombre-de-la-clase-con-queryselector">Cambia el nombre de la clase con <code>querySelector</code>:</h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;titulo disabled&quot;</span><span class="p">&gt;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>  Cambia el color del título.
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<h3 id="crea-una-propiedad-en-la-clase"><strong>Crea una propiedad en la clase:</strong></h3>
+<p>En este ejemplo, agrega un margen de 20px a la clase <strong>titulo</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;titulo&quot;</span><span class="p">&gt;</span>Agregame 20px de margen<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">css</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span>
-<span class="normal"><a href="#__codelineno-4-3">3</a></span>
-<span class="normal"><a href="#__codelineno-4-4">4</a></span>
-<span class="normal"><a href="#__codelineno-4-5">5</a></span>
-<span class="normal"><a href="#__codelineno-4-6">6</a></span>
-<span class="normal"><a href="#__codelineno-4-7">7</a></span>
-<span class="normal"><a href="#__codelineno-4-8">8</a></span>
-<span class="normal"><a href="#__codelineno-4-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="p">.</span><span class="nc">active</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">green</span><span class="p">;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="p">}</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="p">.</span><span class="nc">disabled</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">titulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.titulo&#39;</span><span class="p">);</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nx">titulo</span><span class="p">.</span><span class="nx">className</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;active&#39;</span><span class="p">;</span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">let</span><span class="w"> </span><span class="nt">tarjeta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">document</span><span class="p">.</span><span class="nc">getElementById</span><span class="o">(</span><span class="s1">&#39;titulo&#39;</span><span class="o">);</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">tarjeta</span><span class="p">.</span><span class="nc">style</span><span class="p">.</span><span class="nc">margin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;20px&quot;</span><span class="o">;</span>
 </code></pre></div></td></tr></table></div>
 <hr />
 <p><br></p>
