@@ -23,6 +23,7 @@ hide:
   8. [VSCode snippets](vscode-snippets.md)
   9. [Introducción al DOM](introduccion-dom.md)
   10. [DOM manipular estilos](dom-manipular-estilos.md)
+  11. [DOM event listener](dom-event-listener.md)
 
 ***
 

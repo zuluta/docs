@@ -6,7 +6,15 @@ hide:
 
 ## **DOM añadir y eliminar estilos**
 
-### Cambia el nombre de la clase con `getElementById`:
+Cuando trabajamos con estilos CSS en JS, una tarea común es la de cambiar los estilos de los elementos DOM. Para seleccionar elementos DOM, hay diferentes metodos:
+
+  - ==getElementById==
+  - ==getElementsByClassName==
+  - ==getElementsByTagName==
+  - ==querySelector==
+  - ==querySelectorAll==
+
+### **Cambia el nombre de la clase:**
 
 ```html linenums="1" title="html"
 <div id="titulo" class="disabled">
@@ -34,30 +42,17 @@ titulo.className = 'active';
 
 ***
 
-### Cambia el nombre de la clase con `querySelector`:
+### **Crea una propiedad en la clase:**
+
+En este ejemplo, agrega un margen de 20px a la clase **titulo**
 
 ```html linenums="1" title="html"
-<div class="titulo disabled">
-  Cambia el color del título.
-</div>
+<div id="titulo">Agregame 20px de margen</div>
 ```
 
 ```css linenums="1" title="css"
-.active {
-    color: green;
-    font-size: 1rem;
-}
-
-.disabled {
-    color: red;
-    font-size: 1rem;
-}
-```
-
-```js linenums="1" title="javascript"
-let titulo = document.querySelector('.titulo');
-
-titulo.className = 'active';
+let tarjeta = document.getElementById('titulo');
+tarjeta.style.margin = "20px";
 ```
 
 ***

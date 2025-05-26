@@ -12,13 +12,11 @@
         <meta name="author" content="ZulutaDev">
       
       
-        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/checkpoint-06/que-es-una-api-py/">
+        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/checkpoint-11/dom-event-listener/">
       
       
-        <link rel="prev" href="../que-es-polimorfismo-py/">
+        <link rel="prev" href="../dom-manipular-estilos/">
       
-      
-        <link rel="next" href="../que-es-mongodb-py/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +24,7 @@
     
     
       
-        <title>5. ¿Que es una API? - ZulutaDev</title>
+        <title>11. DOM event listener - ZulutaDev</title>
       
     
     
@@ -98,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#5-que-es-una-api" class="md-skip">
+        <a href="#que-es-event-listener" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -132,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              5. ¿Que es una API?
+              11. DOM event listener
             
           </span>
         </div>
@@ -4631,8 +4629,6 @@
                 
   
   
-    
-  
   
   
     
@@ -4661,15 +4657,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../checkpoint-06/" class="md-nav__link ">
               
   
   
@@ -4688,7 +4684,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             Checkpoint 06
@@ -4704,7 +4700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduccion-clases-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -4727,7 +4723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-dunder-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -4750,7 +4746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -4773,7 +4769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../que-es-polimorfismo-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
         
   
   
@@ -4793,32 +4789,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    5. ¿Que es una API?
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../checkpoint-06/que-es-una-api-py/" class="md-nav__link">
         
   
   
@@ -4829,62 +4803,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#51-una-api-tiene-dos-componentes-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.1. Una API tiene dos componentes principales:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#52-de-donde-obtiene-la-api-toda-la-informacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.2. ¿De donde obtiene la API toda la información?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#53-que-es-postman" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.3. ¿Qué es Postman?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#caracteristicas-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Características principales:
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -4897,7 +4815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../que-es-mongodb-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -5831,6 +5749,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5869,15 +5789,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../checkpoint-11/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -5896,7 +5816,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_7">
             <span class="md-nav__icon md-icon"></span>
             Checkpoint 11
@@ -5912,7 +5832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/git-merge-rebase/" class="md-nav__link">
+      <a href="../git-merge-rebase/" class="md-nav__link">
         
   
   
@@ -5935,7 +5855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/git-stash/" class="md-nav__link">
+      <a href="../git-stash/" class="md-nav__link">
         
   
   
@@ -5958,7 +5878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/git-fetch-pull/" class="md-nav__link">
+      <a href="../git-fetch-pull/" class="md-nav__link">
         
   
   
@@ -5981,7 +5901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/git-eliminar-ramas/" class="md-nav__link">
+      <a href="../git-eliminar-ramas/" class="md-nav__link">
         
   
   
@@ -6004,7 +5924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/git-conflicto-merge/" class="md-nav__link">
+      <a href="../git-conflicto-merge/" class="md-nav__link">
         
   
   
@@ -6027,7 +5947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/git-volver-ultimo-commit/" class="md-nav__link">
+      <a href="../git-volver-ultimo-commit/" class="md-nav__link">
         
   
   
@@ -6050,7 +5970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/git-volver-commit-especifico/" class="md-nav__link">
+      <a href="../git-volver-commit-especifico/" class="md-nav__link">
         
   
   
@@ -6073,7 +5993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/vscode-snippets/" class="md-nav__link">
+      <a href="../vscode-snippets/" class="md-nav__link">
         
   
   
@@ -6096,7 +6016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/introduccion-dom/" class="md-nav__link">
+      <a href="../introduccion-dom/" class="md-nav__link">
         
   
   
@@ -6119,7 +6039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../checkpoint-11/dom-manipular-estilos/" class="md-nav__link">
+      <a href="../dom-manipular-estilos/" class="md-nav__link">
         
   
   
@@ -6139,10 +6059,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../checkpoint-11/dom-event-listener/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    11. DOM event listener
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -6153,6 +6093,99 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-event-listener" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Que es event listener?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodo-addeventlistener" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método addEventListener
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Método addEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evento-funcion-nombrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evento + función nombrada:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evento-funcion-anonima" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evento + función anónima:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evento-funcion-flecha" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evento + función flecha:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-teclas-de-acceso-rapido-a-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agregar teclas de acceso rápido a la aplicación
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agregar teclas de acceso rápido a la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -6190,8 +6223,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -6200,38 +6231,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#51-una-api-tiene-dos-componentes-principales" class="md-nav__link">
+  <a href="#que-es-event-listener" class="md-nav__link">
     <span class="md-ellipsis">
-      5.1. Una API tiene dos componentes principales:
+      ¿Que es event listener?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#52-de-donde-obtiene-la-api-toda-la-informacion" class="md-nav__link">
+  <a href="#metodo-addeventlistener" class="md-nav__link">
     <span class="md-ellipsis">
-      5.2. ¿De donde obtiene la API toda la información?
+      Método addEventListener
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Método addEventListener">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evento-funcion-nombrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evento + función nombrada:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#53-que-es-postman" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#evento-funcion-anonima" class="md-nav__link">
     <span class="md-ellipsis">
-      5.3. ¿Qué es Postman?
+      Evento + función anónima:
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#caracteristicas-principales" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#evento-funcion-flecha" class="md-nav__link">
     <span class="md-ellipsis">
-      Características principales:
+      Evento + función flecha:
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agregar-teclas-de-acceso-rapido-a-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agregar teclas de acceso rápido a la aplicación
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agregar teclas de acceso rápido a la aplicación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6254,90 +6324,123 @@
   
 
 
-<h1 id="5-que-es-una-api">5. ¿Que es una API?</h1>
-<p>Una <strong>API</strong> es una (interfaz de programación de aplicaciones) que sigue un conjunto de restricciones arquitecturales basadas en HTTP. Esto significa que se puede acceder a los recursos a través de URLs, lo que hace que la API sea fácil de entender y utilizar. Podemos crear una API que haga literalmente cualquier cosa, desde dar clima hasta un catálogo completo de una tienda en línea. Casi todas las aplicaciones utilizan APIs para conectarse con fuentes de datos corporativas, servicios de datos de terceros u otras aplicaciones.</p>
+  <h1>11. DOM event listener</h1>
 
-<div class="admonition tip">
-<p class="admonition-title">TIP</p>
-<p>El formato de intercambio de datos normalmente es JSON o XML, lo que permite que la API sea compatible con una amplia variedad de aplicaciones.</p>
-</div>
+<h2 id="que-es-event-listener"><strong>¿Que es event listener?</strong></h2>
+<p>Un <strong>event listener</strong> (o manejador de eventos) en JavaScript es un procedimiento que espera a que ocurra un evento específico para reaccionar a él. En esencia, es una función que se "aplica" a un elemento del documento HTML y que se ejecuta cuando se produce el evento deseado, como un click, un cambio en un campo de texto o el envío de un formulario</p>
+<hr />
+<h2 id="metodo-addeventlistener"><strong>Método <code>addEventListener</code></strong></h2>
+<p>El método <mark>.addEventListener()</mark> nos permite empezar a escuchar un evento concreto, y en el caso de que ocurra, ejecutar la función asociada.</p>
+<p>Lista de eventos más utilizados:</p>
+<ul>
+<li><mark>click</mark> Cuando el usuario hace clic con el botón principal del ratón.</li>
+<li><mark>input</mark> Cuando el valor de un elemento &lt;input&gt;, &lt;select&gt;, o &lt;textarea&gt; ha sido cambiado.</li>
+<li><mark>keyup</mark> Cuando el usuario suelta una tecla.</li>
+<li><mark>focus</mark> Cuando un elemento &lt;input&gt;, &lt;textarea&gt;, o elemento con tabindex obtiene el foco del usuario.</li>
+<li><mark>change</mark> Cuando se modifica el valor de un elemento &lt;input&gt;, &lt;textarea&gt;, o &lt;select&gt;.</li>
+<li><mark>drop</mark> Cuando un elemento arrastrable se suelta sobre un área de destino que lo permite.</li>
+<li><mark>submit</mark> Cuando se envía un formulario.</li>
+</ul>
+<p>En este ejemplo, vamos a seleccionar el <strong>segundo párrafo</strong> por <strong>clase</strong> mediante <code>getElementsByClassName</code> y como evento, utilizaremos <code>addEventListener</code> <mark>click</mark>.</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;articulos&quot;</span><span class="o">&gt;</span><span class="nx">libro</span><span class="w"> </span><span class="mf">1</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;articulos&quot;</span><span class="o">&gt;</span><span class="nx">libro</span><span class="w"> </span><span class="mf">2</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;articulos&quot;</span><span class="o">&gt;</span><span class="nx">libro</span><span class="w"> </span><span class="mf">3</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="o">&lt;</span><span class="nx">button</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;btn-seleccionar-articulo&quot;</span><span class="o">&gt;</span><span class="nx">Aceptar</span><span class="o">&lt;</span><span class="err">/button&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="evento-funcion-nombrada"><strong>Evento + función nombrada:</strong></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1">// elementos DOM</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">articulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;articulos&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">];</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">btnSeleccionarArticulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.btn-seleccionar-articulo&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1">// evento</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nx">btnSeleccionarArticulo</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">seleccionarArticulo</span><span class="p">);</span><span class="w"> </span><span class="c1">// invoca a la funcion</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1">// funcion</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="kd">function</span><span class="w"> </span><span class="nx">seleccionarArticulo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">articuloSeleccionado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">articulo</span><span class="p">.</span><span class="nx">textContent</span><span class="p">;</span><span class="w"> </span><span class="c1">// captura el valor del articulo</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">articuloSeleccionado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: &quot;libro 2&quot;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="evento-funcion-anonima"><strong>Evento + función anónima:</strong></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span>
+<span class="normal"><a href="#__codelineno-2-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1">// elementos DOM</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">articulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;articulos&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">];</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">btnSeleccionarArticulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.btn-seleccionar-articulo&#39;</span><span class="p">);</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1">// evento + funcion flecha</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="nx">btnSeleccionarArticulo</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// ejecuta la funcion anonima</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">articuloSeleccionado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">articulo</span><span class="p">.</span><span class="nx">textContent</span><span class="p">;</span><span class="w"> </span><span class="c1">// captura el valor del articulo</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">articuloSeleccionado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: &quot;libro 2&quot;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="evento-funcion-flecha"><strong>Evento + función flecha:</strong></h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span>
+<span class="normal"><a href="#__codelineno-3-8">8</a></span>
+<span class="normal"><a href="#__codelineno-3-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1">// elementos DOM</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">articulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;articulos&#39;</span><span class="p">)[</span><span class="mf">1</span><span class="p">];</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">btnSeleccionarArticulo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.btn-seleccionar-articulo&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="c1">// evento + funcion flecha</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="nx">btnSeleccionarArticulo</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// ejecuta la funcion flecha</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">articuloSeleccionado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">articulo</span><span class="p">.</span><span class="nx">textContent</span><span class="p">;</span><span class="w"> </span><span class="c1">// captura el valor del articulo</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">articuloSeleccionado</span><span class="p">);</span><span class="w"> </span><span class="c1">// Salida: &quot;libro 2&quot;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="p">});</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h2 id="agregar-teclas-de-acceso-rapido-a-la-aplicacion"><strong>Agregar teclas de acceso rápido a la aplicación</strong></h2>
+<p>Función para detectar con una condicional si se pulsan 2 teclas específicas (ctrl + c).</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">7</a></span>
+<span class="normal"><a href="#__codelineno-4-8">8</a></span>
+<span class="normal"><a href="#__codelineno-4-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">atajoTeclado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">windowEvent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">event</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">e</span><span class="p">;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">windowEvent</span><span class="p">.</span><span class="nx">keyCode</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">67</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">windowEvent</span><span class="p">.</span><span class="nx">ctrlKey</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Has pulsado la tecla ctrl + c&#39;</span><span class="p">);</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="p">};</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="nb">document</span><span class="p">.</span><span class="nx">onkeydown</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">atajoTeclado</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h3 id="fuentes">Fuentes:</h3>
+<blockquote>
+<p>Sitio web: <a href="https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes" target="_blank">Tabla de KeyCode</a></p>
+</blockquote>
+<hr />
 <p><br></p>
-<p><a class="glightbox" href="../../../assets/images/devcamp/checkpoint-06/api-rest.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="../../../assets/images/devcamp/checkpoint-06/api-rest.png" /></a>
-<br>
-<br></p>
-<h3 id="51-una-api-tiene-dos-componentes-principales">5.1. Una API tiene dos componentes principales:</h3>
-<ul>
-<li>
-<p><strong>Recursos:</strong></p>
-<ul>
-<li>Datos o información.</li>
-</ul>
-</li>
-<li>
-<p><strong>Verbos HTTP:</strong></p>
-<ul>
-<li><code>GET</code> para consultar y leer.</li>
-<li><code>POST</code> para crear.</li>
-<li><code>PUT</code> para editar.</li>
-<li><code>DELETE</code> para eliminar.</li>
-</ul>
-</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">IMPORTANTE</p>
-<p>Los <strong>recursos</strong> son los datos o información que se pueden acceder a través de la API. Los <strong>verbos HTTP</strong> son las operaciones que se pueden realizar en esos recursos, como obtener <code>GET</code> un recurso, crear <code>POST</code> un recurso, actualizar <code>PUT</code> un recurso o eliminar <code>DELETE</code> un recurso.</p>
-</div>
-<p><br></p>
-<h3 id="52-de-donde-obtiene-la-api-toda-la-informacion">5.2. ¿De donde obtiene la API toda la información?</h3>
-<p>La información de la api no sale de la nada, necesita ser construido por alguien en formato diccionario. Se puede construir de manera manual o cargarle la información desde una base de datos. Cuando abrimos la url donde esta alojado el API, veremos un monton de datos en formato diccionario <code>{...}</code>. Puede contener anidamientos tanto de diccionarios como de listas en su interior.</p>
-
-<p>Formato de una API 👇
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Juan&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;apellido&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Garcia&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;pais&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">},</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">{</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nerea&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;apellido&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Larralde&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;pais&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;España&quot;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
-</code></pre></div></p>
-<div class="admonition tip">
-<p class="admonition-title">TIP</p>
-<p>Puedes practicar con esta <strong>API de Rick and Morty</strong> https://rickandmortyapi.com/api/character/ utilizando la aplicación <strong>Postman</strong> https://www.postman.com/ para testear con APIs.</p>
-<p>Si accede a <code>https://rickandmortyapi.com/api/character/131</code> por numero de id al personaje, nos devolvera un json con toda la información.</p>
-</div>
-<p><br></p>
-<h3 id="53-que-es-postman">5.3. ¿Qué es Postman?</h3>
-<p>Se trata de una herramienta dirigida a desarrolladores web que permite realizar peticiones HTTP a cualquier API. Postman es muy útil a la hora de programar y hacer pruebas, puesto que nos ofrece la posibilidad de comprobar el correcto funcionamiento de nuestros desarrollos.</p>
-
-<p>Con esto no queremos decir que Postman sea una herramienta exclusiva para profesionales del entorno web, de hecho va a ser muy útil para todo aquel que tenga que interactuar con una API.</p>
-
-<h3 id="caracteristicas-principales">Características principales:</h3>
-<ul>
-<li>
-<p><strong>Envío de solicitudes:</strong></p>
-<ul>
-<li>Postman permite enviar solicitudes HTTP y HTTPS utilizando métodos como GET, POST, PUT y DELETE, entre otros. Los desarrolladores pueden especificar parámetros, encabezados y el cuerpo de la solicitud para simular diversas interacciones con una API.</li>
-</ul>
-</li>
-<li>
-<p><strong>Pruebas automatizadas:</strong></p>
-<ul>
-<li>Con Postman, los desarrolladores pueden crear y ejecutar pruebas automatizadas para verificar el comportamiento de una API. Esto ayuda a detectar errores de manera temprana y a garantizar que el software cumpla con los estándares de calidad.
-<br></li>
-</ul>
-</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">TIP</p>
-<p>API de testeo https://rickandmortyapi.com</p>
-</div>
-<p><br>
-<br></p>
 
 
 

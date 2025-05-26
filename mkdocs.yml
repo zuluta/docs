@@ -217,6 +217,7 @@ nav:
       - 8. VSCode snippets: devcamp/checkpoint-11/vscode-snippets.md
       - 9. Introducción al DOM: devcamp/checkpoint-11/introduccion-dom.md
       - 10. DOM manipular estilos: devcamp/checkpoint-11/dom-manipular-estilos.md
+      - 11. DOM event listener: devcamp/checkpoint-11/dom-event-listener.md
 
 # configuración
 theme:
