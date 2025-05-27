@@ -218,6 +218,7 @@ nav:
       - 9. Introducción al DOM: devcamp/checkpoint-11/introduccion-dom.md
       - 10. DOM manipular estilos: devcamp/checkpoint-11/dom-manipular-estilos.md
       - 11. DOM event listener: devcamp/checkpoint-11/dom-event-listener.md
+      - 12. DOM crear elementos HTML con JS: devcamp/checkpoint-11/dom-crear-elementos-html-con-js.md
 
 # configuración
 theme:
