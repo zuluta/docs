@@ -12,28 +12,26 @@
         <meta name="author" content="ZulutaDev">
       
       
-        <link rel="canonical" href="https://zuluta.github.io/docs/javascript/metodos-de-concatenacion-string/">
+        <link rel="canonical" href="https://zuluta.github.io/docs/devcamp/checkpoint-11/dom-crear-elementos-html-con-js/">
       
       
-        <link rel="prev" href="../metodos-de-extraccion/">
+        <link rel="prev" href="../dom-event-listener/">
       
       
-        <link rel="next" href="../metodos-de-transformacion-caso-string/">
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Métodos de Concatenación y Relleno - ZulutaDev</title>
+        <title>12. DOM crear elementos HTML con JS - ZulutaDev</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +50,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/highlight/11.11.1/atom-one-dark.min.css">
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +68,7 @@
 <meta property="og:image" content="https://zuluta.github.io/docs/assets/images/og.png">
 <meta property="og:locale" content="es_ES">
 
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -79,7 +77,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -98,7 +96,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#metodos-de-concatenacion-y-relleno-en-strings" class="md-skip">
+        <a href="#como-crear-elementos-html-con-js" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -132,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Métodos de Concatenación y Relleno
+              12. DOM crear elementos HTML con JS
             
           </span>
         </div>
@@ -245,7 +243,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -266,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tutoriales/" class="md-tabs__link">
+        <a href="../../../tutoriales/" class="md-tabs__link">
           
   
   
@@ -284,13 +282,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../javascript/" class="md-tabs__link">
           
   
   
@@ -308,11 +304,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../devcamp/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -336,8 +334,6 @@
         <div class="md-main__inner md-grid">
           
             
-              
-                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -380,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -431,7 +427,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../tutoriales/" class="md-nav__link ">
+            <a href="../../../tutoriales/" class="md-nav__link ">
               
   
   
@@ -511,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
+      <a href="../../../tutoriales/ruta-aprendizaje/desarrollador-full-stack/" class="md-nav__link">
         
   
   
@@ -587,7 +583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
+      <a href="../../../tutoriales/control-versiones/comandos-git/" class="md-nav__link">
         
   
   
@@ -665,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
+      <a href="../../../tutoriales/instalacion-librerias/mkdocs/" class="md-nav__link">
         
   
   
@@ -688,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
+      <a href="../../../tutoriales/instalacion-librerias/gh-deploy/" class="md-nav__link">
         
   
   
@@ -764,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tutoriales/desarrollo-web/optimizar-seo/" class="md-nav__link">
+      <a href="../../../tutoriales/desarrollo-web/optimizar-seo/" class="md-nav__link">
         
   
   
@@ -799,8 +795,6 @@
       
   
   
-    
-  
   
   
     
@@ -846,21 +840,18 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../javascript/" class="md-nav__link ">
               
   
   
@@ -873,13 +864,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             JavaScript
@@ -942,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../que-es-javascript/" class="md-nav__link">
+      <a href="../../../javascript/que-es-javascript/" class="md-nav__link">
         
   
   
@@ -965,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../primeros-pasos/" class="md-nav__link">
+      <a href="../../../javascript/primeros-pasos/" class="md-nav__link">
         
   
   
@@ -1057,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sintaxis-javascript/" class="md-nav__link">
+      <a href="../../../javascript/sintaxis-javascript/" class="md-nav__link">
         
   
   
@@ -1080,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../../javascript/variables/" class="md-nav__link">
         
   
   
@@ -1103,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../var-let/" class="md-nav__link">
+      <a href="../../../javascript/var-let/" class="md-nav__link">
         
   
   
@@ -1126,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tipos-de-datos/" class="md-nav__link">
+      <a href="../../../javascript/tipos-de-datos/" class="md-nav__link">
         
   
   
@@ -1149,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../numeros/" class="md-nav__link">
+      <a href="../../../javascript/numeros/" class="md-nav__link">
         
   
   
@@ -1172,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../booleanos/" class="md-nav__link">
+      <a href="../../../javascript/booleanos/" class="md-nav__link">
         
   
   
@@ -1195,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../string/" class="md-nav__link">
+      <a href="../../../javascript/string/" class="md-nav__link">
         
   
   
@@ -1218,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../valores-primitivos-vs-referencia/" class="md-nav__link">
+      <a href="../../../javascript/valores-primitivos-vs-referencia/" class="md-nav__link">
         
   
   
@@ -1241,7 +1232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../objetos/" class="md-nav__link">
+      <a href="../../../javascript/objetos/" class="md-nav__link">
         
   
   
@@ -1333,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-aritmeticos/" class="md-nav__link">
+      <a href="../../../javascript/operadores-aritmeticos/" class="md-nav__link">
         
   
   
@@ -1356,7 +1347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operador-resto/" class="md-nav__link">
+      <a href="../../../javascript/operador-resto/" class="md-nav__link">
         
   
   
@@ -1379,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operador-exponenciacion/" class="md-nav__link">
+      <a href="../../../javascript/operador-exponenciacion/" class="md-nav__link">
         
   
   
@@ -1402,7 +1393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-asignacion/" class="md-nav__link">
+      <a href="../../../javascript/operadores-asignacion/" class="md-nav__link">
         
   
   
@@ -1425,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-unarios/" class="md-nav__link">
+      <a href="../../../javascript/operadores-unarios/" class="md-nav__link">
         
   
   
@@ -1448,7 +1439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-comparacion/" class="md-nav__link">
+      <a href="../../../javascript/operadores-comparacion/" class="md-nav__link">
         
   
   
@@ -1471,7 +1462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-logicos/" class="md-nav__link">
+      <a href="../../../javascript/operadores-logicos/" class="md-nav__link">
         
   
   
@@ -1494,7 +1485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-asignacion-logica/" class="md-nav__link">
+      <a href="../../../javascript/operadores-asignacion-logica/" class="md-nav__link">
         
   
   
@@ -1517,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operador-fusion-nulos/" class="md-nav__link">
+      <a href="../../../javascript/operador-fusion-nulos/" class="md-nav__link">
         
   
   
@@ -1545,10 +1536,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -1575,11 +1564,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -1595,7 +1584,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             04. Métodos de Strings
@@ -1609,7 +1598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-busqueda-strings/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-busqueda-strings/" class="md-nav__link">
         
   
   
@@ -1632,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-reemplazo-string/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-reemplazo-string/" class="md-nav__link">
         
   
   
@@ -1655,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-acceso/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-acceso/" class="md-nav__link">
         
   
   
@@ -1678,7 +1667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-extraccion/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-extraccion/" class="md-nav__link">
         
   
   
@@ -1698,32 +1687,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Métodos de Concatenación y Relleno
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../javascript/metodos-de-concatenacion-string/" class="md-nav__link">
         
   
   
@@ -1734,101 +1701,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#combina-strings-de-forma-explicita-concat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Combina Strings de Forma Explícita: concat
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Combina Strings de Forma Explícita: concat">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-construir-una-url-con-concat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ejemplo: Construir una URL con Concat()
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#completar-rellenar-un-string-en-su-inicio-padstart" class="md-nav__link">
-    <span class="md-ellipsis">
-      Completar / Rellenar un String en su Inicio: padStart
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#completar-rellenar-un-string-en-su-final-padend" class="md-nav__link">
-    <span class="md-ellipsis">
-      Completar / Rellenar un String en su final: padEnd
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#genera-patrones-repitiendo-un-string-repeat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Genera Patrones Repitiendo un String: repeat
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formas-de-utilizar-los-metodos-de-concatenacion-y-relleno" class="md-nav__link">
-    <span class="md-ellipsis">
-      Formas de Utilizar los Métodos de Concatenación y Relleno
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Formas de Utilizar los Métodos de Concatenación y Relleno">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusión
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1841,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-transformacion-caso-string/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-transformacion-caso-string/" class="md-nav__link">
         
   
   
@@ -1864,7 +1736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-limpieza-string/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-limpieza-string/" class="md-nav__link">
         
   
   
@@ -1887,7 +1759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-division-y-union-en-strings/" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-division-y-union-en-strings/" class="md-nav__link">
         
   
   
@@ -1977,7 +1849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../declaracion-if-else.md" class="md-nav__link">
+      <a href="../../../javascript/declaracion-if-else.md" class="md-nav__link">
         
   
   
@@ -2000,7 +1872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../operadores-ternario.md" class="md-nav__link">
+      <a href="../../../javascript/operadores-ternario.md" class="md-nav__link">
         
   
   
@@ -2023,7 +1895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../switch-case.md" class="md-nav__link">
+      <a href="../../../javascript/switch-case.md" class="md-nav__link">
         
   
   
@@ -2046,7 +1918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-while.md" class="md-nav__link">
+      <a href="../../../javascript/bucle-while.md" class="md-nav__link">
         
   
   
@@ -2069,7 +1941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-do-while.md" class="md-nav__link">
+      <a href="../../../javascript/bucle-do-while.md" class="md-nav__link">
         
   
   
@@ -2092,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-for.md" class="md-nav__link">
+      <a href="../../../javascript/bucle-for.md" class="md-nav__link">
         
   
   
@@ -2115,7 +1987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break.md" class="md-nav__link">
+      <a href="../../../javascript/break.md" class="md-nav__link">
         
   
   
@@ -2138,7 +2010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../continue.md" class="md-nav__link">
+      <a href="../../../javascript/continue.md" class="md-nav__link">
         
   
   
@@ -2232,7 +2104,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones.md" class="md-nav__link">
+      <a href="../../../javascript/funciones.md" class="md-nav__link">
         
   
   
@@ -2255,7 +2127,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-ciudadanos-primera-clase.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-ciudadanos-primera-clase.md" class="md-nav__link">
         
   
   
@@ -2278,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-anonimas.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-anonimas.md" class="md-nav__link">
         
   
   
@@ -2301,7 +2173,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-recursivas.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-recursivas.md" class="md-nav__link">
         
   
   
@@ -2324,7 +2196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../closures.md" class="md-nav__link">
+      <a href="../../../javascript/closures.md" class="md-nav__link">
         
   
   
@@ -2347,7 +2219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parametros-defecto.md" class="md-nav__link">
+      <a href="../../../javascript/parametros-defecto.md" class="md-nav__link">
         
   
   
@@ -2370,7 +2242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrow-functions.md" class="md-nav__link">
+      <a href="../../../javascript/arrow-functions.md" class="md-nav__link">
         
   
   
@@ -2393,7 +2265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-avanzados-funciones.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-avanzados-funciones.md" class="md-nav__link">
         
   
   
@@ -2416,7 +2288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rest-parameter.md" class="md-nav__link">
+      <a href="../../../javascript/rest-parameter.md" class="md-nav__link">
         
   
   
@@ -2439,7 +2311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-de-callback.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-de-callback.md" class="md-nav__link">
         
   
   
@@ -2525,7 +2397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrays.md" class="md-nav__link">
+      <a href="../../../javascript/arrays.md" class="md-nav__link">
         
   
   
@@ -2548,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-basicos-arrays.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-basicos-arrays.md" class="md-nav__link">
         
   
   
@@ -2571,7 +2443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-slice-splice-concat.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-slice-splice-concat.md" class="md-nav__link">
         
   
   
@@ -2594,7 +2466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-busqueda-arrays.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-busqueda-arrays.md" class="md-nav__link">
         
   
   
@@ -2617,7 +2489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ordenar-arrays.md" class="md-nav__link">
+      <a href="../../../javascript/ordenar-arrays.md" class="md-nav__link">
         
   
   
@@ -2640,7 +2512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../desestructuracion-y-spread-operator.md" class="md-nav__link">
+      <a href="../../../javascript/desestructuracion-y-spread-operator.md" class="md-nav__link">
         
   
   
@@ -2728,7 +2600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../arrays-metodos-de-alto-orden.md" class="md-nav__link">
+      <a href="../../../javascript/arrays-metodos-de-alto-orden.md" class="md-nav__link">
         
   
   
@@ -2751,7 +2623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../foreach.md" class="md-nav__link">
+      <a href="../../../javascript/foreach.md" class="md-nav__link">
         
   
   
@@ -2774,7 +2646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-map.md" class="md-nav__link">
+      <a href="../../../javascript/metodo-map.md" class="md-nav__link">
         
   
   
@@ -2797,7 +2669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-filter.md" class="md-nav__link">
+      <a href="../../../javascript/metodo-filter.md" class="md-nav__link">
         
   
   
@@ -2820,7 +2692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-reduce.md" class="md-nav__link">
+      <a href="../../../javascript/metodo-reduce.md" class="md-nav__link">
         
   
   
@@ -2843,7 +2715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-some-every.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-some-every.md" class="md-nav__link">
         
   
   
@@ -2866,7 +2738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-find-findindex.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-find-findindex.md" class="md-nav__link">
         
   
   
@@ -2968,7 +2840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-objetos.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-objetos.md" class="md-nav__link">
         
   
   
@@ -2991,7 +2863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funcion-constructora.md" class="md-nav__link">
+      <a href="../../../javascript/funcion-constructora.md" class="md-nav__link">
         
   
   
@@ -3014,7 +2886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prototipo.md" class="md-nav__link">
+      <a href="../../../javascript/prototipo.md" class="md-nav__link">
         
   
   
@@ -3037,7 +2909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../patron-constructor-prototipo.md" class="md-nav__link">
+      <a href="../../../javascript/patron-constructor-prototipo.md" class="md-nav__link">
         
   
   
@@ -3060,7 +2932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../herencia-prototipica.md" class="md-nav__link">
+      <a href="../../../javascript/herencia-prototipica.md" class="md-nav__link">
         
   
   
@@ -3083,7 +2955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../this.md" class="md-nav__link">
+      <a href="../../../javascript/this.md" class="md-nav__link">
         
   
   
@@ -3106,7 +2978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../globalthis.md" class="md-nav__link">
+      <a href="../../../javascript/globalthis.md" class="md-nav__link">
         
   
   
@@ -3129,7 +3001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../propiedades-de-los-objetos.md" class="md-nav__link">
+      <a href="../../../javascript/propiedades-de-los-objetos.md" class="md-nav__link">
         
   
   
@@ -3152,7 +3024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../propiedades-enumerables-propiedades-propias.md" class="md-nav__link">
+      <a href="../../../javascript/propiedades-enumerables-propiedades-propias.md" class="md-nav__link">
         
   
   
@@ -3175,7 +3047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ciclo-for-in.md" class="md-nav__link">
+      <a href="../../../javascript/ciclo-for-in.md" class="md-nav__link">
         
   
   
@@ -3198,7 +3070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../funciones-fabrica.md" class="md-nav__link">
+      <a href="../../../javascript/funciones-fabrica.md" class="md-nav__link">
         
   
   
@@ -3221,7 +3093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../desestructuracion-de-objetos.md" class="md-nav__link">
+      <a href="../../../javascript/desestructuracion-de-objetos.md" class="md-nav__link">
         
   
   
@@ -3244,7 +3116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encadenamiento-opcional.md" class="md-nav__link">
+      <a href="../../../javascript/encadenamiento-opcional.md" class="md-nav__link">
         
   
   
@@ -3267,7 +3139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-create.md" class="md-nav__link">
+      <a href="../../../javascript/object-create.md" class="md-nav__link">
         
   
   
@@ -3363,7 +3235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clases.md" class="md-nav__link">
+      <a href="../../../javascript/clases.md" class="md-nav__link">
         
   
   
@@ -3386,7 +3258,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../constructor-de-clase.md" class="md-nav__link">
+      <a href="../../../javascript/constructor-de-clase.md" class="md-nav__link">
         
   
   
@@ -3409,7 +3281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodos-de-instancia-clases.md" class="md-nav__link">
+      <a href="../../../javascript/metodos-de-instancia-clases.md" class="md-nav__link">
         
   
   
@@ -3432,7 +3304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clases-propiedades-metodos-estaticos.md" class="md-nav__link">
+      <a href="../../../javascript/clases-propiedades-metodos-estaticos.md" class="md-nav__link">
         
   
   
@@ -3455,7 +3327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../expresiones-de-clase.md" class="md-nav__link">
+      <a href="../../../javascript/expresiones-de-clase.md" class="md-nav__link">
         
   
   
@@ -3478,7 +3350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nombres-de-propiedad-computadas-clases.md" class="md-nav__link">
+      <a href="../../../javascript/nombres-de-propiedad-computadas-clases.md" class="md-nav__link">
         
   
   
@@ -3501,7 +3373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../herencia-clases.md" class="md-nav__link">
+      <a href="../../../javascript/herencia-clases.md" class="md-nav__link">
         
   
   
@@ -3524,7 +3396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tipos-super-clases.md" class="md-nav__link">
+      <a href="../../../javascript/tipos-super-clases.md" class="md-nav__link">
         
   
   
@@ -3547,7 +3419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../propiedades-privadas-encapsulacion.md" class="md-nav__link">
+      <a href="../../../javascript/propiedades-privadas-encapsulacion.md" class="md-nav__link">
         
   
   
@@ -3570,7 +3442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getters-y-setters-clases.md" class="md-nav__link">
+      <a href="../../../javascript/getters-y-setters-clases.md" class="md-nav__link">
         
   
   
@@ -3593,7 +3465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mixins.md" class="md-nav__link">
+      <a href="../../../javascript/mixins.md" class="md-nav__link">
         
   
   
@@ -3687,7 +3559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../programacion-asincrona/" class="md-nav__link">
+      <a href="../../../javascript/programacion-asincrona/" class="md-nav__link">
         
   
   
@@ -3710,7 +3582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../promesas/" class="md-nav__link">
+      <a href="../../../javascript/promesas/" class="md-nav__link">
         
   
   
@@ -3733,7 +3605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encadenamiento-de-promesas/" class="md-nav__link">
+      <a href="../../../javascript/encadenamiento-de-promesas/" class="md-nav__link">
         
   
   
@@ -3756,7 +3628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-all/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-all/" class="md-nav__link">
         
   
   
@@ -3779,7 +3651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-race/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-race/" class="md-nav__link">
         
   
   
@@ -3802,7 +3674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-allsettled/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-allsettled/" class="md-nav__link">
         
   
   
@@ -3825,7 +3697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../metodo-promise-any/" class="md-nav__link">
+      <a href="../../../javascript/metodo-promise-any/" class="md-nav__link">
         
   
   
@@ -3848,7 +3720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manejo-errores-en-promesas/" class="md-nav__link">
+      <a href="../../../javascript/manejo-errores-en-promesas/" class="md-nav__link">
         
   
   
@@ -3871,7 +3743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../async-await/" class="md-nav__link">
+      <a href="../../../javascript/async-await/" class="md-nav__link">
         
   
   
@@ -3894,7 +3766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../manejo-de-errores-async-await/" class="md-nav__link">
+      <a href="../../../javascript/manejo-de-errores-async-await/" class="md-nav__link">
         
   
   
@@ -3978,7 +3850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../iteradores/" class="md-nav__link">
+      <a href="../../../javascript/iteradores/" class="md-nav__link">
         
   
   
@@ -4001,7 +3873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bucle-for-of/" class="md-nav__link">
+      <a href="../../../javascript/bucle-for-of/" class="md-nav__link">
         
   
   
@@ -4024,7 +3896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generadores/" class="md-nav__link">
+      <a href="../../../javascript/generadores/" class="md-nav__link">
         
   
   
@@ -4047,7 +3919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../iteradores-asincronos/" class="md-nav__link">
+      <a href="../../../javascript/iteradores-asincronos/" class="md-nav__link">
         
   
   
@@ -4070,7 +3942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../generadores-asincronos/" class="md-nav__link">
+      <a href="../../../javascript/generadores-asincronos/" class="md-nav__link">
         
   
   
@@ -4152,7 +4024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modulos/" class="md-nav__link">
+      <a href="../../../javascript/modulos/" class="md-nav__link">
         
   
   
@@ -4175,7 +4047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exportacion-modulos/" class="md-nav__link">
+      <a href="../../../javascript/exportacion-modulos/" class="md-nav__link">
         
   
   
@@ -4198,7 +4070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../importacion-modulos/" class="md-nav__link">
+      <a href="../../../javascript/importacion-modulos/" class="md-nav__link">
         
   
   
@@ -4221,7 +4093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modulos-dinamicos/" class="md-nav__link">
+      <a href="../../../javascript/modulos-dinamicos/" class="md-nav__link">
         
   
   
@@ -4299,7 +4171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../map/" class="md-nav__link">
+      <a href="../../../javascript/map/" class="md-nav__link">
         
   
   
@@ -4322,7 +4194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../set/" class="md-nav__link">
+      <a href="../../../javascript/set/" class="md-nav__link">
         
   
   
@@ -4404,7 +4276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../try-catch/" class="md-nav__link">
+      <a href="../../../javascript/try-catch/" class="md-nav__link">
         
   
   
@@ -4427,7 +4299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../try-catch-finally/" class="md-nav__link">
+      <a href="../../../javascript/try-catch-finally/" class="md-nav__link">
         
   
   
@@ -4450,7 +4322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../throw/" class="md-nav__link">
+      <a href="../../../javascript/throw/" class="md-nav__link">
         
   
   
@@ -4473,7 +4345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../optional-catch-binding/" class="md-nav__link">
+      <a href="../../../javascript/optional-catch-binding/" class="md-nav__link">
         
   
   
@@ -4557,7 +4429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contexto-de-ejecucion/" class="md-nav__link">
+      <a href="../../../javascript/contexto-de-ejecucion/" class="md-nav__link">
         
   
   
@@ -4580,7 +4452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../call-stack/" class="md-nav__link">
+      <a href="../../../javascript/call-stack/" class="md-nav__link">
         
   
   
@@ -4603,7 +4475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../event-loop/" class="md-nav__link">
+      <a href="../../../javascript/event-loop/" class="md-nav__link">
         
   
   
@@ -4626,7 +4498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hoisting/" class="md-nav__link">
+      <a href="../../../javascript/hoisting/" class="md-nav__link">
         
   
   
@@ -4649,7 +4521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../scope/" class="md-nav__link">
+      <a href="../../../javascript/scope/" class="md-nav__link">
         
   
   
@@ -4684,6 +4556,8 @@
       
   
   
+    
+  
   
   
     
@@ -4709,18 +4583,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -4733,13 +4610,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             DevCamp
@@ -4788,7 +4665,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-06/" class="md-nav__link ">
+            <a href="../../checkpoint-06/" class="md-nav__link ">
               
   
   
@@ -4823,7 +4700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/introduccion-clases-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/introduccion-clases-py/" class="md-nav__link">
         
   
   
@@ -4846,7 +4723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/metodo-dunder-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/metodo-dunder-py/" class="md-nav__link">
         
   
   
@@ -4869,7 +4746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-un-decorador-py/" class="md-nav__link">
         
   
   
@@ -4892,7 +4769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-polimorfismo-py/" class="md-nav__link">
         
   
   
@@ -4915,7 +4792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-una-api-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-una-api-py/" class="md-nav__link">
         
   
   
@@ -4938,7 +4815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
+      <a href="../../checkpoint-06/que-es-mongodb-py/" class="md-nav__link">
         
   
   
@@ -5004,7 +4881,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-07/" class="md-nav__link ">
+            <a href="../../checkpoint-07/" class="md-nav__link ">
               
   
   
@@ -5039,7 +4916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/introduccion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/introduccion-js/" class="md-nav__link">
         
   
   
@@ -5062,7 +4939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tipos-de-datos-js/" class="md-nav__link">
         
   
   
@@ -5085,7 +4962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/tres-funciones-de-string-js/" class="md-nav__link">
         
   
   
@@ -5108,7 +4985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/condicionales-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/condicionales-js/" class="md-nav__link">
         
   
   
@@ -5131,7 +5008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/operador-ternario-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/operador-ternario-js/" class="md-nav__link">
         
   
   
@@ -5154,7 +5031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/declaracion-de-funcion-vs-expresion-de-funcion-js/" class="md-nav__link">
         
   
   
@@ -5177,7 +5054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-07/que-es-this-js/" class="md-nav__link">
+      <a href="../../checkpoint-07/que-es-this-js/" class="md-nav__link">
         
   
   
@@ -5245,7 +5122,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-08/" class="md-nav__link ">
+            <a href="../../checkpoint-08/" class="md-nav__link ">
               
   
   
@@ -5280,7 +5157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/bucles-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/bucles-js/" class="md-nav__link">
         
   
   
@@ -5303,7 +5180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/variables-js/" class="md-nav__link">
         
   
   
@@ -5326,7 +5203,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/funcion-flecha-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/funcion-flecha-js/" class="md-nav__link">
         
   
   
@@ -5349,7 +5226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/deconstruccion-de-variables-js/" class="md-nav__link">
         
   
   
@@ -5372,7 +5249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/operador-de-extension-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/operador-de-extension-js/" class="md-nav__link">
         
   
   
@@ -5395,7 +5272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/que-es-poo-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/que-es-poo-js/" class="md-nav__link">
         
   
   
@@ -5418,7 +5295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/promesa-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/promesa-js/" class="md-nav__link">
         
   
   
@@ -5441,7 +5318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-08/async-await-js/" class="md-nav__link">
+      <a href="../../checkpoint-08/async-await-js/" class="md-nav__link">
         
   
   
@@ -5509,7 +5386,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-09/" class="md-nav__link ">
+            <a href="../../checkpoint-09/" class="md-nav__link ">
               
   
   
@@ -5544,7 +5421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/mejorar-productividad-js/" class="md-nav__link">
+      <a href="../../checkpoint-09/mejorar-productividad-js/" class="md-nav__link">
         
   
   
@@ -5567,7 +5444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/math-js/" class="md-nav__link">
+      <a href="../../checkpoint-09/math-js/" class="md-nav__link">
         
   
   
@@ -5590,7 +5467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/personalizar-precios-js/" class="md-nav__link">
+      <a href="../../checkpoint-09/personalizar-precios-js/" class="md-nav__link">
         
   
   
@@ -5613,7 +5490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/manejar-errores-js/" class="md-nav__link">
+      <a href="../../checkpoint-09/manejar-errores-js/" class="md-nav__link">
         
   
   
@@ -5636,7 +5513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/licencias/" class="md-nav__link">
+      <a href="../../checkpoint-09/licencias/" class="md-nav__link">
         
   
   
@@ -5659,7 +5536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/modulos-js/" class="md-nav__link">
+      <a href="../../checkpoint-09/modulos-js/" class="md-nav__link">
         
   
   
@@ -5682,7 +5559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/node-npm-pnpm-js/" class="md-nav__link">
+      <a href="../../checkpoint-09/node-npm-pnpm-js/" class="md-nav__link">
         
   
   
@@ -5705,7 +5582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-09/crear-desplegar-modulo-npm-js/" class="md-nav__link">
+      <a href="../../checkpoint-09/crear-desplegar-modulo-npm-js/" class="md-nav__link">
         
   
   
@@ -5763,7 +5640,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-10/" class="md-nav__link ">
+            <a href="../../checkpoint-10/" class="md-nav__link ">
               
   
   
@@ -5798,7 +5675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-10/github/" class="md-nav__link">
+      <a href="../../checkpoint-10/github/" class="md-nav__link">
         
   
   
@@ -5821,7 +5698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-10/git/" class="md-nav__link">
+      <a href="../../checkpoint-10/git/" class="md-nav__link">
         
   
   
@@ -5844,7 +5721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-10/comandos-git/" class="md-nav__link">
+      <a href="../../checkpoint-10/comandos-git/" class="md-nav__link">
         
   
   
@@ -5872,6 +5749,8 @@
                 
   
   
+    
+  
   
   
     
@@ -5912,15 +5791,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../devcamp/checkpoint-11/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -5939,7 +5818,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_7">
             <span class="md-nav__icon md-icon"></span>
             Checkpoint 11
@@ -5955,7 +5834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/git-merge-rebase/" class="md-nav__link">
+      <a href="../git-merge-rebase/" class="md-nav__link">
         
   
   
@@ -5978,7 +5857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/git-stash/" class="md-nav__link">
+      <a href="../git-stash/" class="md-nav__link">
         
   
   
@@ -6001,7 +5880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/git-fetch-pull/" class="md-nav__link">
+      <a href="../git-fetch-pull/" class="md-nav__link">
         
   
   
@@ -6024,7 +5903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/git-eliminar-ramas/" class="md-nav__link">
+      <a href="../git-eliminar-ramas/" class="md-nav__link">
         
   
   
@@ -6047,7 +5926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/git-conflicto-merge/" class="md-nav__link">
+      <a href="../git-conflicto-merge/" class="md-nav__link">
         
   
   
@@ -6070,7 +5949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/git-volver-ultimo-commit/" class="md-nav__link">
+      <a href="../git-volver-ultimo-commit/" class="md-nav__link">
         
   
   
@@ -6093,7 +5972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/git-volver-commit-especifico/" class="md-nav__link">
+      <a href="../git-volver-commit-especifico/" class="md-nav__link">
         
   
   
@@ -6116,7 +5995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/vscode-snippets/" class="md-nav__link">
+      <a href="../vscode-snippets/" class="md-nav__link">
         
   
   
@@ -6139,7 +6018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/introduccion-dom/" class="md-nav__link">
+      <a href="../introduccion-dom/" class="md-nav__link">
         
   
   
@@ -6162,7 +6041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/dom-manipular-estilos/" class="md-nav__link">
+      <a href="../dom-manipular-estilos/" class="md-nav__link">
         
   
   
@@ -6185,7 +6064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/dom-event-listener/" class="md-nav__link">
+      <a href="../dom-event-listener/" class="md-nav__link">
         
   
   
@@ -6205,10 +6084,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../devcamp/checkpoint-11/dom-crear-elementos-html-con-js/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    12. DOM crear elementos HTML con JS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -6219,6 +6118,57 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-crear-elementos-html-con-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como crear elementos HTML con JS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como crear elementos HTML con JS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alternativa-usando-innerhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternativa (Usando innerHTML):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-agregar-atributos-al-nuevo-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para agregar atributos al nuevo elemento:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -6247,9 +6197,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -6257,8 +6205,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -6268,70 +6214,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#combina-strings-de-forma-explicita-concat" class="md-nav__link">
+  <a href="#como-crear-elementos-html-con-js" class="md-nav__link">
     <span class="md-ellipsis">
-      Combina Strings de Forma Explícita: concat
+      Como crear elementos HTML con JS
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Combina Strings de Forma Explícita: concat">
+    <nav class="md-nav" aria-label="Como crear elementos HTML con JS">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ejemplo-construir-una-url-con-concat" class="md-nav__link">
+  <a href="#alternativa-usando-innerhtml" class="md-nav__link">
     <span class="md-ellipsis">
-      Ejemplo: Construir una URL con Concat()
+      Alternativa (Usando innerHTML):
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#completar-rellenar-un-string-en-su-inicio-padstart" class="md-nav__link">
-    <span class="md-ellipsis">
-      Completar / Rellenar un String en su Inicio: padStart
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#completar-rellenar-un-string-en-su-final-padend" class="md-nav__link">
-    <span class="md-ellipsis">
-      Completar / Rellenar un String en su final: padEnd
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#genera-patrones-repitiendo-un-string-repeat" class="md-nav__link">
-    <span class="md-ellipsis">
-      Genera Patrones Repitiendo un String: repeat
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formas-de-utilizar-los-metodos-de-concatenacion-y-relleno" class="md-nav__link">
-    <span class="md-ellipsis">
-      Formas de Utilizar los Métodos de Concatenación y Relleno
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Formas de Utilizar los Métodos de Concatenación y Relleno">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#para-agregar-atributos-al-nuevo-elemento" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusión
+      Para agregar atributos al nuevo elemento:
     </span>
   </a>
   
@@ -6355,180 +6259,50 @@
               <article class="md-content__inner md-typeset">
                 
                   
-  
-
 
 
   
   
 
 
-<p><link rel="stylesheet" href="../../assets/stylesheets/javascript.css"></p>
-<h1 id="metodos-de-concatenacion-y-relleno-en-strings"><strong>Métodos de Concatenación y Relleno en Strings</strong></h1>
-<p>En JavaScript, los métodos de concatenación y relleno no solo son herramientas útiles, sino que también ofrecen una solución directa para tareas como combinar <a href="../string/">strings o cadenas de caracteres</a> dinámicamente, crear formatos visuales consistentes y construir patrones de texto repetitivos. Comprender cómo funcionan <code>concat</code>, <code>padStart</code>, <code>padEnd</code> y <code>repeat</code> te permitirá resolver problemas específicos de manipulación de strings con precisión y eficiencia.</p>
-<h2 id="combina-strings-de-forma-explicita-concat"><strong>Combina Strings de Forma Explícita: <code>concat</code></strong></h2>
-<p>El método <code>concat</code> es una forma directa de unir dos o más cadenas en una sola. Aunque el operador <code>+</code> o los template literals (<code>${}</code>) suelen ser más populares, <code>concat</code> puede resultar útil cuando necesitas una función clara y explícita para manejar la combinación de strings.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nx">string1</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">string2</span><span class="p">,</span><span class="w"> </span><span class="nx">string3</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stringN</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li><strong><code>string1</code></strong>: String / Cadena base.</li>
-<li><strong><code>string2, ..., stringN</code></strong>: Strings o cadenas adicionales que deseas concatenar.</li>
-</ul>
+  <h1>12. DOM crear elementos HTML con JS</h1>
+
+<h2 id="como-crear-elementos-html-con-js"><strong>Como crear elementos HTML con JS</strong></h2>
+<p>En este ejemplo, vamos a crear un elemento párrafo <mark>p</mark> dentro de un <mark>div</mark> <strong>padre</strong>.
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;padre&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div></p>
+<p>Usando appendChild:</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
 <span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">saludo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola&quot;</span><span class="p">;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Mundo&quot;</span><span class="p">;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">mensaje</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">saludo</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;!&quot;</span><span class="p">);</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">mensaje</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;Hola, Mundo!&quot;</span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">divPadre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;divPadre&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">nuevoElemento</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nx">nuevoElemento</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;¡Hola mundo!&#39;</span><span class="p">;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="nx">divPadre</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">nuevoElemento</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
-<p>El método toma el string <code>"Hola"</code> y le añade <code>", "</code>, <code>"Mundo"</code>, y <code>"!"</code>, devolviendo una nueva cadena con todo concatenado.</p>
-<p>El método <code>concat()</code> No modifica las cadenas originales, además devuelve una nueva cadena con los valores concatenados. Es más explícito que usar el operador <code>+</code>, aunque funcionalmente similar y permite concatenar múltiples cadenas en una sola llamada.</p>
-<h3 id="ejemplo-construir-una-url-con-concat"><strong>Ejemplo: Construir una URL con Concat()</strong></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span>
-<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">baseUrl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://www.ejemplo.com/&quot;</span><span class="p">;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ruta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;articulo&quot;</span><span class="p">;</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;123&quot;</span><span class="p">;</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">baseUrl</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">ruta</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;/&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="p">);</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
-</code></pre></div></td></tr></table></div>
-<p>Normalmente se utiliza este método cuando se manejan múltiples variables dinámicas y quieres evitar el uso excesivo del operador <code>+</code></p>
+<p><strong>Explicación:</strong></p>
+<ul>
+<li><mark>document.getElementById('divPadre')</mark> Selecciona el elemento div con el ID divPadre.</li>
+<li><mark>document.createElement('p')</mark> Crea un nuevo elemento p.</li>
+<li><mark>nuevoElemento.textContent = '¡Hola mundo!'</mark> Establece el contenido del nuevo elemento.</li>
+<li><mark>divPadre.appendChild(nuevoElemento)</mark> Agrega el nuevo elemento como hijo del divPadre.</li>
+</ul>
+<h3 id="alternativa-usando-innerhtml"><strong>Alternativa (Usando innerHTML):</strong></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">divPadre</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;&lt;p&gt;Hola, mundo!&lt;/p&gt;&#39;</span><span class="p">;</span>
+</code></pre></div>
+<p>Este método es más simple, pero no permite crear elementos dinámicamente con características específicas (como clases o atributos).</p>
+<h3 id="para-agregar-atributos-al-nuevo-elemento"><strong>Para agregar atributos al nuevo elemento:</strong></h3>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">crearMensaje</span><span class="p">(</span><span class="nx">saludo</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">saludo</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">nombre</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">);</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="p">}</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">crearMensaje</span><span class="p">(</span><span class="s2">&quot;Buenas tardes&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;María&quot;</span><span class="p">));</span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nx">nuevoElemento</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mi-clase&#39;</span><span class="p">);</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nx">nuevoElemento</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;mi-id&#39;</span><span class="p">);</span>
 </code></pre></div></td></tr></table></div>
-<p>El método <code>concat()</code> es una forma explícita y legible de unir cadenas. Aunque no ofrece ventajas significativas sobre el operador <code>+</code>, es útil en casos donde la intención de concatenar debe ser clara.</p>
-<h2 id="completar-rellenar-un-string-en-su-inicio-padstart"><strong>Completar / Rellenar un String en su Inicio: <code>padStart</code></strong></h2>
-<p>El método <code>padStart</code> es ideal para agregar caracteres al principio de un string, como ceros iniciales en números, espacios o cualquier otro símbolo necesario para alcanzar una longitud específica. Este método es comúnmente utilizado en formateos.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nx">string</span><span class="p">.</span><span class="nx">padStart</span><span class="p">(</span><span class="nx">targetLength</span><span class="p">,</span><span class="w"> </span><span class="nx">padString</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li><strong><code>targetLength</code></strong>: La longitud deseada para la cadena resultante.</li>
-<li><strong><code>padString</code></strong> (opcional): La cadena con la que se rellenará. Por defecto es un espacio (<code>" "</code>).</li>
-</ul>
-<p>Este método completa al inicio, es decir, rellena con el valor especificado al principio de la cadena, sin modificar la cadena o string original. A demás, si la longitud de la cadena es igual o mayor al parámetro recibido como <code>targetLength</code>, devuelve el string original.</p>
-<p><strong>Ejemplo Básico:</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">numero</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;123&quot;</span><span class="p">;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numero</span><span class="p">.</span><span class="nx">padStart</span><span class="p">(</span><span class="mf">6</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">));</span><span class="w"> </span><span class="c1">// &quot;000123&quot;</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">numero</span><span class="p">.</span><span class="nx">padStart</span><span class="p">(</span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">));</span><span class="w"> </span><span class="c1">// &quot;*****123&quot;</span>
-</code></pre></div></td></tr></table></div>
-<p>En el ejemplo anterior en el primer ejemplo, el string <code>"123"</code> se rellena con ceros al principio hasta alcanzar una longitud total de 6 caracteres. En el segundo ejemplo, se rellenan con asteriscos hasta alcanzar 8 caracteres.</p>
-<p>El metodo <code>padStart</code> es ideal para formatear números o códigos con una longitud fija, como en identificadores o números de tarjeta:</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span>
-<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">formatearCodigo</span><span class="p">(</span><span class="nx">codigo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">codigo</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">padStart</span><span class="p">(</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="p">);</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">}</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a>
-<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formatearCodigo</span><span class="p">(</span><span class="mf">12345</span><span class="p">));</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="completar-rellenar-un-string-en-su-final-padend"><strong>Completar / Rellenar un String en su final: <code>padEnd</code></strong></h2>
-<p>Al contrario de <code>padStart</code>, <code>padEnd</code> agrega caracteres al final de una cadena de caracteres. Es especialmente útil para alinear texto o formatear columnas, como en tablas.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nx">string</span><span class="p">.</span><span class="nx">padEnd</span><span class="p">(</span><span class="nx">targetLength</span><span class="p">,</span><span class="w"> </span><span class="nx">padString</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li><strong><code>targetLength</code></strong>: La longitud deseada de la cadena resultante.</li>
-<li><strong><code>padString</code></strong> (opcional): La cadena usada para rellenar. Por defecto es un espacio (<code>" "</code>).</li>
-</ul>
-<p>El método <code>padEnd()</code> Completa al final, es decir rellena con el valor especificado al final del string. Este método No modifica la cadena original y si la longitud de la cadena es igual o mayor a <code>targetLength</code>, devuelve la cadena original.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">texto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hola&quot;</span><span class="p">;</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a>
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">texto</span><span class="p">.</span><span class="nx">padEnd</span><span class="p">(</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="p">));</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">texto</span><span class="p">.</span><span class="nx">padEnd</span><span class="p">(</span><span class="mf">8</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;!&quot;</span><span class="p">));</span>
-</code></pre></div></td></tr></table></div>
-<p>En el código anterior el string <code>"Hola"</code> se extiende añadiendo puntos hasta que su longitud sea 10. En el segundo caso, se rellenan signos de exclamación hasta alcanzar 8 caracteres.</p>
-<p>Este método es usado para formatear listas de texto con alineación visual, por ejemplo:</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span>
-<span class="normal"><a href="#__codelineno-9-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">formatearColumna</span><span class="p">(</span><span class="nx">titulo</span><span class="p">,</span><span class="w"> </span><span class="nx">dato</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">titulo</span><span class="p">.</span><span class="nx">padEnd</span><span class="p">(</span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">dato</span><span class="p">;</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="p">}</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formatearColumna</span><span class="p">(</span><span class="s2">&quot;Nombre&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Juan&quot;</span><span class="p">));</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">formatearColumna</span><span class="p">(</span><span class="s2">&quot;Edad&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;30&quot;</span><span class="p">));</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="genera-patrones-repitiendo-un-string-repeat"><strong>Genera Patrones Repitiendo un String: <code>repeat</code></strong></h2>
-<p>El método <code>repeat</code> permite generar patrones de texto al repetir un string un número específico de veces. Es útil en tareas como la creación de separadores o cuando necesitas cadenas repetitivas.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nx">string</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li><strong><code>count</code></strong>: Un número entero que indica cuántas veces se repetirá la cadena. Debe ser un valor positivo o cero, si es un decimal, se redondea hacia abajo.</li>
-</ul>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
-<span class="normal"><a href="#__codelineno-11-2">2</a></span>
-<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">texto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;¡Hola! &quot;</span><span class="p">;</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a>
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">texto</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="mf">3</span><span class="p">));</span>
-</code></pre></div></td></tr></table></div>
-<p>En el ejemplo anterior el string <code>"¡Hola! "</code> se repite tres veces y se concatena en una nueva cadena.</p>
-<p>El método Crea una nueva cadena, repite la cadena original sin modificarla y Devuelve una cadena vacía si <code>count</code> es 0. También puede lanzar un error si <code>count</code> es negativo o infinito.</p>
-<p><strong>Ejemplo: líneas decorativas</strong> Un uso práctico es la creación de separadores o encabezados decorativos.</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
-<span class="normal"><a href="#__codelineno-12-2">2</a></span>
-<span class="normal"><a href="#__codelineno-12-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">decoracion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="mf">10</span><span class="p">);</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a>
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">decoracion</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;**********&quot;</span>
-</code></pre></div></td></tr></table></div>
-<p>Crear patrones dinámicos:</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
-<span class="normal"><a href="#__codelineno-13-2">2</a></span>
-<span class="normal"><a href="#__codelineno-13-3">3</a></span>
-<span class="normal"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">filas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nx">filas</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">i</span><span class="p">));</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="p">}</span>
-</code></pre></div></td></tr></table></div>
-<p>Otro caso común es generar contenido estructurado, como cajas visuales:</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">javascript</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
-<span class="normal"><a href="#__codelineno-14-2">2</a></span>
-<span class="normal"><a href="#__codelineno-14-3">3</a></span>
-<span class="normal"><a href="#__codelineno-14-4">4</a></span>
-<span class="normal"><a href="#__codelineno-14-5">5</a></span>
-<span class="normal"><a href="#__codelineno-14-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">crearCaja</span><span class="p">(</span><span class="nx">texto</span><span class="p">,</span><span class="w"> </span><span class="nx">ancho</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">borde</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">ancho</span><span class="p">);</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">borde</span><span class="si">}</span><span class="sb">\n</span><span class="si">${</span><span class="nx">texto</span><span class="p">.</span><span class="nx">padStart</span><span class="p">((</span><span class="nx">ancho</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">texto</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2</span><span class="p">).</span><span class="nx">padEnd</span><span class="p">(</span><span class="nx">ancho</span><span class="p">)</span><span class="si">}</span><span class="sb">\n</span><span class="si">${</span><span class="nx">borde</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="p">}</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5"></a>
-<a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">crearCaja</span><span class="p">(</span><span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="p">));</span>
-</code></pre></div></td></tr></table></div>
-<p>El método <code>repeat()</code> es perfecto para generar patrones repetitivos, líneas decorativas o replicar cadenas en bucles. Es una herramienta simple pero poderosa para tareas de diseño y manipulación de texto.</p>
-<h2 id="formas-de-utilizar-los-metodos-de-concatenacion-y-relleno"><strong>Formas de Utilizar los Métodos de Concatenación y Relleno</strong></h2>
-<ol>
-<li><strong>Usa <code>concat</code> para una Semántica Clara</strong>: Aunque los operadores <code>+</code> y <code>${}</code> son más comunes, <code>concat</code> puede ser útil cuando necesitas enfatizar que estás trabajando únicamente con strings.</li>
-<li><strong><code>padStart</code> y <code>padEnd</code> en Formateo de Datos</strong>: Estos métodos son perfectos para formatear contenido en interfaces de usuario, como reportes o sistemas de facturación.</li>
-<li><strong>Combina Métodos para Crear Estructuras Visuales</strong>: Combinar <code>repeat</code>, <code>padStart</code> y <code>padEnd</code> puede ayudarte a generar contenido visualmente atractivo. Por ejemplo, puedes crear cuadros, tablas o patrones decorativos para interfaces de terminal o logs.</li>
-<li><strong>Optimiza el Uso de <code>repeat</code></strong>: Para tareas repetitivas, como generar separadores o encabezados, <code>repeat</code> es más eficiente y legible que concatenar manualmente un string varias veces.</li>
-<li><strong>Controla Longitudes Dinámicas con <code>padStart</code> y <code>padEnd</code></strong>: Úsalos para trabajar con cadenas de longitudes variables y asegurarte de que el resultado sea uniforme.</li>
-<li><strong>Ten en Cuenta el Rendimiento</strong>: Aunque estos métodos son eficientes para tareas específicas, evita su uso excesivo en operaciones que procesen grandes cantidades de datos en ciclos.</li>
-</ol>
-<hr />
-<h3 id="conclusion"><strong>Conclusión</strong></h3>
-<p>Los métodos de concatenación y relleno de JavaScript son herramientas extremadamente versátiles, ideales para combinar, extender o manipular strings en una amplia variedad de contextos. Su utilidad se extiende desde tareas simples, como agregar ceros iniciales en un número, hasta casos más avanzados, como crear estructuras visuales dinámicas.</p>
+<blockquote>
+<p>Nota: Si el div ya tiene contenido, el nuevo elemento se agregará al final de ese contenido.</p>
+</blockquote>
 <hr />
 <p><br></p>
 
@@ -6543,8 +6317,6 @@
 
 
 
-
-  
 
 
 
@@ -6594,14 +6366,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
+        <script src="../../../assets/javascripts/highlight/11.11.1/highlight.min.js"></script>
       
-        <script src="../../assets/javascripts/extra.js"></script>
+        <script src="../../../assets/javascripts/extra.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
