@@ -24,7 +24,8 @@ hide:
   9. [Introducción al DOM](introduccion-dom.md)
   10. [DOM manipular CSS con JS](dom-manipular-css-con-js.md)
   11. [DOM event listener](dom-event-listener.md)
-  12. [DOM crear elementos HTML con JS](dom-crear-elementos-html-con-js.md)
+  12. [DOM crear y eliminar elementos HTML con JS](dom-crear-eliminar-elementos.md)
+  13. [DOM crear proyecto](dom-crear-proyecto.md)
 
 ***
 
