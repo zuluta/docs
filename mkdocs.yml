@@ -216,7 +216,7 @@ nav:
       - 7. GIT volver a un commit específico: devcamp/checkpoint-11/git-volver-commit-especifico.md
       - 8. VSCode snippets: devcamp/checkpoint-11/vscode-snippets.md
       - 9. Introducción al DOM: devcamp/checkpoint-11/introduccion-dom.md
-      - 10. DOM manipular estilos: devcamp/checkpoint-11/dom-manipular-estilos.md
+      - 10. DOM manipular CSS con JS: devcamp/checkpoint-11/dom-manipular-css-con-js.md
       - 11. DOM event listener: devcamp/checkpoint-11/dom-event-listener.md
       - 12. DOM crear elementos HTML con JS: devcamp/checkpoint-11/dom-crear-elementos-html-con-js.md
 
